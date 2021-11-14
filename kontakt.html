@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scouterna</title>
+    <title>Kontakt | Gustav Juul</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/Logo.png">
 </head>
 
 
 <body>
 
     <img src="Assets/Logo.png" class="logo" />
-    <h1 class="header">Gustav Juul</h1>
+    <h1 class="header2">Gustav Juul</h1>
     <div class="navwrap">
         <a class="navbut" href="index.html">Hem</a>
         <a class="navbut" href="https://github.com/LordGurr">Profil</a>
@@ -21,40 +22,51 @@
         <a class="navbut" href="about.html">Om oss</a>
     </div>
     --
-    <div class="valkommen">
 
-        <a href="https://github.com/LordGurr" title="Follow on Github"><img alt="Gustav on Github" class="social-link" src="Assets/Github.png" width="30" height="30">
-        </a>
-        <a href="https://lordgurr.itch.io/" title="Follow on Itch.io"><img alt="Gustav on Itch.io" class="social-link" src="Assets/itch.png" width="30" height="30">
-        </a>
-        <a href="https://www.linkedin.com/in/gustav-juul-b77424208/" title="Follow on linkedin"><img alt="Gustav on linkedin" class="social-link" src="Assets/linkedin.jpg" width="30" height="30">
-        </a>
-        <a href="https://www.instagram.com/gustavj_04/" title="Follow on Instagram"><img alt="Gustav on Instagram" class="social-link" src="Assets/instagram.png" width="30" height="30">
-        </a>
-        <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=gustav.juul.github@gmail.com&hl=sv" title="Message on email"><img alt="Gustav on email" class="social-link" src="Assets/email.png" width="30" height="30">
-        </a>
-        <button class="collapsible">Open Collapsible</button>
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="grid-container2">
+        <div class="omOss">
+            <h2>Om Gustav</h2>
+            <p>
+                Jag studerar nuvarande teknik på LBS i Lund och hoppas studera vidare till civil ingenjör. Jag är intresserad av programmering, spelutveckling, matematik och att lära mig nya saker.
+                <!--Jag är inte hög på bilden...-->
+            </p>
         </div>
+        <div class="namnforklaring">
+
+            <a href="https://github.com/LordGurr" title="Follow on Github"><img alt="Gustav on Github" class="social-link" src="Assets/Github.png" width="30" height="30">
+            </a>
+            <a href="https://lordgurr.itch.io/" title="Follow on Itch.io"><img alt="Gustav on Itch.io" class="social-link" src="Assets/itch.png" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/gustav-juul-b77424208/" title="Follow on linkedin"><img alt="Gustav on linkedin" class="social-link" src="Assets/linkedin.jpg" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com/gustavj_04/" title="Follow on Instagram"><img alt="Gustav on Instagram" class="social-link" src="Assets/instagram.png" width="30" height="30">
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=gustav.juul.github@gmail.com&hl=sv" title="Message on email"><img alt="Gustav on email" class="social-link" src="Assets/email.png" width="30" height="30">
+            </a>
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
 
 
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
 
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </div>
 
 </body>
 
