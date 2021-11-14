@@ -1,11 +1,12 @@
 body {
-    background-color:rgb(14, 8, 0);
+    background-color: rgb(14, 8, 0);
     margin: 0;
 }
 
-.smaller{ 
-      height: 6%;
+.smaller {
+    height: 6%;
 }
+
 .header {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -15,17 +16,18 @@ body {
     text-decoration-color: rgb(37, 109, 3);
 }
 
-.header2{
+.header2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-size: 70px;
     margin: 10px;
 }
 
-.boxen{
-    background-color: rgb(216, 138, 48);;
+.boxen {
+    background-color: rgb(216, 138, 48);
+    ;
     width: 50%;
     padding: 10px;
     margin-top: 20px;
@@ -35,33 +37,34 @@ body {
     overflow: auto;
 }
 
-.boxenLeft{
-  background-color: rgb(216, 138, 48);;
-  width: 50%;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: auto;
-  height: 120px;
-  overflow: auto;
+.boxenLeft {
+    background-color: rgb(216, 138, 48);
+    ;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+    height: 120px;
+    overflow: auto;
 }
 
-.boxen1About{
+.boxen1About {
     width: 70%;
     margin: auto;
 }
 
-.oldimg{
+.oldimg {
     width: 300px;
     border-radius: 100px;
     opacity: 80%
 }
 
-.oldimg:hover{
+.oldimg:hover {
     opacity: 100%
 }
 
-.firstA{
+.firstA {
     display: block;
     background-color: rgb(255, 255, 255);
     width: 50%;
@@ -70,8 +73,8 @@ body {
     text-align: center;
 }
 
-.navwrap{
-  /*position: relative;
+.navwrap {
+    /*position: relative;
   top:  100px;*/
     background-color: rgb(151, 82, 2);
     height: 57px;
@@ -79,34 +82,35 @@ body {
     /*margin: 0.5%;*/
     margin-left: 1%;
     width: 98%;
-    background-image: linear-gradient(0deg, #ecaa1c,  #c7911e);
+    background-image: linear-gradient(0deg, #ecaa1c, #c7911e);
     border-radius: 20px;
 }
 
-.navWrap2{
+.navWrap2 {
     /*background-color:rgb(243, 199, 28);*/
     height: 50px;
     margin: 0px;
     margin-top: -4px;
     margin-bottom: 20px;
     position: sticky;
-    top: -102px; 
+    top: -102px;
     z-index: 100;
 }
 
-.navbut{
+.navbut {
     float: left;
-    padding-left: 10%;
+    /*padding-left: 10%;*/
     padding-top: 18px;
     height: 39px;
     display: block;
-    width: 15%;
+    width: 25%;
     color: mediumpurple;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.navbut:hover{
+.navbut:hover {
     background-color: #ffbb00;
     color: mediumpurple;
     text-decoration: none;
@@ -114,88 +118,86 @@ body {
     border-radius: 20px;
 }
 
-.navBut{
+.navBut {
     text-align: center;
     padding-top: 17px;
     height: 35px;
     display: block;
     width: 16.6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666667%;
-    float: left;    
+    float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: black !important;
     background-image: linear-gradient(to bottom, #f5d040, #f3c71c, #d1ac19);
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 14px;
 }
 
-
-.navBut:hover{
+.navBut:hover {
     background-image: linear-gradient(to top, #f4cd34, #f3c71c, #d8b119);
     text-decoration: none !important;
 }
 
-.navButaktiv{
+.navButaktiv {
     text-align: center;
     padding-top: 17px;
     height: 35px;
     display: block;
     width: 16.6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666667%;
-    float: left;    
+    float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: black !important;
     text-decoration: none;
     background-image: linear-gradient(to bottom, #f5d040, #f3c71c, #d1ac19);
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 14px;
-    border-bottom: 5px solid hsl(48, 40%, 65%);  
+    border-bottom: 5px solid hsl(48, 40%, 65%);
 }
 
-.navButaktiv:hover{
+.navButaktiv:hover {
     background-image: linear-gradient(to top, #f4cd34, #f3c71c, #d8b119);
     text-decoration: none !important;
 }
 
 @media only screen and (max-width: 335px) {
-  .navButaktiv{
-    font-size: 12px;
-  }
-  .navBut{
-    font-size: 12px;
-  }
+    .navButaktiv {
+        font-size: 12px;
+    }
+    .navBut {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 300px) {
-  .navButaktiv{
-    font-size: 10px;
-  }
-  .navBut{
-    font-size: 10px;
-  }
+    .navButaktiv {
+        font-size: 10px;
+    }
+    .navBut {
+        font-size: 10px;
+    }
 }
 
-
-.logo{
-    width: 140px;
-    /*margin: 20px;*/
+.logo {
+    width: 200px;
+    margin: 0px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     border-radius: 50%;
 }
 
-.picHöger{
-  width: 200px;
-  /*margin: 20px;
+.picHöger {
+    width: 200px;
+    /*margin: 20px;
   margin-right: 20px;*/
-  margin-left: 86%;
-  top: 20px;
-  right: 20px;
-  border-radius: 20%;
+    margin-left: 86%;
+    top: 20px;
+    right: 20px;
+    border-radius: 20%;
 }
 
-.boxen2{
+.boxen2 {
     width: 100%;
     background-color: rgb(243, 199, 28);
     float: right;
@@ -205,119 +207,115 @@ body {
     height: 101px;
 }
 
-.boxen3{
-    color:rgb(243, 199, 28)
+.boxen3 {
+    color: rgb(243, 199, 28)
 }
 
-.footer{
-  background-color: #f3c71c;
-  padding: 1.5%;
-  min-height: 1px;
-  z-index: 1000;
+.footer {
+    background-color: rgb(253, 189, 11);
+    padding: 1.5%;
+    min-height: 1px;
+    z-index: 1000;
 }
 
-.footergrid{
-  display: grid;
-  grid-template-columns: 6rem 20rem 22rem auto;
-  grid-template-areas: 
-    'footernavs footerinfo hemsideinformation bild';
-  font-size: small;
-  width: 110rem;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.footergrid {
+    display: grid;
+    grid-template-columns: 6rem 20rem 22rem auto;
+    grid-template-areas: 'footernavs footerinfo hemsideinformation bild';
+    font-size: small;
+    width: 110rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 950px) {
-  .footergrid{
-  grid-template-areas:
-    'footernavs'
-    'footerinfo'
-    'hemsideinformation'
-    'bild';
-    grid-template-columns: 100%;
-    grid-gap: 6%;
-    padding: 3%;
-    width: auto;
-  }
-  .footer{
-    height: 22rem;
-  }
-  .footerinfo{
-    width: 100% !important;
-  }
-  .hemsideinformation{
-    width: 100% !important;
-  }
+    .footergrid {
+        grid-template-areas: 'footernavs' 'footerinfo' 'hemsideinformation' 'bild';
+        grid-template-columns: 100%;
+        grid-gap: 6%;
+        padding: 3%;
+        width: auto;
+    }
+    .footer {
+        height: 22rem;
+    }
+    .footerinfo {
+        width: 100% !important;
+    }
+    .hemsideinformation {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 490px) {
-  .footer{
-    height: 25rem;
-  }
+    .footer {
+        height: 25rem;
+    }
 }
 
-.footernavs{
-  grid-area: footernavs;
-  font-family: Arial, Helvetica, sans-serif;
-/*   font-size: 100%; */
+.footernavs {
+    grid-area: footernavs;
+    font-family: Arial, Helvetica, sans-serif;
+    /*   font-size: 100%; */
 }
 
-.footernavAktiv{
-/*   font-weight: bold; */
-/*     text-transform: uppercase; */
-  text-decoration: underline overline;
+.footernavAktiv {
+    /*   font-weight: bold; */
+    /*     text-transform: uppercase; */
+    text-decoration: underline overline;
 }
 
-.footerinfo{
-  grid-area: footerinfo;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 90%;
-/*   font-size: 100%; */
-}
-
-.hemsideinformation{
+.footerinfo {
+    grid-area: footerinfo;
     font-family: Arial, Helvetica, sans-serif;
     width: 90%;
-  grid-area: hemsideinformation;
+    /*   font-size: 100%; */
 }
 
-.bild{
-  width: 10rem;
-  float: right;
-  display: block;
-  justify-self: center;
-/*   margin-top: auto;
+.hemsideinformation {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    grid-area: hemsideinformation;
+}
+
+.bild {
+    width: 10rem;
+    float: right;
+    display: block;
+    justify-self: center;
+    /*   margin-top: auto;
   margin-bottom: auto; */
-  grid-area: bild;
-  margin-top: 0.3rem;
+    grid-area: bild;
+    margin-top: 0.3rem;
 }
 
 @media only screen and (max-width: 954px) {
-  .bild{
-    width: 10rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-    margin-top: 0.7rem;
-  }
+    .bild {
+        width: 10rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        margin-top: 0.7rem;
+    }
 }
 
-.gridbild{
-  grid-area: bild;
+.gridbild {
+    grid-area: bild;
 }
 
-.AIBild{
+.AIBild {
     width: 400px;
     margin-left: 30%;
     margin-top: 50px;
 }
 
-.program{
+.program {
     background-color: rgb(243, 199, 28);
     width: 48%;
-    padding: 1.5rem;;
+    padding: 1.5rem;
+    ;
     margin: 40px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -327,39 +325,39 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.programforklaring{
-  width: 20%;
-  position: fixed;
-  left: 60%;
-  top: 186px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(243, 199, 28);
-  padding: 1.2rem;
-  font-size: small;
+.programforklaring {
+    width: 20%;
+    position: fixed;
+    left: 60%;
+    top: 186px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 199, 28);
+    padding: 1.2rem;
+    font-size: small;
 }
 
 @media only screen and (max-width: 768px) {
-  .program{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%;
-/*     z-index: -200; */
-  }
-  .programforklaring{
-    top: 83%;
-    left: 65%;
-    width: 25%;
-    font-size: 75%;
-    background-color: transparent;
-    padding: 0;
-/*     z-index: -10; */
-  }
+    .program {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        /*     z-index: -200; */
+    }
+    .programforklaring {
+        top: 83%;
+        left: 65%;
+        width: 25%;
+        font-size: 75%;
+        background-color: transparent;
+        padding: 0;
+        /*     z-index: -10; */
+    }
 }
 
-
-.lankarRubrik1{
-  background-color: rgb(243, 199, 28);;
+.lankarRubrik1 {
+    background-color: rgb(243, 199, 28);
+    ;
     width: 48%;
     padding: 40px;
     padding-top: 20px;
@@ -372,11 +370,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.indexOmOss1{
-  background-color: rgb(243, 199, 28);;
+.indexOmOss1 {
+    background-color: rgb(243, 199, 28);
+    ;
     width: 47%;
     padding: 40px;
-    margin-top: 140px; 
+    margin-top: 140px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -385,11 +384,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.indexOmOss{
-  background-color: rgb(243, 199, 28);;
+.indexOmOss {
+    background-color: rgb(243, 199, 28);
+    ;
     width: 47%;
     padding: 40px;
-    margin-top: 40px; 
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -398,8 +398,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.lankar1{
-  background-color: rgb(243, 199, 28);;
+.lankar1 {
+    background-color: rgb(243, 199, 28);
+    ;
     width: 48%;
     padding: 1.5rem;
     margin: 3%;
@@ -410,8 +411,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.lankar2{
-  background-color: rgb(243, 199, 28);;
+.lankar2 {
+    background-color: rgb(243, 199, 28);
+    ;
     width: 48%;
     padding: 1.5rem;
     margin: 3%;
@@ -423,39 +425,40 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .lankar1{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%
-  }
-  .lankar2{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%
-  }
+    .lankar1 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%
+    }
+    .lankar2 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%
+    }
 }
 
-.bilder{
+.bilder {
     width: 30%;
     margin-left: 2.4%;
     margin-top: 2.4%;
 }
 
-.bilder2{
+.bilder2 {
     width: 46.4%;
-    margin-left: 2.4%; 
+    margin-left: 2.4%;
     margin-top: 2.4%;
     margin-bottom: 2.4%
 }
 
-.hampusIndex{
-  height: 300px;
+.hampusIndex {
+    height: 300px;
 }
 
-.Inforuta1{
-  background-color: rgb(243, 199, 28);;
+.Inforuta1 {
+    background-color: rgb(243, 199, 28);
+    ;
     width: 47%;
     padding: 40px;
     margin-left: 24%;
@@ -465,153 +468,441 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.aboutText{ 
-  grid-area: text; 
-  padding: 1.5rem;
+.aboutText {
+    grid-area: text;
+    padding: 1.5rem;
 }
 
-.aboutBildGrid{
-  grid-area: bild;
-  padding: 1.5rem;
+.aboutBildGrid {
+    grid-area: bild;
+    padding: 1.5rem;
 }
 
-.aboutBild{
-  width: 100%;
-  max-width: 12rem;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: 10%;
+.aboutBild {
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
 }
 
-.grid-container1{ /*Om oss, dator*/
-  display: grid;
-  grid-template-areas:
-     'text bild';
-  grid-template-columns: 50% 50%;
-  background-color: rgb(243, 199, 28);
-  width: 48%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4%;
-  min-height: 1px;
-  margin-top: 140px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.grid-container{ /*om oss, dator*/
-  display: grid;
-  grid-template-areas:
-     'text bild';
-  grid-template-columns: 50% 50%;
-  background-color: rgb(243, 199, 28);
-  width: 48%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4%;
-  min-height: 1px;
-  margin-top: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@media only screen and (max-width: 900px){
-  .grid-container1{ /*om oss, telefon*/
-    grid-template-areas:
-      'text'
-      'bild';
-    width: 85%;
-    grid-template-columns: 100%;
-  }
-  .grid-container{ /*Om oss, telefon*/
-    grid-template-areas:
-      'text'
-      'bild';
-    width: 85%;
-    grid-template-columns: 100%;
-    margin-bottom: 10%;
-  }
-  .aboutBild{
+.grid-container1 {
+    /*Om oss, dator*/
+    display: grid;
+    grid-template-areas: 'text bild';
+    grid-template-columns: 50% 50%;
+    background-color: rgb(243, 199, 28);
+    width: 48%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 14rem;
-  }
+    margin-bottom: 4%;
+    min-height: 1px;
+    margin-top: 140px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.namnforklaring{
-  background-color: rgb(243, 199, 28);
-  grid-area: namnforklaring;
-  padding: 1.5rem;
+.grid-container {
+    /*om oss, dator*/
+    display: grid;
+    grid-template-areas: 'text bild';
+    grid-template-columns: 50% 50%;
+    background-color: rgb(243, 199, 28);
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    min-height: 1px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.namnforklaringtext{
-  font-size: small;
+@media only screen and (max-width: 900px) {
+    .grid-container1 {
+        /*om oss, telefon*/
+        grid-template-areas: 'text' 'bild';
+        width: 85%;
+        grid-template-columns: 100%;
+    }
+    .grid-container {
+        /*Om oss, telefon*/
+        grid-template-areas: 'text' 'bild';
+        width: 85%;
+        grid-template-columns: 100%;
+        margin-bottom: 10%;
+    }
+    .aboutBild {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 14rem;
+    }
 }
 
-.omOss{
-  background-color: rgb(243, 199, 28);
-  grid-area: omPatrullen;
-  padding: 1.5rem;
+.namnforklaring {
+    background-color: rgb(253, 189, 11);
+    grid-area: namnforklaring;
+    padding: 1.5rem;
 }
 
-.grid-container2{ /*startsida*/
-  margin-right: auto;
-  margin-left: auto;
-  width: 85%;
-  margin-top: 40px;
-  display: grid;
-  grid-gap: 4%;
-/*   grid-template-column: 80% 20%; */
-  grid-template-areas:
-    'omPatrullen omPatrullen omPatrullen omPatrullen namnforklaring';
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 1px;
-  margin-bottom: 3%;
+.namnforklaringtext {
+    font-size: small;
+}
+
+.omOss {
+    background-color: rgb(253, 189, 11);
+    grid-area: omPatrullen;
+    padding: 1.5rem;
+}
+
+.grid-container2 {
+    /*startsida*/
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 4%;
+    /*   grid-template-column: 80% 20%; */
+    grid-template-areas: 'omPatrullen omPatrullen omPatrullen omPatrullen namnforklaring';
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 1px;
+    margin-bottom: 3%;
 }
 
 @media only screen and (max-width: 768px) {
-  .grid-container2{ /*Startsida, telefon*/
-  grid-template-areas:
-    'omPatrullen'
-    'namnforklaring';
-    margin-bottom: 20%;
-  }
+    .grid-container2 {
+        /*Startsida, telefon*/
+        grid-template-areas: 'omPatrullen' 'namnforklaring';
+        margin-bottom: 20%;
+    }
 }
 
-.valkommen{
-  background-color: rgb(243, 199, 28);
-  font-family: Arial, Helvetica, sans-serif;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 140px;
-  padding: 1.5rem;
-  text-align: center;
+.valkommen {
+    background-color: rgb(253, 189, 11);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 a:link {
-  color: rgb(75,75,75);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: rgb(85, 85, 85);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(38, 38, 38);
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: rgb(38, 38, 38);
-/*   background-color: hsl(47,89,100); */
-  text-decoration: underline;
+    color: rgb(75, 75, 75);
+    background-color: transparent;
+    text-decoration: none;
 }
 
-.namnBild{
-  width: 12rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+a:visited {
+    color: rgb(85, 85, 85);
+    background-color: transparent;
+    text-decoration: none;
 }
+
+a:hover {
+    color: rgb(38, 38, 38);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(38, 38, 38);
+    /*   background-color: hsl(47,89,100); */
+    text-decoration: underline;
+}
+
+.namnBild {
+    width: 12rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-link {
+    padding: 0.25em;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 2px;
+    width: 5%;
+    height: 5%;
+    border-radius: 35%;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    background-color: rgba(238, 238, 238, 0);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+    background-color: rgb(243, 178, 0);
+}
+
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0 18px;
+    background-color: rgba(255, 255, 255, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+/* Github calendar*/
+
+
+/*.contrib-column {
+    border-left-color: rgb(58, 62, 65);
+    border-top-color: rgb(58, 62, 65);
+}
+
+.table-column {
+    display: table-cell;
+    width: 1%;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.contrib-column {
+    padding: 15px 0;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    font-size: 11px;
+}*/
+
+:root {
+    --color-calendar-graph-day-bg: #dddbdb;
+    --color-calendar-graph-day-L1-bg: #39dd34;
+    --color-calendar-graph-day-L2-bg: #45a045;
+    --color-calendar-graph-day-L3-bg: #047526;
+    --color-calendar-graph-day-L4-bg: #0a4208;
+}
+
+rect.ContributionCalendar-day[data-level='0'] {
+    fill: var(--color-calendar-graph-day-bg);
+}
+
+rect.ContributionCalendar-day[data-level='1'] {
+    fill: var(--color-calendar-graph-day-L1-bg);
+}
+
+rect.ContributionCalendar-day[data-level='2'] {
+    fill: var(--color-calendar-graph-day-L2-bg);
+}
+
+rect.ContributionCalendar-day[data-level='3'] {
+    fill: var(--color-calendar-graph-day-L3-bg);
+}
+
+rect.ContributionCalendar-day[data-level='4'] {
+    fill: var(--color-calendar-graph-day-L4-bg);
+}
+
+.calendar .width-full>.float-left {
+    display: none;
+}
+
+.calendar {
+    font-family: Helvetica, arial;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    min-height: 243px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.calendar-graph text.wday,
+.calendar-graph text.month {
+    font-size: 10px;
+    fill: #aaa;
+}
+
+.contrib-legend {
+    text-align: right;
+    padding: 0 14px 10px 0;
+    display: inline-block;
+    /*float: right;*/
+}
+
+.contrib-legend .legend {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+    position: relative;
+    bottom: -1px;
+    padding: 0;
+}
+
+.contrib-legend .legend li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
+.text-small {
+    font-size: 12px;
+    color: #767676;
+}
+
+.calendar-graph {
+    padding: 5px 0 0;
+    text-align: center;
+}
+
+.contrib-column {
+    padding: 15px 0;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    font-size: 11px;
+}
+
+.contrib-column-first {
+    border-left: 0;
+}
+
+.table-column {
+    display: table-cell;
+    width: 1%;
+    padding-right: 10px;
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+.contrib-number {
+    font-weight: 300;
+    line-height: 1.3em;
+    font-size: 24px;
+    display: block;
+    color: #ddd;
+}
+
+.calendar img.spinner {
+    width: 70px;
+    margin-top: 50px;
+    min-height: 70px;
+}
+
+.monospace {
+    text-align: center;
+    color: #000;
+    font-family: monospace;
+}
+
+.monospace a {
+    color: #1D75AB;
+    text-decoration: none;
+}
+
+.contrib-footer {
+    font-size: 11px;
+    padding: 0 10px 12px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    height: 26px;
+}
+
+.text-muted {
+    float: none;
+    margin-left: 9px;
+    color: #ddd;
+    text-align: center;
+}
+
+.text-muted a {
+    color: #4078c0;
+    text-decoration: none;
+}
+
+.text-muted a:hover,
+.monospace a:hover {
+    text-decoration: underline;
+}
+
+h2.f4.text-normal.mb-3 {
+    display: none;
+}
+
+.float-left.text-gray {
+    float: left;
+}
+
+#user-activity-overview {
+    display: none;
+}
+
+.day-tooltip {
+    white-space: nowrap;
+    position: absolute;
+    z-index: 99999;
+    padding: 10px;
+    font-size: 12px;
+    color: #959da5;
+    text-align: center;
+    background: rgba(0, 0, 0, .85);
+    border-radius: 3px;
+    display: none;
+    pointer-events: none;
+}
+
+.day-tooltip strong {
+    color: #dfe2e5;
+}
+
+.day-tooltip.is-visible {
+    display: block;
+}
+
+.day-tooltip:after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    box-sizing: border-box;
+    margin: 0 0 0 -5px;
+    content: " ";
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, .85)
+}
+
+text.ContributionCalendar-label {
+    fill: #ccc;
+    font-size: 11px;
+}
+
+
+/* Github calendar*/
