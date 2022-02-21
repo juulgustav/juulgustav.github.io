@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+.space {
+    padding: 10px;
+}
+
 .smaller {
     height: 6%;
 }
@@ -38,15 +42,14 @@ body {
 }
 
 .boxenLeft {
-    background-color: rgb(216, 138, 48);
-    ;
+    /*background-color: rgb(216, 138, 48);*/
     width: 50%;
-    padding: 10px;
+    /*padding: 10px;*/
     margin-top: 20px;
     margin-left: 20px;
     margin-right: auto;
-    height: 120px;
-    overflow: auto;
+    height: auto;
+    /*overflow: auto;*/
 }
 
 .boxen1About {
@@ -659,6 +662,13 @@ a:active {
 .content {
     padding: 0 18px;
     background-color: rgba(255, 255, 255, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.contentPic {
+    max-width: auto;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
