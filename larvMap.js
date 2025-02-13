@@ -2,8 +2,13 @@
 var imageWidth = 4678;  // Replace with your image width
 var imageHeight = 1654; // Replace with your image height
 
+var offsetX = imageWidth*0.5;
+var offsetY = imageHeight*0.5;
+
 // Calculate map bounds using Leaflet's CRS.Simple (for pixel-based maps)
+//var bounds = [[offsetY, offsetX], [imageHeight+offsetY, imageWidth+offsetX]];
 var bounds = [[0, 0], [imageHeight, imageWidth]];
+
 
 // Initialize the map with the custom bounds
 var map = L.map('map', {
@@ -49,6 +54,7 @@ Promise.all([
             createBoothMarker(company, booth);
         }
     });
+    populateDropdowns();
 })
 .catch(error => console.error('Error loading the JSON files:', error));
 
@@ -56,25 +62,36 @@ var booths = {}; // Store rectangle layers so we can remove them later
 var companyData = {};
 
 function createBoothMarker(company, booth) {
-    const rect = L.rectangle([[imageHeight-booth.coordinates[0][0], booth.coordinates[0][1]],[imageHeight-booth.coordinates[1][0], booth.coordinates[1][1]]], {
+    const rect = L.rectangle([[imageHeight - booth.coordinates[0][0], booth.coordinates[0][1]], [imageHeight - booth.coordinates[1][0], booth.coordinates[1][1]]], {
         color: "blue",
         weight: 2,
         fillColor: "blue",
         fillOpacity: 0.3
-    }).addTo(map)
-    .bindPopup(`
+    }).addTo(map);
+
+    let popupContent = `
         <b>${company.name}</b><br>
-        <strong>Industry:</strong> ${company.profile && company.profile.industry ? company.profile.industry.join(', ') : "Information not available"}<br>
-        <strong>Desired Programs:</strong> ${company.profile && company.profile.desiredProgramme ? company.profile.desiredProgramme.join(', ') : "Information not available"}<br>
-        <strong>We Offer:</strong> ${company.profile && company.profile.weOffer ? company.profile.weOffer.join(', ') : "Information not available"}<br>
+        <strong>Industry:</strong> ${company.profile?.industry?.join(', ') || "Information not available"}<br>
+        <strong>Desired Programs:</strong> ${company.profile?.desiredProgramme?.join(', ') || "Information not available"}<br>
+        <strong>We Offer:</strong> ${company.profile?.weOffer?.join(', ') || "Information not available"}<br>
         <br>
         <strong>About Us:</strong><br>
-        ${company.profile && company.profile.aboutUs ? company.profile.aboutUs : "Information not available"}
-    `);
-    // Store booth in boothLayers with boothId as key
+        ${company.profile?.aboutUs || "Information not available"}
+    `;
+
+    const popup = L.popup({
+        maxWidth: 300,
+        keepInView: true,       // Ensures popups do not go off-screen
+        autoPan: true,          // Moves map if needed
+        autoPanPadding: [50, 50] // Adds space around popup
+    }).setContent(popupContent);
+
+    rect.bindPopup(popup);
     booths[booth.boothId] = rect;
-    companyData[booth.boothId] = company
+    companyData[booth.boothId] = company;
 }
+
+
 
 // 📌 Define booths with coordinates and info
 //var booths = [
@@ -95,42 +112,84 @@ function createBoothMarker(company, booth) {
 //    boothLayers[booth.name] = rect; // Store reference for filtering and highlighting
 //});
 
-// 🔍 Function to filter by search and category
+function populateDropdowns() {
+    let industries = new Set();
+    let programs = new Set();
+    let offers = new Set();
+
+    Object.values(companyData).forEach(company => {
+        if (company.profile) {
+            company.profile.industry?.forEach(industry => industries.add(industry));
+            company.profile.desiredProgramme?.forEach(program => programs.add(program));
+            company.profile.weOffer?.forEach(offer => offers.add(offer));
+        }
+    });
+
+    addOptionsToDropdown("industryFilter", industries);
+    addOptionsToDropdown("programFilter", programs);
+    addOptionsToDropdown("offerFilter", offers);
+}
+
+function addOptionsToDropdown(dropdownId, optionsSet) {
+    let dropdown = document.getElementById(dropdownId);
+    dropdown.innerHTML = `<option value="">All</option>`; // Default option
+    optionsSet.forEach(option => {
+        let optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.textContent = option;
+        dropdown.appendChild(optionElement);
+    });
+}
+
+
 function filterBooths() {
     var searchText = document.getElementById("searchBox").value.toLowerCase();
+    var selectedIndustry = document.getElementById("industryFilter").value;
+    var selectedProgram = document.getElementById("programFilter").value;
+    var selectedOffer = document.getElementById("offerFilter").value;
 
-    // Reset the styles to default before filtering
+    // Reset all booths to default style
     for (let boothId in booths) {
         booths[boothId].setStyle(defaultStyle);
     }
 
-    if (searchText.length < 1) {
-        return;
+    if (!searchText && !selectedIndustry && !selectedProgram && !selectedOffer) {
+        return; // No filters applied
     }
 
     // Loop through all booth layers
     for (let boothId in booths) {
-        var booth = booths[boothId];  // Get the current booth layer
-        var company = companyData[boothId]; // Find company by boothId
+        var booth = booths[boothId];
+        var company = companyData[boothId];
 
-        // If company is found, check for matches
         var matches = false;
         if (company) {
-            // Check name, industry, and programs for matches
-            matches = company.name.toLowerCase().includes(searchText) ||
-                      (company.profile && company.profile.industry && company.profile.industry.some(industry => industry.toLowerCase().includes(searchText))) ||
-                      (company.profile && company.profile.desiredProgramme && company.profile.desiredProgramme.some(program => program.toLowerCase().includes(searchText))) ||
-                      (company.profile && company.profile.weOffer && company.profile.weOffer.some(offer => offer.toLowerCase().includes(searchText)));
+            let profile = company.profile || {};
+
+            // 🔹 Allow search to match name, industry, program, or offer
+            let matchesSearch = searchText
+                ? company.name.toLowerCase().includes(searchText) ||
+                  (profile.industry || []).some(industry => industry.toLowerCase().includes(searchText)) ||
+                  (profile.desiredProgramme || []).some(program => program.toLowerCase().includes(searchText)) ||
+                  (profile.weOffer || []).some(offer => offer.toLowerCase().includes(searchText))
+                : true;
+
+            let matchesIndustry = selectedIndustry ? (profile.industry || []).includes(selectedIndustry) : true;
+            let matchesProgram = selectedProgram ? (profile.desiredProgramme || []).includes(selectedProgram) : true;
+            let matchesOffer = selectedOffer ? (profile.weOffer || []).includes(selectedOffer) : true;
+
+            matches = matchesSearch && matchesIndustry && matchesProgram && matchesOffer;
         }
 
-        // Highlight or remove based on search match
         if (matches) {
             booth.setStyle(highlightStyle); // Highlight matching booth
         } else {
-            booth.setStyle(defaultStyle);  // Reset style for non-matching booths
+            booth.setStyle(defaultStyle);
         }
     }
 }
+
+
 
 
 // 🔍 Function to filter booths based on selected category

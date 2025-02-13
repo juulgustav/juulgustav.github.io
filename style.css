@@ -938,3 +938,17 @@ text.ContributionCalendar-label {
     border-radius: 5px;
 }
 
+#filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#filters input, #filters select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+

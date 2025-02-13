@@ -30,16 +30,23 @@
         <a class="navbut" href="about.html">Github historik</a>
     </div>
     --
-    <input type="text" id="searchBox" placeholder="Search for a company..." onkeyup="filterBooths()">
 
-    <select id="filterMenu" onchange="filterByCategory()">
-        <option value="">Select Category</option>
-        <option value="software">Software</option>
-        <option value="engineering">Engineering</option>
-        <option value="government">Government</option>
-        <option value="graduate programs">Graduate Programs</option>
-        <option value="certification">Certification</option>
-    </select>
+    <div id="filters">
+        <input type="text" id="searchBox" placeholder="Search for company..." oninput="filterBooths()">
+        
+        <select id="industryFilter" onchange="filterBooths()">
+            <option value="">All Industries</option>
+        </select>
+    
+        <select id="programFilter" onchange="filterBooths()">
+            <option value="">All Programs</option>
+        </select>
+    
+        <select id="offerFilter" onchange="filterBooths()">
+            <option value="">All Offers</option>
+        </select>
+    </div>
+    
     <div id="map"></div>
 </body>
 <script src="larvMap.js"></script>
