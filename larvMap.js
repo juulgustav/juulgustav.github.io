@@ -54,6 +54,9 @@ Promise.all([
             console.log(booth)
             createBoothMarker(company, booth);
         }
+        else {
+            console.error("No company found for "+ booth.boothId)
+        }
     });
     populateDropdowns();
 })
@@ -78,6 +81,7 @@ function createBoothMarker(company, booth) {
         <br>
         <strong>About Us:</strong><br>
         ${company.profile?.aboutUs || "Information not available"}
+        
     `;
 
     const popup = L.popup({
@@ -127,28 +131,45 @@ function populateDropdowns() {
             company.profile.industry?.forEach(industry => industries.add(industry));
             company.profile.desiredProgramme?.forEach(program => programs.add(program));
             company.profile.weOffer?.forEach(offer => offers.add(offer));
+            if(Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews')) {
+                offers.add("Individual Meetings")
+                offersCount["Individual Meetings"] = 200
+            }
+            
 
             company.profile.industry?.forEach(industry => industryCount[industry] = (industryCount[industry] || 0) + 1);
             company.profile.desiredProgramme?.forEach(program => programCount[program] = (programCount[program] || 0) + 1);
             company.profile.weOffer?.forEach(offer => offersCount[offer] = (offersCount[offer] || 0) + 1);
         }
     });
-    console.log(industryCount)
-    console.log(programCount)
-    console.log(offersCount)
+    //console.log(industryCount)
+    //console.log(programCount)
+    //console.log(offersCount)
 
     industries = Array.from(industries);
-    //industries.sort(a => industryCount[a])
     industries.sort(function(a, b){return industryCount[b]-industryCount[a]})
     programs = Array.from(programs);
-    //programs.sort(a => programCount[a])
     programs.sort(function(a, b){return programCount[b]-programCount[a]})
     offers = Array.from(offers);
-    console.log(offers)
-    //offers.sort(a => offersCount[a])
     offers.sort(function(a, b){return offersCount[b]-offersCount[a]})
 
-    console.log(offers)
+    let list = []
+    Object.values(industries).forEach(industry => {
+        list.push([industry,industryCount[industry]]);
+    });
+    console.log(list)
+    list = []
+    Object.values(programs).forEach(program => {
+        list.push([program,programCount[program]]);
+    });
+    console.log(list)
+    list = []
+    Object.values(offers).forEach(offer => {
+        list.push([offer,offersCount[offer]]);
+    });
+    console.log(list)
+
+
     addOptionsToDropdown("industryFilter", industries);
     addOptionsToDropdown("programFilter", programs);
     addOptionsToDropdown("offerFilter", offers);
@@ -201,6 +222,9 @@ function filterBooths() {
             let matchesIndustry = selectedIndustry ? (profile.industry || []).includes(selectedIndustry) : true;
             let matchesProgram = selectedProgram ? (profile.desiredProgramme || []).includes(selectedProgram) : true;
             let matchesOffer = selectedOffer ? (profile.weOffer || []).includes(selectedOffer) : true;
+            if(selectedOffer == "Individual Meetings" && Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews) {
+                matchesOffer = true;
+            }
 
             matches = matchesSearch && matchesIndustry && matchesProgram && matchesOffer;
         }

@@ -71225,5 +71225,17 @@
     },
     "$rev": "2025-01-28T14:15:22.963Z",
     "$key": "/exhibitors/6163880378105856"
+  },
+  {
+    "name": "SFMA, Swedish Fluid Motion Association",
+	"boothSpace": {
+      "name": "C0-12"
+    }
+  },
+  {
+    "name": "TKL/LARV",
+	"boothSpace": {
+      "name": "C1-54"
+    }
   }
 ]
