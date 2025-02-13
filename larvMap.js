@@ -50,8 +50,8 @@ Promise.all([
     boothsData.forEach(booth => {
         const company = companiesData.find(c => c.boothSpace.name === booth.boothId);
         if (company) {
-            console.log(company)
-            console.log(booth)
+            //console.log(company)
+            //console.log(booth)
             createBoothMarker(company, booth);
         }
         else {
