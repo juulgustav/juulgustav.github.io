@@ -46,6 +46,7 @@ Promise.all([
 ])
 .then(([boothsData, companiesData]) => {
     // Now you have booth coordinates and company data
+    //console.log(boothsData)
     boothsData.forEach(booth => {
         const company = companiesData.find(c => c.boothSpace.name === booth.boothId);
         if (company) {
@@ -117,14 +118,37 @@ function populateDropdowns() {
     let programs = new Set();
     let offers = new Set();
 
+    let industryCount= {}
+    let programCount= {}
+    let offersCount= {}
+
     Object.values(companyData).forEach(company => {
         if (company.profile) {
             company.profile.industry?.forEach(industry => industries.add(industry));
             company.profile.desiredProgramme?.forEach(program => programs.add(program));
             company.profile.weOffer?.forEach(offer => offers.add(offer));
+
+            company.profile.industry?.forEach(industry => industryCount[industry] = (industryCount[industry] || 0) + 1);
+            company.profile.desiredProgramme?.forEach(program => programCount[program] = (programCount[program] || 0) + 1);
+            company.profile.weOffer?.forEach(offer => offersCount[offer] = (offersCount[offer] || 0) + 1);
         }
     });
+    console.log(industryCount)
+    console.log(programCount)
+    console.log(offersCount)
 
+    industries = Array.from(industries);
+    //industries.sort(a => industryCount[a])
+    industries.sort(function(a, b){return industryCount[b]-industryCount[a]})
+    programs = Array.from(programs);
+    //programs.sort(a => programCount[a])
+    programs.sort(function(a, b){return programCount[b]-programCount[a]})
+    offers = Array.from(offers);
+    console.log(offers)
+    //offers.sort(a => offersCount[a])
+    offers.sort(function(a, b){return offersCount[b]-offersCount[a]})
+
+    console.log(offers)
     addOptionsToDropdown("industryFilter", industries);
     addOptionsToDropdown("programFilter", programs);
     addOptionsToDropdown("offerFilter", offers);

@@ -102,5 +102,49 @@
 	{
 		"boothId": "B0-26",
 		"coordinates": [[115, 143], [182, 245]]
+	},
+	{
+		"boothId": "B0-27",
+		"coordinates": [[266, 142], [329, 293]]
+	},
+	{
+		"boothId": "B0-28",
+		"coordinates": [[332, 250], [424, 320]]
+	},
+	{
+		"boothId": "B0-29",
+		"coordinates": [[540, 265], [642, 334]]
+	},
+	{
+		"boothId": "B0-30",
+		"coordinates": [[642, 265], [744, 334]]
+	},
+	{
+		"boothId": "B0-31",
+		"coordinates": [[744, 265], [846, 334]]
+	},
+	{
+		"boothId": "B0-32",
+		"coordinates": [[846, 265], [950, 334]]
+	},
+	{
+		"boothId": "B0-33",
+		"coordinates": [[1094, 377], [1200, 446]]
+	},
+	{
+		"boothId": "B0-34",
+		"coordinates": [[1200, 377], [1300, 446]]
+	},
+	{
+		"boothId": "B0-35",
+		"coordinates": [[1300, 377], [1400, 446]]
+	},
+	{
+		"boothId": "B0-36",
+		"coordinates": [[1400, 377], [1500, 446]]
+	},
+	{
+		"boothId": "B0-37",
+		"coordinates": [[1500, 377], [1600, 446]]
 	}
 ]
