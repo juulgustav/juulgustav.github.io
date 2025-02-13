@@ -1,0 +1,106 @@
+[
+	{
+		"boothId": "B0-01",
+		"coordinates": [[250, 2090], [320, 2190]]
+	},
+	{
+		"boothId": "B0-02",
+		"coordinates": [[250, 1990], [320, 2090]]
+	},
+	{
+		"boothId": "B0-03",
+		"coordinates": [[250, 1885], [320, 1990]]
+	},
+	{
+		"boothId": "B0-04",
+		"coordinates": [[250, 1785], [320, 1885]]
+	},
+	{
+		"boothId": "B0-05",
+		"coordinates": [[250, 1683], [320, 1785]]
+	},
+	{
+		"boothId": "B0-06",
+		"coordinates": [[250, 1510], [320, 1683]]
+	},
+	{
+		"boothId": "B0-07",
+		"coordinates": [[115, 2077], [182, 2178]]
+	},
+	{
+		"boothId": "B0-08",
+		"coordinates": [[115, 1975], [182, 2077]]
+	},
+	{
+		"boothId": "B0-09",
+		"coordinates": [[115, 1873], [182, 1975]]
+	},
+	{
+		"boothId": "B0-10",
+		"coordinates": [[115, 1771], [182, 1873]]
+	},
+	{
+		"boothId": "B0-11",
+		"coordinates": [[115, 1670], [182, 1771]]
+	},
+	{
+		"boothId": "B0-12",
+		"coordinates": [[115, 1567], [182, 1670]]
+	},
+	{
+		"boothId": "B0-13",
+		"coordinates": [[115, 1466], [182, 1567]]
+	},
+	{
+		"boothId": "B0-14",
+		"coordinates": [[115, 1365], [182, 1466]]
+	},
+	{
+		"boothId": "B0-15",
+		"coordinates": [[115, 1263], [182, 1365]]
+	},
+	{
+		"boothId": "B0-16",
+		"coordinates": [[115, 1160], [182, 1263]]
+	},
+	{
+		"boothId": "B0-17",
+		"coordinates": [[115, 1060], [182, 1160]]
+	},
+	{
+		"boothId": "B0-18",
+		"coordinates": [[115, 957], [182, 1060]]
+	},
+	{
+		"boothId": "B0-19",
+		"coordinates": [[115, 856], [182, 957]]
+	},
+	{
+		"boothId": "B0-20",
+		"coordinates": [[115, 754], [182, 856]]
+	},
+	{
+		"boothId": "B0-21",
+		"coordinates": [[115, 652], [182, 754]]
+	},
+	{
+		"boothId": "B0-22",
+		"coordinates": [[115, 551], [182, 652]]
+	},
+	{
+		"boothId": "B0-23",
+		"coordinates": [[115, 450], [182, 551]]
+	},
+	{
+		"boothId": "B0-24",
+		"coordinates": [[115, 347], [182, 450]]
+	},
+	{
+		"boothId": "B0-25",
+		"coordinates": [[115, 245], [182, 347]]
+	},
+	{
+		"boothId": "B0-26",
+		"coordinates": [[115, 143], [182, 245]]
+	},
+]
