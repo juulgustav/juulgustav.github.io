@@ -930,18 +930,20 @@ text.ContributionCalendar-label {
 }
 
 #searchBox {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     font-size: 16px;
+    margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 #filters {
+    padding: 10px;
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 #filters input, #filters select {
@@ -1005,6 +1007,8 @@ text.ContributionCalendar-label {
     display: none;
     max-height: 320px;
     overflow-y: auto;
+    margin-bottom: -367px;
+    z-index: 10000;
 }
 .select-btn.open ~ .list-items{
     display: block;
