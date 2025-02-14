@@ -954,19 +954,15 @@ text.ContributionCalendar-label {
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+
 
 .container{
     max-width: 320px;
     width: 100%;
-    margin: 20px auto 30px;
+    margin: 0px auto 15px;
     display: inline-block;
-    position-anchor: top;
+    vertical-align: top;
+    align-self: center;
 }
 .select-btn{
     display: flex;

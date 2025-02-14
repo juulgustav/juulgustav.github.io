@@ -16,12 +16,12 @@ var map = L.map('map', {
     minZoom: -2,       // Allows zooming out
     maxZoom: 2,        // Prevents excessive zooming in
     maxBounds: bounds, // Prevents panning beyond image
-    maxBoundsViscosity: 1.0 // Ensures bounds are strict
+    maxBoundsViscosity: 1.0, // Ensures bounds are strict
 }).setView([imageHeight / 2, imageWidth / 2], 0); // Center the map
 
 // Load the custom image as a Leaflet layer
 L.imageOverlay('Assets/Mässkarta Larv.png', bounds).addTo(map);
-
+map.attributionControl.addAttribution('Made by Gustav Juul');
 // Fit the image inside the map viewport
 map.fitBounds(bounds);
 
