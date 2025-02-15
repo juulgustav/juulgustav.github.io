@@ -114,6 +114,10 @@ function createBoothMarker(company, booth) {
         fillOpacity: 0.3
     }).addTo(map);
     let cities = Array.from(citiesFromCompany(company));
+    if(Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews){
+        console.log(company.profile.weOffer);
+        company.profile.weOffer.push("Individual Meetings");
+    }
     let popupContent = `
         <b>${company.name}</b><br>
         <strong>Industry:</strong> ${company.profile?.industry?.join(', ') || "Information not available"}<br>
@@ -127,7 +131,7 @@ function createBoothMarker(company, booth) {
         
     `;
 
-    company.cities = cities;
+    //company.cities = cities;
 
     const popup = L.popup({
         maxWidth: 300,
@@ -139,7 +143,7 @@ function createBoothMarker(company, booth) {
     rect.bindPopup(popup);
     booths[booth.boothId] = rect;
     companyData[booth.boothId] = company;
-    companyData[booth.boothId].cities = cities
+    companyData[booth.boothId].cities = cities;
 }
 
 function citiesFromCompany(company) {
@@ -194,7 +198,7 @@ function populateDropdowns() {
             company.profile.weOffer?.forEach(offer => offers.add(offer));
             company.cities?.forEach(city => cities.add(city));
 
-            if(Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews')) {
+            if(Object.hasOwn(company, 'exposure') && Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews>0) {
                 offers.add("Individual Meetings")
                 offersCount["Individual Meetings"] = 200
             }
@@ -318,6 +322,7 @@ function filterBooths() {
             // 🔹 Allow search to match name, industry, program, or offer
             let matchesSearch = searchText
                 ? company.name.toLowerCase().includes(searchText) ||
+                  company.boothSpace.name.toLowerCase().includes(searchText) ||
                   (profile.industry || []).some(industry => industry.toLowerCase().includes(searchText)) ||
                   (profile.desiredProgramme || []).some(program => program.toLowerCase().includes(searchText)) ||
                   (profile.weOffer || []).some(offer => offer.toLowerCase().includes(searchText)) ||
@@ -327,14 +332,14 @@ function filterBooths() {
             //selectedIndustries.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
             let matchesIndustry = selectedIndustries.length>0 ? selectedIndustries.some(selectedIndustry => (profile.industry || []).includes(selectedIndustry.innerText)) : true;
             let matchesProgram = selectedProgrammes.length>0?selectedProgrammes.some(selectedProgram => (profile.desiredProgramme || []).includes(selectedProgram.innerText)) : true;
-            let matchesOffer = selectedOffers.length>0? selectedOffers.some(selectedOffer => (profile.weOffer || []).includes(selectedOffer.innerText)) : true;
+            let matchesOffer = selectedOffers.length>0? selectedOffers.some(selectedOffer => (profile.weOffer || []).includes(selectedOffer.innerText) ||(selectedOffer.innerText=="Individual Meetings"&& Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews>0)) : true;
             let matchesCity = selectedCities.length>0? selectedCities.some(selectedCity => (company.cities || []).includes(selectedCity.innerText)) : true;
 
             //let matchesIndustry = selectedIndustry ? (profile.industry || []).includes(selectedIndustry) : true;
             //let matchesProgram = selectedProgram ? (profile.desiredProgramme || []).includes(selectedProgram) : true;
             //let matchesOffer = selectedOffer ? (profile.weOffer || []).includes(selectedOffer) : true;
             //let matchesCity = selectedCity ? (company.cities || []).includes(selectedCity) : true;
-
+            
             //if(selectedOffers == "Individual Meetings" && Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews) {
             //    matchesOffer = true;
             //}
@@ -355,46 +360,6 @@ function filterBooths() {
             booth.setStyle(defaultStyle);
         }
     }
-}
-
-
-
-
-// 🔍 Function to filter booths based on selected category
-function filterByCategory() {
-    var selectedCategory = document.getElementById("filterMenu").value.toLowerCase();
-
-    // Reset all booths to default style
-    for (let boothName in booths) {
-        booths[boothName].setStyle(defaultStyle);
-    }
-
-    // If no category is selected, return (no filtering)
-    if (!selectedCategory) {
-        return;
-    }
-
-    // Loop through booths and highlight matching ones based on the selected category
-    booths.forEach(booth => {
-        var matchesCategory = booth.tags.some(tag => tag.toLowerCase().includes(selectedCategory));
-
-        if (matchesCategory) {
-            booths[booth.name].setStyle(highlightStyle); // Highlight matching booths
-        }
-    });
-}
-
-// Example of filtering booths by industry
-function filterByIndustry() {
-    var selectedIndustry = document.getElementById("filterMenu").value.toLowerCase();
-
-    booths.forEach(booth => {
-        if (booth.industry.toLowerCase().includes(selectedIndustry)) {
-            booth.marker.setStyle(highlightStyle); // Highlight matching booths
-        } else {
-            booth.marker.setStyle(defaultStyle); // Reset non-matching booths
-        }
-    });
 }
 
 
