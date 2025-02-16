@@ -47,16 +47,12 @@ Promise.all([
     fetch('Json/companies.json').then(response => response.json())
 ])
 .then(([boothsData, companiesData]) => {
-    // Now you have booth coordinates and company data
-    //console.log(boothsData)
     boothsData.forEach(booth => {
         const company = companiesData.find(c => c.boothSpace.name === booth.boothId);
         if(booth.boothId == "C1-51") {
             console.log(company)
         }
         if (company) {
-            //console.log(company)
-            //console.log(booth)
             createBoothMarker(company, booth);
         }
         else {
@@ -70,27 +66,16 @@ Promise.all([
             btn.classList.toggle("open");
         });
     });
-    //const selectBtn = document.querySelector(".select-btn"),
-    //    items = document.querySelectorAll(".item");
-    //    selectBtn.addEventListener("click", () => {
-    //    selectBtn.classList.toggle("open");
-    //});
     items = document.querySelectorAll(".item");
     items.forEach(item => {
         item.addEventListener("click", () => {
             console.log("Clicked! "+item.getAttribute("name"));
             item.classList.toggle("checked");
-            //let checked = document.querySelectorAll('input[name="'+item.getAttribute("name")+'"], input[class="item checked"]'),
-            //let checked = document.querySelectorAll(`.item.checked[name="`+item.getAttribute("name")+`'"]`);
             let checked = document.getElementsByName(item.getAttribute("name")),
-                //btnText = document.querySelector(".btn-text");
                 btnText = document.getElementById(item.getAttribute("name").replace("FilterOption","Text"))
                 let numChecked = 0;
-                //checked.forEach(i => console.log(i.getAttribute("class")));
-                //checked.forEach(i => i.getAttribute("class")=="item checked" ? console.log(i.getAttribute("class")+" is equal to item checked"): console.log(i.getAttribute("class")+" is not equal to item checked"));
                 checked.forEach(i => i.getAttribute("class")=="item checked" ? numChecked++: true);
 
-                //console.log("numChecked: "+numChecked)
                 if(numChecked > 0){
                     btnText.innerText = `${numChecked} Selected`;
                 }else{
@@ -114,8 +99,11 @@ function createBoothMarker(company, booth) {
         fillOpacity: 0.3
     }).addTo(map);
     let cities = Array.from(citiesFromCompany(company));
-    if(Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews){
+    if(Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews>0){
         console.log(company.profile.weOffer);
+        if(!Object.hasOwn(company, 'profile') || !Object.hasOwn(company.exposure, 'weOffer')) {
+            
+        }
         company.profile.weOffer.push("Individual Meetings");
     }
     let popupContent = `
@@ -131,7 +119,6 @@ function createBoothMarker(company, booth) {
         
     `;
 
-    //company.cities = cities;
 
     const popup = L.popup({
         maxWidth: 300,
@@ -156,27 +143,6 @@ function citiesFromCompany(company) {
     }
     return cities;
 }
-
-
-
-// 📌 Define booths with coordinates and info
-//var booths = [
-//    { name: "Kiwa", coords: [[imageHeight-250, 2090], [imageHeight-320, 2190]], info: "Vi är Kiwa, ett av världens största företag inom besiktning, provning och certifiering. Våra tjänster skapar förtroende för våra kunders produkter, tjänster, ledningssystem och medarbetare. Vi finns i hela Sverige, från Malmö i söder till Kiruna i norr.", tags: ["inspection", "certification", "engineering"] },
-//    { name: "Syntronic Research and Development", coords: [[imageHeight-250, 1990], [imageHeight-320, 2090]], info: "Looking for software engineers.", tags: ["software", "engineering"] },
-//    { name: "Länsstyrelsen Norrbotten", coords: [[imageHeight-250, 1885], [imageHeight-320, 1990]], info: "We have graduate programs available.", tags: ["government", "graduate programs"] },
-//    { name: "Länsstyrelsen Norrbotten2", coords: [[0, 0], [100, 100]], info: "We have graduate programs available.", tags: ["government", "graduate programs"] }
-//];
-
-
-
-// Add booths to map
-//booths.forEach(booth => {
-//    var rect = L.rectangle(booth.coords, defaultStyle)  // Default style initially
-//        .addTo(map)
-//        .bindPopup(`<b>${booth.name}</b><br>${booth.info}`);
-//
-//    boothLayers[booth.name] = rect; // Store reference for filtering and highlighting
-//});
 
 function populateDropdowns() {
     let industries = new Set();
@@ -211,9 +177,6 @@ function populateDropdowns() {
 
         }
     });
-    //console.log(industryCount)
-    //console.log(programCount)
-    //console.log(offersCount)
 
     industries = Array.from(industries);
     industries.sort(function(a, b){return industryCount[b]-industryCount[a]})
@@ -255,17 +218,9 @@ function populateDropdowns() {
 
 function addOptionsToDropdown(dropdownId, optionsSet) {
     let dropdown = document.getElementById(dropdownId);
-    //dropdown.innerHTML = `<option value="">All</option>`; // Default option
-    /*optionsSet.forEach(option => {
-        let optionElement = document.createElement("option");
-        optionElement.value = option;
-        optionElement.textContent = option;
-        dropdown.appendChild(optionElement);
-    });*/
     optionsSet.forEach(option => {
         let listItem = document.createElement("li");
         listItem.classList.add("item");
-        //listItem.classList.entries[listItem.classList.length-1].setAttribute("name", dropdownId+"Option")
         listItem.setAttribute("name", dropdownId+"Option");
         let checkboxSpan = document.createElement("span");
         checkboxSpan.classList.add("checkbox");
@@ -328,28 +283,11 @@ function filterBooths() {
                   (profile.weOffer || []).some(offer => offer.toLowerCase().includes(searchText)) ||
                   (company.cities || []).some(city => city.toLowerCase().includes(searchText))
                 : true;
-            //console.log(selectedIndustries);
-            //selectedIndustries.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
+
             let matchesIndustry = selectedIndustries.length>0 ? selectedIndustries.some(selectedIndustry => (profile.industry || []).includes(selectedIndustry.innerText)) : true;
             let matchesProgram = selectedProgrammes.length>0?selectedProgrammes.some(selectedProgram => (profile.desiredProgramme || []).includes(selectedProgram.innerText)) : true;
             let matchesOffer = selectedOffers.length>0? selectedOffers.some(selectedOffer => (profile.weOffer || []).includes(selectedOffer.innerText)) : true;
             let matchesCity = selectedCities.length>0? selectedCities.some(selectedCity => (company.cities || []).includes(selectedCity.innerText)) : true;
-
-            //let matchesIndustry = selectedIndustry ? (profile.industry || []).includes(selectedIndustry) : true;
-            //let matchesProgram = selectedProgram ? (profile.desiredProgramme || []).includes(selectedProgram) : true;
-            //let matchesOffer = selectedOffer ? (profile.weOffer || []).includes(selectedOffer) : true;
-            //let matchesCity = selectedCity ? (company.cities || []).includes(selectedCity) : true;
-            
-            //if(selectedOffers == "Individual Meetings" && Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews) {
-            //    matchesOffer = true;
-            //}
-            //if(matchesIndustry || matchesProgram || matchesOffer || matchesCity) {
-            //    console.log("Company: "+company.name+ " matches industry: "+matchesIndustry+", program: "+matchesProgram+", offer: "+matchesOffer+", city: "+matchesCity)
-            //}
-            //matchesIndustry=true;
-            //matchesProgram=true;
-            //matchesOffer=true;
-            //matchesCity=true;
 
             matches = matchesSearch && matchesIndustry && matchesProgram && matchesOffer && matchesCity;
         }
