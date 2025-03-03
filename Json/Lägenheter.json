@@ -11,7 +11,9 @@
     "tidigareInflyttning": true,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6054249",
+    "longitud": "22.153788786365702"
   },
   {
     "bostadsområde": 0,
@@ -25,7 +27,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -39,7 +43,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -53,7 +59,9 @@
     "tidigareInflyttning": true,
     "våning": -1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -67,7 +75,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -81,7 +91,9 @@
     "tidigareInflyttning": true,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -95,7 +107,9 @@
     "tidigareInflyttning": true,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -109,7 +123,9 @@
     "tidigareInflyttning": false,
     "våning": 5,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -123,7 +139,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60590105",
+    "longitud": "22.152650100000002"
   },
   {
     "bostadsområde": 0,
@@ -137,7 +155,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60590105",
+    "longitud": "22.152650100000002"
   },
   {
     "bostadsområde": 0,
@@ -151,7 +171,9 @@
     "tidigareInflyttning": false,
     "våning": 5,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60590105",
+    "longitud": "22.152650100000002"
   },
   {
     "bostadsområde": 0,
@@ -165,7 +187,9 @@
     "tidigareInflyttning": false,
     "våning": 5,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60590105",
+    "longitud": "22.152650100000002"
   },
   {
     "bostadsområde": 0,
@@ -179,7 +203,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -193,7 +219,9 @@
     "tidigareInflyttning": true,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -207,7 +235,9 @@
     "tidigareInflyttning": false,
     "våning": 5,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -221,7 +251,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60547385000001",
+    "longitud": "22.152870864344067"
   },
   {
     "bostadsområde": 0,
@@ -235,7 +267,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60547385000001",
+    "longitud": "22.152870864344067"
   },
   {
     "bostadsområde": 0,
@@ -249,7 +283,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6054249",
+    "longitud": "22.153788786365702"
   },
   {
     "bostadsområde": 0,
@@ -263,7 +299,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -277,7 +315,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -291,7 +331,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -305,7 +347,9 @@
     "tidigareInflyttning": true,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -319,7 +363,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -333,7 +379,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60593175",
+    "longitud": "22.15321438701899"
   },
   {
     "bostadsområde": 0,
@@ -347,7 +395,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60590105",
+    "longitud": "22.152650100000002"
   },
   {
     "bostadsområde": 0,
@@ -361,7 +411,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -375,7 +427,9 @@
     "tidigareInflyttning": false,
     "våning": 5,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -389,7 +443,9 @@
     "tidigareInflyttning": false,
     "våning": 5,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60616808057499",
+    "longitud": "22.153817440808247"
   },
   {
     "bostadsområde": 0,
@@ -403,7 +459,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60547385000001",
+    "longitud": "22.152870864344067"
   },
   {
     "bostadsområde": 0,
@@ -417,7 +475,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.60547385000001",
+    "longitud": "22.152870864344067"
   },
   {
     "bostadsområde": 2,
@@ -431,7 +491,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6208177",
+    "longitud": "22.1392052370998"
   },
   {
     "bostadsområde": 2,
@@ -445,7 +507,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6208177",
+    "longitud": "22.1392052370998"
   },
   {
     "bostadsområde": 2,
@@ -459,7 +523,9 @@
     "tidigareInflyttning": false,
     "våning": 6,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6202127",
+    "longitud": "22.139095619999992"
   },
   {
     "bostadsområde": 2,
@@ -473,7 +539,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62046465",
+    "longitud": "22.13767521906341"
   },
   {
     "bostadsområde": 1,
@@ -487,7 +555,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -501,7 +571,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -515,7 +587,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -529,7 +603,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -543,7 +619,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62281755000001",
+    "longitud": "22.120116845375957"
   },
   {
     "bostadsområde": 1,
@@ -557,7 +635,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6206245",
+    "longitud": "22.11778128794362"
   },
   {
     "bostadsområde": 1,
@@ -571,7 +651,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62077959999999",
+    "longitud": "22.118545447902118"
   },
   {
     "bostadsområde": 1,
@@ -585,7 +667,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6189427701037",
+    "longitud": "22.11870262819293"
   },
   {
     "bostadsområde": 1,
@@ -599,7 +683,9 @@
     "tidigareInflyttning": true,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -613,7 +699,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -627,7 +715,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -641,7 +731,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -655,7 +747,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6221451",
+    "longitud": "22.118723641978516"
   },
   {
     "bostadsområde": 1,
@@ -669,7 +763,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -683,7 +779,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6231202",
+    "longitud": "22.12057912466917"
   },
   {
     "bostadsområde": 1,
@@ -697,7 +795,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62281755000001",
+    "longitud": "22.120116845375957"
   },
   {
     "bostadsområde": 1,
@@ -711,7 +811,9 @@
     "tidigareInflyttning": true,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62087435000001",
+    "longitud": "22.11772545"
   },
   {
     "bostadsområde": 1,
@@ -725,7 +827,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -739,7 +843,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -753,7 +859,9 @@
     "tidigareInflyttning": true,
     "våning": 3,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -767,7 +875,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 4,
-    "korridor": true
+    "korridor": true,
+    "latitud": "65.6195458",
+    "longitud": "22.120248949999997"
   },
   {
     "bostadsområde": 1,
@@ -781,7 +891,9 @@
     "tidigareInflyttning": true,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -795,7 +907,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -809,7 +923,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -823,7 +939,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -837,7 +955,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -851,7 +971,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6217987",
+    "longitud": "22.1200927"
   },
   {
     "bostadsområde": 1,
@@ -865,7 +987,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -879,7 +1003,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -893,7 +1019,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62274364999999",
+    "longitud": "22.12227835531386"
   },
   {
     "bostadsområde": 1,
@@ -907,7 +1035,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6216087",
+    "longitud": "22.119638093456874"
   },
   {
     "bostadsområde": 1,
@@ -921,7 +1051,9 @@
     "tidigareInflyttning": true,
     "våning": 1,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -935,7 +1067,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62281755000001",
+    "longitud": "22.120116845375957"
   },
   {
     "bostadsområde": 1,
@@ -949,7 +1083,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62125244999999",
+    "longitud": "22.11863413679764"
   },
   {
     "bostadsområde": 1,
@@ -963,7 +1099,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6189427701037",
+    "longitud": "22.11870262819293"
   },
   {
     "bostadsområde": 1,
@@ -977,7 +1115,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6182284419239",
+    "longitud": "22.12579115480998"
   },
   {
     "bostadsområde": 1,
@@ -991,7 +1131,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -1005,7 +1147,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -1019,7 +1163,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -1033,7 +1179,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6219559",
+    "longitud": "22.1210546"
   },
   {
     "bostadsområde": 1,
@@ -1047,7 +1195,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62206265",
+    "longitud": "22.117940771447458"
   },
   {
     "bostadsområde": 1,
@@ -1061,7 +1211,9 @@
     "tidigareInflyttning": true,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6221451",
+    "longitud": "22.118723641978516"
   },
   {
     "bostadsområde": 1,
@@ -1075,7 +1227,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62312745",
+    "longitud": "22.11867325"
   },
   {
     "bostadsområde": 1,
@@ -1089,7 +1243,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1103,7 +1259,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62243375",
+    "longitud": "22.12218073845215"
   },
   {
     "bostadsområde": 1,
@@ -1117,7 +1275,9 @@
     "tidigareInflyttning": true,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62272039999999",
+    "longitud": "22.121315551821077"
   },
   {
     "bostadsområde": 1,
@@ -1131,7 +1291,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62272039999999",
+    "longitud": "22.121315551821077"
   },
   {
     "bostadsområde": 1,
@@ -1145,7 +1307,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 4,
-    "korridor": true
+    "korridor": true,
+    "latitud": "65.6195458",
+    "longitud": "22.120248949999997"
   },
   {
     "bostadsområde": 1,
@@ -1159,7 +1323,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 4,
-    "korridor": true
+    "korridor": true,
+    "latitud": "65.6196526",
+    "longitud": "22.119051849999973"
   },
   {
     "bostadsområde": 1,
@@ -1173,7 +1339,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 4,
-    "korridor": true
+    "korridor": true,
+    "latitud": "65.61927375",
+    "longitud": "22.12043985"
   },
   {
     "bostadsområde": 1,
@@ -1187,7 +1355,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -1201,7 +1371,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -1215,7 +1387,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -1229,7 +1403,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -1243,7 +1419,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   },
   {
     "bostadsområde": 1,
@@ -1257,7 +1435,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62281755000001",
+    "longitud": "22.120116845375957"
   },
   {
     "bostadsområde": 1,
@@ -1271,7 +1451,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62281755000001",
+    "longitud": "22.120116845375957"
   },
   {
     "bostadsområde": 1,
@@ -1285,7 +1467,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62281755000001",
+    "longitud": "22.120116845375957"
   },
   {
     "bostadsområde": 1,
@@ -1299,7 +1483,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62281755000001",
+    "longitud": "22.120116845375957"
   },
   {
     "bostadsområde": 1,
@@ -1313,7 +1499,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6206245",
+    "longitud": "22.11778128794362"
   },
   {
     "bostadsområde": 1,
@@ -1327,7 +1515,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6189852",
+    "longitud": "22.1185917"
   },
   {
     "bostadsområde": 1,
@@ -1341,7 +1531,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -1355,7 +1547,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -1369,7 +1563,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -1383,7 +1579,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -1397,7 +1595,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -1411,7 +1611,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -1425,7 +1627,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -1439,7 +1643,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6216087",
+    "longitud": "22.119638093456874"
   },
   {
     "bostadsområde": 1,
@@ -1453,7 +1659,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62162635",
+    "longitud": "22.1205784"
   },
   {
     "bostadsområde": 1,
@@ -1467,7 +1675,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62206265",
+    "longitud": "22.117940771447458"
   },
   {
     "bostadsområde": 1,
@@ -1481,7 +1691,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6219591",
+    "longitud": "22.11843576019695"
   },
   {
     "bostadsområde": 1,
@@ -1495,7 +1707,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6231202",
+    "longitud": "22.12057912466917"
   },
   {
     "bostadsområde": 1,
@@ -1509,7 +1723,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1523,7 +1739,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1537,7 +1755,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1551,7 +1771,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1565,7 +1787,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 1,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6229342",
+    "longitud": "22.121596105606347"
   },
   {
     "bostadsområde": 1,
@@ -1579,7 +1803,9 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -1593,7 +1819,9 @@
     "tidigareInflyttning": false,
     "våning": 4,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6224795",
+    "longitud": "22.117944525993444"
   },
   {
     "bostadsområde": 1,
@@ -1607,7 +1835,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62142225",
+    "longitud": "22.121568379685133"
   },
   {
     "bostadsområde": 1,
@@ -1621,7 +1851,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1635,7 +1867,9 @@
     "tidigareInflyttning": false,
     "våning": 1,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1649,7 +1883,9 @@
     "tidigareInflyttning": false,
     "våning": 3,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.6233524",
+    "longitud": "22.119007854433953"
   },
   {
     "bostadsområde": 1,
@@ -1663,6 +1899,8 @@
     "tidigareInflyttning": false,
     "våning": 2,
     "storlek": 2,
-    "korridor": false
+    "korridor": false,
+    "latitud": "65.62217165",
+    "longitud": "22.12084167317478"
   }
 ]

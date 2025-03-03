@@ -12,14 +12,14 @@ var bounds = [[0, 0], [imageHeight, imageWidth]];
 
 
 // Initialize the map with the custom bounds
-var map = L.map('map').setView([65.618163, 22.140272], 15); // Center the map
+var map = L.map('map').setView([65.618163, 22.140272], 16); // Center the map
 // Load the custom image as a Leaflet layer
 //L.imageOverlay('Assets/Mässkarta Larv.png', bounds).addTo(map);
 map.attributionControl.addAttribution('Made by Gustav Juul');
 // Fit the image inside the map viewport
 //map.fitBounds(bounds);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 20,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
@@ -41,52 +41,34 @@ var items = [];
 
 function getCoordinates(apartment) {
     console.log(apartment.adress);
-    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(apartment.adress)}`)
-      .then(response => response.json())
-      .then(data => {
-        if (data.length > 0) {
-          let lat = data[0].lat;
-          let lon = data[0].lon;
-          console.log(`Coordinates: ${lat}, ${lon}`);
-
-          // Move the map to the new location
-          //map.setView([lat, lon], 14);
-
-          // Add a marker
-          L.marker([lat, lon]).addTo(map)
-            .bindPopup(apartment.beskrivning)
-            .openPopup();
-        } else {
-          alert("Address not found!"+ apartment.adress);
-          console.log("Address not found!"+ apartment.adress+", Luleå");
-        }
-      })
-      .catch(error => console.error("Geocoding error:", error));
+    L.marker([apartment.latitud, apartment.longitud]).addTo(map)
+            .bindPopup(apartment.beskrivning);
+            //.openPopup();
   }
 
-  function getCoordinatesFromAdress(address) {
-    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`)
-      .then(response => response.json())
-      .then(data => {
-        if (data.length > 0) {
-          let lat = data[0].lat;
-          let lon = data[0].lon;
-          console.log(`Coordinates: ${lat}, ${lon}`);
-
-          // Move the map to the new location
-          map.setView([lat, lon], 14);
-
-          // Add a marker
-          L.marker([lat, lon]).addTo(map)
-            .bindPopup(`Address: ${address}<br>Lat: ${lat}, Lon: ${lon}`)
-            .openPopup();
-        } else {
-          alert("Address not found!");
-        }
-      })
-      .catch(error => console.error("Geocoding error:", error));
-  }
-  getCoordinatesFromAdress("Vänortsvägen 46, Luleå")
+//function getCoordinatesFromAdress(address) {
+//    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`)
+//      .then(response => response.json())
+//      .then(data => {
+//        if (data.length > 0) {
+//          let lat = data[0].lat;
+//          let lon = data[0].lon;
+//          console.log(`Coordinates: ${lat}, ${lon}`);
+//
+//          // Move the map to the new location
+//          map.setView([lat, lon], 14);
+//
+//          // Add a marker
+//          L.marker([lat, lon]).addTo(map)
+//            .bindPopup(`Address: ${address}<br>Lat: ${lat}, Lon: ${lon}`)
+//            .openPopup();
+//        } else {
+//          alert("Address not found!");
+//        }
+//      })
+//      .catch(error => console.error("Geocoding error:", error));
+//  }
+//getCoordinatesFromAdress("Vänortsvägen 46, Luleå")
 // Fetch both JSON files
 Promise.all([
     fetch('Json/Lägenheter.json').then(response => response.json()),
@@ -95,8 +77,8 @@ Promise.all([
 .then(([apartmentData]) => {
     console.log(apartmentData);
     apartmentData.forEach(apartment => {
-        apartment.adress +=", Luleå, Sweden";
-        //getCoordinates(apartment);
+        //apartment.adress +=", Luleå, Sweden";
+        getCoordinates(apartment);
     });
     populateDropdowns();
     const selectBtns = document.querySelectorAll(".select-btn")
