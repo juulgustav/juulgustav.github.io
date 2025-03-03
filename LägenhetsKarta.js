@@ -41,9 +41,11 @@ var items = [];
 
 function getCoordinates(apartment) {
     console.log(apartment.adress);
-    L.marker([apartment.latitud, apartment.longitud]).addTo(map)
+    let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(map)
             .bindPopup(apartment.beskrivning);
             //.openPopup();
+    //apartments.push(marker)
+    apartment.marker = marker;
   }
 
 //function getCoordinatesFromAdress(address) {
@@ -70,15 +72,19 @@ function getCoordinates(apartment) {
 //  }
 //getCoordinatesFromAdress("Vänortsvägen 46, Luleå")
 // Fetch both JSON files
+
+//var apartments = []; // Store rectangle layers so we can remove them later
+var apartmentData = [];
 Promise.all([
     fetch('Json/Lägenheter.json').then(response => response.json()),
     //fetch('Json/companies.json').then(response => response.json())
 ])
-.then(([apartmentData]) => {
-    console.log(apartmentData);
-    apartmentData.forEach(apartment => {
+.then(([apartmentsData]) => {
+    console.log(apartmentsData);
+    apartmentsData.forEach(apartment => {
         //apartment.adress +=", Luleå, Sweden";
         getCoordinates(apartment);
+        apartmentData.push(apartment);
     });
     populateDropdowns();
     const selectBtns = document.querySelectorAll(".select-btn")
@@ -109,150 +115,73 @@ Promise.all([
 })
 .catch(error => console.error('Error loading the JSON files:', error));
 
-var booths = {}; // Store rectangle layers so we can remove them later
-var companyData = {};
 
 function isMobile() {
     return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 }
 
-
-function createBoothMarker(company, booth) {
-    const rect = L.rectangle([[imageHeight - booth.coordinates[0][0], booth.coordinates[0][1]], [imageHeight - booth.coordinates[1][0], booth.coordinates[1][1]]], {
-        color: "blue",
-        weight: 2,
-        fillColor: "blue",
-        fillOpacity: 0.3
-    }).addTo(map);
-    let cities = Array.from(citiesFromCompany(company));
-    if(Object.hasOwn(company, 'exposure')&&Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews>0){
-        console.log(company.profile.weOffer);
-        if(!Object.hasOwn(company, 'profile') || !Object.hasOwn(company.exposure, 'weOffer')) {
-            
-        }
-        company.profile.weOffer.push("Individual Meetings");
-    }
-    let popupContent = `
-        <b>${company.name}</b><br>
-        <strong>Industry:</strong> ${company.profile?.industry?.join(', ') || "Information not available"}<br>
-        <strong>Desired Programs:</strong> ${company.profile?.desiredProgramme?.join(', ') || "Information not available"}<br>
-        <strong>We Offer:</strong> ${company.profile?.weOffer?.join(', ') || "Information not available"}<br>
-        <strong>Cities:</strong> ${cities?.join(', ') || "Information not available"}<br>
-
-        <br>
-        <strong>About Us:</strong><br>
-        ${company.profile?.aboutUs || "Information not available"}
-        
-    `;
-
-
-    const popup = L.popup({
-        maxWidth: isMobile() ? window.innerWidth*0.8 : 500,
-        //keepInView: true,       // Ensures popups do not go off-screen
-        autoPan: true,          // Moves map if needed
-        autoPanPadding: [50, 50] // Adds space around popup
-    }).setContent(popupContent);
-
-    rect.bindPopup(popup);
-    booths[booth.boothId] = rect;
-    companyData[booth.boothId] = company;
-    companyData[booth.boothId].cities = cities;
-}
-
-map.on("popupopen", function (e) {
-    map.setMaxBounds(panBounds);
-    console.log("Popup opened!", e.popup);
-});
-
-map.on("popupclose", function (e) {
-    map.setMaxBounds(bounds);
-    console.log("Popup closed!", e.popup);
-    console.log("Popups", map.getPane("popupPane"));
-    console.log("Popup open?", map.getPane("popupPane").getElementsByClassName("leaflet-popup  leaflet-zoom-animated").length);
-});
-
-
-function citiesFromCompany(company) {
-    let cities = new Set()
-    if (company.profile) {
-        company.profile.cities?.forEach(city => cities.add(city));
-    }
-    if (company.jobs) {
-        company.jobs.list?.forEach(job => job.location?.forEach(city => cities.add(city)));
-    }
-    return cities;
-}
-
 function populateDropdowns() {
-    let industries = new Set();
-    let programs = new Set();
-    let offers = new Set();
-    let cities = new Set();
+    let bostadsområden = new Set();
+    let rok = new Set();
+    let värdar = new Set();
+    let möblerad = new Set();
 
 
-    let industryCount= {}
-    let programCount= {}
-    let offersCount= {}
-    let citiesCount= {}
+    let bostadsområdeCount= {}
+    let rokCount= {}
+    let värdarCount= {}
+    let möbleradCount= {}
 
 
-    Object.values(companyData).forEach(company => {
-        if (company.profile) {
-            company.profile.industry?.forEach(industry => industries.add(industry));
-            company.profile.desiredProgramme?.forEach(program => programs.add(program));
-            company.profile.weOffer?.forEach(offer => offers.add(offer));
-            company.cities?.forEach(city => cities.add(city));
+    Object.values(apartmentData).forEach(apartment => {
+        bostadsområden.add(apartment.bostadsområde);
+        rok.add(apartment.storlek);
+        värdar.add(apartment.bostadskö);
+        möblerad.add(apartment.möblerad);
 
-            if(Object.hasOwn(company, 'exposure') && Object.hasOwn(company.exposure, 'interviews') && company.exposure.interviews>0) {
-                offers.add("Individual Meetings")
-                offersCount["Individual Meetings"] = 200
-            }
-            
-
-            company.profile.industry?.forEach(industry => industryCount[industry] = (industryCount[industry] || 0) + 1);
-            company.profile.desiredProgramme?.forEach(program => programCount[program] = (programCount[program] || 0) + 1);
-            company.profile.weOffer?.forEach(offer => offersCount[offer] = (offersCount[offer] || 0) + 1);
-            company.cities?.forEach(city => citiesCount[city] = (citiesCount[city] || 0) + 1);
-
-        }
+        
+        bostadsområdeCount[apartment.bostadsområde] = (bostadsområdeCount[apartment.bostadsområde] || 0) + 1
+        rokCount[apartment.storlek] = (rokCount[apartment.storlek] || 0) + 1
+        värdarCount[apartment.bostadskö] = (värdarCount[apartment.bostadskö] || 0) + 1
+        möbleradCount[apartment.möblerad] = (möbleradCount[apartment.möblerad] || 0) + 1
     });
 
-    industries = Array.from(industries);
-    industries.sort(function(a, b){return industryCount[b]-industryCount[a]})
-    programs = Array.from(programs);
-    programs.sort(function(a, b){return programCount[b]-programCount[a]})
-    offers = Array.from(offers);
-    offers.sort(function(a, b){return offersCount[b]-offersCount[a]})
-    cities = Array.from(cities);
-    cities.sort(function(a, b){return citiesCount[b]-citiesCount[a]})
+
+    bostadsområden = Array.from(bostadsområden);
+    bostadsområden.sort(function(a, b){return bostadsområdeCount[b]-bostadsområdeCount[a]})
+    rok = Array.from(rok);
+    rok.sort(function(a, b){return rokCount[b]-rokCount[a]})
+    värdar = Array.from(värdar);
+    värdar.sort(function(a, b){return värdarCount[b]-värdarCount[a]})
+    möblerad = Array.from(möblerad);
+    möblerad.sort(function(a, b){return möbleradCount[b]-möbleradCount[a]})
 
     let list = []
-    Object.values(industries).forEach(industry => {
-        list.push([industry,industryCount[industry]]);
+    Object.values(bostadsområden).forEach(bostadsområde => {
+        list.push([bostadsområde,bostadsområdeCount[bostadsområde]]);
     });
     console.log(list)
     list = []
-    Object.values(programs).forEach(program => {
-        list.push([program,programCount[program]]);
+    Object.values(rok).forEach(rok => {
+        list.push([rok,rokCount[rok]]);
     });
     console.log(list)
     list = []
-    Object.values(offers).forEach(offer => {
-        list.push([offer,offersCount[offer]]);
+    Object.values(värdar).forEach(värd => {
+        list.push([värd,värdarCount[värd]]);
     });
     console.log(list)
     list = []
-    Object.values(cities).forEach(city => {
-        list.push([city,citiesCount[city]]);
+    Object.values(möblerad).forEach(möbler => {
+        list.push([möbler,möbleradCount[möbler]]);
     });
     console.log(list)
 
 
-    addOptionsToDropdown("industryFilter", industries);
-    addOptionsToDropdown("programFilter", programs);
-    addOptionsToDropdown("offerFilter", offers);
-    addOptionsToDropdown("cityFilter", cities);
-
+    addOptionsToDropdown("bostadsområdeFilter", bostadsområden);
+    addOptionsToDropdown("rokFilter", rok);
+    addOptionsToDropdown("värdFilter", värdar);
+    addOptionsToDropdown("möbleradFilter", möblerad);
 }
 
 function addOptionsToDropdown(dropdownId, optionsSet) {
@@ -281,62 +210,50 @@ function addOptionsToDropdown(dropdownId, optionsSet) {
 
 function filterBooths() {
     var searchText = document.getElementById("searchBox").value.toLowerCase();
-    var selectedIndustries = document.getElementById("industryFilter");
-    var selectedProgrammes = document.getElementById("programFilter");
-    var selectedOffers = document.getElementById("offerFilter");
-    var selectedCities = document.getElementById("cityFilter");
+    var selectedBostadsområden = document.getElementById("bostadsområdeFilter");
+    var selectedROK = document.getElementById("rokFilter");
+    var selectedVärdar = document.getElementById("värdFilter");
+    var selectedMöblerad = document.getElementById("möbleradFilter");
 
-    selectedIndustries = Array.from(selectedIndustries.children).filter(item => item.className == "item checked");
-    selectedProgrammes = Array.from(selectedProgrammes.children).filter(item => item.className == "item checked");
-    selectedOffers = Array.from(selectedOffers.children).filter(item => item.className == "item checked");
-    selectedCities = Array.from(selectedCities.children).filter(item => item.className == "item checked");
+    selectedBostadsområden = Array.from(selectedBostadsområden.children).filter(item => item.className == "item checked");
+    selectedROK = Array.from(selectedROK.children).filter(item => item.className == "item checked");
+    selectedVärdar = Array.from(selectedVärdar.children).filter(item => item.className == "item checked");
+    selectedMöblerad = Array.from(selectedMöblerad.children).filter(item => item.className == "item checked");
 
     //console.log(selectedIndustries);
-    selectedIndustries.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
+    selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
 
 
     // Reset all booths to default style
-    for (let boothId in booths) {
-        booths[boothId].setStyle(defaultStyle);
-    }
+    Object.values(apartmentData).forEach(apartment => {
+        //apartment.marker.opacity =0;
+        map.addLayer(apartment.marker);
+        //console.log(apartment.marker);
+    });
 
-    if (!searchText && selectedIndustries.length==0 && selectedProgrammes.length==0 && selectedOffers.length==0 && selectedCities.length==0) {
+    console.log(selectedBostadsområden);
+    if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0) {
         return; // No filters applied
     }
 
     // Loop through all booth layers
-    for (let boothId in booths) {
-        var booth = booths[boothId];
-        var company = companyData[boothId];
-
+    Object.values(apartmentData).forEach(apartment => {
         var matches = false;
-        if (company) {
-            let profile = company.profile || {};
-
-            // 🔹 Allow search to match name, industry, program, or offer
-            let matchesSearch = searchText
-                ? company.name.toLowerCase().includes(searchText) ||
-                  company.boothSpace.name.toLowerCase().includes(searchText) ||
-                  (profile.industry || []).some(industry => industry.toLowerCase().includes(searchText)) ||
-                  (profile.desiredProgramme || []).some(program => program.toLowerCase().includes(searchText)) ||
-                  (profile.weOffer || []).some(offer => offer.toLowerCase().includes(searchText)) ||
-                  (company.cities || []).some(city => city.toLowerCase().includes(searchText))
-                : true;
-
-            let matchesIndustry = selectedIndustries.length>0 ? selectedIndustries.some(selectedIndustry => (profile.industry || []).includes(selectedIndustry.innerText)) : true;
-            let matchesProgram = selectedProgrammes.length>0?selectedProgrammes.some(selectedProgram => (profile.desiredProgramme || []).includes(selectedProgram.innerText)) : true;
-            let matchesOffer = selectedOffers.length>0? selectedOffers.some(selectedOffer => (profile.weOffer || []).includes(selectedOffer.innerText)) : true;
-            let matchesCity = selectedCities.length>0? selectedCities.some(selectedCity => (company.cities || []).includes(selectedCity.innerText)) : true;
-
-            matches = matchesSearch && matchesIndustry && matchesProgram && matchesOffer && matchesCity;
+        let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==apartment.bostadsområde) : true;
+        console.log(matchesBostadsområde);
+        //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
+        //console.log(apartment.bostadsområde);
+        selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
+        let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==apartment.storlek) : true;
+        let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==apartment.bostadskö) : true;
+        let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==apartment.möblerad.toString()) : true;
+        matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad;
+        if(!matches)
+        {
+            //apartment.marker.opacity =0;
+            map.removeLayer(apartment.marker);
         }
-
-        if (matches) {
-            booth.setStyle(highlightStyle); // Highlight matching booth
-        } else {
-            booth.setStyle(defaultStyle);
-        }
-    }
+    });
 }
 
 
