@@ -42,7 +42,20 @@ var items = [];
 function getCoordinates(apartment) {
     console.log(apartment.adress);
     let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(map)
-            .bindPopup(apartment.beskrivning);
+            .bindPopup(`
+            <b>${apartment.adress} med ${apartment.bostadskö} som värd</b><br>
+            ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m^2<br>
+            <strong>Hyra:</strong> ${apartment.hyra}kr<br>
+            <strong>Möblerad:</strong> ${apartment.möblerad ? "Ja":"Nej"}<br>
+            <strong>Tidigareinflyttning:</strong> ${apartment.tidigareInflyttning ? "Ja":"Nej"}<br>
+            <strong>Korridor:</strong> ${apartment.korridor ? "Ja":"Nej"}<br>
+
+            <strong>Inflyttningsdatum:</strong> ${apartment.inflyttningsdatum}<br>
+
+            <br>
+            <strong>About Us:</strong><br>
+            ${apartment.beskrivning || "Information not available"}
+            `);
             //.openPopup();
     //apartments.push(marker)
     apartment.marker = marker;
@@ -235,19 +248,31 @@ function filterBooths() {
     if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0) {
         return; // No filters applied
     }
-
+    console.log(searchText);
     // Loop through all booth layers
     Object.values(apartmentData).forEach(apartment => {
         var matches = false;
+
+        let matchesSearch = searchText
+                ? apartment.bostadsområde?.toLowerCase().includes(searchText) ||
+                //apartment.storlek.toLowerCase().includes(searchText) ||
+                apartment.beskrivning?.toLowerCase().includes(searchText) ||
+                apartment.adress?.toLowerCase().includes(searchText) ||
+                //apartment.kvm.toLowerCase().includes(searchText) ||
+                apartment.inflyttningsdatum?.toLowerCase().includes(searchText)
+                : true;
+
+
         let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==apartment.bostadsområde) : true;
-        console.log(matchesBostadsområde);
+        //console.log(matchesSearch);
+        console.log(apartment.adress.toLowerCase().includes(searchText))
         //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
         //console.log(apartment.bostadsområde);
-        selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
+        //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
         let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==apartment.storlek) : true;
         let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==apartment.bostadskö) : true;
         let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==apartment.möblerad.toString()) : true;
-        matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad;
+        matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesSearch;
         if(!matches)
         {
             //apartment.marker.opacity =0;
