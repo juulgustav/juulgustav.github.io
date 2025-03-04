@@ -19,7 +19,7 @@ map.attributionControl.addAttribution('Made by Gustav Juul');
 // Fit the image inside the map viewport
 //map.fitBounds(bounds);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 20,
+    maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
@@ -91,7 +91,7 @@ var apartmentData = [];
 var markerClusters  = L.markerClusterGroup({
     maxClusterRadius: 50, // Cluster radius in pixels
     spiderfyOnMaxZoom: true, // Expand markers when zoomed in
-    showCoverageOnHover: false, // Hide the cluster area outline on hover
+    showCoverageOnHover: true, // Hide the cluster area outline on hover
     disableClusteringAtZoom: 21 // Disable clustering when zoomed in beyond level 16
 });
 
