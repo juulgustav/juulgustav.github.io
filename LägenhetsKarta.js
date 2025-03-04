@@ -41,7 +41,7 @@ var items = [];
 
 function getCoordinates(apartment) {
     console.log(apartment.adress);
-    let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(map)
+    let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(markerClusters)
             .bindPopup(`
             <b>${apartment.adress} med ${apartment.bostadskö} som värd</b><br>
             ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m^2<br>
@@ -88,6 +88,13 @@ function getCoordinates(apartment) {
 
 //var apartments = []; // Store rectangle layers so we can remove them later
 var apartmentData = [];
+var markerClusters  = L.markerClusterGroup({
+    maxClusterRadius: 50, // Cluster radius in pixels
+    spiderfyOnMaxZoom: true, // Expand markers when zoomed in
+    showCoverageOnHover: false, // Hide the cluster area outline on hover
+    disableClusteringAtZoom: 21 // Disable clustering when zoomed in beyond level 16
+});
+
 Promise.all([
     fetch('Json/Lägenheter.json').then(response => response.json()),
     //fetch('Json/companies.json').then(response => response.json())
@@ -99,6 +106,7 @@ Promise.all([
         getCoordinates(apartment);
         apartmentData.push(apartment);
     });
+    map.addLayer(markerClusters);
     populateDropdowns();
     const selectBtns = document.querySelectorAll(".select-btn")
     selectBtns.forEach(btn => {
@@ -240,7 +248,7 @@ function filterBooths() {
     // Reset all booths to default style
     Object.values(apartmentData).forEach(apartment => {
         //apartment.marker.opacity =0;
-        map.addLayer(apartment.marker);
+        markerClusters.addLayer(apartment.marker);
         //console.log(apartment.marker);
     });
 
@@ -276,7 +284,7 @@ function filterBooths() {
         if(!matches)
         {
             //apartment.marker.opacity =0;
-            map.removeLayer(apartment.marker);
+            markerClusters.removeLayer(apartment.marker);
         }
     });
 }
