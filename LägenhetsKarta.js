@@ -290,24 +290,50 @@ function filterBooths() {
         }
     });
 }
-map.on('popupopen', function() {
+map.on('popupopen', function(pop) {
     console.log("Popup!")
     // Open modal when "More Info" button is clicked
-    document.getElementById('more-info-btn').addEventListener('click', function() {
+
+    document.querySelectorAll('[id=more-info-btn]').forEach(buton => buton.addEventListener('click', function(e) {
         console.log("Button clicked!")
+        console.log(e.target.name)
+        console.log(pop)
+        const modalContent = document.querySelector('.modal-content');
+        //let apartment =apartmentData.find(o => o.marker.popup = pop);
+        let apartment =apartmentData[e.target.name];
+
+        // Update the modal content dynamically
+        modalContent.innerHTML = `
+            <span class="close-btn">&times;</span>
+            <b>${apartment.adress} med ${apartment.bostadskö} som värd</b><br>
+            ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m²<br>
+            <strong>Hyra:</strong> ${apartment.hyra}kr<br>
+            <strong>Möblerad:</strong> ${apartment.möblerad ? "Ja" : "Nej"}<br>
+            <strong>Tidigare inflyttning:</strong> ${apartment.tidigareInflyttning ? "Ja" : "Nej"}<br>
+            <strong>Korridor:</strong> ${apartment.korridor ? "Ja" : "Nej"}<br>
+            <strong>Inflyttningsdatum:</strong> ${apartment.inflyttningsdatum}<br>
+            <br>
+            <strong>About Us:</strong><br>
+            ${apartment.beskrivning || "Information not available"}
+            <img src=${apartment.bildLänk}>
+            <img src=${apartment.planlösningsLänk}>
+        `;
+
         document.getElementById('info-modal').style.display = "block";
+
+        // Close modal when the user clicks on the close button (×)
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            document.getElementById('info-modal').style.display = "none";
+        });
         // Close modal if the user clicks outside the modal
         //window.onclick = function(event) {
         //    if (event.target == document.getElementById('info-modal')) {
         //        document.getElementById('info-modal').style.display = "none";
         //    }
         //};
-    });
+    }));
 
-    // Close modal when the user clicks on the close button (×)
-    document.querySelector('.close-btn').addEventListener('click', function() {
-        document.getElementById('info-modal').style.display = "none";
-    });
+    
 });
 
 
