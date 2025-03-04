@@ -1057,3 +1057,47 @@ text.ContributionCalendar-label {
 .item.checked .check-icon{
     transform: scale(1);
 }
+
+/* Modal container (covers the entire screen) */
+.modal {
+    display: none;  /* Hidden by default */
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;  /* Full width of the viewport */
+    height: 90vh;  /* Full height of the viewport */
+    background-color: rgba(255, 255, 255, 0.8);  /* Grey semi-transparent background */
+    z-index: 10000;  /* Ensure modal sits above the map (which usually has z-index 1 or 0) */
+    overflow: auto;  /* Allow scrolling if the content is larger than the screen */
+}
+
+/* Modal content (centered within the modal) */
+.modal-content {
+    background-color: white;
+    margin: 0;
+    /*padding: 20px;*/
+    width: 100%;  /* Make content take up full width */
+    height: 100%;  /* Make content take up full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;  /* Allow scrolling if content overflows */
+}
+
+/* Close button for the modal */
+.close-btn {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

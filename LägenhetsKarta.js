@@ -39,7 +39,7 @@ var highlightStyle = {
 
 var items = [];
 
-function getCoordinates(apartment) {
+function getCoordinates(apartment, index) {
     console.log(apartment.adress);
     let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(markerClusters)
             .bindPopup(`
@@ -55,6 +55,7 @@ function getCoordinates(apartment) {
             <br>
             <strong>About Us:</strong><br>
             ${apartment.beskrivning || "Information not available"}
+            <button id="more-info-btn" name=${index}>More Info</button>
             `);
             //.openPopup();
     //apartments.push(marker)
@@ -94,6 +95,7 @@ var markerClusters  = L.markerClusterGroup({
     showCoverageOnHover: true, // Hide the cluster area outline on hover
     disableClusteringAtZoom: 21 // Disable clustering when zoomed in beyond level 16
 });
+document.getElementById('info-modal').style.display = "none";
 
 Promise.all([
     fetch('Json/Lägenheter.json').then(response => response.json()),
@@ -103,7 +105,7 @@ Promise.all([
     console.log(apartmentsData);
     apartmentsData.forEach(apartment => {
         //apartment.adress +=", Luleå, Sweden";
-        getCoordinates(apartment);
+        getCoordinates(apartment,apartmentData.length);
         apartmentData.push(apartment);
     });
     map.addLayer(markerClusters);
@@ -288,5 +290,26 @@ function filterBooths() {
         }
     });
 }
+map.on('popupopen', function() {
+    console.log("Popup!")
+    // Open modal when "More Info" button is clicked
+    document.getElementById('more-info-btn').addEventListener('click', function() {
+        console.log("Button clicked!")
+        document.getElementById('info-modal').style.display = "block";
+        // Close modal if the user clicks outside the modal
+        //window.onclick = function(event) {
+        //    if (event.target == document.getElementById('info-modal')) {
+        //        document.getElementById('info-modal').style.display = "none";
+        //    }
+        //};
+    });
+
+    // Close modal when the user clicks on the close button (×)
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        document.getElementById('info-modal').style.display = "none";
+    });
+});
+
+
 
 
