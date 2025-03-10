@@ -41,10 +41,11 @@ var items = [];
 
 function getCoordinates(apartment, index) {
     console.log(apartment.adress);
+    let titel = `<b>${apartment.adress} med ${apartment.bostadskö} som värd</b>`;
     let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(markerClusters)
             .bindPopup(`
-            <b>${apartment.adress} med ${apartment.bostadskö} som värd</b><br>
-            ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m^2<br>
+            <strong>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">"+titel+"</a>" : titel}</strong><br>
+            ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m²<br>
             <strong>Hyra:</strong> ${apartment.hyra}kr<br>
             <strong>Möblerad:</strong> ${apartment.möblerad ? "Ja":"Nej"}<br>
             <strong>Tidigareinflyttning:</strong> ${apartment.tidigareInflyttning ? "Ja":"Nej"}<br>
@@ -54,7 +55,8 @@ function getCoordinates(apartment, index) {
 
             <br>
             <strong>About Us:</strong><br>
-            ${apartment.beskrivning || "Information not available"}
+            ${apartment.beskrivning || "Information not available"}<br>
+            <strong>${apartment.länk && apartment.länk.length>0 ? "" : "Direktlänk saknas:(<br>"}</strong>
             <button id="more-info-btn" name=${index}>More Info</button>
             `);
             //.openPopup();
@@ -314,7 +316,8 @@ map.on('popupopen', function(pop) {
             <strong>Inflyttningsdatum:</strong> ${apartment.inflyttningsdatum}<br>
             <br>
             <strong>About Us:</strong><br>
-            ${apartment.beskrivning || "Information not available"}
+            ${apartment.beskrivning || "Information not available"}<br>
+            <strong>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">Länk till lägenhet</a>" : "Direktlänk saknas:("}</strong>
             <img src=${apartment.bildLänk}>
             <img src=${apartment.planlösningsLänk}>
         `;
