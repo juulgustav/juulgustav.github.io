@@ -42,7 +42,9 @@ var items = [];
 function getCoordinates(apartment, index) {
     console.log(apartment.adress);
     let titel = `<b>${apartment.adress} med ${apartment.bostadskö} som värd</b>`;
-    let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(markerClusters)
+    let inflyttningsDatumeStylized = apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+    inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
+        let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(markerClusters)
             .bindPopup(`
             <strong>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">"+titel+"</a>" : titel}</strong><br>
             ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m²<br>
@@ -51,7 +53,7 @@ function getCoordinates(apartment, index) {
             <strong>Tidigareinflyttning:</strong> ${apartment.tidigareInflyttning ? "Ja":"Nej"}<br>
             <strong>Korridor:</strong> ${apartment.korridor ? "Ja":"Nej"}<br>
 
-            <strong>Inflyttningsdatum:</strong> ${apartment.inflyttningsdatum}<br>
+            <strong>Inflyttningsdatum:</strong> ${inflyttningsDatumeStylized}<br>
 
             <br>
             <strong>About Us:</strong><br>
@@ -107,6 +109,8 @@ Promise.all([
     console.log(apartmentsData);
     apartmentsData.forEach(apartment => {
         //apartment.adress +=", Luleå, Sweden";
+        apartment.inflyttningsdatum = apartment.inflyttningsdatum ? new Date(apartment.inflyttningsdatum) : null;
+        apartment.tidigareInflyttning = apartment.tidigareInflyttning ? new Date(apartment.tidigareInflyttning) : null;
         getCoordinates(apartment,apartmentData.length);
         apartmentData.push(apartment);
     });
@@ -303,7 +307,8 @@ map.on('popupopen', function(pop) {
         const modalContent = document.querySelector('.modal-content');
         //let apartment =apartmentData.find(o => o.marker.popup = pop);
         let apartment =apartmentData[e.target.name];
-
+        let inflyttningsDatumeStylized = apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+        inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
         // Update the modal content dynamically
         modalContent.innerHTML = `
             <span class="close-btn">&times;</span>
@@ -313,7 +318,7 @@ map.on('popupopen', function(pop) {
             <strong>Möblerad:</strong> ${apartment.möblerad ? "Ja" : "Nej"}<br>
             <strong>Tidigare inflyttning:</strong> ${apartment.tidigareInflyttning ? "Ja" : "Nej"}<br>
             <strong>Korridor:</strong> ${apartment.korridor ? "Ja" : "Nej"}<br>
-            <strong>Inflyttningsdatum:</strong> ${apartment.inflyttningsdatum}<br>
+            <strong>Inflyttningsdatum:</strong> ${inflyttningsDatumeStylized}<br>
             <br>
             <strong>About Us:</strong><br>
             ${apartment.beskrivning || "Information not available"}<br>
