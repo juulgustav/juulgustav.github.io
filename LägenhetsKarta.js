@@ -102,7 +102,7 @@ var markerClusters  = L.markerClusterGroup({
 document.getElementById('info-modal').style.display = "none";
 
 Promise.all([
-    fetch('Json/Lägenheter.json').then(response => response.json()),
+    fetch('Json/Lägenheter.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
     //fetch('Json/companies.json').then(response => response.json())
 ])
 .then(([apartmentsData]) => {
