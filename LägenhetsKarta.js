@@ -109,7 +109,7 @@ Promise.all([
     console.log(apartmentsData);
     modTime = new Date(modTime);
     console.log(modTime);
-    document.getElementById('last-modified-date').innerHTML = "Uppdated: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'});
+    document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'});
     apartmentsData.forEach(apartment => {
         //apartment.adress +=", Luleå, Sweden";
         apartment.inflyttningsdatum = apartment.inflyttningsdatum ? new Date(apartment.inflyttningsdatum) : null;
