@@ -50,6 +50,7 @@ function getCoordinates(apartment, index) {
             ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m²<br>
             <strong>Hyra:</strong> ${apartment.hyra}kr<br>
             <strong>Möblerad:</strong> ${apartment.möblerad ? "Ja":"Nej"}<br>
+            <strong>Lägenhetstyp:</strong> ${apartment.lägenhetstyp}<br>
             <strong>Tidigareinflyttning:</strong> ${apartment.tidigareInflyttning ? "Ja":"Nej"}<br>
             <strong>Korridor:</strong> ${apartment.korridor ? "Ja":"Nej"}<br>
 
@@ -157,12 +158,15 @@ function populateDropdowns() {
     let rok = new Set();
     let värdar = new Set();
     let möblerad = new Set();
+    let lägenhetstyp = new Set();
 
 
     let bostadsområdeCount= {}
     let rokCount= {}
     let värdarCount= {}
     let möbleradCount= {}
+    let lägenhetstypCount= {}
+
 
 
     Object.values(apartmentData).forEach(apartment => {
@@ -170,12 +174,15 @@ function populateDropdowns() {
         rok.add(apartment.storlek);
         värdar.add(apartment.bostadskö);
         möblerad.add(apartment.möblerad);
+        lägenhetstyp.add(apartment.lägenhetstyp);
 
         
         bostadsområdeCount[apartment.bostadsområde] = (bostadsområdeCount[apartment.bostadsområde] || 0) + 1
         rokCount[apartment.storlek] = (rokCount[apartment.storlek] || 0) + 1
         värdarCount[apartment.bostadskö] = (värdarCount[apartment.bostadskö] || 0) + 1
         möbleradCount[apartment.möblerad] = (möbleradCount[apartment.möblerad] || 0) + 1
+        lägenhetstypCount[apartment.lägenhetstyp] = (lägenhetstypCount[apartment.lägenhetstyp] || 0) + 1
+
     });
 
 
@@ -187,7 +194,8 @@ function populateDropdowns() {
     värdar.sort(function(a, b){return värdarCount[b]-värdarCount[a]})
     möblerad = Array.from(möblerad);
     möblerad.sort(function(a, b){return möbleradCount[b]-möbleradCount[a]})
-
+    lägenhetstyp = Array.from(lägenhetstyp);
+    lägenhetstyp.sort(function(a, b){return lägenhetstypCount[b]-lägenhetstypCount[a]})
     let list = []
     Object.values(bostadsområden).forEach(bostadsområde => {
         list.push([bostadsområde,bostadsområdeCount[bostadsområde]]);
@@ -208,12 +216,18 @@ function populateDropdowns() {
         list.push([möbler,möbleradCount[möbler]]);
     });
     console.log(list)
+    list = []
+    Object.values(lägenhetstyp).forEach(lägenhetenstyp => {
+        list.push([lägenhetenstyp,lägenhetstypCount[lägenhetenstyp]]);
+    });
+    console.log(list)
 
 
     addOptionsToDropdown("bostadsområdeFilter", bostadsområden);
     addOptionsToDropdown("rokFilter", rok);
     addOptionsToDropdown("värdFilter", värdar);
     addOptionsToDropdown("möbleradFilter", möblerad);
+    addOptionsToDropdown("lägenhetstypFilter", lägenhetstyp);
 }
 
 function addOptionsToDropdown(dropdownId, optionsSet) {
@@ -246,11 +260,14 @@ function filterBooths() {
     var selectedROK = document.getElementById("rokFilter");
     var selectedVärdar = document.getElementById("värdFilter");
     var selectedMöblerad = document.getElementById("möbleradFilter");
+    var selectedLägenhetstyp = document.getElementById("lägenhetstypFilter");
+
 
     selectedBostadsområden = Array.from(selectedBostadsområden.children).filter(item => item.className == "item checked");
     selectedROK = Array.from(selectedROK.children).filter(item => item.className == "item checked");
     selectedVärdar = Array.from(selectedVärdar.children).filter(item => item.className == "item checked");
     selectedMöblerad = Array.from(selectedMöblerad.children).filter(item => item.className == "item checked");
+    selectedLägenhetstyp = Array.from(selectedLägenhetstyp.children).filter(item => item.className == "item checked");
 
     //console.log(selectedIndustries);
     selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
@@ -264,7 +281,7 @@ function filterBooths() {
     });
 
     console.log(selectedBostadsområden);
-    if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0) {
+    if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
         return; // No filters applied
     }
     console.log(searchText);
@@ -291,7 +308,9 @@ function filterBooths() {
         let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==apartment.storlek) : true;
         let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==apartment.bostadskö) : true;
         let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==apartment.möblerad.toString()) : true;
-        matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesSearch;
+        let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==apartment.lägenhetstyp) : true;
+
+        matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesLägenhetstyp && matchesSearch;
         if(!matches)
         {
             //apartment.marker.opacity =0;
@@ -319,6 +338,7 @@ map.on('popupopen', function(pop) {
             ${apartment.storlek}:a på ${apartment.våning} våningen med ${apartment.kvm}m²<br>
             <strong>Hyra:</strong> ${apartment.hyra}kr<br>
             <strong>Möblerad:</strong> ${apartment.möblerad ? "Ja" : "Nej"}<br>
+            <strong>Lägenhetstyp:</strong> ${apartment.lägenhetstyp}<br>
             <strong>Tidigare inflyttning:</strong> ${apartment.tidigareInflyttning ? "Ja" : "Nej"}<br>
             <strong>Korridor:</strong> ${apartment.korridor ? "Ja" : "Nej"}<br>
             <strong>Inflyttningsdatum:</strong> ${inflyttningsDatumeStylized}<br>
