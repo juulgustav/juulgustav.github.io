@@ -12,7 +12,7 @@ var bounds = [[0, 0], [imageHeight, imageWidth]];
 
 
 // Initialize the map with the custom bounds
-var map = L.map('map').setView([65.618163, 22.140272], 16); // Center the map
+var map = L.map('map').setView([65.620366, 22.135477], 16); // Center the map
 // Load the custom image as a Leaflet layer
 //L.imageOverlay('Assets/Mässkarta Larv.png', bounds).addTo(map);
 map.attributionControl.addAttribution('Made by Gustav Juul');
