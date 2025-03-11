@@ -103,10 +103,13 @@ document.getElementById('info-modal').style.display = "none";
 
 Promise.all([
     fetch('Json/Lägenheter.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
-    //fetch('Json/companies.json').then(response => response.json())
+    fetch('Json/Lägenheter.json?nocache='+ (new Date()).getTime()).then(response => response.headers.get('Last-Modified')),
 ])
-.then(([apartmentsData]) => {
+.then(([apartmentsData, modTime]) => {
     console.log(apartmentsData);
+    modTime = new Date(modTime);
+    console.log(modTime);
+    document.getElementById('last-modified-date').innerHTML = "Uppdated: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'});
     apartmentsData.forEach(apartment => {
         //apartment.adress +=", Luleå, Sweden";
         apartment.inflyttningsdatum = apartment.inflyttningsdatum ? new Date(apartment.inflyttningsdatum) : null;
