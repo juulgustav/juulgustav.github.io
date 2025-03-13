@@ -45,11 +45,16 @@
 
         <select id="sort-by">
             <option value="original-order">Standard</option>
-            <option value="hyra">Hyra (Låg till Hög)</option>
-            <option value="storlek">Storlek (Liten till Stor)</option>
-            <option value="kvm">Kvm (Låg till Hög)</option>
-            <option value="våning">Våning (Låg till Hög)</option>
-            <option value="inflyttningsdatum">inflyttningsdatum (Snart till Senare)</option>
+            <option value="hyra">Billigast</option>
+            <option value="*hyra">Dyrast</option>
+            <option value="kvm">Minst (m²)</option>
+            <option value="*kvm">Störst (m²)</option>
+
+            <option value="våning">Våning (Lägst)</option>
+            <option value="*våning">Våning (Högst)</option>
+            <option value="inflyttningsdatum">Inflyttningsdatum (Snart)</option>
+            <option value="*inflyttningsdatum">Inflyttningsdatum (Senare)</option>
+
         </select>
 
         <div class="container">
@@ -154,6 +159,11 @@
 
                 inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
 
+                if(apartment.inflyttningsdatum.getYear() != new Date().getYear())
+                {
+                    inflyttningsDatumeStylized += " "+apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { year: 'numeric' });
+                }
+
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Bostadsbild">
                     <h3>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">"+apartment.adress+"</a>" : apartment.adress}</h3>
@@ -177,14 +187,14 @@
                     kvm: item => parseFloat(item.dataset.kvm),
                     våning: item => parseFloat(item.dataset.våning),
                     inflyttningsdatum: item => Date.parse(item.dataset.inflyttningsdatum)
-                },
-                getFilterData: {
-                  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
-                  möblerad: item => item.dataset.möblerad,
-                  korridor: item => item.dataset.korridor,
-                  tidigareInflyttning: item => item.dataset.tidigareInflyttning
-
                 }
+                //getFilterData: {
+                //  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
+                //  möblerad: item => item.dataset.möblerad,
+                //  korridor: item => item.dataset.korridor,
+                //  tidigareInflyttning: item => item.dataset.tidigareInflyttning
+
+                //}
             });
             console.log(iso);
 
@@ -196,8 +206,18 @@
 
             // Sorting Handler
             document.getElementById("sort-by").addEventListener("change", (event) => {
-                const sortValue = event.target.value;
-                iso.arrange({ sortBy: sortValue });
+                var sortValue = event.target.value;
+                if(sortValue[0]=='*')
+                {
+                    sortValue = sortValue.slice(1);
+                    console.log("Inverse sort för: "+sortValue);
+                    iso.arrange({ sortBy: sortValue, sortAscending: false });
+                }
+                else
+                {
+                    console.log("Vanlig sort för: "+sortValue)
+                    iso.arrange({ sortBy: sortValue, sortAscending: true });
+                }
                 console.log(event)
             });
             iso.arrange({ sortBy: "storlek" });

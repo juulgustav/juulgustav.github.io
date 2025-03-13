@@ -44,6 +44,10 @@ function getCoordinates(apartment, index) {
     let titel = `<b>${apartment.adress} med ${apartment.bostadskö} som värd</b>`;
     let inflyttningsDatumeStylized = apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
     inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
+    if(apartment.inflyttningsdatum.getYear() != new Date().getYear())
+    {
+        inflyttningsDatumeStylized += " "+apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { year: 'numeric' });
+    }
         let marker =L.marker([apartment.latitud, apartment.longitud]).addTo(markerClusters)
             .bindPopup(`
             <strong>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">"+titel+"</a>" : titel}</strong><br>
