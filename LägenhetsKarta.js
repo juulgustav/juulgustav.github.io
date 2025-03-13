@@ -106,18 +106,19 @@ Promise.all([
     fetch('Json/Lägenheter.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
     fetch('Json/Lägenheter.json?nocache='+ (new Date()).getTime()).then(response => response.headers.get('Last-Modified')),
 ])
-.then(([apartmentsData, modTime]) => {
-    console.log(apartmentsData);
+.then(([apartmentJsonData, modTime]) => {
+    console.log(apartmentJsonData);
     modTime = new Date(modTime);
     console.log(modTime);
     document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'});
-    apartmentsData.forEach(apartment => {
+    apartmentJsonData.forEach(apartment => {
         //apartment.adress +=", Luleå, Sweden";
         apartment.inflyttningsdatum = apartment.inflyttningsdatum ? new Date(apartment.inflyttningsdatum) : null;
         apartment.tidigareInflyttning = apartment.tidigareInflyttning ? new Date(apartment.tidigareInflyttning) : null;
         getCoordinates(apartment,apartmentData.length);
         apartmentData.push(apartment);
     });
+    console.log(apartmentData);
     map.addLayer(markerClusters);
     populateDropdowns();
     const selectBtns = document.querySelectorAll(".select-btn")

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bostadsguide</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/Logo.png">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <style>
+        .grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .grid-item {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            background: #fff;
+            margin: 5px;
+        }
+        .grid-item img { width: 100%; height: auto; border-radius: 8px; }
+        .filters select { margin: 5px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <div class="top-right-div">
+      <span id="last-modified-date">Update time missing</span>
+    </div>
+    <!-- Filter Controls -->
+    <div class="filters">
+        <select id="filter-category">
+            <option value="*">Alla kategorier</option>
+            <option value=".lägenhetstyp">Lägenhetstyp</option>
+            <option value=".möblerad">Möblerad</option>
+            <option value=".korridor">Korridor</option>
+            <option value=".tidigareInflyttning">Tidigare Inflyttning</option>
+
+        </select>
+
+        <select id="sort-by">
+            <option value="original-order">Standard</option>
+            <option value="hyra">Hyra (Låg till Hög)</option>
+            <option value="storlek">Storlek (Liten till Stor)</option>
+            <option value="kvm">Kvm (Låg till Hög)</option>
+            <option value="våning">Våning (Låg till Hög)</option>
+        </select>
+    </div>
+
+    <!-- Grid Container -->
+    <div class="grid">
+        <!-- Items will be added dynamically -->
+    </div>
+
+    <script>
+        var apartmentData = [];
+        const gridContainer = document.querySelector(".grid");
+
+        // Sample Data
+        Promise.all([
+        fetch('Json/Lägenheter.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
+        fetch('Json/Lägenheter.json?nocache='+ (new Date()).getTime()).then(response => response.headers.get('Last-Modified')),
+        ])
+        .then(([apartmentJsonData, modTime]) => {
+            console.log(apartmentJsonData);
+            modTime = new Date(modTime);
+            console.log(modTime);
+            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'});
+            apartmentJsonData.forEach(apartment => {
+                //apartment.adress +=", Luleå, Sweden";
+                apartment.inflyttningsdatum = apartment.inflyttningsdatum ? new Date(apartment.inflyttningsdatum) : null;
+                apartment.tidigareInflyttning = apartment.tidigareInflyttning ? new Date(apartment.tidigareInflyttning) : null;
+                apartmentData.push(apartment);
+                console.log(apartment);
+                const imgSrc = apartment.bildLänk || apartment.planlösningsLänk;
+                const div = document.createElement("div");
+                div.className = `grid-item ${apartment.lägenhetstyp} ${apartment.bostadsområde}`;
+                div.dataset.hyra = apartment.hyra;
+                div.dataset.storlek = apartment.storlek;
+                div.dataset.kvm = apartment.kvm;
+                div.dataset.våning = apartment.våning;
+                div.dataset.lägenhetstyp = apartment.lägenhetstyp;
+                div.dataset.möblerad = apartment.möblerad;
+                div.dataset.korridor = apartment.korridor;
+                div.dataset.tidigareInflyttning = apartment.tidigareInflyttning;
+
+                div.innerHTML = `
+                    <img src="${imgSrc}" alt="Bostadsbild">
+                    <h3>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">"+apartment.adress+"</a>" : apartment.adress}</h3>
+                    <p><strong>${apartment.lägenhetstyp}</strong> - ${apartment.bostadsområde}</p>
+                    <p>${apartment.bostadskö}</p>
+                    <p>Hyra: ${apartment.hyra} kr</p>
+                    <p>Storlek: ${apartment.storlek} rum, ${apartment.kvm} kvm</p>
+                `;
+                gridContainer.appendChild(div);
+                console.log(div);
+            });
+            // Initialize Isotope
+            const iso = new Isotope(".grid", {
+                itemSelector: ".grid-item",
+                layoutMode: "fitRows",
+                getSortData: {
+                    hyra: item => parseFloat(item.dataset.hyra),
+                    storlek: item => parseFloat(item.dataset.storlek),
+                    kvm: item => parseFloat(item.dataset.kvm),
+                    våning: item => parseFloat(item.dataset.våning)
+                },
+                getFilterData: {
+                  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
+                  möblerad: item => item.dataset.möblerad,
+                  korridor: item => item.dataset.korridor,
+                  tidigareInflyttning: item => item.dataset.tidigareInflyttning
+
+                }
+            });
+            console.log(iso);
+
+            // Filter Handler
+            document.getElementById("filter-category").addEventListener("change", (event) => {
+                const filterValue = event.target.value === "*" ? "*" : `.${event.target.value}`;
+                iso.arrange({ filter: filterValue });
+            });
+
+            // Sorting Handler
+            document.getElementById("sort-by").addEventListener("change", (event) => {
+                const sortValue = event.target.value;
+                iso.arrange({ sortBy: sortValue });
+            });
+        }).catch(error => console.error('Error loading the JSON files:', error));
+
+        
+    </script>
+
+</body>
+</html>
