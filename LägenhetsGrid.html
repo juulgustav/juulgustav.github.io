@@ -43,6 +43,7 @@
             <option value="storlek">Storlek (Liten till Stor)</option>
             <option value="kvm">Kvm (Låg till Hög)</option>
             <option value="våning">Våning (Låg till Hög)</option>
+            <option value="inflyttningsdatum">inflyttningsdatum (Snart till Senare)</option>
         </select>
     </div>
 
@@ -78,10 +79,15 @@
                 div.dataset.storlek = apartment.storlek;
                 div.dataset.kvm = apartment.kvm;
                 div.dataset.våning = apartment.våning;
+                div.dataset.inflyttningsdatum = apartment.inflyttningsdatum;
+
                 div.dataset.lägenhetstyp = apartment.lägenhetstyp;
                 div.dataset.möblerad = apartment.möblerad;
                 div.dataset.korridor = apartment.korridor;
                 div.dataset.tidigareInflyttning = apartment.tidigareInflyttning;
+                let inflyttningsDatumeStylized = apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+
+                inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
 
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Bostadsbild">
@@ -90,6 +96,8 @@
                     <p>${apartment.bostadskö}</p>
                     <p>Hyra: ${apartment.hyra} kr</p>
                     <p>Storlek: ${apartment.storlek} rum, ${apartment.kvm} kvm</p>
+                    <strong>Inflyttningsdatum:</strong> ${inflyttningsDatumeStylized}<br>
+
                 `;
                 gridContainer.appendChild(div);
                 console.log(div);
@@ -102,7 +110,8 @@
                     hyra: item => parseFloat(item.dataset.hyra),
                     storlek: item => parseFloat(item.dataset.storlek),
                     kvm: item => parseFloat(item.dataset.kvm),
-                    våning: item => parseFloat(item.dataset.våning)
+                    våning: item => parseFloat(item.dataset.våning),
+                    inflyttningsdatum: item => Date.parse(item.dataset.inflyttningsdatum)
                 },
                 getFilterData: {
                   lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
@@ -117,14 +126,18 @@
             // Filter Handler
             document.getElementById("filter-category").addEventListener("change", (event) => {
                 const filterValue = event.target.value === "*" ? "*" : `.${event.target.value}`;
-                iso.arrange({ filter: filterValue });
+                iso.filter({ filter: filterValue });
             });
 
             // Sorting Handler
             document.getElementById("sort-by").addEventListener("change", (event) => {
                 const sortValue = event.target.value;
                 iso.arrange({ sortBy: sortValue });
+                console.log(event)
             });
+            iso.arrange({ sortBy: "storlek" });
+
+            
         }).catch(error => console.error('Error loading the JSON files:', error));
 
         
