@@ -44,17 +44,19 @@
         </select> -->
 
         <select id="sort-by">
-            <option value="original-order">Standard</option>
+            <option value="random">Random</option>
             <option value="hyra">Billigast</option>
             <option value="*hyra">Dyrast</option>
-            <option value="kvm">Minst (m²)</option>
-            <option value="*kvm">Störst (m²)</option>
-
-            <option value="våning">Våning (Lägst)</option>
-            <option value="*våning">Våning (Högst)</option>
+            <option value="stuk">Avstånd Stuk</option>
+            <option value="kårken">Avstånd Kårken</option>
             <option value="inflyttningsdatum">Inflyttningsdatum (Snart)</option>
             <option value="*inflyttningsdatum">Inflyttningsdatum (Senare)</option>
-
+            <option value="*publiceringsDatum">Nyast</option>
+            <option value="publiceringsDatum">Äldst</option>
+            <option value="kvm">Minst (m²)</option>
+            <option value="*kvm">Störst (m²)</option>
+            <option value="våning">Våning (Lägst)</option>
+            <option value="*våning">Våning (Högst)</option>
         </select>
 
         <div class="container">
@@ -132,6 +134,8 @@
                 //apartment.adress +=", Luleå, Sweden";
                 apartment.inflyttningsdatum = apartment.inflyttningsdatum ? new Date(apartment.inflyttningsdatum) : null;
                 apartment.tidigareInflyttning = apartment.tidigareInflyttning ? new Date(apartment.tidigareInflyttning) : null;
+                apartment.publiceringsDatum = apartment.publiceringsDatum ? new Date(apartment.publiceringsDatum) : null;
+
                 apartmentData.push(apartment);
                 //console.log(apartment);
                 const imgSrc = apartment.bildLänk || apartment.planlösningsLänk;
@@ -151,19 +155,14 @@
                 div.dataset.beskrivning = apartment.beskrivning;
                 div.dataset.bostadskö = apartment.bostadskö;
                 div.dataset.bostadsområde = apartment.bostadsområde;
+                div.dataset.latitud = apartment.latitud;
+                div.dataset.longitud = apartment.longitud;
+                div.dataset.publiceringsDatum = apartment.publiceringsDatum;
 
 
-
-                console.log(div.dataset)
-                let inflyttningsDatumeStylized = apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
-
-                inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
-
-                if(apartment.inflyttningsdatum.getYear() != new Date().getYear())
-                {
-                    inflyttningsDatumeStylized += " "+apartment.inflyttningsdatum.toLocaleDateString('sv-SE', { year: 'numeric' });
-                }
-
+                //console.log(div.dataset)
+                let inflyttningsDatumeStylized = stylizeDate(apartment.inflyttningsdatum);
+                let publiceringsDatumeStylized = stylizeDate(apartment.publiceringsDatum);
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Bostadsbild">
                     <h3>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">"+apartment.adress+"</a>" : apartment.adress}</h3>
@@ -172,12 +171,15 @@
                     <p>Hyra: ${apartment.hyra} kr</p>
                     <p>Storlek: ${apartment.storlek} rum, ${apartment.kvm} kvm</p>
                     <strong>Inflyttningsdatum:</strong> ${inflyttningsDatumeStylized}<br>
+                    <strong>Publiceringsdatum:</strong> ${publiceringsDatumeStylized}<br>
 
                 `;
                 gridContainer.appendChild(div);
                 //console.log(div);
             });
             // Initialize Isotope
+            var stuk = [65.61784180109724, 22.14376757827861];
+            var kårken =[65.61757351039493, 22.13427124826677];
             const iso = new Isotope(".grid", {
                 itemSelector: ".grid-item",
                 layoutMode: "fitRows",
@@ -186,7 +188,12 @@
                     storlek: item => parseFloat(item.dataset.storlek),
                     kvm: item => parseFloat(item.dataset.kvm),
                     våning: item => parseFloat(item.dataset.våning),
-                    inflyttningsdatum: item => Date.parse(item.dataset.inflyttningsdatum)
+                    inflyttningsdatum: item => Date.parse(item.dataset.inflyttningsdatum),
+                    weight: item => distance(kårken[0], kårken[1], item.dataset.latitud, item.dataset.longitud),
+                    kårken: item => distance(kårken[0], kårken[1], item.dataset.latitud, item.dataset.longitud),
+                    stuk: item => distance(stuk[0], stuk[1], item.dataset.latitud, item.dataset.longitud),
+                    publiceringsDatum: item => Date.parse(item.dataset.publiceringsDatum),
+
                 }
                 //getFilterData: {
                 //  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
@@ -196,8 +203,8 @@
 
                 //}
             });
-            console.log(iso);
-
+            console.log(iso._sorters);
+            
             // Filter Handler
             //document.getElementById("filter-category").addEventListener("change", (event) => {
             //    const filterValue = event.target.value === "*" ? "*" : `.${event.target.value}`;
@@ -207,20 +214,61 @@
             // Sorting Handler
             document.getElementById("sort-by").addEventListener("change", (event) => {
                 var sortValue = event.target.value;
+                
                 if(sortValue[0]=='*')
                 {
                     sortValue = sortValue.slice(1);
-                    console.log("Inverse sort för: "+sortValue);
-                    iso.arrange({ sortBy: sortValue, sortAscending: false });
+                    console.log("Inverse sort för: "+sortValue+ " length:"+sortValue.length);
+                    sortSettings = {};
+                    Object.values(iso._sorters).forEach(element => {
+                        sortSettings[element.name] = false;
+                    });
+                    sortSettings["weight"] = true;
+                    console.log(sortSettings);
+                    iso.arrange({ sortBy: [sortValue, "weight"], sortAscending: sortSettings});
                 }
                 else
                 {
-                    console.log("Vanlig sort för: "+sortValue)
-                    iso.arrange({ sortBy: sortValue, sortAscending: true });
+                    console.log("Vanlig sort för: "+sortValue+ " length:"+sortValue.length)
+                    sortSettings = {};
+                    Object.values(iso._sorters).forEach(element => {
+                        sortSettings[element.name] = true;
+                    });
+                    console.log(sortSettings);
+                    iso.arrange({ sortBy: [sortValue,"weight"], sortAscending: sortSettings});
                 }
                 console.log(event)
             });
-            iso.arrange({ sortBy: "storlek" });
+            iso.arrange({ sortBy: 'random'  });
+            function distance(lat1, lon1, lat2, lon2)
+            {
+                const R = 6371e3; // metres
+                const φ1 = lat1 * Math.PI/180; // φ, λ in radians
+                const φ2 = lat2 * Math.PI/180;
+                const Δφ = (lat2-lat1) * Math.PI/180;
+                const Δλ = (lon2-lon1) * Math.PI/180;
+
+                const a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+                        Math.cos(φ1) * Math.cos(φ2) *
+                        Math.sin(Δλ/2) * Math.sin(Δλ/2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+                return R * c; // in metres
+            }
+
+            function stylizeDate(date)
+            {
+                //console.log(date);
+                let inflyttningsDatumeStylized = date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+
+                inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
+
+                if(date.getYear() != new Date().getYear())
+                {
+                    inflyttningsDatumeStylized += " "+date.toLocaleDateString('sv-SE', { year: 'numeric' });
+                }
+                return inflyttningsDatumeStylized
+            }
 
 
             populateDropdowns();
