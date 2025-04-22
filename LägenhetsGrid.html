@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">-->
 </head>
 <body>
     <input type="text" id="searchBox" placeholder="Sök för lägenhet..." oninput="filterBooths()">
@@ -55,8 +55,12 @@
             <option value="publiceringsDatum">Äldst</option>
             <option value="kvm">Minst (m²)</option>
             <option value="*kvm">Störst (m²)</option>
+            <option value="prisPerKVM">Pris per m²</option>
             <option value="våning">Våning (Lägst)</option>
             <option value="*våning">Våning (Högst)</option>
+            <option value="anmälningsDatum">Anmälningsdatum (Snart)</option>
+            <option value="*anmälningsDatum">Anmälningsdatum (Senare)</option>
+
         </select>
 
         <div class="container">
@@ -135,6 +139,7 @@
                 apartment.inflyttningsdatum = apartment.inflyttningsdatum ? new Date(apartment.inflyttningsdatum) : null;
                 apartment.tidigareInflyttning = apartment.tidigareInflyttning ? new Date(apartment.tidigareInflyttning) : null;
                 apartment.publiceringsDatum = apartment.publiceringsDatum ? new Date(apartment.publiceringsDatum) : null;
+                apartment.anmälSenast = apartment.anmälSenast ? new Date(apartment.anmälSenast) : null;
 
                 apartmentData.push(apartment);
                 //console.log(apartment);
@@ -158,20 +163,24 @@
                 div.dataset.latitud = apartment.latitud;
                 div.dataset.longitud = apartment.longitud;
                 div.dataset.publiceringsDatum = apartment.publiceringsDatum;
-
+                div.dataset.anmälSenast = apartment.anmälSenast;
+                div.dataset.prisPerKVM = apartment.hyra / apartment.kvm;
 
                 //console.log(div.dataset)
                 let inflyttningsDatumeStylized = stylizeDate(apartment.inflyttningsdatum);
                 let publiceringsDatumeStylized = stylizeDate(apartment.publiceringsDatum);
+                let anmälningsDatumStylized = stylizeDate(apartment.anmälSenast);
+
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Bostadsbild">
                     <h3>${apartment.länk && apartment.länk.length>0 ? "<a href=\""+apartment.länk+"\">"+apartment.adress+"</a>" : apartment.adress}</h3>
                     <p><strong>${apartment.lägenhetstyp}</strong> - ${apartment.bostadsområde}</p>
                     <p>${apartment.bostadskö}</p>
                     <p>Hyra: ${apartment.hyra} kr</p>
-                    <p>Storlek: ${apartment.storlek} rum, ${apartment.kvm} kvm</p>
+                    <p>Storlek: ${apartment.storlek} rum, ${apartment.kvm} kvm, ${Math.floor(div.dataset.prisPerKVM)}kr/m²</p>
                     <strong>Inflyttningsdatum:</strong> ${inflyttningsDatumeStylized}<br>
                     <strong>Publiceringsdatum:</strong> ${publiceringsDatumeStylized}<br>
+                    <strong>Anmälningsdatum:</strong> ${anmälningsDatumStylized}<br>
 
                 `;
                 gridContainer.appendChild(div);
@@ -187,13 +196,14 @@
                     hyra: item => parseFloat(item.dataset.hyra),
                     storlek: item => parseFloat(item.dataset.storlek),
                     kvm: item => parseFloat(item.dataset.kvm),
+                    prisPerKVM: item => parseFloat(item.dataset.prisPerKVM),
                     våning: item => parseFloat(item.dataset.våning),
                     inflyttningsdatum: item => Date.parse(item.dataset.inflyttningsdatum),
                     weight: item => distance(kårken[0], kårken[1], item.dataset.latitud, item.dataset.longitud),
                     kårken: item => distance(kårken[0], kårken[1], item.dataset.latitud, item.dataset.longitud),
                     stuk: item => distance(stuk[0], stuk[1], item.dataset.latitud, item.dataset.longitud),
                     publiceringsDatum: item => Date.parse(item.dataset.publiceringsDatum),
-
+                    anmälningsDatum: item => Date.parse(item.dataset.anmälSenast),
                 }
                 //getFilterData: {
                 //  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
@@ -258,7 +268,7 @@
 
             function stylizeDate(date)
             {
-                //console.log(date);
+                console.log(date);
                 let inflyttningsDatumeStylized = date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
 
                 inflyttningsDatumeStylized = inflyttningsDatumeStylized.replace(/(\p{L})/u, match => match.toUpperCase());
