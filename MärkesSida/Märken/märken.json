@@ -220,6 +220,17 @@
     "image": "0.jpg"
   },
   {
+    "date": "2023-11-17T00:00:00",
+    "name": "Ravet",
+    "places": [
+      "left-back-leg-lower"
+    ],
+    "shape": "outline",
+    "width": 15.0,
+    "height": 4.0,
+    "image": "ravet.jpg"
+  },
+  {
     "date": "2023-11-22T00:00:00",
     "name": "Fejden 2023 35 års jubileum",
     "places": [
@@ -245,7 +256,7 @@
     "date": "2023-11-22T00:00:00",
     "name": "Teknologkåren 50 år",
     "places": [
-      "left-front-leg-upper",
+      "left-front-leg-upper"
     ],
     "shape": "rect",
     "width": 8.0,
@@ -463,6 +474,17 @@
     "image": "gula_24.jpg"
   },
   {
+    "date": "2024-09-13T00:00:00",
+    "name": "Data Phös 24",
+    "places": [
+      "right-front-shoulder"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 5.5,
+    "image": "data_phös_24.jpg"
+  },
+  {
     "date": "2024-09-29T00:00:00",
     "name": "Störst Hjärna på LTU - Larv",
     "places": [
@@ -486,6 +508,17 @@
     "image": "tillämpad_artificiell_intelligens_2023_litet_ryggmärke.jpg"
   },
   {
+    "date": "2024-10-19T00:00:00",
+    "name": "Ur Trafiken",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 8.5,
+    "height": 2.5,
+    "image": "ur_trafiken.jpg"
+  },
+  {
     "date": "2024-11-15T00:00:00",
     "name": "Evelution",
     "places": [
@@ -506,6 +539,17 @@
     "width": 8.0,
     "height": 7.0,
     "image": "y_-_mätfel.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "Ymd",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 7.5,
+    "image": "ymd.jpg"
   },
   {
     "date": "2024-11-20T00:00:00",
@@ -704,6 +748,28 @@
     "width": 6.0,
     "height": 6.0,
     "image": "vattennationen_-_kristin.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "S.T.E.N. Hård",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 4.0,
+    "height": 9.5,
+    "image": "s.t.e.n._hård.jpg"
+  },
+  {
+    "date": "2025-05-04T00:00:00",
+    "name": "I love Philm",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 5.5,
+    "height": 4.5,
+    "image": "i_love_philm.jpg"
   },
   {
     "date": "2025-05-10T00:00:00",

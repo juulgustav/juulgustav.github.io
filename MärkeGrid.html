@@ -125,7 +125,8 @@
             console.log(apartmentJsonData);
             modTime = new Date(modTime);
             console.log(modTime);
-            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'});
+            var totalArea=0;
+            var totalPatches=0;
             apartmentJsonData.forEach(apartment => {
                 //apartment.adress +=", Luleå, Sweden";
                 apartment.date = apartment.date ? new Date(apartment.date) : null;
@@ -143,18 +144,21 @@
                 div.dataset.shape = apartment.shape;
                 //console.log(div.dataset)
                 let dateSewnOn = stylizeDate(apartment.date);
-
+                totalArea += area(apartment.width, apartment.height, apartment.shape)* apartment.places.length;
+                totalPatches +=apartment.places.length;
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Märkesbild">
                     <h3>${apartment.name}</h3>
                     <p><strong>${apartment.shape}</strong></p>
                     <p><strong>Antal: ${apartment.places.length}</strong></p>
-                    <p>Bredd: ${apartment.width} cm, Höjd: ${apartment.height} cm, Area: ${parseInt(area(apartment.width, apartment.height, apartment.shape),10)} cm²</p>
+                    <p>Bredd: ${apartment.width} cm, Höjd: ${apartment.height} cm, Area: ${parseInt(area(apartment.width, apartment.height, apartment.shape),10)}cm²</p>
                     <strong>Datum påsatt:</strong> ${dateSewnOn}<br>
                 `;
                 gridContainer.appendChild(div);
                 //console.log(div);
             });
+            totalArea*= 0.0001;
+            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'})+"<br />Totalt antal märken: "+totalPatches+"<br />Total area: "+(Math.round(totalArea * 1000) / 1000).toFixed(3)+"m²";
             // Initialize Isotope
             var stuk = [65.61784180109724, 22.14376757827861];
             var kårken =[65.61757351039493, 22.13427124826677];
@@ -460,8 +464,7 @@
                     }
                 });
             }
-        }).catch(error => console.error('Error loading the JSON files:', error));
-
+        });
     </script>
 
 </body>
