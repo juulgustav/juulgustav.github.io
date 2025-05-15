@@ -1,0 +1,742 @@
+[
+  {
+    "date": "2023-09-02T00:00:00",
+    "name": "Tapas",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "tapas.jpg"
+  },
+  {
+    "date": "2023-09-14T00:00:00",
+    "name": "Comicon Phaesten - Utomhussittningen 2023",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "utomhussittningen_2023.jpg"
+  },
+  {
+    "date": "2023-09-14T00:00:00",
+    "name": "Datanolla 2023",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datanolla_2023.jpg"
+  },
+  {
+    "date": "2023-09-14T00:00:00",
+    "name": "Datasektionen",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionen.jpg"
+  },
+  {
+    "date": "2023-09-14T00:00:00",
+    "name": "Geolympiaden 2023",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "geolympiaden_2023.jpg"
+  },
+  {
+    "date": "2023-09-14T00:00:00",
+    "name": "Hata Stuga17",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 10.0,
+    "height": 4.0,
+    "image": "hata_stuga17.jpg"
+  },
+  {
+    "date": "2023-09-14T00:00:00",
+    "name": "Sveriges ingejörer",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "circle",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "sveriges_ingenjörer.jpg"
+  },
+  {
+    "date": "2023-09-14T00:00:00",
+    "name": "Teknologkåren",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "teknologkåren.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "40 Years of Philm",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "circle",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "philm_40.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Datasektionen 30 år",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionen_30.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Datasektionen Sköld",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "outline",
+    "width": 9.0,
+    "height": 8.0,
+    "image": "datasektionen_programmen.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Datateknisk linje",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 10.0,
+    "height": 8.0,
+    "image": "datateknisk_linje.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Dö Kapsyl",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "dö_kapsyl.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Ludd 20 år",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "ludd_20.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Nolleperioden",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "nolleperioden.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Spelhöst 2022",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "spelhöst_2022.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
+    "name": "Spunk",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "spunk.jpg"
+  },
+  {
+    "date": "2023-10-05T00:00:00",
+    "name": "Skåne landskapsvapen",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.5,
+    "height": 7.5,
+    "image": "skåne_landskapsvapen.jpg"
+  },
+  {
+    "date": "2023-10-05T00:00:00",
+    "name": "Skåne vägskylt",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "rect",
+    "width": 10.0,
+    "height": 3.0,
+    "image": "skåne_vägskylt.jpg"
+  },
+  {
+    "date": "2023-10-05T00:00:00",
+    "name": "Spexet 2023",
+    "places": [
+      "avryckt"
+    ],
+    "shape": "rect",
+    "width": 0.0,
+    "height": 0.0,
+    "image": "0.jpg"
+  },
+  {
+    "date": "2023-11-22T00:00:00",
+    "name": "Fejden 2023 35 års jubileum",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 11.5,
+    "height": 11.0,
+    "image": "fejden23.jpg"
+  },
+  {
+    "date": "2023-11-22T00:00:00",
+    "name": "Gula 23",
+    "places": [
+      "left-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula23.jpg"
+  },
+  {
+    "date": "2023-11-22T00:00:00",
+    "name": "Teknologkåren 50 år",
+    "places": [
+      "left-front-leg-upper",
+      "0"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 6.5,
+    "image": "teknologkåren_50_år.jpg"
+  },
+  {
+    "date": "2023-12-13T00:00:00",
+    "name": "Data Ludd Lan 2023",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "data_ludd_lan_2023.jpg"
+  },
+  {
+    "date": "2023-12-13T00:00:00",
+    "name": "Datalaget",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 9.5,
+    "height": 9.5,
+    "image": "datalaget.jpg"
+  },
+  {
+    "date": "2023-12-13T00:00:00",
+    "name": "Teknisk Fysik 2017",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "teknisk_fysik_2017.jpg"
+  },
+  {
+    "date": "2023-12-15T00:00:00",
+    "name": "Jag Kan Supa Utan att Ha Kul",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 3.0,
+    "image": "jag_kan_supa_utan_att_ha_kul.jpg"
+  },
+  {
+    "date": "2024-02-17T00:00:00",
+    "name": "Snopp 2024",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "snopp_2024.jpg"
+  },
+  {
+    "date": "2024-03-08T00:00:00",
+    "name": "YAI Phösarphest 2023",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "yai_phösarphest_2023.jpg"
+  },
+  {
+    "date": "2024-03-16T00:00:00",
+    "name": "I 8 sum pi",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 8.5,
+    "height": 3.0,
+    "image": "i_8_sum_pi.jpg"
+  },
+  {
+    "date": "2024-04-14T00:00:00",
+    "name": "Gula 22",
+    "places": [
+      "left-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_22.jpg"
+  },
+  {
+    "date": "2024-04-19T00:00:00",
+    "name": "Datateknik 2021 Litet Ryggmärke",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datateknik_2021_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2024-05-01T00:00:00",
+    "name": "Pedro",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "pedro.jpg"
+  },
+  {
+    "date": "2024-05-11T00:00:00",
+    "name": "Datasittningen 2024",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 9.0,
+    "height": 9.0,
+    "image": "datasittningen_2024.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
+    "name": "Live Laugh Larv",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 7.0,
+    "image": "live_laugh_larv.jpg"
+  },
+  {
+    "date": "2024-08-15T00:00:00",
+    "name": "Tillämpad Artificiell Intelligens 2023",
+    "places": [
+      "back-backside",
+      "inside-back-backside"
+    ],
+    "shape": "circle",
+    "width": 29.0,
+    "height": 29.0,
+    "image": "tillämpad_artificiell_intelligens_2023.jpg"
+  },
+  {
+    "date": "2024-08-16T00:00:00",
+    "name": "Gula 21",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_21.jpg"
+  },
+  {
+    "date": "2024-08-16T00:00:00",
+    "name": "Spaceshuttle Endevour",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "spaceshuttle_endevour.jpg"
+  },
+  {
+    "date": "2024-08-17T00:00:00",
+    "name": "Phösare 2024",
+    "places": [
+      "right-front-shoulder"
+    ],
+    "shape": "oval",
+    "width": 9.0,
+    "height": 5.5,
+    "image": "phösare_2024.jpg"
+  },
+  {
+    "date": "2024-08-21T00:00:00",
+    "name": "Datahäst",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 7.0,
+    "height": 8.0,
+    "image": "datahäst.jpg"
+  },
+  {
+    "date": "2024-08-21T00:00:00",
+    "name": "Datasektionens Mutpris",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 10.0,
+    "image": "datasektionens_mutpris.jpg"
+  },
+  {
+    "date": "2024-08-21T00:00:00",
+    "name": "Gula 24",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 9.5,
+    "height": 9.5,
+    "image": "gula_24.jpg"
+  },
+  {
+    "date": "2024-09-29T00:00:00",
+    "name": "Störst Hjärna på LTU - Larv",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "störst_hjärna_på_ltu_-_larv.jpg"
+  },
+  {
+    "date": "2024-10-03T00:00:00",
+    "name": "Tillämpad Artificiell Intelligens 2023 Litet Ryggmärke",
+    "places": [
+      "right-front-leg-upper",
+      "right-front-inside-stomach"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "tillämpad_artificiell_intelligens_2023_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2024-11-15T00:00:00",
+    "name": "Evelution",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 10.0,
+    "height": 5.0,
+    "image": "evelution.jpg"
+  },
+  {
+    "date": "2024-11-15T00:00:00",
+    "name": "Y - Mätfel",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 7.0,
+    "image": "y_-_mätfel.jpg"
+  },
+  {
+    "date": "2024-11-20T00:00:00",
+    "name": "Fejden 2024",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 6.5,
+    "height": 9.0,
+    "image": "fejden_2024.jpg"
+  },
+  {
+    "date": "2024-12-06T00:00:00",
+    "name": "Taco Phaesten 2024",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 5.0,
+    "height": 8.0,
+    "image": "taco_phaesten_2024.jpg"
+  },
+  {
+    "date": "2025-02-17T00:00:00",
+    "name": "Snopp 2025",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "snopp_2025.jpg"
+  },
+  {
+    "date": "2025-03-30T00:00:00",
+    "name": "YAI sittning 2025",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "yai_sittning_2025.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Eldnationen - Kristin",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "eldnationen_-_kristin.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 01",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_01.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 07",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_07.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 08",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_08.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 10",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_10.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 15",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_15.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 16",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_16.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 18",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_18.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Gula 2000",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_2000.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Hollow Knight - Kristin",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 7.5,
+    "height": 3.5,
+    "image": "hollow_knight_-_kristin.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Hylian Shield",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 5.5,
+    "height": 7.0,
+    "image": "hylian_shield.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Jordnationen - Kristin",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "jordnationen_-_kristin.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Luftnationen - Kristin",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "luftnationen_-_kristin.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Vattennationen - Kristin",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "vattennationen_-_kristin.jpg"
+  },
+  {
+    "date": "2025-05-10T00:00:00",
+    "name": "Snopp 2020",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "snopp_2020.jpg"
+  },
+  {
+    "date": "2025-05-10T00:00:00",
+    "name": "Snopp 2022",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "snopp_2022.jpg"
+  },
+  {
+    "date": "2025-05-10T00:00:00",
+    "name": "Snopp 2023",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "snopp_2023.jpg"
+  }
+]
