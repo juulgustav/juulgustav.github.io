@@ -352,6 +352,17 @@
     "image": "i_8_sum_pi.jpg"
   },
   {
+    "date": "2024-04-12T00:00:00",
+    "name": "More Passion",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.5,
+    "height": 6.5,
+    "image": "more_passion.jpg"
+  },
+  {
     "date": "2024-04-14T00:00:00",
     "name": "Gula 22",
     "places": [
@@ -361,6 +372,28 @@
     "width": 10.0,
     "height": 10.0,
     "image": "gula_22.jpg"
+  },
+  {
+    "date": "2024-04-14T00:00:00",
+    "name": "Nolleperioden 2023",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "nolleperioden_2023.jpg"
+  },
+  {
+    "date": "2024-04-18T00:00:00",
+    "name": "1+1=10",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 3.0,
+    "image": "1+1=10.jpg"
   },
   {
     "date": "2024-04-19T00:00:00",
@@ -441,10 +474,32 @@
     "image": "spaceshuttle_endevour.jpg"
   },
   {
+    "date": "2024-08-16T00:00:00",
+    "name": "Norrskensröj 2023",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "norrskensröj_2023.jpg"
+  },
+  {
+    "date": "2024-08-16T00:00:00",
+    "name": "Spelkvällen 2023",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "spelkvällen_2023.jpg"
+  },
+  {
     "date": "2024-08-17T00:00:00",
     "name": "Phösare 2024",
     "places": [
-      "right-front-shoulder"
+      "left-front-shoulder"
     ],
     "shape": "oval",
     "width": 9.0,
@@ -496,6 +551,28 @@
     "image": "data_phös_24.jpg"
   },
   {
+    "date": "2024-09-13T00:00:00",
+    "name": "Görbilligt",
+    "places": [
+      "right-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "görbilligt.jpg"
+  },
+  {
+    "date": "2024-09-20T00:00:00",
+    "name": "Freak in the Sheets",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 8.0,
+    "image": "freak_in_the_sheets.jpg"
+  },
+  {
     "date": "2024-09-29T00:00:00",
     "name": "Störst Hjärna på LTU - Larv",
     "places": [
@@ -517,6 +594,28 @@
     "width": 8.0,
     "height": 8.0,
     "image": "tillämpad_artificiell_intelligens_2023_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2024-10-19T00:00:00",
+    "name": "ICA Slemmis",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 5.0,
+    "image": "ica_slemmis.jpg"
+  },
+  {
+    "date": "2024-10-19T00:00:00",
+    "name": "Sonic Nom Nom",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "sonic_nom_nom.jpg"
   },
   {
     "date": "2024-10-19T00:00:00",
@@ -553,6 +652,61 @@
   },
   {
     "date": "2024-11-16T00:00:00",
+    "name": "Datateknik 2023 Litet Ryggmärke",
+    "places": [
+      "left-front-inside-stomach"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datateknik_2023_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "In Utter Space",
+    "places": [
+      "left-front-inside-stomach"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "in_utter_space.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "It's a Trapp!",
+    "places": [
+      "left-front-inside-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "it's_a_trapp!.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "Lekmatta",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 9.0,
+    "height": 6.5,
+    "image": "lekmatta.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "Teknisk Fysik 2023 Litet Ryggmärke",
+    "places": [
+      "left-front-inside-stomach"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "teknisk_fysik_2023_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
     "name": "Ymd",
     "places": [
       "right-front-leg-lower"
@@ -561,6 +715,17 @@
     "width": 8.0,
     "height": 7.5,
     "image": "ymd.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "Är det Fredag än",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "är_det_fredag_än.jpg"
   },
   {
     "date": "2024-11-20T00:00:00",
@@ -585,6 +750,28 @@
     "image": "taco_phaesten_2024.jpg"
   },
   {
+    "date": "2025-02-07T00:00:00",
+    "name": "35 Years of Philm",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "35_years_of_philm.jpg"
+  },
+  {
+    "date": "2025-02-08T00:00:00",
+    "name": "Luleå Teatern",
+    "places": [
+      "right-front-shoulder"
+    ],
+    "shape": "outline",
+    "width": 6.0,
+    "height": 7.0,
+    "image": "luleå_teatern.jpg"
+  },
+  {
     "date": "2025-02-17T00:00:00",
     "name": "Snopp 2025",
     "places": [
@@ -596,6 +783,17 @@
     "image": "snopp_2025.jpg"
   },
   {
+    "date": "2025-03-16T00:00:00",
+    "name": "Gameboy Blue",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "outline",
+    "width": 4.0,
+    "height": 6.5,
+    "image": "gameboy_blue.jpg"
+  },
+  {
     "date": "2025-03-30T00:00:00",
     "name": "YAI sittning 2025",
     "places": [
@@ -605,6 +803,17 @@
     "width": 8.0,
     "height": 8.0,
     "image": "yai_sittning_2025.jpg"
+  },
+  {
+    "date": "2025-04-11T00:00:00",
+    "name": "Rymdteknik 2023 Litet Ryggmärke",
+    "places": [
+      "right-front-inside-stomach"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "rymdteknik_2023_litet_ryggmärke.jpg"
   },
   {
     "date": "2025-04-18T00:00:00",

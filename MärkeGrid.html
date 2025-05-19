@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bostadsguide</title>
+    <title>Märken!</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="Assets/Logo.png">
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
@@ -151,6 +151,7 @@
                     <h3>${apartment.name}</h3>
                     <p><strong>${apartment.shape}</strong></p>
                     <p><strong>Antal: ${apartment.places.length}</strong></p>
+                    <p>${apartment.places.join('\n')}</p>
                     <p>Bredd: ${apartment.width} cm, Höjd: ${apartment.height} cm, Area: ${parseInt(area(apartment.width, apartment.height, apartment.shape),10)}cm²</p>
                     <strong>Datum påsatt:</strong> ${dateSewnOn}<br>
                 `;
