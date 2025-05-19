@@ -12,7 +12,7 @@
   },
   {
     "date": "2023-09-14T00:00:00",
-    "name": "Comicon Phaesten - Utomhussittningen 2023",
+    "name": "Comic Con Phaesten - Utomhussittningen 2023",
     "places": [
       "left-front-leg-lower"
     ],
@@ -429,6 +429,17 @@
     "image": "datasittningen_2024.jpg"
   },
   {
+    "date": "2024-05-17T00:00:00",
+    "name": "Bunkern",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "bunkern.jpg"
+  },
+  {
     "date": "2024-05-18T00:00:00",
     "name": "Live Laugh Larv",
     "places": [
@@ -438,6 +449,39 @@
     "width": 6.0,
     "height": 7.0,
     "image": "live_laugh_larv.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
+    "name": "PC Master Race",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "circle",
+    "width": 5.0,
+    "height": 5.0,
+    "image": "pc_master_race.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
+    "name": "Skåne Halvbåge",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 4.0,
+    "image": "skåne_halvbåge.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
+    "name": "Europeiska Unionen Halvbåge",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 4.0,
+    "image": "europeiska_unionen_halvbåge.jpg"
   },
   {
     "date": "2024-08-15T00:00:00",
@@ -464,17 +508,6 @@
   },
   {
     "date": "2024-08-16T00:00:00",
-    "name": "Spaceshuttle Endevour",
-    "places": [
-      "left-back-leg-upper"
-    ],
-    "shape": "outline",
-    "width": 10.0,
-    "height": 10.0,
-    "image": "spaceshuttle_endevour.jpg"
-  },
-  {
-    "date": "2024-08-16T00:00:00",
     "name": "Norrskensröj 2023",
     "places": [
       "left-front-stomach"
@@ -483,6 +516,17 @@
     "width": 8.0,
     "height": 8.0,
     "image": "norrskensröj_2023.jpg"
+  },
+  {
+    "date": "2024-08-16T00:00:00",
+    "name": "Spaceshuttle Endevour",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "spaceshuttle_endevour.jpg"
   },
   {
     "date": "2024-08-16T00:00:00",
@@ -594,6 +638,61 @@
     "width": 8.0,
     "height": 8.0,
     "image": "tillämpad_artificiell_intelligens_2023_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2024-10-06T00:00:00",
+    "name": "Datasektionen 40 år Jubileumsbanquetten",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionen_40_år_jubileumsbanquetten.jpg"
+  },
+  {
+    "date": "2024-10-06T00:00:00",
+    "name": "Datateknologsektionen",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "outline",
+    "width": 7.0,
+    "height": 9.0,
+    "image": "datateknologsektionen.jpg"
+  },
+  {
+    "date": "2024-10-06T00:00:00",
+    "name": "Datasektionen 40 år",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionen_40_år.jpg"
+  },
+  {
+    "date": "2024-10-06T00:00:00",
+    "name": "Not All Those Who Wander Are Lost",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "not_all_those_who_wander_are_lost.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
+    "name": "Essex",
+    "places": [
+      "right-front-stomach"
+    ],
+    "shape": "outline",
+    "width": 9.5,
+    "height": 9.0,
+    "image": "essex.jpg"
   },
   {
     "date": "2024-10-19T00:00:00",
@@ -718,7 +817,7 @@
   },
   {
     "date": "2024-11-16T00:00:00",
-    "name": "Är det Fredag än",
+    "name": "Är det Fredag än?",
     "places": [
       "back-backside"
     ],
@@ -750,6 +849,50 @@
     "image": "taco_phaesten_2024.jpg"
   },
   {
+    "date": "2024-12-15T00:00:00",
+    "name": "Larv Rhomb",
+    "places": [
+      "right-front-shoulder"
+    ],
+    "shape": "triangle",
+    "width": 9.5,
+    "height": 5.0,
+    "image": "larv_rhomb.jpg"
+  },
+  {
+    "date": "2025-01-24T00:00:00",
+    "name": "Ludd x32",
+    "places": [
+      "right-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "ludd_x32.jpg"
+  },
+  {
+    "date": "2025-01-24T00:00:00",
+    "name": "Systembolaget Delfingatan Öppettider",
+    "places": [
+      "right-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 9.0,
+    "height": 5.0,
+    "image": "systembolaget_delfingatan_öppettider.jpg"
+  },
+  {
+    "date": "2025-01-24T00:00:00",
+    "name": "Systembolaget Storheden Öppettider",
+    "places": [
+      "right-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 9.0,
+    "height": 5.0,
+    "image": "systembolaget_storheden_öppettider.jpg"
+  },
+  {
     "date": "2025-02-07T00:00:00",
     "name": "35 Years of Philm",
     "places": [
@@ -759,6 +902,28 @@
     "width": 8.0,
     "height": 8.0,
     "image": "35_years_of_philm.jpg"
+  },
+  {
+    "date": "2025-02-07T00:00:00",
+    "name": "Paljett Jultomte",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "outline",
+    "width": 6.5,
+    "height": 7.0,
+    "image": "paljett_jultomte.jpg"
+  },
+  {
+    "date": "2025-02-08T00:00:00",
+    "name": "Luleå Kranen",
+    "places": [
+      "left-front-shoulder"
+    ],
+    "shape": "outline",
+    "width": 6.0,
+    "height": 7.0,
+    "image": "luleå_kranen.jpg"
   },
   {
     "date": "2025-02-08T00:00:00",

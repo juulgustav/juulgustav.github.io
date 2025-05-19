@@ -115,7 +115,7 @@
     <script>
         var apartmentData = [];
         const gridContainer = document.querySelector(".grid");
-
+        var iso;
         // Sample Data
         Promise.all([
         fetch('MärkesSida/Märken/märken.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
@@ -163,7 +163,7 @@
             // Initialize Isotope
             var stuk = [65.61784180109724, 22.14376757827861];
             var kårken =[65.61757351039493, 22.13427124826677];
-            const iso = new Isotope(".grid", {
+            iso = new Isotope(".grid", {
                 itemSelector: ".grid-item",
                 layoutMode: "fitRows",
                 getSortData: {
@@ -297,6 +297,7 @@
                     filterBooths();
                 });
             })
+            filterBooths();
             console.log(items)
             
             function populateDropdowns() {
@@ -400,76 +401,77 @@
             }
     
     
-            function filterBooths() {
-                var searchText = document.getElementById("searchBox").value.toLowerCase();
-                var selectedBostadsområden = document.getElementById("bostadsområdeFilter");
-                var selectedROK = document.getElementById("rokFilter");
-                var selectedVärdar = document.getElementById("värdFilter");
-                var selectedMöblerad = document.getElementById("möbleradFilter");
-                var selectedLägenhetstyp = document.getElementById("lägenhetstypFilter");
-    
-    
-                selectedBostadsområden = Array.from(selectedBostadsområden.children).filter(item => item.className == "item checked");
-                selectedROK = Array.from(selectedROK.children).filter(item => item.className == "item checked");
-                selectedVärdar = Array.from(selectedVärdar.children).filter(item => item.className == "item checked");
-                selectedMöblerad = Array.from(selectedMöblerad.children).filter(item => item.className == "item checked");
-                selectedLägenhetstyp = Array.from(selectedLägenhetstyp.children).filter(item => item.className == "item checked");
-    
-                //console.log(selectedIndustries);
-                selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
-    
-    
-                
-    
-                console.log(selectedBostadsområden);
-                if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
-                    iso.arrange({
-                        filter: '*'
-                    });
-                    return; // No filters applied
-                }
-                console.log(searchText);
-
-
-                iso.arrange({
-                    // item element provided as argument
-                    filter: function( itemElem ) {
-                        var apartment = itemElem.dataset;
-                        //console.log(apartment);
-                        if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
-                            console.log("No filters");
-                            return true; // No filters applied
-                        }
-                        var matches = false;
-    
-                        let matchesSearch = searchText
-                                ? apartment.bostadsområde?.toLowerCase().includes(searchText) ||
-                                //apartment.storlek.toLowerCase().includes(searchText) ||
-                                apartment.beskrivning?.toLowerCase().includes(searchText) ||
-                                apartment.adress?.toLowerCase().includes(searchText) ||
-                                //apartment.kvm.toLowerCase().includes(searchText) ||
-                                apartment.inflyttningsdatum?.toLowerCase().includes(searchText)
-                                : true;
-        
-        
-                        let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==apartment.bostadsområde) : true;
-                        //console.log(matchesSearch);
-                        console.log(apartment.adress.toLowerCase().includes(searchText))
-                        //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
-                        //console.log(apartment.bostadsområde);
-                        //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
-                        let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==apartment.storlek) : true;
-                        let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==apartment.bostadskö) : true;
-                        let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==apartment.möblerad.toString()) : true;
-                        let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==apartment.lägenhetstyp) : true;
-        
-                        matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesLägenhetstyp && matchesSearch;
-                        
-                        return matches;
-                    }
-                });
-            }
         });
+        function filterBooths() {
+            var searchText = document.getElementById("searchBox").value.toLowerCase();
+            var selectedBostadsområden = document.getElementById("bostadsområdeFilter");
+            var selectedROK = document.getElementById("rokFilter");
+            var selectedVärdar = document.getElementById("värdFilter");
+            var selectedMöblerad = document.getElementById("möbleradFilter");
+            var selectedLägenhetstyp = document.getElementById("lägenhetstypFilter");
+
+
+            selectedBostadsområden = Array.from(selectedBostadsområden.children).filter(item => item.className == "item checked");
+            selectedROK = Array.from(selectedROK.children).filter(item => item.className == "item checked");
+            selectedVärdar = Array.from(selectedVärdar.children).filter(item => item.className == "item checked");
+            selectedMöblerad = Array.from(selectedMöblerad.children).filter(item => item.className == "item checked");
+            selectedLägenhetstyp = Array.from(selectedLägenhetstyp.children).filter(item => item.className == "item checked");
+
+            //console.log(selectedIndustries);
+            selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
+
+
+            
+
+            console.log(selectedBostadsområden);
+            if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
+                iso.arrange({
+                    filter: '*'
+                });
+                return; // No filters applied
+            }
+            console.log(searchText);
+
+
+            iso.arrange({
+                // item element provided as argument
+                filter: function( itemElem ) {
+                    var apartment = itemElem.dataset;
+                    //console.log(apartment);
+                    if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
+                        console.log("No filters");
+                        return true; // No filters applied
+                    }
+                    var matches = false;
+
+                    let matchesSearch = searchText
+                            ? apartment.name?.toLowerCase().includes(searchText) ||
+                            //apartment.storlek.toLowerCase().includes(searchText) ||
+                            apartment.shape?.toLowerCase().includes(searchText) ||
+                            apartment.width?.toLowerCase().includes(searchText) ||
+                            apartment.height?.toLowerCase().includes(searchText) ||
+                            //apartment.kvm.toLowerCase().includes(searchText) ||
+                            (apartment.places || []).some(place => place.toLowerCase().includes(searchText))
+                            : true;
+    
+                    return matchesSearch;
+                    let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==apartment.bostadsområde) : true;
+                    //console.log(matchesSearch);
+                    console.log(apartment.adress.toLowerCase().includes(searchText))
+                    //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
+                    //console.log(apartment.bostadsområde);
+                    //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
+                    let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==apartment.storlek) : true;
+                    let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==apartment.bostadskö) : true;
+                    let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==apartment.möblerad.toString()) : true;
+                    let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==apartment.lägenhetstyp) : true;
+    
+                    matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesLägenhetstyp && matchesSearch;
+                    
+                    return matches;
+                }
+            });
+        }
     </script>
 
 </body>
