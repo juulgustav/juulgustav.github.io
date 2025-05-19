@@ -172,7 +172,7 @@
                     date: item => Date.parse(item.dataset.date),
                     width: item => parseFloat(item.dataset.width),
                     height: item => parseFloat(item.dataset.height),
-                    weight: item => parseFloat(area(item.dataset.width, item.dataset.height, item.dataset.shape)),
+                    weight: item => item.dataset.name,
                 }
                 //getFilterData: {
                 //  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
@@ -248,6 +248,10 @@
                 if (shape == "rect" || shape == "outline")
                 {
                     return width * height;
+                }
+                if (shape == "triangle")
+                {
+                    return width * height/2;
                 }
             }
 

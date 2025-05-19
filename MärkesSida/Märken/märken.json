@@ -220,6 +220,17 @@
     "image": "0.jpg"
   },
   {
+    "date": "2023-10-15T00:00:00",
+    "name": "Datasektionen Bygger Nätverk",
+    "places": [
+      "left-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionen_bygger_nätverk.jpg"
+  },
+  {
     "date": "2023-11-17T00:00:00",
     "name": "Ravet",
     "places": [
@@ -546,7 +557,7 @@
     "places": [
       "right-front-leg-lower"
     ],
-    "shape": "outline",
+    "shape": "triangle",
     "width": 8.0,
     "height": 7.5,
     "image": "ymd.jpg"
@@ -740,17 +751,6 @@
   },
   {
     "date": "2025-04-18T00:00:00",
-    "name": "Vattennationen - Kristin",
-    "places": [
-      "right-front-chest"
-    ],
-    "shape": "rect",
-    "width": 6.0,
-    "height": 6.0,
-    "image": "vattennationen_-_kristin.jpg"
-  },
-  {
-    "date": "2025-04-18T00:00:00",
     "name": "S.T.E.N. Hård",
     "places": [
       "left-front-leg-upper"
@@ -759,6 +759,17 @@
     "width": 4.0,
     "height": 9.5,
     "image": "s.t.e.n._hård.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Vattennationen - Kristin",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "vattennationen_-_kristin.jpg"
   },
   {
     "date": "2025-05-04T00:00:00",
