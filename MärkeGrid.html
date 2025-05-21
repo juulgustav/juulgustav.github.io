@@ -112,6 +112,15 @@
         <!-- Items will be added dynamically -->
     </div>
 
+    <!-- Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <!--<h2>More Information</h2>
+            <p>Here is more detailed info about the marker...</p>-->
+        </div>
+    </div>
+
     <script>
         var apartmentData = [];
         const gridContainer = document.querySelector(".grid");
@@ -127,13 +136,14 @@
             console.log(modTime);
             var totalArea=0;
             var totalPatches=0;
+            index =0;
             apartmentJsonData.forEach(apartment => {
                 //apartment.adress +=", Luleå, Sweden";
                 apartment.date = apartment.date ? new Date(apartment.date) : null;
 
                 apartmentData.push(apartment);
                 //console.log(apartment);
-                const imgSrc = "MärkesSida/Bilder/"+apartment.image;
+                const imgSrc = "MärkesSida/NewCompressed/"+apartment.image;
                 const div = document.createElement("div");
                 div.className = `grid-item ${apartment.lägenhetstyp} ${apartment.bostadsområde}`;
                 div.dataset.name = apartment.name;
@@ -154,9 +164,11 @@
                     <p>${apartment.places.join('\n')}</p>
                     <p>Bredd: ${apartment.width} cm, Höjd: ${apartment.height} cm, Area: ${parseInt(area(apartment.width, apartment.height, apartment.shape),10)}cm²</p>
                     <strong>Datum påsatt:</strong> ${dateSewnOn}<br>
+                    <button id="more-info-btn" onclick="openPopup(${index})" name=${index}>More Info</button>
                 `;
                 gridContainer.appendChild(div);
                 //console.log(div);
+                index++;
             });
             totalArea*= 0.0001;
             document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'})+"<br />Totalt antal märken: "+totalPatches+"<br />Total area: "+(Math.round(totalArea * 1000) / 1000).toFixed(3)+"m²";
@@ -194,7 +206,12 @@
             // Sorting Handler
             document.getElementById("sort-by").addEventListener("change", (event) => {
                 var sortValue = event.target.value;
+                sort(sortValue)
                 
+            });
+
+            function sort(sortValue)
+            {
                 if(sortValue[0]=='*')
                 {
                     sortValue = sortValue.slice(1);
@@ -218,8 +235,23 @@
                     iso.arrange({ sortBy: [sortValue,"weight"], sortAscending: sortSettings});
                 }
                 console.log(event)
-            });
+            }
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
             iso.arrange({ sortBy: 'random'  });
+            function fixSort() {
+                sleep(2000).then(() => { 
+                    sort(document.getElementById("sort-by").value); 
+                    console.log("Resorting during load");
+                    console.log(document.readyState); 
+                    if(document.readyState != "complete") {
+                        fixSort();
+                    }
+                });
+            }
+            fixSort();
+            console.log(document.readyState);
             function distance(lat1, lon1, lat2, lon2)
             {
                 const R = 6371e3; // metres
@@ -236,40 +268,10 @@
                 return R * c; // in metres
             }
 
-            function area(width, height, shape)
-            {
-                if (shape == "circle")
-                {
-                    return Math.pow(width / 2, 2) * Math.PI;
-                }
-                if (shape == "oval")
-                {
-                    return width / 2 * height / 2 * Math.PI;
-                }
-                if (shape == "rect" || shape == "outline")
-                {
-                    return width * height;
-                }
-                if (shape == "triangle")
-                {
-                    return width * height/2;
-                }
-            }
+            
 
 
-            function stylizeDate(date)
-            {
-                console.log(date);
-                let dateSewnOn = date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
-
-                dateSewnOn = dateSewnOn.replace(/(\p{L})/u, match => match.toUpperCase());
-
-                if(date.getYear() != new Date().getYear())
-                {
-                    dateSewnOn += " "+date.toLocaleDateString('sv-SE', { year: 'numeric' });
-                }
-                return dateSewnOn
-            }
+            
 
 
             //populateDropdowns();
@@ -402,6 +404,39 @@
     
     
         });
+
+        function stylizeDate(date)
+        {
+            console.log(date);
+            let dateSewnOn = date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+
+            dateSewnOn = dateSewnOn.replace(/(\p{L})/u, match => match.toUpperCase());
+
+            if(date.getYear() != new Date().getYear())
+            {
+                dateSewnOn += " "+date.toLocaleDateString('sv-SE', { year: 'numeric' });
+            }
+            return dateSewnOn
+        }
+        function area(width, height, shape)
+        {
+            if (shape == "circle")
+            {
+                return Math.pow(width / 2, 2) * Math.PI;
+            }
+            if (shape == "oval")
+            {
+                return width / 2 * height / 2 * Math.PI;
+            }
+            if (shape == "rect" || shape == "outline")
+            {
+                return width * height;
+            }
+            if (shape == "triangle")
+            {
+                return width * height/2;
+            }
+        }
         function filterBooths() {
             var searchText = document.getElementById("searchBox").value.toLowerCase();
             var selectedBostadsområden = document.getElementById("bostadsområdeFilter");
@@ -471,6 +506,40 @@
                     return matches;
                 }
             });
+        }
+
+        function openPopup(index){
+            console.log("Button clicked!");
+            console.log(index);
+            const modalContent = document.querySelector('.modal-content');
+            //let apartment =apartmentData.find(o => o.marker.popup = pop);
+            let apartment =apartmentData[index];
+            let dateSewnOn = stylizeDate(apartment.date);
+            const imgSrc = "MärkesSida/Bilder/"+apartment.image;
+            // Update the modal content dynamically
+            modalContent.innerHTML = `
+                    <span class="close-btn">&times;</span>
+                    <h1>${apartment.name}</h1>
+                    <img src="${imgSrc}" alt="Märkesbild" style="max-width:90%; max-height:700px;">
+                    <p><strong>${apartment.shape}</strong></p>
+                    <p><strong>Antal: ${apartment.places.length}</strong></p>
+                    <p>${apartment.places.join('\n')}</p>
+                    <p>Bredd: ${apartment.width} cm, Höjd: ${apartment.height} cm, Area: ${parseInt(area(apartment.width, apartment.height, apartment.shape),10)}cm²</p>
+                    <strong>Datum påsatt:</strong> ${dateSewnOn}<br>
+                `;
+
+            document.getElementById('info-modal').style.display = "block";
+
+            // Close modal when the user clicks on the close button (×)
+            document.querySelector('.close-btn').addEventListener('click', function() {
+                document.getElementById('info-modal').style.display = "none";
+            });
+            // Close modal if the user clicks outside the modal
+            //window.onclick = function(event) {
+            //    if (event.target == document.getElementById('info-modal')) {
+            //        document.getElementById('info-modal').style.display = "none";
+            //    }
+            //};
         }
     </script>
 

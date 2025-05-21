@@ -93,9 +93,9 @@
     "places": [
       "right-front-chest"
     ],
-    "shape": "circle",
-    "width": 7.0,
-    "height": 7.0,
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
     "image": "philm_40.jpg"
   },
   {
@@ -122,6 +122,17 @@
   },
   {
     "date": "2023-09-29T00:00:00",
+    "name": "Datasektionens Öhlhäfvarlag (DÖ) Kapsyl",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "dö_kapsyl.jpg"
+  },
+  {
+    "date": "2023-09-29T00:00:00",
     "name": "Datateknisk linje",
     "places": [
       "left-front-leg-upper"
@@ -130,17 +141,6 @@
     "width": 10.0,
     "height": 8.0,
     "image": "datateknisk_linje.jpg"
-  },
-  {
-    "date": "2023-09-29T00:00:00",
-    "name": "Dö Kapsyl",
-    "places": [
-      "left-front-leg-upper"
-    ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "dö_kapsyl.jpg"
   },
   {
     "date": "2023-09-29T00:00:00",
@@ -265,6 +265,17 @@
   },
   {
     "date": "2023-11-22T00:00:00",
+    "name": "Sektionskvällen 2023",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "sektionskvällen_2023.jpg"
+  },
+  {
+    "date": "2023-11-22T00:00:00",
     "name": "Teknologkåren 50 år",
     "places": [
       "left-front-leg-upper"
@@ -298,7 +309,7 @@
   },
   {
     "date": "2023-12-13T00:00:00",
-    "name": "Teknisk Fysik 2017",
+    "name": "Teknisk Fysik 2017 Litet Ryggmärke",
     "places": [
       "left-back-leg-upper"
     ],
@@ -396,17 +407,6 @@
     "image": "1+1=10.jpg"
   },
   {
-    "date": "2024-04-19T00:00:00",
-    "name": "Datateknik 2021 Litet Ryggmärke",
-    "places": [
-      "right-front-leg-lower"
-    ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "datateknik_2021_litet_ryggmärke.jpg"
-  },
-  {
     "date": "2024-05-01T00:00:00",
     "name": "Pedro",
     "places": [
@@ -438,6 +438,17 @@
     "width": 8.0,
     "height": 8.0,
     "image": "bunkern.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
+    "name": "Europeiska Unionen Halvbåge",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 4.0,
+    "image": "europeiska_unionen_halvbåge.jpg"
   },
   {
     "date": "2024-05-18T00:00:00",
@@ -473,19 +484,8 @@
     "image": "skåne_halvbåge.jpg"
   },
   {
-    "date": "2024-05-18T00:00:00",
-    "name": "Europeiska Unionen Halvbåge",
-    "places": [
-      "right-arm"
-    ],
-    "shape": "outline",
-    "width": 8.0,
-    "height": 4.0,
-    "image": "europeiska_unionen_halvbåge.jpg"
-  },
-  {
     "date": "2024-08-15T00:00:00",
-    "name": "Tillämpad Artificiell Intelligens 2023",
+    "name": "Tillämpad Artificiell Intelligens 2023 Ryggmärke",
     "places": [
       "back-backside",
       "inside-back-backside"
@@ -641,6 +641,17 @@
   },
   {
     "date": "2024-10-06T00:00:00",
+    "name": "Datasektionen 40 år",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionen_40_år.jpg"
+  },
+  {
+    "date": "2024-10-06T00:00:00",
     "name": "Datasektionen 40 år Jubileumsbanquetten",
     "places": [
       "right-arm"
@@ -663,17 +674,6 @@
   },
   {
     "date": "2024-10-06T00:00:00",
-    "name": "Datasektionen 40 år",
-    "places": [
-      "right-arm"
-    ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "datasektionen_40_år.jpg"
-  },
-  {
-    "date": "2024-10-06T00:00:00",
     "name": "Not All Those Who Wander Are Lost",
     "places": [
       "right-arm"
@@ -682,6 +682,17 @@
     "width": 8.0,
     "height": 8.0,
     "image": "not_all_those_who_wander_are_lost.jpg"
+  },
+  {
+    "date": "2024-10-06T00:00:00",
+    "name": "XP-EL",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "xp-el.jpg"
   },
   {
     "date": "2024-10-18T00:00:00",
@@ -704,6 +715,17 @@
     "width": 7.0,
     "height": 5.0,
     "image": "ica_slemmis.jpg"
+  },
+  {
+    "date": "2024-10-19T00:00:00",
+    "name": "Pokémon",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "oval",
+    "width": 11.0,
+    "height": 7.0,
+    "image": "pokémon.jpg"
   },
   {
     "date": "2024-10-19T00:00:00",
@@ -792,6 +814,28 @@
     "width": 9.0,
     "height": 6.5,
     "image": "lekmatta.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "Ped6 23-24",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "triangle",
+    "width": 9.0,
+    "height": 8.0,
+    "image": "ped6_23-24.jpg"
+  },
+  {
+    "date": "2024-11-16T00:00:00",
+    "name": "Rymd -97",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "triangle",
+    "width": 9.0,
+    "height": 9.0,
+    "image": "rymd_-97.jpg"
   },
   {
     "date": "2024-11-16T00:00:00",
@@ -957,6 +1001,94 @@
     "width": 4.0,
     "height": 6.5,
     "image": "gameboy_blue.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Bite My Shiny Metall Ass",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "bite_my_shiny_metall_ass.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Datasektionens Öhlhäfvarlag (DÖ)",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionens_öhlhäfvarlag_(dö).jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Ovve Onsdag",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "ovve_onsdag.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Skam",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "skam.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Unga Aktiesparare",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "unga_aktiesparare.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Wave of Kanagawa",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 9.0,
+    "height": 9.0,
+    "image": "wave_of_kanagawa.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "XP-EL 50 år",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "xp-el_50_år.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Åreskutans Topp",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "åreskutans_topp.jpg"
   },
   {
     "date": "2025-03-30T00:00:00",
@@ -1146,10 +1278,22 @@
     "image": "vattennationen_-_kristin.jpg"
   },
   {
+    "date": "2025-04-19T00:00:00",
+    "name": "Datateknik 2021 Litet Ryggmärke",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datateknik_2021_litet_ryggmärke.jpg"
+  },
+  {
     "date": "2025-05-04T00:00:00",
     "name": "I love Philm",
     "places": [
-      "left-front-leg-upper"
+      "left-front-leg-upper",
+      "left-front-leg-lower"
     ],
     "shape": "outline",
     "width": 5.5,
@@ -1188,5 +1332,16 @@
     "width": 7.5,
     "height": 7.5,
     "image": "snopp_2023.jpg"
+  },
+  {
+    "date": "2025-05-20T00:00:00+02:00",
+    "name": "Valborg 2024",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "valborg_2024.jpg"
   }
 ]
