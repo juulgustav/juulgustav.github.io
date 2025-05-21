@@ -121,7 +121,7 @@
     </div>
 
     <script>
-        var apartmentData = [];
+        var märkeData = [];
         const gridContainer = document.querySelector(".grid");
         var iso;
         // Sample Data
@@ -129,39 +129,39 @@
         fetch('MärkesSida/Märken/märken.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
         fetch('MärkesSida/Märken/märken.json?nocache='+ (new Date()).getTime()).then(response => response.headers.get('Last-Modified')),
         ])
-        .then(([apartmentJsonData, modTime]) => {
-            console.log(apartmentJsonData);
+        .then(([märkeJsonData, modTime]) => {
+            console.log(märkeJsonData);
             modTime = new Date(modTime);
             console.log(modTime);
             var totalArea=0;
             var totalPatches=0;
             index =0;
-            apartmentJsonData.forEach(apartment => {
+            märkeJsonData.forEach(märke => {
                 //apartment.adress +=", Luleå, Sweden";
-                apartment.date = apartment.date ? new Date(apartment.date) : null;
+                märke.date = märke.date ? new Date(märke.date) : null;
 
-                apartmentData.push(apartment);
+                märkeData.push(märke);
                 //console.log(apartment);
-                const imgSrc = "MärkesSida/NewCompressed/"+apartment.image;
+                const imgSrc = "MärkesSida/NewCompressed/"+märke.image;
                 const div = document.createElement("div");
-                div.className = `grid-item ${apartment.lägenhetstyp} ${apartment.bostadsområde}`;
-                div.dataset.name = apartment.name;
-                div.dataset.antal = apartment.places.length;
-                div.dataset.date = apartment.date;
-                div.dataset.width = apartment.width;
-                div.dataset.height = apartment.height;
-                div.dataset.shape = apartment.shape;
+                div.className = `grid-item ${märke.lägenhetstyp} ${märke.bostadsområde}`;
+                div.dataset.name = märke.name;
+                div.dataset.antal = märke.places.length;
+                div.dataset.date = märke.date;
+                div.dataset.width = märke.width;
+                div.dataset.height = märke.height;
+                div.dataset.shape = märke.shape;
                 //console.log(div.dataset)
-                let dateSewnOn = stylizeDate(apartment.date);
-                totalArea += area(apartment.width, apartment.height, apartment.shape)* apartment.places.length;
-                totalPatches +=apartment.places.length;
+                let dateSewnOn = stylizeDate(märke.date);
+                totalArea += area(märke.width, märke.height, märke.shape)* märke.places.length;
+                totalPatches +=märke.places.length;
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Märkesbild">
-                    <h3>${apartment.name}</h3>
-                    <p><strong>${apartment.shape}</strong></p>
-                    <p><strong>Antal: ${apartment.places.length}</strong></p>
-                    <p>${apartment.places.join('\n')}</p>
-                    <p>Bredd: ${apartment.width} cm, Höjd: ${apartment.height} cm, Area: ${parseInt(area(apartment.width, apartment.height, apartment.shape),10)}cm²</p>
+                    <h3>${märke.name}</h3>
+                    <p><strong>${märke.shape}</strong></p>
+                    <p><strong>Antal: ${märke.places.length}</strong></p>
+                    <p>${märke.places.join('\n')}</p>
+                    <p>Bredd: ${märke.width} cm, Höjd: ${märke.height} cm, Area: ${parseInt(area(märke.width, märke.height, märke.shape),10)}cm²</p>
                     <strong>Datum påsatt:</strong> ${dateSewnOn}<br>
                     <button id="more-info-btn" onclick="openPopup(${index})" name=${index}>More Info</button>
                 `;
@@ -317,19 +317,19 @@
     
     
     
-                Object.values(apartmentData).forEach(apartment => {
-                    bostadsområden.add(apartment.bostadsområde);
-                    rok.add(apartment.storlek);
-                    värdar.add(apartment.bostadskö);
-                    möblerad.add(apartment.möblerad);
-                    lägenhetstyp.add(apartment.lägenhetstyp);
+                Object.values(märkeData).forEach(märke => {
+                    bostadsområden.add(märke.bostadsområde);
+                    rok.add(märke.storlek);
+                    värdar.add(märke.bostadskö);
+                    möblerad.add(märke.möblerad);
+                    lägenhetstyp.add(märke.lägenhetstyp);
     
                     
-                    bostadsområdeCount[apartment.bostadsområde] = (bostadsområdeCount[apartment.bostadsområde] || 0) + 1
-                    rokCount[apartment.storlek] = (rokCount[apartment.storlek] || 0) + 1
-                    värdarCount[apartment.bostadskö] = (värdarCount[apartment.bostadskö] || 0) + 1
-                    möbleradCount[apartment.möblerad] = (möbleradCount[apartment.möblerad] || 0) + 1
-                    lägenhetstypCount[apartment.lägenhetstyp] = (lägenhetstypCount[apartment.lägenhetstyp] || 0) + 1
+                    bostadsområdeCount[märke.bostadsområde] = (bostadsområdeCount[märke.bostadsområde] || 0) + 1
+                    rokCount[märke.storlek] = (rokCount[märke.storlek] || 0) + 1
+                    värdarCount[märke.bostadskö] = (värdarCount[märke.bostadskö] || 0) + 1
+                    möbleradCount[märke.möblerad] = (möbleradCount[märke.möblerad] || 0) + 1
+                    lägenhetstypCount[märke.lägenhetstyp] = (lägenhetstypCount[märke.lägenhetstyp] || 0) + 1
     
                 });
     
@@ -470,7 +470,7 @@
             iso.arrange({
                 // item element provided as argument
                 filter: function( itemElem ) {
-                    var apartment = itemElem.dataset;
+                    var märke = itemElem.dataset;
                     //console.log(apartment);
                     if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
                         console.log("No filters");
@@ -479,26 +479,26 @@
                     var matches = false;
 
                     let matchesSearch = searchText
-                            ? apartment.name?.toLowerCase().includes(searchText) ||
+                            ? märke.name?.toLowerCase().includes(searchText) ||
                             //apartment.storlek.toLowerCase().includes(searchText) ||
-                            apartment.shape?.toLowerCase().includes(searchText) ||
-                            apartment.width?.toLowerCase().includes(searchText) ||
-                            apartment.height?.toLowerCase().includes(searchText) ||
+                            märke.shape?.toLowerCase().includes(searchText) ||
+                            märke.width?.toLowerCase().includes(searchText) ||
+                            märke.height?.toLowerCase().includes(searchText) ||
                             //apartment.kvm.toLowerCase().includes(searchText) ||
-                            (apartment.places || []).some(place => place.toLowerCase().includes(searchText))
+                            (märke.places || []).some(place => place.toLowerCase().includes(searchText))
                             : true;
     
                     return matchesSearch;
-                    let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==apartment.bostadsområde) : true;
+                    let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==märke.bostadsområde) : true;
                     //console.log(matchesSearch);
-                    console.log(apartment.adress.toLowerCase().includes(searchText))
+                    console.log(märke.adress.toLowerCase().includes(searchText))
                     //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
                     //console.log(apartment.bostadsområde);
                     //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
-                    let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==apartment.storlek) : true;
-                    let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==apartment.bostadskö) : true;
-                    let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==apartment.möblerad.toString()) : true;
-                    let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==apartment.lägenhetstyp) : true;
+                    let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==märke.storlek) : true;
+                    let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==märke.bostadskö) : true;
+                    let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==märke.möblerad.toString()) : true;
+                    let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==märke.lägenhetstyp) : true;
     
                     matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesLägenhetstyp && matchesSearch;
                     
@@ -512,18 +512,18 @@
             console.log(index);
             const modalContent = document.querySelector('.modal-content');
             //let apartment =apartmentData.find(o => o.marker.popup = pop);
-            let apartment =apartmentData[index];
-            let dateSewnOn = stylizeDate(apartment.date);
-            const imgSrc = "MärkesSida/Bilder/"+apartment.image;
+            let märke =märkeData[index];
+            let dateSewnOn = stylizeDate(märke.date);
+            const imgSrc = "MärkesSida/Bilder/"+märke.image;
             // Update the modal content dynamically
             modalContent.innerHTML = `
                     <span class="close-btn">&times;</span>
-                    <h1>${apartment.name}</h1>
+                    <h1>${märke.name}</h1>
                     <img src="${imgSrc}" alt="Märkesbild" style="max-width:90%; max-height:700px;">
-                    <p><strong>${apartment.shape}</strong></p>
-                    <p><strong>Antal: ${apartment.places.length}</strong></p>
-                    <p>${apartment.places.join('\n')}</p>
-                    <p>Bredd: ${apartment.width} cm, Höjd: ${apartment.height} cm, Area: ${parseInt(area(apartment.width, apartment.height, apartment.shape),10)}cm²</p>
+                    <p><strong>${märke.shape}</strong></p>
+                    <p><strong>Antal: ${märke.places.length}</strong></p>
+                    <p>${märke.places.join('\n')}</p>
+                    <p>Bredd: ${märke.width} cm, Höjd: ${märke.height} cm, Area: ${parseInt(area(märke.width, märke.height, märke.shape),10)}cm²</p>
                     <strong>Datum påsatt:</strong> ${dateSewnOn}<br>
                 `;
 
