@@ -174,8 +174,9 @@
                 //console.log(div);
                 index++;
             });
+            var averageArea = totalArea/totalPatches;
             totalArea*= 0.0001;
-            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'})+"<br />Totalt antal märken: "+totalPatches+"<br />Total area: "+(Math.round(totalArea * 1000) / 1000).toFixed(3)+"m²";
+            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'})+"<br />Totalt antal märken: "+totalPatches+"<br />Total area: "+(Math.round(totalArea * 1000) / 1000).toFixed(3)+"m²<br />Genomsnitt area: "+(Math.round(averageArea * 10) / 10).toFixed(1)+"cm²";
             // Initialize Isotope
             var stuk = [65.61784180109724, 22.14376757827861];
             var kårken =[65.61757351039493, 22.13427124826677];
