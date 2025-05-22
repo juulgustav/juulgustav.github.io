@@ -47,7 +47,7 @@
 
         </select> -->
 
-        <select id="sort-by">
+        <select id="sort-by" autocomplete="off">
             <option value="random" selected>Random</option>
             <option value="hyra">Billigast</option>
             <option value="*hyra">Dyrast</option>
@@ -228,7 +228,12 @@
             // Sorting Handler
             document.getElementById("sort-by").addEventListener("change", (event) => {
                 var sortValue = event.target.value;
+                sort(sortValue)
                 
+            });
+
+            function sort(sortValue)
+            {
                 if(sortValue[0]=='*')
                 {
                     sortValue = sortValue.slice(1);
@@ -252,8 +257,23 @@
                     iso.arrange({ sortBy: [sortValue,"weight"], sortAscending: sortSettings});
                 }
                 console.log(event)
-            });
+            }
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
             iso.arrange({ sortBy: 'random'  });
+            function fixSort() {
+                sleep(2000).then(() => { 
+                    sort(document.getElementById("sort-by").value); 
+                    console.log("Resorting during load");
+                    console.log(document.readyState); 
+                    if(document.readyState != "complete") {
+                        fixSort();
+                    }
+                });
+            }
+            fixSort();
+            console.log(document.readyState);
             function distance(lat1, lon1, lat2, lon2)
             {
                 const R = 6371e3; // metres

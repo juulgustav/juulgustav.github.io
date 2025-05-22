@@ -518,7 +518,7 @@
             modalContent.innerHTML = `
                     <span class="close-btn">&times;</span>
                     <h1>${märke.name}</h1>
-                    <img src="${imgSrc}" alt="Märkesbild" style="max-width:90%; max-height:700px;">
+                    <img src="${imgSrc}" alt="Märkesbild" style="max-width:100%; max-height:700px;">
                     <p><strong>${märke.shape}</strong></p>
                     <p><strong>Antal: ${märke.places.length}</strong></p>
                     <p>${märke.places.join('\n')}</p>
@@ -527,7 +527,22 @@
                 `;
 
             document.getElementById('info-modal').style.display = "block";
+            let firstClick=true;
+            window.addEventListener('click', click);
 
+            function click(e){
+                if (document.getElementById('info-modal').contains(e.target)){
+                    console.log("Click in Box!");
+                } else{
+                    if(firstClick) {
+                        firstClick=false;
+                        return;
+                    }
+                    console.log("Click outside Box!");
+                    window.removeEventListener('click', click);
+                    document.getElementById('info-modal').style.display = "none";
+                }
+            }
             // Close modal when the user clicks on the close button (×)
             document.querySelector('.close-btn').addEventListener('click', function() {
                 document.getElementById('info-modal').style.display = "none";
