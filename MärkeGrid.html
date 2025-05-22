@@ -52,6 +52,8 @@
             <option value="date">Äldst</option>
             <option value="*width">Bredd</option>
             <option value="*height">Höjd</option>
+            <option value="ratio">Smal</option>
+            <option value="*ratio">Tjock</option>
         </select>
 
         <div class="container">
@@ -188,6 +190,7 @@
                     width: item => parseFloat(item.dataset.width),
                     height: item => parseFloat(item.dataset.height),
                     weight: item => item.dataset.name,
+                    ratio: item => parseFloat(item.dataset.width/item.dataset.height),
                 }
                 //getFilterData: {
                 //  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
