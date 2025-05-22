@@ -254,6 +254,17 @@
   },
   {
     "date": "2023-10-15T00:00:00",
+    "name": "Allt Kommer Att Bli Bra",
+    "places": [
+      "right-front-collar"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 3.0,
+    "image": "allt_kommer_att_bli_bra.jpg"
+  },
+  {
+    "date": "2023-10-15T00:00:00",
     "name": "Datasektionen Bygger Nätverk",
     "places": [
       "left-front-leg-lower"
@@ -262,6 +273,61 @@
     "width": 8.0,
     "height": 8.0,
     "image": "datasektionen_bygger_nätverk.jpg"
+  },
+  {
+    "date": "2023-10-15T00:00:00",
+    "name": "Enkelrikta Öresundsbron",
+    "places": [
+      "back-collar"
+    ],
+    "shape": "rect",
+    "width": 9.5,
+    "height": 3.5,
+    "image": "enkelrikta_öresundsbron.jpg"
+  },
+  {
+    "date": "2023-10-15T00:00:00",
+    "name": "Nöd Öl",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 8.5,
+    "height": 4.0,
+    "image": "nöd_öl.jpg"
+  },
+  {
+    "date": "2023-10-15T00:00:00",
+    "name": "Resistance Is Futile",
+    "places": [
+      "left-front-collar"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 3.0,
+    "image": "resistance_is_futile.jpg"
+  },
+  {
+    "date": "2023-10-15T00:00:00",
+    "name": "Skåne Flagga",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 3.5,
+    "image": "skåne_flagga.jpg"
+  },
+  {
+    "date": "2023-11-10T00:00:00",
+    "name": "Tentaröj Halloween 2023",
+    "places": [
+      "left-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "tentaröj_halloween_2023.jpg"
   },
   {
     "date": "2023-11-17T00:00:00",
@@ -474,6 +540,17 @@
   },
   {
     "date": "2024-05-18T00:00:00",
+    "name": "Among Us Red",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 4.5,
+    "height": 5.5,
+    "image": "among_us_red.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
     "name": "Europeiska Unionen Halvbåge",
     "places": [
       "right-arm"
@@ -482,6 +559,17 @@
     "width": 8.0,
     "height": 4.0,
     "image": "europeiska_unionen_halvbåge.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
+    "name": "Larv Pub 7",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 6.0,
+    "image": "larv_pub_7.jpg"
   },
   {
     "date": "2024-05-18T00:00:00",
@@ -582,6 +670,17 @@
     "width": 9.0,
     "height": 5.5,
     "image": "phösare_2024.jpg"
+  },
+  {
+    "date": "2024-08-20T00:00:00",
+    "name": "Mytikas",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "mytikas.jpg"
   },
   {
     "date": "2024-08-21T00:00:00",
@@ -728,6 +827,28 @@
     "image": "xp-el.jpg"
   },
   {
+    "date": "2024-10-15T00:00:00",
+    "name": "Bolaget",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "outline",
+    "width": 7.5,
+    "height": 8.0,
+    "image": "bolaget.jpg"
+  },
+  {
+    "date": "2024-10-15T00:00:00",
+    "name": "Larv Pub 8",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 6.0,
+    "image": "larv_pub_8.jpg"
+  },
+  {
     "date": "2024-10-18T00:00:00",
     "name": "Essex",
     "places": [
@@ -759,6 +880,50 @@
     "width": 6.0,
     "height": 7.0,
     "image": "sektionskvällen_2024.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
+    "name": "Fire Bender",
+    "places": [
+      "back-inside-backside"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "fire_bender.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
+    "name": "Water Bender",
+    "places": [
+      "back-inside-backside"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "water_bender.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
+    "name": "Air Bender",
+    "places": [
+      "right-front-inside-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "air_bender.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
+    "name": "Earth Bender",
+    "places": [
+      "right-front-inside-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "earth_bender.jpg"
   },
   {
     "date": "2024-10-19T00:00:00",
@@ -803,6 +968,39 @@
     "width": 8.5,
     "height": 2.5,
     "image": "ur_trafiken.jpg"
+  },
+  {
+    "date": "2024-11-10T00:00:00",
+    "name": "Astronomisk Ungdom",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "astronomisk_ungdom.jpg"
+  },
+  {
+    "date": "2024-11-10T00:00:00",
+    "name": "Mars Exploration Rover",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "mars_exploration_rover.jpg"
+  },
+  {
+    "date": "2024-11-10T00:00:00",
+    "name": "Nasa",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.0,
+    "height": 7.0,
+    "image": "nasa.jpg"
   },
   {
     "date": "2024-11-15T00:00:00",
@@ -959,6 +1157,17 @@
     "image": "ths_armada.jpg"
   },
   {
+    "date": "2024-12-10T00:00:00",
+    "name": "Arla",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 9.0,
+    "height": 8.5,
+    "image": "arla.jpg"
+  },
+  {
     "date": "2024-12-15T00:00:00",
     "name": "Larv Rhomb",
     "places": [
@@ -968,6 +1177,39 @@
     "width": 9.5,
     "height": 5.0,
     "image": "larv_rhomb.jpg"
+  },
+  {
+    "date": "2025-01-10T00:00:00",
+    "name": "Larv Pub 9",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 6.0,
+    "image": "larv_pub_9.jpg"
+  },
+  {
+    "date": "2025-01-10T00:00:00",
+    "name": "Tails",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "outline",
+    "width": 8.5,
+    "height": 8.5,
+    "image": "tails.jpg"
+  },
+  {
+    "date": "2025-01-10T00:00:00",
+    "name": "The Division",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "outline",
+    "width": 9.0,
+    "height": 8.0,
+    "image": "the_division.jpg"
   },
   {
     "date": "2025-01-24T00:00:00",
@@ -1055,7 +1297,7 @@
     "shape": "hexagon",
     "width": 5.0,
     "height": 5.5,
-    "image": "c#.jpg"
+    "image": "c_sharp.jpg"
   },
   {
     "date": "2025-02-10T00:00:00",
@@ -1375,6 +1617,28 @@
     "width": 6.0,
     "height": 6.0,
     "image": "luftnationen_-_kristin.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Portal Left - Kristin",
+    "places": [
+      "left-front-shoulder"
+    ],
+    "shape": "rect",
+    "width": 4.0,
+    "height": 8.5,
+    "image": "portal_left_-_kristin.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "Portal Right - Kristin",
+    "places": [
+      "left-front-shoulder"
+    ],
+    "shape": "rect",
+    "width": 4.0,
+    "height": 8.5,
+    "image": "portal_right_-_kristin.jpg"
   },
   {
     "date": "2025-04-18T00:00:00",

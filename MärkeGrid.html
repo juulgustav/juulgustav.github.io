@@ -151,6 +151,10 @@
                 div.dataset.width = märke.width;
                 div.dataset.height = märke.height;
                 div.dataset.shape = märke.shape;
+                div.dataset.places = märke.places;
+                div.dataset.index = index;
+                console.log(märke.places);
+                console.log("Typ av märke.places:", typeof märke.places, märke.places);
                 //console.log(div.dataset)
                 let dateSewnOn = stylizeDate(märke.date);
                 totalArea += area(märke.width, märke.height, märke.shape)* märke.places.length;
@@ -434,6 +438,10 @@
             {
                 return width * height/2;
             }
+            if (shape == "hexagon")
+            {
+                return 3/2*Math.sqrt(3)*Math.pow(width /Math.sqrt(3),2);
+            }
         }
         function filterBooths() {
             var searchText = document.getElementById("searchBox").value.toLowerCase();
@@ -469,43 +477,48 @@
             iso.arrange({
                 // item element provided as argument
                 filter: function( itemElem ) {
-                    var märke = itemElem.dataset;
+                    let märke =märkeData[itemElem.dataset.index];
                     //console.log(apartment);
                     if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
                         console.log("No filters");
                         return true; // No filters applied
                     }
-                    var matches = false;
-
+                    //var matches = false;
+                    console.log(märke);
+                    console.log("Typ av märke.places:", typeof märke.places, märke.places);
                     let matchesSearch = searchText
                             ? märke.name?.toLowerCase().includes(searchText) ||
                             //apartment.storlek.toLowerCase().includes(searchText) ||
                             märke.shape?.toLowerCase().includes(searchText) ||
-                            märke.width?.toLowerCase().includes(searchText) ||
-                            märke.height?.toLowerCase().includes(searchText) ||
+                            märke.width.toString().toLowerCase().includes(searchText) ||
+                            märke.height.toString().toLowerCase().includes(searchText) ||
                             //apartment.kvm.toLowerCase().includes(searchText) ||
                             (märke.places || []).some(place => place.toLowerCase().includes(searchText))
+                            //märke.places[0].toLowerCase().includes(searchText)
                             : true;
     
                     return matchesSearch;
-                    let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==märke.bostadsområde) : true;
+                    //let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==märke.bostadsområde) : true;
                     //console.log(matchesSearch);
-                    console.log(märke.adress.toLowerCase().includes(searchText))
+                    //console.log(märke.adress.toLowerCase().includes(searchText))
                     //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
                     //console.log(apartment.bostadsområde);
                     //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
-                    let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==märke.storlek) : true;
-                    let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==märke.bostadskö) : true;
-                    let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==märke.möblerad.toString()) : true;
-                    let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==märke.lägenhetstyp) : true;
+                    //let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==märke.storlek) : true;
+                    //let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==märke.bostadskö) : true;
+                    //let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==märke.möblerad.toString()) : true;
+                    //let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==märke.lägenhetstyp) : true;
     
-                    matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesLägenhetstyp && matchesSearch;
+                    //matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesLägenhetstyp && matchesSearch;
                     
-                    return matches;
+                    //return matches;
                 }
             });
         }
 
+        function isMobile() {
+            return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        }
         function openPopup(index){
             console.log("Button clicked!");
             console.log(index);
@@ -515,10 +528,11 @@
             let dateSewnOn = stylizeDate(märke.date);
             const imgSrc = "MärkesSida/Bilder/"+märke.image;
             // Update the modal content dynamically
+            const imgStyle= isMobile()? "max-width:100%; max-height:700px;":  "max-width:90%; max-height:70%;";
             modalContent.innerHTML = `
                     <span class="close-btn">&times;</span>
                     <h1>${märke.name}</h1>
-                    <img src="${imgSrc}" alt="Märkesbild" style="max-width:100%; max-height:700px;">
+                    <img src="${imgSrc}" alt="Märkesbild" style="${imgStyle}">
                     <p><strong>${märke.shape}</strong></p>
                     <p><strong>Antal: ${märke.places.length}</strong></p>
                     <p>${märke.places.join('\n')}</p>
