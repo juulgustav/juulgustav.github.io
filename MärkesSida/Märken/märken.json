@@ -220,6 +220,39 @@
     "image": "0.jpg"
   },
   {
+    "date": "2023-10-06T00:00:00",
+    "name": "Hexagons Are the Bestagons",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "hexagon",
+    "width": 6.0,
+    "height": 6.5,
+    "image": "hexagons_are_the_bestagons.jpg"
+  },
+  {
+    "date": "2023-10-06T00:00:00",
+    "name": "Rollspels Phaesten - Utomhussittningen 2022",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "hexagon",
+    "width": 6.5,
+    "height": 8.0,
+    "image": "rollspels_phaesten_-_utomhussittningen_2022.jpg"
+  },
+  {
+    "date": "2023-10-06T00:00:00",
+    "name": "Sektionskvällen 2022",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "hexagon",
+    "width": 6.5,
+    "height": 8.0,
+    "image": "sektionskvällen_2022.jpg"
+  },
+  {
     "date": "2023-10-15T00:00:00",
     "name": "Datasektionen Bygger Nätverk",
     "places": [
@@ -706,6 +739,28 @@
     "image": "essex.jpg"
   },
   {
+    "date": "2024-10-18T00:00:00",
+    "name": "Far Far Away Phaesten - Utomhussittningen 2024",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "hexagon",
+    "width": 6.0,
+    "height": 7.0,
+    "image": "far_far_away_phaesten_-_utomhussittningen_2024.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
+    "name": "Sektionskvällen 2024",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "hexagon",
+    "width": 6.0,
+    "height": 7.0,
+    "image": "sektionskvällen_2024.jpg"
+  },
+  {
     "date": "2024-10-19T00:00:00",
     "name": "ICA Slemmis",
     "places": [
@@ -893,6 +948,17 @@
     "image": "taco_phaesten_2024.jpg"
   },
   {
+    "date": "2024-12-06T00:00:00",
+    "name": "THS Armada",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "hexagon",
+    "width": 7.0,
+    "height": 8.0,
+    "image": "ths_armada.jpg"
+  },
+  {
     "date": "2024-12-15T00:00:00",
     "name": "Larv Rhomb",
     "places": [
@@ -981,6 +1047,50 @@
     "image": "luleå_teatern.jpg"
   },
   {
+    "date": "2025-02-10T00:00:00",
+    "name": "C#",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "hexagon",
+    "width": 5.0,
+    "height": 5.5,
+    "image": "c#.jpg"
+  },
+  {
+    "date": "2025-02-10T00:00:00",
+    "name": "C++",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "hexagon",
+    "width": 5.0,
+    "height": 5.5,
+    "image": "c++.jpg"
+  },
+  {
+    "date": "2025-02-10T00:00:00",
+    "name": "Reservat",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "hexagon",
+    "width": 6.0,
+    "height": 6.5,
+    "image": "reservat.jpg"
+  },
+  {
+    "date": "2025-02-10T00:00:00",
+    "name": "Space Scout",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "hexagon",
+    "width": 6.5,
+    "height": 7.5,
+    "image": "space_scout.jpg"
+  },
+  {
     "date": "2025-02-17T00:00:00",
     "name": "Snopp 2025",
     "places": [
@@ -1056,6 +1166,17 @@
     "width": 7.0,
     "height": 7.0,
     "image": "unga_aktiesparare.jpg"
+  },
+  {
+    "date": "2025-03-22T00:00:00",
+    "name": "Valborg 2024",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "valborg_2024.jpg"
   },
   {
     "date": "2025-03-22T00:00:00",
@@ -1301,6 +1422,39 @@
     "image": "i_love_philm.jpg"
   },
   {
+    "date": "2025-05-09T00:00:00",
+    "name": "Kaffe - Hearthstone",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "kaffe_-_hearthstone.jpg"
+  },
+  {
+    "date": "2025-05-09T00:00:00",
+    "name": "Studiebidrag - Hearthstone",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "studiebidrag_-_hearthstone.jpg"
+  },
+  {
+    "date": "2025-05-09T00:00:00",
+    "name": "Tentaresultat",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "tentaresultat.jpg"
+  },
+  {
     "date": "2025-05-10T00:00:00",
     "name": "Snopp 2020",
     "places": [
@@ -1332,16 +1486,5 @@
     "width": 7.5,
     "height": 7.5,
     "image": "snopp_2023.jpg"
-  },
-  {
-    "date": "2025-03-22T00:00:00",
-    "name": "Valborg 2024",
-    "places": [
-      "right-front-leg-lower"
-    ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "valborg_2024.jpg"
   }
 ]
