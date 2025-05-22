@@ -545,6 +545,7 @@
             }
             // Close modal when the user clicks on the close button (×)
             document.querySelector('.close-btn').addEventListener('click', function() {
+                window.removeEventListener('click', click);
                 document.getElementById('info-modal').style.display = "none";
             });
             // Close modal if the user clicks outside the modal
