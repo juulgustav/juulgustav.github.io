@@ -214,7 +214,7 @@
     "places": [
       "avryckt"
     ],
-    "shape": "rect",
+    "shape": "outline",
     "width": 0.0,
     "height": 0.0,
     "image": "0.jpg"
@@ -496,7 +496,7 @@
   },
   {
     "date": "2024-04-18T00:00:00",
-    "name": "1+1=10",
+    "name": "1+1=10 - Kristin",
     "places": [
       "left-front-stomach"
     ],
@@ -544,7 +544,7 @@
     "places": [
       "left-front-stomach"
     ],
-    "shape": "rect",
+    "shape": "outline",
     "width": 4.5,
     "height": 5.5,
     "image": "among_us_red.jpg"
@@ -850,6 +850,28 @@
   },
   {
     "date": "2024-10-18T00:00:00",
+    "name": "Air Bender",
+    "places": [
+      "right-front-inside-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "air_bender.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
+    "name": "Earth Bender",
+    "places": [
+      "right-front-inside-stomach"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "earth_bender.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
     "name": "Essex",
     "places": [
       "right-front-stomach"
@@ -872,17 +894,6 @@
   },
   {
     "date": "2024-10-18T00:00:00",
-    "name": "Sektionskvällen 2024",
-    "places": [
-      "right-back-leg-upper"
-    ],
-    "shape": "hexagon",
-    "width": 6.0,
-    "height": 7.0,
-    "image": "sektionskvällen_2024.jpg"
-  },
-  {
-    "date": "2024-10-18T00:00:00",
     "name": "Fire Bender",
     "places": [
       "back-inside-backside"
@@ -894,6 +905,17 @@
   },
   {
     "date": "2024-10-18T00:00:00",
+    "name": "Sektionskvällen 2024",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "hexagon",
+    "width": 6.0,
+    "height": 7.0,
+    "image": "sektionskvällen_2024.jpg"
+  },
+  {
+    "date": "2024-10-18T00:00:00",
     "name": "Water Bender",
     "places": [
       "back-inside-backside"
@@ -902,28 +924,6 @@
     "width": 8.0,
     "height": 8.0,
     "image": "water_bender.jpg"
-  },
-  {
-    "date": "2024-10-18T00:00:00",
-    "name": "Air Bender",
-    "places": [
-      "right-front-inside-stomach"
-    ],
-    "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "air_bender.jpg"
-  },
-  {
-    "date": "2024-10-18T00:00:00",
-    "name": "Earth Bender",
-    "places": [
-      "right-front-inside-stomach"
-    ],
-    "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "earth_bender.jpg"
   },
   {
     "date": "2024-10-19T00:00:00",
@@ -1349,7 +1349,7 @@
     "places": [
       "left-front-stomach"
     ],
-    "shape": "outline",
+    "shape": "rect",
     "width": 4.0,
     "height": 6.5,
     "image": "gameboy_blue.jpg"
@@ -1624,7 +1624,7 @@
     "places": [
       "left-front-shoulder"
     ],
-    "shape": "rect",
+    "shape": "outline",
     "width": 4.0,
     "height": 8.5,
     "image": "portal_left_-_kristin.jpg"
@@ -1635,7 +1635,7 @@
     "places": [
       "right-front-shoulder"
     ],
-    "shape": "rect",
+    "shape": "outline",
     "width": 4.0,
     "height": 8.5,
     "image": "portal_right_-_kristin.jpg"
