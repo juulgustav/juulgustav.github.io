@@ -202,7 +202,15 @@
                 //}
             });
             console.log(iso._sorters);
-            
+            if(isMobile() && screen.height> screen.width) {
+                console.log("Mobile mode activate")
+                const divs = document.querySelectorAll('.grid-item');
+                console.log(divs);
+                divs.forEach(div => {
+                    //div.style.width = "100%";
+                    div.style.width = (screen.width-30).toString()+"px";
+                });
+            }
             // Filter Handler
             //document.getElementById("filter-category").addEventListener("change", (event) => {
             //    const filterValue = event.target.value === "*" ? "*" : `.${event.target.value}`;
@@ -526,6 +534,8 @@
             return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
         }
 
+
+        
         var popupOpen = false;
         function openPopup(index){
             if(popupOpen){
