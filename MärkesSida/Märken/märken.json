@@ -562,6 +562,17 @@
   },
   {
     "date": "2024-05-18T00:00:00",
+    "name": "Gameboy Gray",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 4.0,
+    "height": 6.5,
+    "image": "gameboy_gray.jpg"
+  },
+  {
+    "date": "2024-05-18T00:00:00",
     "name": "Larv Pub 7",
     "places": [
       "left-back-leg-upper"
@@ -605,17 +616,6 @@
     "image": "skåne_halvbåge.jpg"
   },
   {
-    "date": "2024-05-18T00:00:00",
-    "name": "Gameboy Gray",
-    "places": [
-      "left-front-leg-upper"
-    ],
-    "shape": "rect",
-    "width": 4.0,
-    "height": 6.5,
-    "image": "gameboy_gray.jpg"
-  },
-  {
     "date": "2024-08-15T00:00:00",
     "name": "Tillämpad Artificiell Intelligens 2023 Ryggmärke",
     "places": [
@@ -651,7 +651,7 @@
   },
   {
     "date": "2024-08-16T00:00:00",
-    "name": "Spaceshuttle Endevour",
+    "name": "Spaceshuttle Endeavour",
     "places": [
       "left-back-leg-upper"
     ],
@@ -670,6 +670,17 @@
     "width": 8.0,
     "height": 8.0,
     "image": "spelkvällen_2023.jpg"
+  },
+  {
+    "date": "2024-08-16T00:00:00",
+    "name": "ESA",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 9.5,
+    "height": 9.5,
+    "image": "esa.jpg"
   },
   {
     "date": "2024-08-17T00:00:00",
@@ -1026,17 +1037,6 @@
   },
   {
     "date": "2024-11-15T00:00:00",
-    "name": "Y - Mätfel",
-    "places": [
-      "left-front-leg-upper"
-    ],
-    "shape": "outline",
-    "width": 8.0,
-    "height": 7.0,
-    "image": "y_-_mätfel.jpg"
-  },
-  {
-    "date": "2024-11-15T00:00:00",
     "name": "Jag Kursvärderade HT 23",
     "places": [
       "right-back-leg-upper"
@@ -1056,6 +1056,17 @@
     "width": 8.0,
     "height": 8.0,
     "image": "jag_kursvärderade_vt_24.jpg"
+  },
+  {
+    "date": "2024-11-15T00:00:00",
+    "name": "Y - Mätfel",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 7.0,
+    "image": "y_-_mätfel.jpg"
   },
   {
     "date": "2024-11-16T00:00:00",
@@ -1199,6 +1210,17 @@
     "width": 9.0,
     "height": 8.5,
     "image": "arla.jpg"
+  },
+  {
+    "date": "2024-12-10T00:00:00",
+    "name": "Larv 2022 Omstart",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "larv_2022_omstart.jpg"
   },
   {
     "date": "2024-12-15T00:00:00",
