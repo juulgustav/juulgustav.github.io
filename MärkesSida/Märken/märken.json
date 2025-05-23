@@ -605,6 +605,17 @@
     "image": "skåne_halvbåge.jpg"
   },
   {
+    "date": "2024-05-18T00:00:00",
+    "name": "Gameboy Gray",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 4.0,
+    "height": 6.5,
+    "image": "gameboy_gray.jpg"
+  },
+  {
     "date": "2024-08-15T00:00:00",
     "name": "Tillämpad Artificiell Intelligens 2023 Ryggmärke",
     "places": [
@@ -1023,6 +1034,28 @@
     "width": 8.0,
     "height": 7.0,
     "image": "y_-_mätfel.jpg"
+  },
+  {
+    "date": "2024-11-15T00:00:00",
+    "name": "Jag Kursvärderade HT 23",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "jag_kursvärderade_ht_23.jpg"
+  },
+  {
+    "date": "2024-11-15T00:00:00",
+    "name": "Jag Kursvärderade VT 24",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "jag_kursvärderade_vt_24.jpg"
   },
   {
     "date": "2024-11-16T00:00:00",
