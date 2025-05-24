@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="Assets/Logo.png">
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@^2"></script>
     <style>
         .grid { display: flex; flex-wrap: wrap; gap: 10px; }
         .grid-item {
@@ -28,6 +30,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">-->
 </head>
 <body>
+    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
     <input type="text" id="searchBox" placeholder="Sök för lägenhet..." oninput="filterBooths()">
     <div class="top-right-div">
       <span id="last-modified-date">Update time missing</span>
@@ -126,6 +129,8 @@
         var märkeData = [];
         const gridContainer = document.querySelector(".grid");
         var iso;
+        var xValues = [];
+        var yValues = [];
         // Sample Data
         Promise.all([
         fetch('MärkesSida/Märken/märken.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
@@ -141,8 +146,18 @@
             märkeJsonData.forEach(märke => {
                 //apartment.adress +=", Luleå, Sweden";
                 märke.date = märke.date ? new Date(märke.date) : null;
-
                 märkeData.push(märke);
+                var days=days_between(märkeData[0].date,märke.date);
+                var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
+                console.log(date);
+                if (index>0&&date==xValues[xValues.length-1]) {
+                    yValues[yValues.length-1] = yValues[yValues.length-1]+märke.places.length;
+                }
+                else{
+                    xValues.push(date);
+                    //xValues.push(märke.date);
+                    yValues.push(totalPatches+ märke.places.length);
+                }
                 //console.log(apartment);
                 const imgSrc = "MärkesSida/NewCompressed/"+märke.image;
                 const div = document.createElement("div");
@@ -201,6 +216,45 @@
 
                 //}
             });
+            console.log(xValues);
+            console.log(yValues);
+            const dataPoints = xValues.map((x, i) => ({ x, y: yValues[i] }));
+            console.log(dataPoints);
+            new Chart("myChart", {
+                type: "line",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                    label: "Data over time",
+                    data: yValues,
+                    backgroundColor: "rgba(0,0,255,0.1)",
+                    borderColor: "rgba(0,0,255,1.0)",
+                    fill: true,
+                    tension: 0.1
+                    }]
+                },
+                options: {
+                    scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                        unit: 'day'
+                        },
+                        title: {
+                        display: true,
+                        text: 'Date'
+                        }
+                    },
+                    y: {
+                        title: {
+                        display: true,
+                        text: 'Value'
+                        }
+                    }
+                    }
+                }
+            });
+            
             console.log(iso._sorters);
             if(isMobile() && screen.height> screen.width) {
                 console.log("Mobile mode activate")
@@ -277,6 +331,18 @@
                         fixSort();
                     }
                 });
+            }
+            function days_between(date1, date2) {
+
+                // The number of milliseconds in one day
+                const ONE_DAY = 1000 * 60 * 60 * 24;
+
+                // Calculate the difference in milliseconds
+                const differenceMs = Math.abs(date1 - date2);
+
+                // Convert back to days and return
+                return Math.round(differenceMs / ONE_DAY);
+
             }
             fixSort();
             console.log(document.readyState);
