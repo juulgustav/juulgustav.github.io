@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="Assets/Logo.png">
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/luxon@^2"></script>
+    <!-- Chart.js core -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Luxon date library -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon"></script>
+
+    <!-- Chart.js adapter for Luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
+
     <style>
         .grid { display: flex; flex-wrap: wrap; gap: 10px; }
         .grid-item {
@@ -267,7 +274,7 @@
             }
             else {
                 var numWidth= Math.floor(window.innerWidth/330);
-                var width = window.innerWidth/numWidth-35-9/numWidth;
+                var width = window.innerWidth/numWidth-34-9/numWidth;
                 console.log(window.innerWidth);
                 console.log("Widening divs to width: "+width);
                 const divs = document.querySelectorAll('.grid-item');
