@@ -10,7 +10,7 @@
     <style>
         .grid { display: flex; flex-wrap: wrap; gap: 10px; }
         .grid-item {
-            width: 300px;
+            width: 331px;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -184,13 +184,13 @@
                 itemSelector: ".grid-item",
                 layoutMode: "fitRows",
                 getSortData: {
-                    name: item => item.dataset.name,
+                    name: item => item.dataset.name=="Gula 2000"?"Gula":item.dataset.name,
                     antal: item => parseFloat(item.dataset.antal),
                     area: item => parseFloat(area(item.dataset.width, item.dataset.height, item.dataset.shape)),
                     date: item => Date.parse(item.dataset.date),
                     width: item => parseFloat(item.dataset.width),
                     height: item => parseFloat(item.dataset.height),
-                    weight: item => item.dataset.name,
+                    weight: item => item.dataset.name=="Gula 2000"?"Gula":item.dataset.name,
                     ratio: item => parseFloat(item.dataset.width/item.dataset.height),
                 }
                 //getFilterData: {
@@ -209,6 +209,18 @@
                 divs.forEach(div => {
                     //div.style.width = "100%";
                     div.style.width = (screen.width-30).toString()+"px";
+                });
+            }
+            else {
+                var numWidth= Math.floor(window.innerWidth/330);
+                var width = window.innerWidth/numWidth-35-9/numWidth;
+                console.log(window.innerWidth);
+                console.log("Widening divs to width: "+width);
+                const divs = document.querySelectorAll('.grid-item');
+                console.log(divs);
+                divs.forEach(div => {
+                    //div.style.width = "100%";
+                    div.style.width = (width).toString()+"px";
                 });
             }
             // Filter Handler

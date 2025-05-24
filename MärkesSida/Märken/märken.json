@@ -620,7 +620,7 @@
     "name": "Tillämpad Artificiell Intelligens 2023 Ryggmärke",
     "places": [
       "back-backside",
-      "inside-back-backside"
+      "back-inside-backside"
     ],
     "shape": "circle",
     "width": 29.0,
@@ -850,7 +850,7 @@
   },
   {
     "date": "2024-10-15T00:00:00",
-    "name": "Bolaget",
+    "name": "Kajsa - Bolaget",
     "places": [
       "back-backside"
     ],
@@ -1105,7 +1105,7 @@
     "date": "2024-11-16T00:00:00",
     "name": "Lekmatta",
     "places": [
-      "back-backside"
+      "back-inside-backside"
     ],
     "shape": "rect",
     "width": 9.0,
@@ -1160,7 +1160,7 @@
     "date": "2024-11-16T00:00:00",
     "name": "Är det Fredag än?",
     "places": [
-      "back-backside"
+      "back-inside-backside"
     ],
     "shape": "rect",
     "width": 7.5,
