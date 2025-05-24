@@ -339,9 +339,9 @@
             });
 
             // 3. Normalize to density (optional)
-            const total = areaList.length;
-            const density = bins.map(count => count / total);
-
+            //const total = areaList.length;
+            const density = bins.map(count => count / totalPatches);
+            //const density = bins;
             // 4. Labels (center of bins)
             const labels = Array.from({length: binCount}, (_, i) => min + i * binSize);
 
@@ -357,7 +357,14 @@
                         backgroundColor:colours,
                         borderColor: colours,
                         data: density
-                    }]
+                    },
+                    {
+                        label: "Antal med den arean",
+                        backgroundColor:colours,
+                        borderColor: colours,
+                        data: bins
+                    }
+                ]
                 },
                 options: {
                     scales: {
@@ -370,7 +377,7 @@
                     y: {
                         title: {
                         display: true,
-                        text: 'Procent%'
+                        text: 'Antal'
                         }
                     }
                     }
