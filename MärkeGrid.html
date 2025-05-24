@@ -37,7 +37,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">-->
 </head>
 <body>
-    <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
     <input type="text" id="searchBox" placeholder="Sök för lägenhet..." oninput="filterBooths()">
     <div class="top-right-div">
       <span id="last-modified-date">Update time missing</span>
@@ -132,12 +131,27 @@
         </div>
     </div>
 
+    <div id="stat-modal" class="modal">
+        <div class="modal-content" id="stat_content">
+            <canvas id="märkeGraf" style="width:49%;max-height:100%"></canvas>
+            <canvas id="myChart" style="width:100%;max-height:1000px"></canvas>
+            <canvas id="histogram" style="width:100%;max-height:1000px"></canvas>
+
+            <span class="close-btn">&times;</span>
+            <!--<h2>More Information</h2>
+            <p>Here is more detailed info about the marker...</p>-->
+        </div>
+    </div>
+
     <script>
         var märkeData = [];
         const gridContainer = document.querySelector(".grid");
         var iso;
         var xValues = [];
         var yValues = [];
+        var shapes = new Set();
+        var shapeCount = {};
+        var areaList = [];
         // Sample Data
         Promise.all([
         fetch('MärkesSida/Märken/märken.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
@@ -154,6 +168,9 @@
                 //apartment.adress +=", Luleå, Sweden";
                 märke.date = märke.date ? new Date(märke.date) : null;
                 märkeData.push(märke);
+                for (let index = 0; index < märke.places.length; index++) {
+                    areaList.push(area(märke.width, märke.height, märke.shape));
+                }
                 var days=days_between(märkeData[0].date,märke.date);
                 var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
                 console.log(date);
@@ -165,6 +182,8 @@
                     //xValues.push(märke.date);
                     yValues.push(totalPatches+ märke.places.length);
                 }
+                shapes.add(märke.shape);
+                shapeCount[märke.shape] = (shapeCount[märke.shape] || 0) + 1;
                 //console.log(apartment);
                 const imgSrc = "MärkesSida/NewCompressed/"+märke.image;
                 const div = document.createElement("div");
@@ -198,7 +217,7 @@
             });
             var averageArea = totalArea/totalPatches;
             totalArea*= 0.0001;
-            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'})+"<br />Totalt antal märken: "+totalPatches+"<br />Total area: "+(Math.round(totalArea * 1000) / 1000).toFixed(3)+"m²<br />Genomsnitt area: "+(Math.round(averageArea * 10) / 10).toFixed(1)+"cm²";
+            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'})+"<br />Totalt antal märken: "+totalPatches+"<br />Total area: "+(Math.round(totalArea * 1000) / 1000).toFixed(3)+"m²<br />Genomsnitt area: "+(Math.round(averageArea * 10) / 10).toFixed(1)+"cm²<br /><button onclick=\"openPopupStat()\">Enhance!</button>";
             // Initialize Isotope
             var stuk = [65.61784180109724, 22.14376757827861];
             var kårken =[65.61757351039493, 22.13427124826677];
@@ -227,12 +246,12 @@
             console.log(yValues);
             const dataPoints = xValues.map((x, i) => ({ x, y: yValues[i] }));
             console.log(dataPoints);
-            new Chart("myChart", {
+            new Chart("märkeGraf", {
                 type: "line",
                 data: {
                     labels: xValues,
                     datasets: [{
-                    label: "Data over time",
+                    label: "Märken över tid",
                     data: yValues,
                     backgroundColor: "rgba(0,0,255,0.1)",
                     borderColor: "rgba(0,0,255,1.0)",
@@ -245,23 +264,116 @@
                     x: {
                         type: 'time',
                         time: {
-                        unit: 'day'
+                        unit: 'month'
                         },
                         title: {
                         display: true,
-                        text: 'Date'
+                        text: 'Datum'
                         }
                     },
                     y: {
                         title: {
                         display: true,
-                        text: 'Value'
+                        text: 'Märken'
                         }
                     }
                     }
                 }
             });
-            
+            shapeCount = Object.fromEntries(
+                Object.entries(shapeCount).sort(([, a], [, b]) => b-a)
+            );
+            console.log(shapeCount);
+            var colours = randomColours(Object.keys(shapeCount).length);
+            console.log("Colours:"+ Object.keys(shapeCount).length)
+            console.log(colours);
+            new Chart("myChart", {
+                type: "doughnut",
+                data: {
+                    labels: Object.keys(shapeCount),
+                    datasets: [{
+                        label: "Former",
+                        backgroundColor:colours,
+                        borderColor: colours,
+                        data: Object.values(shapeCount)
+                    }]
+                },
+            });
+
+
+            function randomColours(quan) {
+                let colours = [];
+                for (let i = 0; i < quan; i++) {
+                    colours.push(`rgba(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`);
+                }
+                return colours;
+            }
+
+            // 1. Bin configuration
+            const binSize = 5;
+            console.log(areaList);
+            areaList.sort(function(a,b) { return a - b;});
+            for (let index = 0; index < areaList.length*0.015; index++) {
+                areaList.shift();
+                areaList.pop();
+            }
+            //areaList.shift();
+            //areaList.shift();
+            //areaList.pop();
+            //areaList.pop();
+            console.log(areaList);
+
+            const min = Math.min(...areaList);
+            const max = Math.max(...areaList);
+            console.log(min);
+            console.log(max);
+            const binCount = Math.ceil((max - min) / binSize) + 1;
+
+            // 2. Create bins and count data
+            const bins = Array(binCount).fill(0);
+            areaList.forEach(value => {
+                const index = Math.floor((value - min) / binSize);
+                bins[index]++;
+            });
+
+            // 3. Normalize to density (optional)
+            const total = areaList.length;
+            const density = bins.map(count => count / total);
+
+            // 4. Labels (center of bins)
+            const labels = Array.from({length: binCount}, (_, i) => min + i * binSize);
+
+            colours = randomColours(binCount);
+            console.log(labels);
+            console.log(density);
+            new Chart("histogram", {
+                type: "bar",
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: "Täthetsfunktion på arean",
+                        backgroundColor:colours,
+                        borderColor: colours,
+                        data: density
+                    }]
+                },
+                options: {
+                    scales: {
+                    x: {
+                        title: {
+                        display: true,
+                        text: 'cm²'
+                        }
+                    },
+                    y: {
+                        title: {
+                        display: true,
+                        text: 'Procent%'
+                        }
+                    }
+                    }
+                }
+            });
             console.log(iso._sorters);
             if(isMobile() && screen.height> screen.width) {
                 console.log("Mobile mode activate")
@@ -274,7 +386,7 @@
             }
             else {
                 var numWidth= Math.floor(window.innerWidth/330);
-                var width = window.innerWidth/numWidth-34-9/numWidth;
+                var width = window.innerWidth/numWidth-35-9/numWidth;
                 console.log(window.innerWidth);
                 console.log("Widening divs to width: "+width);
                 const divs = document.querySelectorAll('.grid-item');
@@ -678,6 +790,50 @@
             //    }
             //};
         }
+
+        function openPopupStat(){
+            if(popupOpen){
+                return;
+            }
+            popupOpen = true;
+            console.log("Button clicked!");
+            const modalContent = document.querySelector('.modal-content');
+            //let apartment =apartmentData.find(o => o.marker.popup = pop);
+
+            document.getElementById('stat-modal').style.display = "block";
+            let firstClick=true;
+
+            document.getElementById('märkeGraf').style.width = '100%';
+            window.addEventListener('click', click);
+
+            function click(e){
+                if (document.getElementById('stat-modal').contains(e.target)){
+                    console.log("Click in Box!");
+                } else{
+                    if(firstClick) {
+                        firstClick=false;
+                        return;
+                    }
+                    console.log("Click outside Box!");
+                    window.removeEventListener('click', click);
+                    popupOpen=false;
+                    document.getElementById('stat-modal').style.display = "none";
+                }
+            }
+            // Close modal when the user clicks on the close button (×)
+            document.querySelector('.close-btn').addEventListener('click', function() {
+                window.removeEventListener('click', click);
+                popupOpen=false;
+                document.getElementById('stat-modal').style.display = "none";
+            });
+            // Close modal if the user clicks outside the modal
+            //window.onclick = function(event) {
+            //    if (event.target == document.getElementById('info-modal')) {
+            //        document.getElementById('info-modal').style.display = "none";
+            //    }
+            //};
+        }
+
     </script>
 
 </body>
