@@ -149,9 +149,11 @@
         var märkeData = [];
         const gridContainer = document.querySelector(".grid");
         var iso;
-        var xValues = [];
-        var yValues = [];
+        var patchGraphxValues = [];
+        var patchGraphyValues = [];
         var shapeCount = {};
+        var patchGraphxValuesShape = {};
+        var patchGraphyValuesShape = {};
         var areaList = [];
         // Sample Data
         Promise.all([
@@ -175,15 +177,15 @@
                 var days=days_between(märkeData[0].date,märke.date);
                 var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
                 console.log(date);
-                if (index>0&&date==xValues[xValues.length-1]) {
-                    yValues[yValues.length-1] = yValues[yValues.length-1]+märke.places.length;
+                if (index>0&&date==patchGraphxValues[patchGraphxValues.length-1]) {
+                    patchGraphyValues[patchGraphyValues.length-1] = patchGraphyValues[patchGraphyValues.length-1]+märke.places.length;
                 }
                 else{
-                    xValues.push(date);
+                    patchGraphxValues.push(date);
                     //xValues.push(märke.date);
-                    yValues.push(totalPatches+ märke.places.length);
+                    patchGraphyValues.push(totalPatches+ märke.places.length);
                 }
-                shapeCount[märke.shape] = (shapeCount[märke.shape] || 0) + 1;
+                shapeCount[märke.shape] = (shapeCount[märke.shape] || 0) + märke.places.length;
                 //console.log(apartment);
                 const imgSrc = "MärkesSida/NewCompressed/"+märke.image;
                 const div = document.createElement("div");
@@ -242,17 +244,17 @@
 
                 //}
             });
-            console.log(xValues);
-            console.log(yValues);
-            const dataPoints = xValues.map((x, i) => ({ x, y: yValues[i] }));
+            console.log(patchGraphxValues);
+            console.log(patchGraphyValues);
+            const dataPoints = patchGraphxValues.map((x, i) => ({ x, y: patchGraphyValues[i] }));
             console.log(dataPoints);
             new Chart("märkeGraf", {
                 type: "line",
                 data: {
-                    labels: xValues,
+                    labels: patchGraphxValues,
                     datasets: [{
                     label: "Märken över tid",
-                    data: yValues,
+                    data: patchGraphyValues,
                     backgroundColor: "rgba(0,0,255,0.1)",
                     borderColor: "rgba(0,0,255,1.0)",
                     fill: true,
@@ -294,7 +296,7 @@
                 data: {
                     labels: Object.keys(shapeCount),
                     datasets: [{
-                        label: "Former",
+                        label: "Antal",
                         backgroundColor:colours,
                         borderColor: colours,
                         data: Object.values(shapeCount)
@@ -312,17 +314,15 @@
             }
 
             // 1. Bin configuration
-            const binSize = 5;
+            const binSize = 6;
             console.log(areaList);
             areaList.sort(function(a,b) { return a - b;});
+
+            // Remove 3% outliers
             for (let index = 0; index < areaList.length*0.015; index++) {
                 areaList.shift();
                 areaList.pop();
             }
-            //areaList.shift();
-            //areaList.shift();
-            //areaList.pop();
-            //areaList.pop();
             console.log(areaList);
 
             const min = Math.min(...areaList);
@@ -343,7 +343,7 @@
             const density = bins.map(count => count / totalPatches);
             //const density = bins;
             // 4. Labels (center of bins)
-            const labels = Array.from({length: binCount}, (_, i) => min + i * binSize);
+            const labels = Array.from({length: binCount}, (_, i) => min + i * binSize+"-"+(min + (i+1) * binSize));
 
             colours = randomColours(binCount);
             console.log(labels);
