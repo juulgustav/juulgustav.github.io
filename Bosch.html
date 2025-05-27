@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Märken!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/Logo.png">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Chart.js core -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Luxon date library -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon"></script>
+
+    <!-- Chart.js adapter for Luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
+
+    <style>
+        .grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .grid-item {
+            width: 331px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            background: #fff;
+            margin: 5px;
+        }
+        .grid-item img { width: 100%; height: auto; border-radius: 8px; }
+        .filters select { margin: 5px; padding: 5px; }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">-->
+</head>
+<body>
+    <input type="text" id="searchBox" placeholder="Sök för lägenhet..." oninput="filterBooths()">
+    <div class="top-right-div">
+      <span id="last-modified-date">Update time missing</span>
+    </div>
+    <!-- Filter Controls -->
+    <div class="filters">
+        <!--<select id="filter-category">
+            <option value="*">Alla kategorier</option>
+            <option value=".lägenhetstyp">Lägenhetstyp</option>
+            <option value=".möblerad">Möblerad</option>
+            <option value=".korridor">Korridor</option>
+            <option value=".tidigareInflyttning">Tidigare Inflyttning</option>
+
+        </select> -->
+
+        <select id="sort-by" autocomplete="off">
+            <option value="*stock" selected>Flest i lager</option>
+            <option value="stock">Minst i lager</option>
+            <option value="price">Billigast</option>
+            <option value="*price">Dyrast</option>
+            <option value="name">Bokstavsordning</option>
+            <option value="random">Random</option>
+            <option value="barcode">Barcode</option>
+            <option value="id">ID</option>
+        </select>
+
+        <div class="container">
+            <div class="select-btn">
+                <span id="bostadsområdeText" name="Form" class="btn-text">Form</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <ul id="bostadsområdeFilter" class="list-items">
+            </ul>
+        </div>
+        <div class="container">
+            <div class="select-btn">
+                <span id="rokText" name="Platser" class="btn-text">Platser</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <ul id="rokFilter" class="list-items">
+            </ul>
+        </div>
+        <div class="container">
+            <div class="select-btn">
+                <span id="värdText" name="Alla värdar" class="btn-text">Alla värdar</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <ul id="värdFilter" class="list-items">
+            </ul>
+        </div>
+        <div class="container">
+            <div class="select-btn">
+                <span id="lägenhetstypText" name="Lägenhetstyp" class="btn-text">Lägenhetstyp</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <ul id="lägenhetstypFilter" class="list-items">
+            </ul>
+        </div>
+        <div class="container">
+            <div class="select-btn">
+                <span id="möbleradText" name="Möblerad" class="btn-text">Möblerad</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+            <ul id="möbleradFilter" class="list-items">
+            </ul>
+        </div>
+    </div>
+
+    <!-- Grid Container -->
+    <div class="grid">
+        <!-- Items will be added dynamically -->
+    </div>
+
+    <!-- Modal -->
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <!--<h2>More Information</h2>
+            <p>Here is more detailed info about the marker...</p>-->
+        </div>
+    </div>
+
+    <div id="stat-modal" class="modal">
+        <div class="modal-content" id="stat_content">
+            <div style="width:50%;height:100%; position: absolute; left: 0; top: 0; bottom: 0;">
+                <canvas id="märkeGraf" style="width: 100%; height: 100%;"></canvas>
+            </div>
+            <canvas id="myChart" style="max-width:50%;max-height:50%; position: absolute; right: 0; top: 0;"></canvas>
+            <canvas id="histogram" style="max-width:50%;max-height:50%; position: absolute; right: 0; bottom: 0;"></canvas>
+
+            <span id ="stat-close-btn" class="close-btn">&times;</span>
+            <!--<h2>More Information</h2>
+            <p>Here is more detailed info about the marker...</p>-->
+        </div>
+    </div>
+
+    <script>
+        var märkeData = [];
+        const gridContainer = document.querySelector(".grid");
+        var iso;
+        var xValues = [];
+        var yValues = [];
+        var shapeCount = {};
+        var areaList = [];
+        // Sample Data
+        Promise.all([
+        //fetch('https://vortex.ludd.ltu.se/bosch/products/json').then(response => response.json()),
+        //fetch('https://vortex.ludd.ltu.se/bosch/products/json').then(response => response.headers.get('Last-Modified')),
+        fetch('Json/bosch.json?nocache='+ (new Date()).getTime()).then(response => response.json()),
+        fetch('Json/bosch.json?nocache='+ (new Date()).getTime()).then(response => response.headers.get('Last-Modified')),
+        ])
+        .then(([märkeJsonData, modTime]) => {
+            console.log(märkeJsonData);
+            modTime = new Date(modTime);
+            console.log(modTime);
+            index =0;
+            märkeJsonData.products.forEach(märke => {
+                //apartment.adress +=", Luleå, Sweden";
+                if(märke.stock < 1) {
+                    return;
+                }
+                märke.date = märke.date ? new Date(märke.date) : null;
+                märkeData.push(märke);
+                //console.log(apartment);
+                const div = document.createElement("div");
+                div.className = `grid-item ${märke.lägenhetstyp} ${märke.bostadsområde}`;
+                div.dataset.barcode = märke.barcode;
+                div.dataset.id = märke.id;
+                div.dataset.name = märke.name;
+                div.dataset.price = märke.price;
+                div.dataset.stock = märke.stock;
+                div.dataset.index = index;
+                //console.log(div.dataset)
+                div.innerHTML = `
+                    <h3 style="margin: 5px 0;">${märke.name}</h3>
+                    <p style="margin: 4px 0;"><strong>Pris: ${märke.price/1000}kr</strong></p>
+                    <p style="margin: 4px 0;"><strong>Antal: ${märke.stock}</strong></p>
+                    <p style="margin: 4px 0;"><strong>Barcode: ${märke.barcode}</strong></p>
+                    <p style="margin: 4px 0;"><strong>Id: ${märke.id}</strong></p>
+                `;
+                gridContainer.appendChild(div);
+                //console.log(div);
+                index++;
+            });
+            console.log(märkeData);
+            document.getElementById('last-modified-date').innerHTML = "Uppdaterad: "+modTime.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long', hour:'numeric', minute:'numeric'});
+            // Initialize Isotope
+            var stuk = [65.61784180109724, 22.14376757827861];
+            var kårken =[65.61757351039493, 22.13427124826677];
+            iso = new Isotope(".grid", {
+                itemSelector: ".grid-item",
+                layoutMode: "fitRows",
+                getSortData: {
+                    barcode: item => parseFloat(item.dataset.barcode),
+                    id: item => parseFloat(item.dataset.id),
+                    name: item => item.dataset.name,
+                    price: item => parseFloat(item.dataset.price),
+                    stock: item => parseFloat(item.dataset.stock),
+                    weight: item => item.dataset.stock,
+                }
+                //getFilterData: {
+                //  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
+                //  möblerad: item => item.dataset.möblerad,
+                //  korridor: item => item.dataset.korridor,
+                //  tidigareInflyttning: item => item.dataset.tidigareInflyttning
+
+                //}
+            });
+            // Filter Handler
+            //document.getElementById("filter-category").addEventListener("change", (event) => {
+            //    const filterValue = event.target.value === "*" ? "*" : `.${event.target.value}`;
+            //    iso.filter({ filter: filterValue });
+            //});
+
+            // Sorting Handler
+            document.getElementById("sort-by").addEventListener("change", (event) => {
+                var sortValue = event.target.value;
+                sort(sortValue)
+                
+            });
+
+            function sort(sortValue)
+            {
+                if(sortValue[0]=='*')
+                {
+                    sortValue = sortValue.slice(1);
+                    console.log("Inverse sort för: "+sortValue+ " length:"+sortValue.length);
+                    sortSettings = {};
+                    Object.values(iso._sorters).forEach(element => {
+                        sortSettings[element.name] = false;
+                    });
+                    sortSettings["weight"] = true;
+                    console.log(sortSettings);
+                    iso.arrange({ sortBy: [sortValue, "weight"], sortAscending: sortSettings});
+                }
+                else
+                {
+                    console.log("Vanlig sort för: "+sortValue+ " length:"+sortValue.length)
+                    sortSettings = {};
+                    Object.values(iso._sorters).forEach(element => {
+                        sortSettings[element.name] = true;
+                    });
+                    console.log(sortSettings);
+                    iso.arrange({ sortBy: [sortValue,"weight"], sortAscending: sortSettings});
+                }
+                console.log(event)
+            }
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            sort("*stock");
+            var firstComplete = true;
+            function fixSort() {
+                sleep(2000).then(() => { 
+                    sort(document.getElementById("sort-by").value); 
+                    console.log("Resorting during load");
+                    console.log(document.readyState); 
+                    if(document.readyState != "complete") {
+                        if (firstComplete) {}
+                        fixSort();
+                    }
+                });
+            }
+            function days_between(date1, date2) {
+
+                // The number of milliseconds in one day
+                const ONE_DAY = 1000 * 60 * 60 * 24;
+
+                // Calculate the difference in milliseconds
+                const differenceMs = Math.abs(date1 - date2);
+
+                // Convert back to days and return
+                return Math.round(differenceMs / ONE_DAY);
+
+            }
+            fixSort();
+            console.log(document.readyState);
+            function distance(lat1, lon1, lat2, lon2)
+            {
+                const R = 6371e3; // metres
+                const φ1 = lat1 * Math.PI/180; // φ, λ in radians
+                const φ2 = lat2 * Math.PI/180;
+                const Δφ = (lat2-lat1) * Math.PI/180;
+                const Δλ = (lon2-lon1) * Math.PI/180;
+
+                const a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
+                        Math.cos(φ1) * Math.cos(φ2) *
+                        Math.sin(Δλ/2) * Math.sin(Δλ/2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+                return R * c; // in metres
+            }
+
+            
+
+
+            
+
+
+            //populateDropdowns();
+            const selectBtns = document.querySelectorAll(".select-btn")
+            selectBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    btn.classList.toggle("open");
+                });
+            });
+            items = document.querySelectorAll(".item");
+            items.forEach(item => {
+                item.addEventListener("click", () => {
+                    console.log("Clicked! "+item.getAttribute("name"));
+                    item.classList.toggle("checked");
+                    let checked = document.getElementsByName(item.getAttribute("name")),
+                        btnText = document.getElementById(item.getAttribute("name").replace("FilterOption","Text"))
+                        let numChecked = 0;
+                        checked.forEach(i => i.getAttribute("class")=="item checked" ? numChecked++: true);
+
+                        if(numChecked > 0){
+                            btnText.innerText = `${numChecked} Selected`;
+                        }else{
+                            btnText.innerText = btnText.getAttribute("name");
+                        }
+                    filterBooths();
+                });
+            })
+            filterBooths();
+            console.log(items)
+            
+            function populateDropdowns() {
+                let bostadsområden = new Set();
+                let rok = new Set();
+                let värdar = new Set();
+                let möblerad = new Set();
+                let lägenhetstyp = new Set();
+    
+    
+                let bostadsområdeCount= {}
+                let rokCount= {}
+                let värdarCount= {}
+                let möbleradCount= {}
+                let lägenhetstypCount= {}
+    
+    
+    
+                Object.values(märkeData).forEach(märke => {
+                    bostadsområden.add(märke.bostadsområde);
+                    rok.add(märke.storlek);
+                    värdar.add(märke.bostadskö);
+                    möblerad.add(märke.möblerad);
+                    lägenhetstyp.add(märke.lägenhetstyp);
+    
+                    
+                    bostadsområdeCount[märke.bostadsområde] = (bostadsområdeCount[märke.bostadsområde] || 0) + 1
+                    rokCount[märke.storlek] = (rokCount[märke.storlek] || 0) + 1
+                    värdarCount[märke.bostadskö] = (värdarCount[märke.bostadskö] || 0) + 1
+                    möbleradCount[märke.möblerad] = (möbleradCount[märke.möblerad] || 0) + 1
+                    lägenhetstypCount[märke.lägenhetstyp] = (lägenhetstypCount[märke.lägenhetstyp] || 0) + 1
+    
+                });
+    
+    
+                bostadsområden = Array.from(bostadsområden);
+                bostadsområden.sort(function(a, b){return bostadsområdeCount[b]-bostadsområdeCount[a]})
+                rok = Array.from(rok);
+                rok.sort(function(a, b){return rokCount[b]-rokCount[a]})
+                värdar = Array.from(värdar);
+                värdar.sort(function(a, b){return värdarCount[b]-värdarCount[a]})
+                möblerad = Array.from(möblerad);
+                möblerad.sort(function(a, b){return möbleradCount[b]-möbleradCount[a]})
+                lägenhetstyp = Array.from(lägenhetstyp);
+                lägenhetstyp.sort(function(a, b){return lägenhetstypCount[b]-lägenhetstypCount[a]})
+                let list = []
+                Object.values(bostadsområden).forEach(bostadsområde => {
+                    list.push([bostadsområde,bostadsområdeCount[bostadsområde]]);
+                });
+                console.log(list)
+                list = []
+                Object.values(rok).forEach(rok => {
+                    list.push([rok,rokCount[rok]]);
+                });
+                console.log(list)
+                list = []
+                Object.values(värdar).forEach(värd => {
+                    list.push([värd,värdarCount[värd]]);
+                });
+                console.log(list)
+                list = []
+                Object.values(möblerad).forEach(möbler => {
+                    list.push([möbler,möbleradCount[möbler]]);
+                });
+                console.log(list)
+                list = []
+                Object.values(lägenhetstyp).forEach(lägenhetenstyp => {
+                    list.push([lägenhetenstyp,lägenhetstypCount[lägenhetenstyp]]);
+                });
+                console.log(list)
+    
+    
+                addOptionsToDropdown("bostadsområdeFilter", bostadsområden);
+                addOptionsToDropdown("rokFilter", rok);
+                addOptionsToDropdown("värdFilter", värdar);
+                addOptionsToDropdown("möbleradFilter", möblerad);
+                addOptionsToDropdown("lägenhetstypFilter", lägenhetstyp);
+            }
+    
+            function addOptionsToDropdown(dropdownId, optionsSet) {
+                let dropdown = document.getElementById(dropdownId);
+                optionsSet.forEach(option => {
+                    let listItem = document.createElement("li");
+                    listItem.classList.add("item");
+                    listItem.setAttribute("name", dropdownId+"Option");
+                    let checkboxSpan = document.createElement("span");
+                    checkboxSpan.classList.add("checkbox");
+    
+                    let checkIcon = document.createElement("i");
+                    checkIcon.classList.add("fa-solid", "fa-check", "check-icon");
+    
+                    let textSpan = document.createElement("span");
+                    textSpan.textContent = option;
+                    textSpan.classList.add("option-text"); // Add class for styling if needed
+    
+                    checkboxSpan.appendChild(checkIcon);
+                    listItem.appendChild(checkboxSpan);
+                    listItem.appendChild(textSpan);
+                    dropdown.appendChild(listItem);
+                });
+            }
+    
+    
+        });
+
+        function stylizeDate(date)
+        {
+            console.log(date);
+            let dateSewnOn = date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+
+            dateSewnOn = dateSewnOn.replace(/(\p{L})/u, match => match.toUpperCase());
+
+            if(date.getYear() != new Date().getYear())
+            {
+                dateSewnOn += " "+date.toLocaleDateString('sv-SE', { year: 'numeric' });
+            }
+            return dateSewnOn
+        }
+        function area(width, height, shape)
+        {
+            if (shape == "circle")
+            {
+                return Math.pow(width / 2, 2) * Math.PI;
+            }
+            if (shape == "oval")
+            {
+                return width / 2 * height / 2 * Math.PI;
+            }
+            if (shape == "rect" || shape == "outline")
+            {
+                return width * height;
+            }
+            if (shape == "triangle")
+            {
+                return width * height/2;
+            }
+            if (shape == "hexagon")
+            {
+                return 3/2*Math.sqrt(3)*Math.pow(width /Math.sqrt(3),2);
+            }
+        }
+        function filterBooths() {
+            var searchText = document.getElementById("searchBox").value.toLowerCase();
+            var selectedBostadsområden = document.getElementById("bostadsområdeFilter");
+            var selectedROK = document.getElementById("rokFilter");
+            var selectedVärdar = document.getElementById("värdFilter");
+            var selectedMöblerad = document.getElementById("möbleradFilter");
+            var selectedLägenhetstyp = document.getElementById("lägenhetstypFilter");
+
+
+            selectedBostadsområden = Array.from(selectedBostadsområden.children).filter(item => item.className == "item checked");
+            selectedROK = Array.from(selectedROK.children).filter(item => item.className == "item checked");
+            selectedVärdar = Array.from(selectedVärdar.children).filter(item => item.className == "item checked");
+            selectedMöblerad = Array.from(selectedMöblerad.children).filter(item => item.className == "item checked");
+            selectedLägenhetstyp = Array.from(selectedLägenhetstyp.children).filter(item => item.className == "item checked");
+
+            //console.log(selectedIndustries);
+            selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
+
+
+            
+
+            console.log(selectedBostadsområden);
+            if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
+                iso.arrange({
+                    filter: '*'
+                });
+                return; // No filters applied
+            }
+            console.log(searchText);
+
+
+            iso.arrange({
+                // item element provided as argument
+                filter: function( itemElem ) {
+                    let märke =märkeData[itemElem.dataset.index];
+                    //console.log(apartment);
+                    if (!searchText && selectedBostadsområden.length==0 && selectedROK.length==0 && selectedVärdar.length==0 && selectedMöblerad.length==0 && selectedLägenhetstyp.length ==0) {
+                        console.log("No filters");
+                        return true; // No filters applied
+                    }
+                    //var matches = false;
+                    console.log(märke);
+                    console.log("Typ av märke.places:", typeof märke.places, märke.places);
+                    let matchesSearch = searchText
+                            ? märke.name?.toLowerCase().includes(searchText)
+                            //apartment.storlek.toLowerCase().includes(searchText) ||
+                            //märke.places[0].toLowerCase().includes(searchText)
+                            : true;
+    
+                    return matchesSearch;
+                    //let matchesBostadsområde = selectedBostadsområden.length>0 ? selectedBostadsområden.some(selectedBostadsområde => selectedBostadsområde.innerText==märke.bostadsområde) : true;
+                    //console.log(matchesSearch);
+                    //console.log(märke.adress.toLowerCase().includes(searchText))
+                    //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText));
+                    //console.log(apartment.bostadsområde);
+                    //selectedBostadsområden.forEach(selectedIndustry => console.log(selectedIndustry.innerText==apartment.bostadsområde));
+                    //let matchesROK = selectedROK.length>0 ? selectedROK.some(selectedROK => selectedROK.innerText==märke.storlek) : true;
+                    //let matchesVärdar = selectedVärdar.length>0 ? selectedVärdar.some(selectedVärd => selectedVärd.innerText==märke.bostadskö) : true;
+                    //let matchesMöblerad = selectedMöblerad.length>0 ? selectedMöblerad.some(selectedMöbler => selectedMöbler.innerText==märke.möblerad.toString()) : true;
+                    //let matchesLägenhetstyp = selectedLägenhetstyp.length>0 ? selectedLägenhetstyp.some(selecLägenhettyp => selecLägenhettyp.innerText==märke.lägenhetstyp) : true;
+    
+                    //matches = matchesBostadsområde && matchesROK && matchesVärdar && matchesMöblerad && matchesLägenhetstyp && matchesSearch;
+                    
+                    //return matches;
+                }
+            });
+        }
+
+        function isMobile() {
+            return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        }
+
+
+        
+        var popupOpen = false;
+        function openPopup(index){
+            if(popupOpen){
+                return;
+            }
+            popupOpen = true;
+            console.log("Button clicked!");
+            console.log(index);
+            const modalContent = document.querySelector('.modal-content');
+            //let apartment =apartmentData.find(o => o.marker.popup = pop);
+            let märke =märkeData[index];
+            let dateSewnOn = stylizeDate(märke.date);
+            const imgSrc = "MärkesSida/Bilder/"+märke.image;
+            // Update the modal content dynamically
+            const imgStyle= isMobile()? "max-width:100%; max-height:700px;":  "max-width:90%; max-height:70%;";
+            modalContent.innerHTML = `
+                    <span class="close-btn">&times;</span>
+                    <h1>${märke.name}</h1>
+                    <img src="${imgSrc}" alt="Märkesbild" style="${imgStyle}">
+                    <p><strong>${märke.shape}</strong></p>
+                    <p><strong>Antal: ${märke.places.length}</strong></p>
+                    <p>${märke.places.join('\n')}</p>
+                    <p>Bredd: ${märke.width} cm, Höjd: ${märke.height} cm, Area: ${parseInt(area(märke.width, märke.height, märke.shape),10)}cm²</p>
+                    <strong>Datum påsatt:</strong> ${dateSewnOn}<br>
+                `;
+
+            document.getElementById('info-modal').style.display = "block";
+            let firstClick=true;
+            window.addEventListener('click', click);
+
+            function click(e){
+                if (document.getElementById('info-modal').contains(e.target)){
+                    console.log("Click in Box!");
+                } else{
+                    if(firstClick) {
+                        firstClick=false;
+                        return;
+                    }
+                    console.log("Click outside Box!");
+                    window.removeEventListener('click', click);
+                    popupOpen=false;
+                    document.getElementById('info-modal').style.display = "none";
+                }
+            }
+            // Close modal when the user clicks on the close button (×)
+            document.querySelector('.close-btn').addEventListener('click', function() {
+                window.removeEventListener('click', click);
+                popupOpen=false;
+                document.getElementById('info-modal').style.display = "none";
+            });
+            // Close modal if the user clicks outside the modal
+            //window.onclick = function(event) {
+            //    if (event.target == document.getElementById('info-modal')) {
+            //        document.getElementById('info-modal').style.display = "none";
+            //    }
+            //};
+        }
+
+        function openPopupStat(){
+            if(popupOpen){
+                return;
+            }
+            popupOpen = true;
+            console.log("Button clicked!");
+            const modalContent = document.querySelector('.modal-content');
+            //let apartment =apartmentData.find(o => o.marker.popup = pop);
+
+            document.getElementById('stat-modal').style.display = "block";
+            let firstClick=true;
+
+            //document.getElementById('märkeGraf').style.width = '50%';
+            window.addEventListener('click', click);
+
+            function click(e){
+                if (document.getElementById('stat-modal').contains(e.target)){
+                    console.log("Click in Box!");
+                } else{
+                    if(firstClick) {
+                        firstClick=false;
+                        return;
+                    }
+                    console.log("Click outside Box!");
+                    window.removeEventListener('click', click);
+                    popupOpen=false;
+                    document.getElementById('stat-modal').style.display = "none";
+                }
+            }
+            // Close modal when the user clicks on the close button (×)
+            document.getElementById('stat-close-btn').addEventListener('click', function() {
+                window.removeEventListener('click', click);
+                popupOpen=false;
+                document.getElementById('stat-modal').style.display = "none";
+            });
+            // Close modal if the user clicks outside the modal
+            //window.onclick = function(event) {
+            //    if (event.target == document.getElementById('info-modal')) {
+            //        document.getElementById('info-modal').style.display = "none";
+            //    }
+            //};
+        }
+
+    </script>
+
+</body>
+</html>
