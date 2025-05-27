@@ -319,6 +319,17 @@
     "image": "skåne_flagga.jpg"
   },
   {
+    "date": "2023-10-18T00:00:00",
+    "name": "Live Laugh Larv",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 7.0,
+    "image": "live_laugh_larv.jpg"
+  },
+  {
     "date": "2023-11-10T00:00:00",
     "name": "Tentaröj Halloween 2023",
     "places": [
@@ -495,17 +506,6 @@
     "image": "nolleperioden_2023.jpg"
   },
   {
-    "date": "2025-04-18T00:00:00",
-    "name": "1+1=10 - Kristin",
-    "places": [
-      "left-front-stomach"
-    ],
-    "shape": "rect",
-    "width": 7.0,
-    "height": 3.0,
-    "image": "1+1=10.jpg"
-  },
-  {
     "date": "2024-05-01T00:00:00",
     "name": "Pedro",
     "places": [
@@ -583,17 +583,6 @@
     "image": "larv_pub_7.jpg"
   },
   {
-    "date": "2023-10-18T00:00:00",
-    "name": "Live Laugh Larv",
-    "places": [
-      "right-front-leg-upper"
-    ],
-    "shape": "rect",
-    "width": 6.0,
-    "height": 7.0,
-    "image": "live_laugh_larv.jpg"
-  },
-  {
     "date": "2024-05-18T00:00:00",
     "name": "PC Master Race",
     "places": [
@@ -626,6 +615,17 @@
     "width": 29.0,
     "height": 29.0,
     "image": "tillämpad_artificiell_intelligens_2023.jpg"
+  },
+  {
+    "date": "2024-08-16T00:00:00",
+    "name": "ESA",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 9.5,
+    "height": 9.5,
+    "image": "esa.jpg"
   },
   {
     "date": "2024-08-16T00:00:00",
@@ -672,17 +672,6 @@
     "image": "spelkvällen_2023.jpg"
   },
   {
-    "date": "2024-08-16T00:00:00",
-    "name": "ESA",
-    "places": [
-      "left-back-leg-upper"
-    ],
-    "shape": "circle",
-    "width": 9.5,
-    "height": 9.5,
-    "image": "esa.jpg"
-  },
-  {
     "date": "2024-08-17T00:00:00",
     "name": "Phösare 2024",
     "places": [
@@ -692,6 +681,17 @@
     "width": 9.0,
     "height": 5.5,
     "image": "phösare_2024.jpg"
+  },
+  {
+    "date": "2024-08-18T00:00:00",
+    "name": "Datasektionen 40 år",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasektionen_40_år.jpg"
   },
   {
     "date": "2024-08-20T00:00:00",
@@ -736,6 +736,17 @@
     "width": 9.5,
     "height": 9.5,
     "image": "gula_24.jpg"
+  },
+  {
+    "date": "2024-09-10T00:00:00",
+    "name": "Astronomisk Ungdom",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "astronomisk_ungdom.jpg"
   },
   {
     "date": "2024-09-13T00:00:00",
@@ -792,17 +803,6 @@
     "width": 8.0,
     "height": 8.0,
     "image": "tillämpad_artificiell_intelligens_2023_litet_ryggmärke.jpg"
-  },
-  {
-    "date": "2024-8-18T00:00:00",
-    "name": "Datasektionen 40 år",
-    "places": [
-      "right-arm"
-    ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "datasektionen_40_år.jpg"
   },
   {
     "date": "2024-10-06T00:00:00",
@@ -990,17 +990,6 @@
     "width": 8.5,
     "height": 2.5,
     "image": "ur_trafiken.jpg"
-  },
-  {
-    "date": "2024-9-10T00:00:00",
-    "name": "Astronomisk Ungdom",
-    "places": [
-      "left-back-leg-upper"
-    ],
-    "shape": "circle",
-    "width": 6.0,
-    "height": 6.0,
-    "image": "astronomisk_ungdom.jpg"
   },
   {
     "date": "2024-11-10T00:00:00",
@@ -1529,6 +1518,17 @@
     "width": 8.0,
     "height": 8.0,
     "image": "rymdteknik_2023_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2025-04-18T00:00:00",
+    "name": "1+1=10 - Kristin",
+    "places": [
+      "left-front-stomach"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 3.0,
+    "image": "1+1=10.jpg"
   },
   {
     "date": "2025-04-18T00:00:00",

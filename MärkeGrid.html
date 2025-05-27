@@ -176,7 +176,7 @@
                 }
                 var days=days_between(märkeData[0].date,märke.date);
                 var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
-                console.log(date);
+                //console.log(date);
                 if (index>0&&date==patchGraphxValues[patchGraphxValues.length-1]) {
                     patchGraphyValues[patchGraphyValues.length-1] = patchGraphyValues[patchGraphyValues.length-1]+märke.places.length;
                 }
@@ -198,8 +198,8 @@
                 div.dataset.shape = märke.shape;
                 div.dataset.places = märke.places;
                 div.dataset.index = index;
-                console.log(märke.places);
-                console.log("Typ av märke.places:", typeof märke.places, märke.places);
+                //console.log(märke.places);
+                //console.log("Typ av märke.places:", typeof märke.places, märke.places);
                 //console.log(div.dataset)
                 let dateSewnOn = stylizeDate(märke.date);
                 totalArea += area(märke.width, märke.height, märke.shape)* märke.places.length;
@@ -629,7 +629,7 @@
 
         function stylizeDate(date)
         {
-            console.log(date);
+            //console.log(date);
             let dateSewnOn = date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
 
             dateSewnOn = dateSewnOn.replace(/(\p{L})/u, match => match.toUpperCase());
@@ -704,8 +704,8 @@
                         return true; // No filters applied
                     }
                     //var matches = false;
-                    console.log(märke);
-                    console.log("Typ av märke.places:", typeof märke.places, märke.places);
+                    //console.log(märke);
+                    //console.log("Typ av märke.places:", typeof märke.places, märke.places);
                     let matchesSearch = searchText
                             ? märke.name?.toLowerCase().includes(searchText) ||
                             //apartment.storlek.toLowerCase().includes(searchText) ||
