@@ -151,6 +151,7 @@
         var iso;
         var patchGraphxValues = [];
         var patchGraphyValues = [];
+        var patchGraphyValuesArea = [];
         var shapeCount = {};
         var patchGraphxValuesShape = {};
         var patchGraphyValuesShape = {};
@@ -171,19 +172,25 @@
                 //apartment.adress +=", Luleå, Sweden";
                 märke.date = märke.date ? new Date(märke.date) : null;
                 märkeData.push(märke);
+                märke.area=area(märke.width, märke.height, märke.shape);
+                if(isNaN(märke.area)){
+                    märke.area=0;
+                }
                 for (let index = 0; index < märke.places.length; index++) {
-                    areaList.push(area(märke.width, märke.height, märke.shape));
+                    areaList.push(märke.area);
                 }
                 var days=days_between(märkeData[0].date,märke.date);
                 var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
                 //console.log(date);
                 if (index>0&&date==patchGraphxValues[patchGraphxValues.length-1]) {
                     patchGraphyValues[patchGraphyValues.length-1] = patchGraphyValues[patchGraphyValues.length-1]+märke.places.length;
+                    patchGraphyValuesArea[patchGraphyValues.length-1] = patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length*0.0001;
                 }
                 else{
                     patchGraphxValues.push(date);
                     //xValues.push(märke.date);
                     patchGraphyValues.push(totalPatches+ märke.places.length);
+                    patchGraphyValuesArea.push(totalArea*0.0001+märke.area* märke.places.length*0.0001);
                 }
                 shapeCount[märke.shape] = (shapeCount[märke.shape] || 0) + märke.places.length;
                 //console.log(apartment);
@@ -202,7 +209,7 @@
                 //console.log("Typ av märke.places:", typeof märke.places, märke.places);
                 //console.log(div.dataset)
                 let dateSewnOn = stylizeDate(märke.date);
-                totalArea += area(märke.width, märke.height, märke.shape)* märke.places.length;
+                totalArea += märke.area* märke.places.length;
                 totalPatches +=märke.places.length;
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Märkesbild" onclick="openPopup(${index})" name=${index}>
@@ -246,6 +253,7 @@
             });
             console.log(patchGraphxValues);
             console.log(patchGraphyValues);
+            console.log(patchGraphyValuesArea);
             const dataPoints = patchGraphxValues.map((x, i) => ({ x, y: patchGraphyValues[i] }));
             console.log(dataPoints);
             new Chart("märkeGraf", {
@@ -253,13 +261,25 @@
                 data: {
                     labels: patchGraphxValues,
                     datasets: [{
-                    label: "Märken över tid",
-                    data: patchGraphyValues,
-                    backgroundColor: "rgba(0,0,255,0.1)",
-                    borderColor: "rgba(0,0,255,1.0)",
-                    fill: true,
-                    tension: 0.1
-                    }]
+                        label: "Märken över tid",
+                        data: patchGraphyValues,
+                        backgroundColor: "rgba(0,0,255,0.1)",
+                        borderColor: "rgba(0,0,255,1.0)",
+                        fill: true,
+                        tension: 0.1,
+                        yAxisID: 'yLeft'
+                    },
+                    {
+                        label: "Area över tid",
+                        data: patchGraphyValuesArea,
+                        backgroundColor: "rgba(255,0,0,0.1)",
+                        borderColor: "rgba(255,0,0,1.0)",
+                        fill: true,
+                        tension: 0.1,
+                        yAxisID: 'yRight',
+                        hidden: true
+                    }
+                ]
                 },
                 options: {
                     responsive: true,
@@ -275,10 +295,21 @@
                             text: 'Datum'
                             }
                         },
-                        y: {
+                        yLeft: {
+                            position: 'left',
                             title: {
                             display: true,
                             text: 'Märken'
+                            }
+                        },
+                        yRight: {
+                            position: 'right',
+                            title: {
+                            display: true,
+                            text: 'Area (cm²)'
+                            },
+                            grid: {
+                            drawOnChartArea: false, // prevent grid lines from overlapping
                             }
                         }
                     }
