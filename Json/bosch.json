@@ -782,7 +782,7 @@
       "id": 840,
       "name": "CocaCola Zero 33cl",
       "price": 8712,
-      "stock": 19
+      "stock": 18
     },
     {
       "active": true,
@@ -838,7 +838,7 @@
       "id": 847,
       "name": "CocaCola 33cl",
       "price": 8664,
-      "stock": -27
+      "stock": -29
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 44
+      "stock": 43
     },
     {
       "active": true,
