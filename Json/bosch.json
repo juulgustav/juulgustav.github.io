@@ -838,7 +838,7 @@
       "id": 847,
       "name": "CocaCola 33cl",
       "price": 8664,
-      "stock": -23
+      "stock": -27
     },
     {
       "active": true,
@@ -2062,7 +2062,7 @@
       "id": 1005,
       "name": "Asia Box Red Curry Chicken",
       "price": 36752,
-      "stock": 2
+      "stock": 0
     },
     {
       "active": true,
@@ -2766,7 +2766,7 @@
       "id": 1093,
       "name": "LUDD Sticker",
       "price": 6378,
-      "stock": -27
+      "stock": -30
     },
     {
       "active": true,
@@ -3822,7 +3822,7 @@
       "id": 1411,
       "name": "Pepsi Max 33cl",
       "price": 7368,
-      "stock": 24
+      "stock": 22
     },
     {
       "active": true,
@@ -3894,7 +3894,7 @@
       "id": 1438,
       "name": "Karins lasagne",
       "price": 30032,
-      "stock": 8
+      "stock": 7
     },
     {
       "active": true,
@@ -4566,7 +4566,7 @@
       "id": 1685,
       "name": "Big Corny C",
       "price": 12345,
-      "stock": 3
+      "stock": 2
     },
     {
       "active": true,
