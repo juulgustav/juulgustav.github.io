@@ -205,6 +205,10 @@
                 div.dataset.shape = märke.shape;
                 div.dataset.places = märke.places;
                 div.dataset.index = index;
+                div.dataset.ratio = märke.width/märke.height;
+                if(isNaN(div.dataset.ratio)){
+                    div.dataset.ratio=0;
+                }
                 //console.log(märke.places);
                 //console.log("Typ av märke.places:", typeof märke.places, märke.places);
                 //console.log(div.dataset)
@@ -218,6 +222,8 @@
                     <p style="margin: 4px 0;">${märke.places.join('\n')}</p>
                     <p style="margin: 4px 0;">Bredd: ${märke.width} cm, Höjd: ${märke.height} cm, Area: ${parseInt(area(märke.width, märke.height, märke.shape),10)}cm²</p>
                     <p style="margin: 4px 0;"><strong>Datum påsatt:</strong> ${dateSewnOn}<br></p>
+                    <p style="margin: 4px 0;"><strong>RAtio:</strong> ${märke.width/märke.height}<br></p>
+
                     <button id="more-info-btn" onclick="openPopup(${index})" name=${index}>Enhance!</button>
                 `;
                 gridContainer.appendChild(div);
@@ -241,7 +247,7 @@
                     width: item => parseFloat(item.dataset.width),
                     height: item => parseFloat(item.dataset.height),
                     weight: item => item.dataset.name=="Gula 2000"?"Gula":item.dataset.name,
-                    ratio: item => parseFloat(item.dataset.width/item.dataset.height),
+                    ratio: item => item.dataset.ratio,
                 }
                 //getFilterData: {
                 //  lägenhetstyp: item => item.dataset.lägenhetstyp=="Studentbostad",
@@ -387,7 +393,8 @@
                         label: "Täthetsfunktion på arean",
                         backgroundColor:colours,
                         borderColor: colours,
-                        data: density
+                        data: density,
+                        hidden: true
                     },
                     {
                         label: "Antal med den arean",
