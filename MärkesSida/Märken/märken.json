@@ -440,6 +440,17 @@
     "image": "jag_kan_supa_utan_att_ha_kul.jpg"
   },
   {
+    "date": "2023-12-15T00:00:00",
+    "name": "Databilen",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 11.5,
+    "height": 4.5,
+    "image": "databilen.jpg"
+  },
+  {
     "date": "2024-02-17T00:00:00",
     "name": "Snopp 2024",
     "places": [
@@ -603,6 +614,17 @@
     "width": 8.0,
     "height": 4.0,
     "image": "skåne_halvbåge.jpg"
+  },
+  {
+    "date": "2024-05-20T00:00:00",
+    "name": "Skjut Upp Det Du Ska Göra Imorgon, Redan Idag",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 9.0,
+    "height": 4.0,
+    "image": "skjut_upp_det_du_ska_göra_imorgon.jpg"
   },
   {
     "date": "2024-08-15T00:00:00",
@@ -1805,5 +1827,27 @@
     "width": 7.5,
     "height": 7.5,
     "image": "snopp_2023.jpg"
+  },
+  {
+    "date": "2025-05-28T00:00:00+02:00",
+    "name": "Woodstuk 25 VT Roadtrip",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 7.0,
+    "height": 10.0,
+    "image": "woodstuk_25_vt_roadtrip.jpg"
+  },
+  {
+    "date": "2025-05-28T00:00:00+02:00",
+    "name": "My Code Works //I Have No Idea Why",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 11.5,
+    "height": 4.5,
+    "image": "my_code_works.jpg"
   }
 ]
