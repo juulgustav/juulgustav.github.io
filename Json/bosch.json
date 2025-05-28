@@ -54,7 +54,7 @@
       "id": 746,
       "name": "Panpizza Original Fryst 170g Billys",
       "price": 15448,
-      "stock": 6
+      "stock": 5
     },
     {
       "active": true,
@@ -230,7 +230,7 @@
       "id": 770,
       "name": "Kexchoklad 60g Cloetta",
       "price": 9848,
-      "stock": 39
+      "stock": 37
     },
     {
       "active": true,
@@ -782,7 +782,7 @@
       "id": 840,
       "name": "CocaCola Zero 33cl",
       "price": 8712,
-      "stock": 20
+      "stock": 19
     },
     {
       "active": true,
@@ -3934,7 +3934,7 @@
       "id": 1452,
       "name": "Gorby's Pirog",
       "price": 13208,
-      "stock": 3
+      "stock": 2
     },
     {
       "active": true,
@@ -4038,7 +4038,7 @@
       "id": 1489,
       "name": "Trocadero",
       "price": 6808,
-      "stock": 16
+      "stock": 15
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 51
+      "stock": 46
     },
     {
       "active": true,

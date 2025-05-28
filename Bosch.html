@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Märken!</title>
+    <title>Bosch!</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="Assets/Logo.png">
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
@@ -168,7 +168,6 @@
                 if(märke.stock < 1) {
                     return;
                 }
-                märke.date = märke.date ? new Date(märke.date) : null;
                 märkeData.push(märke);
                 //console.log(apartment);
                 const div = document.createElement("div");
