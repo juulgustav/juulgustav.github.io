@@ -1,1 +1,4596 @@
-{"products":[{"active":true,"barcode":"1KR","id":739,"name":"1Kr","price":1000,"stock":-192},{"active":true,"barcode":"2KR","id":740,"name":"2Kr","price":2000,"stock":0},{"active":true,"barcode":"5KR","id":741,"name":"5Kr","price":5000,"stock":0},{"active":true,"barcode":"10KR","id":742,"name":"10Kr","price":10000,"stock":0},{"active":true,"barcode":"123KAPPA","id":743,"name":"Burkl\u00e4sk 33cl","price":7246,"stock":0},{"active":true,"barcode":"7310960029243","id":745,"name":"Panpizza Bolognese Fryst 170g Billys","price":16085,"stock":0},{"active":true,"barcode":"7310960713654","id":746,"name":"Panpizza Original Fryst 170g Billys","price":15448,"stock":6},{"active":true,"barcode":"7392257001392","id":747,"name":"Patron Hallon och Lakrits","price":1384,"stock":0},{"active":false,"barcode":"5000159459228","id":748,"name":"Twix 50g","price":6208,"stock":0},{"active":true,"barcode":"7040110663408","id":749,"name":"Japp 30g Marabou","price":5497,"stock":0},{"active":true,"barcode":"5900951020940","id":751,"name":"Milky Way 21.5g 2-p","price":6439,"stock":0},{"active":true,"barcode":"7310040027909","id":752,"name":"Kexchoklad 25g Cloetta","price":5315,"stock":0},{"active":true,"barcode":"7622210435262","id":753,"name":"Traditional Winegums 160g Bassetts","price":16029,"stock":0},{"active":true,"barcode":"7310350111343","id":754,"name":"Ahlgrens Bilar 55g","price":10478,"stock":0},{"active":true,"barcode":"80050094","id":756,"name":"Kinder Maxi","price":4494,"stock":0},{"active":true,"barcode":"7611612221351","id":757,"name":"Powerking","price":8397,"stock":48},{"active":true,"barcode":"9002490215408","id":758,"name":"Red Bull","price":15376,"stock":22},{"active":true,"barcode":"7392257132898","id":759,"name":"Hockeypulver 12g Konfekta","price":2055,"stock":0},{"active":true,"barcode":"5000159407236","id":760,"name":"Mars 51g","price":6312,"stock":0},{"active":true,"barcode":"7310350109142","id":761,"name":"Pim Pim 80g Malaco","price":7412,"stock":0},{"active":true,"barcode":"7310511257507","id":762,"name":"Daim Dubbel 56g Marabou","price":11640,"stock":0},{"active":true,"barcode":"76145513","id":763,"name":"Toblerone 50g Marabou","price":8380,"stock":0},{"active":true,"barcode":"7310511210304","id":764,"name":"Mj\u00f6lkchoklad 100g Marabou","price":16213,"stock":0},{"active":true,"barcode":"7622210208101","id":765,"name":"Mj\u00f6lkchoklad 185g Marabou Oreo","price":24340,"stock":0},{"active":true,"barcode":"5000159557771","id":766,"name":"Bounty 57g","price":9872,"stock":1},{"active":true,"barcode":"7310350119790","id":767,"name":"Juleskum 100g Cloetta","price":12174,"stock":0},{"active":true,"barcode":"RAVIOLI","id":768,"name":"Patron","price":1004,"stock":0},{"active":true,"barcode":"5900951134937","id":769,"name":"Mars 2-p 69g","price":6260,"stock":0},{"active":true,"barcode":"7310350118342","id":770,"name":"Kexchoklad 60g Cloetta","price":9848,"stock":39},{"active":true,"barcode":"7622210059956","id":771,"name":"Dr\u00f6mkrisp 100g Marabo","price":14011,"stock":0},{"active":true,"barcode":"5996071642711","id":772,"name":"S.P. Ray","price":12300,"stock":0},{"active":true,"barcode":"7310350109029","id":773,"name":"Djungelvr\u00e5l 80g Malac","price":7296,"stock":0},{"active":true,"barcode":"4009900399432","id":774,"name":"Tuggummi Professional white Spearemint 29g Extra","price":15305,"stock":0},{"active":true,"barcode":"7310350504305","id":775,"name":"Gott men d\u00e5ligt blandat","price":16592,"stock":29},{"active":true,"barcode":"8710398161987","id":776,"name":"Nacho cheese 170g Doritos","price":23288,"stock":14},{"active":true,"barcode":"5774540465401","id":777,"name":"Pingvinst\u00e5ng Salta Hallon 27g Tom","price":5207,"stock":0},{"active":true,"barcode":"7622300788834","id":778,"name":"Mj\u00f6lkchoklad Bubblig 60g Marabou","price":12753,"stock":0},{"active":true,"barcode":"7350036416751","id":779,"name":"Godis Armband","price":1428,"stock":0},{"active":true,"barcode":"57540948","id":780,"name":"Pingvinst\u00e5ng Tivoli 27g Tom","price":5229,"stock":9},{"active":true,"barcode":"7310040021341","id":781,"name":"Center 78g Cloetta","price":12129,"stock":0},{"active":true,"barcode":"5053990101870","id":782,"name":"Chips Sour cream big","price":20318,"stock":0},{"active":true,"barcode":"7310511210403","id":783,"name":"Mj\u00f6lkchoklad 200g Marabo","price":20279,"stock":0},{"active":true,"barcode":"7614500010013","id":784,"name":"Original 100g Toblerone","price":16620,"stock":0},{"active":true,"barcode":"6411401061066","id":785,"name":"Tyrkisk peber 20g Fazer","price":2261,"stock":0},{"active":true,"barcode":"7311672270251","id":786,"name":"Smakis P\u00e4ron","price":5035,"stock":0},{"active":true,"barcode":"7311671270252","id":787,"name":"Smakis Apelsin","price":5040,"stock":0},{"active":true,"barcode":"8855702006827","id":788,"name":"Thai-Cube Tikka Masala","price":26163,"stock":0},{"active":true,"barcode":"7040110663200","id":789,"name":"Japp Dubbel 60g","price":8385,"stock":0},{"active":true,"barcode":"7622210713216","id":790,"name":"Marabou Oreo 37g","price":11640,"stock":0},{"active":true,"barcode":"50251094","id":791,"name":"Kitkat","price":6326,"stock":0},{"active":true,"barcode":"7310240079562","id":792,"name":"Mexikansk Tacopaj","price":41042,"stock":5},{"active":true,"barcode":"7310500000404","id":793,"name":"Pasta Alferdo","price":35632,"stock":1},{"active":true,"barcode":"7310040028067","id":794,"name":"Sport Lunch","price":18384,"stock":0},{"active":true,"barcode":"6416453038981","id":795,"name":"Kina snacks","price":22180,"stock":0},{"active":true,"barcode":"7622300740375","id":796,"name":"O'boy","price":3207,"stock":0},{"active":true,"barcode":"7340005403547","id":797,"name":"OLW Sourcecream ","price":14139,"stock":0},{"active":true,"barcode":"5701090043919","id":798,"name":"Haribo Persikor","price":7645,"stock":-24},{"active":true,"barcode":"7310350109135","id":799,"name":"Malaco Fruxo","price":7994,"stock":0},{"active":true,"barcode":"4011800564513","id":800,"name":"Corny Chocolate-Banana","price":8115,"stock":0},{"active":true,"barcode":"4011800541514","id":801,"name":"Corny Coconut","price":8119,"stock":0},{"active":true,"barcode":"4011800563516","id":802,"name":"Corny Chocolate","price":8752,"stock":0},{"active":true,"barcode":"7622400624445","id":803,"name":"M\u00f6rkchoklad Apelsn","price":18134,"stock":0},{"active":true,"barcode":"7622300544010","id":804,"name":"M\u00f6rkchoklad Havsalt Peca","price":18277,"stock":0},{"active":true,"barcode":"7622201042226","id":805,"name":"M\u00f6rkchoklad Hallno","price":18453,"stock":0},{"active":true,"barcode":"7622400424601","id":806,"name":"Mj\u00f6lkchokld 100g Apelsin","price":14163,"stock":0},{"active":true,"barcode":"7310040034563","id":807,"name":"Polly 130g Og","price":14433,"stock":0},{"active":true,"barcode":"7611612100397","id":808,"name":"Asia Box Chiken Tikka Masala","price":36845,"stock":1},{"active":true,"barcode":"7611612100434","id":809,"name":"Asia Box Panang Curry Chicken","price":36752,"stock":2},{"active":true,"barcode":"7622300346676","id":810,"name":"Marabou 100g Gradd nougat","price":14404,"stock":0},{"active":true,"barcode":"5774540738932","id":811,"name":"Pingvin Karamella Kolastang","price":4321,"stock":0},{"active":true,"barcode":"7315360010709","id":812,"name":"Delicato Biskvi","price":8700,"stock":2},{"active":true,"barcode":"7310960001447","id":813,"name":"Billys Burning Pepper","price":16055,"stock":0},{"active":true,"barcode":"7310500040110","id":814,"name":"Findus Ost-schnitzel","price":35632,"stock":16},{"active":true,"barcode":"7310500000404","id":815,"name":"Finus Pasta Alfredo","price":35632,"stock":16},{"active":true,"barcode":"7310240079562","id":816,"name":"Felix Maxikansk Tacopaj","price":33147,"stock":0},{"active":true,"barcode":"7300400127394","id":817,"name":"Sandwich Cheese and French Herbs","price":7219,"stock":-21},{"active":true,"barcode":"7300400122689","id":818,"name":"Sandwich Cheese and Chives","price":8404,"stock":0},{"active":true,"barcode":"4001686313916","id":819,"name":"Haribo Nappar Zourr","price":7268,"stock":0},{"active":true,"barcode":"57402369","id":820,"name":"Pingvinstang Jordgubb","price":4500,"stock":0},{"active":true,"barcode":"4001686372586","id":821,"name":"Haribo Roulette","price":6462,"stock":0},{"active":true,"barcode":"5996379193748","id":822,"name":"Haribo Goldenbears","price":6140,"stock":0},{"active":true,"barcode":"7315360010914","id":823,"name":"Delicato Punschrulle","price":7732,"stock":4},{"active":true,"barcode":"7311672273252","id":824,"name":"Smakis Paron","price":5202,"stock":0},{"active":true,"barcode":"7310500094861","id":825,"name":"Findus Falafel Marrakech","price":30370,"stock":0},{"active":true,"barcode":"7310500094809","id":826,"name":"Findus Chicken Indonesia","price":30454,"stock":0},{"active":true,"barcode":"7310240079593","id":827,"name":"Felix Kyckling Broccolipaj","price":33082,"stock":0},{"active":true,"barcode":"7310240076851","id":828,"name":"Felix Italia Fettuccine alla Bolognese","price":39309,"stock":0},{"active":true,"barcode":"7310500109107","id":829,"name":"Findus Rostad Kycklingfile","price":31634,"stock":0},{"active":true,"barcode":"7310500040158","id":830,"name":"Findus Jagarbiff","price":30394,"stock":0},{"active":true,"barcode":"5760466961479","id":831,"name":"Pucko","price":8268,"stock":0},{"active":true,"barcode":"7310040028746","id":833,"name":"Sport Lunch 50 g","price":10681,"stock":0},{"active":true,"barcode":"7310240079579","id":834,"name":"Felix K\u00f6ttfarspaj","price":33150,"stock":0},{"active":true,"barcode":"7310240076813","id":835,"name":"Felix Penne Rosse Piccanti","price":39308,"stock":0},{"active":true,"barcode":"7310240076820","id":836,"name":"Felix Rigatoni ai Funghi","price":39307,"stock":0},{"active":true,"barcode":"5996379193724","id":837,"name":"Haribo Nappar Fruit","price":7643,"stock":0},{"active":true,"barcode":"5000112579321","id":838,"name":"Fanta Orange 33cl","price":8414,"stock":0},{"active":true,"barcode":"5000112579925","id":839,"name":"Spicy Water","price":7338,"stock":0},{"active":true,"barcode":"5000112637939","id":840,"name":"CocaCola Zero 33cl","price":8712,"stock":20},{"active":true,"barcode":"7310401021768","id":841,"name":"Loka Passionsfruk ","price":7172,"stock":0},{"active":true,"barcode":"5000112614701","id":842,"name":"Fanta Zero Orange 33cl","price":8285,"stock":0},{"active":true,"barcode":"7310401007113","id":843,"name":"Loka Citron 33cl","price":5688,"stock":20},{"active":true,"barcode":"5000112617382","id":844,"name":"Sprite Mynta 33cl","price":7047,"stock":0},{"active":true,"barcode":"7310401007168","id":845,"name":"Dr. Pepper 33cl","price":8208,"stock":4},{"active":true,"barcode":"5449000181435","id":846,"name":"Fanta Strawberry ","price":8287,"stock":0},{"active":true,"barcode":"5000112637922","id":847,"name":"CocaCola 33cl","price":8664,"stock":-23},{"active":true,"barcode":"5000112579550","id":848,"name":"Sprite Zero 33cl-old","price":7206,"stock":0},{"active":true,"barcode":"5000112579390","id":849,"name":"Fanta Exotic","price":8284,"stock":0},{"active":true,"barcode":"7311672273252","id":850,"name":"Smakis Jordgubb","price":5083,"stock":0},{"active":true,"barcode":"7310401007144","id":851,"name":"Champis 33cl","price":7248,"stock":0},{"active":true,"barcode":"5449000096982","id":852,"name":"CocaCola Vanilla 33cl-old","price":8287,"stock":0},{"active":true,"barcode":"7310500007700","id":853,"name":"Findus Pepparbiff","price":30006,"stock":0},{"active":true,"barcode":"7310531027906","id":854,"name":"Est Chips Sourcream ","price":5326,"stock":0},{"active":true,"barcode":"3800020414385","id":855,"name":"KitKat Cookie Dough 42g","price":6003,"stock":0},{"active":true,"barcode":"7310040028647","id":856,"name":"Sport Lunch 25g","price":5268,"stock":0},{"active":true,"barcode":"5010478251434","id":857,"name":"Banana Skids","price":1090,"stock":0},{"active":true,"barcode":"5000112579376","id":858,"name":"Fanta Lemon","price":8284,"stock":0},{"active":true,"barcode":"7350045424303","id":859,"name":"Vimto","price":7665,"stock":0},{"active":true,"barcode":"7310070000361","id":860,"name":"Mountain Dew Orginal","price":7368,"stock":60},{"active":true,"barcode":"5449000009500","id":861,"name":"CocaCola Cherry old","price":7143,"stock":0},{"active":true,"barcode":"5060335635716","id":862,"name":"Monster Energy Ultra Zero White","price":18176,"stock":-1},{"active":true,"barcode":"5060335635747","id":863,"name":"Orange Sips","price":15258,"stock":0},{"active":true,"barcode":"5060335635778","id":864,"name":"Red Sips","price":15314,"stock":0},{"active":true,"barcode":"7310960601906","id":865,"name":"Billys Kebab 170g","price":15448,"stock":-1},{"active":true,"barcode":"5060337502740","id":866,"name":"Yellow Sips","price":15027,"stock":0},{"active":true,"barcode":"7310401007151","id":867,"name":"Trocadero 33cl","price":6808,"stock":20},{"active":true,"barcode":"7310350119318","id":868,"name":"Kick Raspberry","price":5092,"stock":0},{"active":true,"barcode":"5700417006804","id":869,"name":"Kick OG","price":5062,"stock":0},{"active":true,"barcode":"4001686372975","id":870,"name":"Haribo Roulette Zourr","price":6106,"stock":0},{"active":true,"barcode":"7310500040141","id":871,"name":"Findus K\u00f6ttbullar","price":31634,"stock":0},{"active":true,"barcode":"7310960016489","id":872,"name":"Karins Lasagne","price":28957,"stock":0},{"active":true,"barcode":"7310511217303","id":873,"name":"Marabou Frukt ","price":14413,"stock":0},{"active":true,"barcode":"7622300245146","id":874,"name":"Marabou Mj\u00f6lk bar 43g","price":7105,"stock":0},{"active":true,"barcode":"4001686383612","id":875,"name":"Haribo Mega-Roulette Cola","price":7386,"stock":0},{"active":true,"barcode":"5766632533518","id":876,"name":"Dumle strut","price":15341,"stock":0},{"active":true,"barcode":"7312690013479","id":877,"name":"Hilda pinne","price":7455,"stock":0},{"active":true,"barcode":"7310500057590","id":878,"name":"Findus Black & White","price":35632,"stock":1},{"active":true,"barcode":"7312690013257","id":879,"name":"Sandwich","price":8250,"stock":0},{"active":true,"barcode":"7312690013097","id":880,"name":"Glass N\u00f6tkrokant","price":8490,"stock":0},{"active":true,"barcode":"5060466510005","id":881,"name":"Burn","price":12484,"stock":0},{"active":true,"barcode":"8711400800016","id":882,"name":"Lakrisal","price":4118,"stock":0},{"active":true,"barcode":"7310350103959","id":883,"name":"Zoo","price":6376,"stock":0},{"active":true,"barcode":"6411401017575","id":884,"name":"Dumle Snacks","price":6069,"stock":0},{"active":true,"barcode":"7310040020504","id":885,"name":"Plopp","price":12408,"stock":0},{"active":true,"barcode":"5000159502955","id":886,"name":"Mars Kingsize","price":9444,"stock":0},{"active":true,"barcode":"7622400958991","id":887,"name":"Marrabou Digestive","price":14408,"stock":0},{"active":true,"barcode":"4008400935225","id":888,"name":"Kinder Bueno","price":8252,"stock":0},{"active":true,"barcode":"7340116870009","id":889,"name":"Memevatten Original","price":15030,"stock":0},{"active":true,"barcode":"7622210981271","id":890,"name":"Daim orange","price":6063,"stock":0},{"active":true,"barcode":"7310050005188","id":891,"name":"ICE ESPRESSO + MILK","price":19219,"stock":0},{"active":true,"barcode":"7340116870030","id":892,"name":"Memevatten Jordgubb","price":15092,"stock":0},{"active":true,"barcode":"7300400127363","id":893,"name":"Sandwich cheese tomato & basil","price":8404,"stock":3},{"active":true,"barcode":"7300400128315","id":894,"name":"Sandwich cheesee & paprika","price":7219,"stock":8},{"active":true,"barcode":"54492653","id":896,"name":"Powerade","price":17000,"stock":0},{"active":true,"barcode":"7310070002754","id":897,"name":"Pepsi max ginger","price":7389,"stock":0},{"active":true,"barcode":"7311673270250","id":898,"name":"Smakis \u00c4pple","price":4100,"stock":0},{"active":true,"barcode":"7310960718116","id":899,"name":"Billys peperoni","price":15448,"stock":6},{"active":true,"barcode":"7315361112402","id":900,"name":"Daimboll","price":7335,"stock":0},{"active":true,"barcode":"7310040020719","id":901,"name":"Center 50g","price":10441,"stock":0},{"active":true,"barcode":"5060166694777","id":902,"name":"Monster Energy","price":16810,"stock":0},{"active":true,"barcode":"7340116870801","id":903,"name":"Memevatten melon","price":15394,"stock":0},{"active":true,"barcode":"7310960794752","id":904,"name":"Billys Hawaii","price":15448,"stock":0},{"active":true,"barcode":"7310401009551","id":905,"name":"Mariestads alkoholfri","price":11023,"stock":0},{"active":true,"barcode":"7310401007137","id":906,"name":"Loka p\u00e4ron","price":7162,"stock":0},{"active":true,"barcode":"7393077181653","id":907,"name":"Skalle","price":8110,"stock":0},{"active":true,"barcode":"7350039457690","id":908,"name":"Peacem\u00e4rke J/L","price":8411,"stock":0},{"active":true,"barcode":"5000159376655","id":909,"name":"Skittles 38g","price":12348,"stock":0},{"active":true,"barcode":"7392257002061","id":910,"name":"Filidutter","price":7174,"stock":0},{"active":true,"barcode":"7350042710102","id":911,"name":"Vitamin Well care","price":15347,"stock":0},{"active":true,"barcode":"5060517880613","id":912,"name":"Monster punch","price":17128,"stock":0},{"active":true,"barcode":"4011800565510","id":913,"name":"corny peanut-choclate","price":8445,"stock":0},{"active":true,"barcode":"7310240077636","id":914,"name":"Grandiosa Vesuvio","price":19136,"stock":0},{"active":true,"barcode":"6411401037184","id":915,"name":"Viol","price":4360,"stock":0},{"active":true,"barcode":"7310070765802","id":917,"name":"Julmust","price":7005,"stock":0},{"active":true,"barcode":"7393714333100","id":918,"name":"Zeunerts","price":10085,"stock":0},{"active":true,"barcode":"7310040020726","id":919,"name":"Plopp 50g","price":12136,"stock":0},{"active":true,"barcode":"7350020720093","id":920,"name":"frossh Pineapple, banana & coconut","price":17175,"stock":0},{"active":true,"barcode":"4003084595000","id":921,"name":"Burger 50g","price":10373,"stock":0},{"active":true,"barcode":"87111606","id":922,"name":"Dextro classic","price":9034,"stock":0},{"active":true,"barcode":"8713600286072","id":923,"name":"mini sushi","price":19119,"stock":0},{"active":true,"barcode":"8000500003787","id":924,"name":"Ferrero Rocher","price":47384,"stock":0},{"active":true,"barcode":"7310510001729","id":925,"name":"Non Stop","price":15444,"stock":0},{"active":true,"barcode":"7613032625474","id":926,"name":"Lion","price":7290,"stock":0},{"active":true,"barcode":"40052441","id":927,"name":"KitKat","price":5821,"stock":0},{"active":true,"barcode":"7300400381703","id":928,"name":"OLW Sourcream & Onion","price":6131,"stock":0},{"active":true,"barcode":"7300400382205","id":929,"name":"OLW Cheese Doodles","price":5435,"stock":0},{"active":true,"barcode":"5000112626551","id":931,"name":"Fanta Blackcurrant","price":8286,"stock":0},{"active":true,"barcode":"7310070765987","id":932,"name":"Pepsi Hax","price":7398,"stock":0},{"active":true,"barcode":"7310400010695","id":933,"name":"Nyg\u00e5rda Julmust (flaska)","price":7482,"stock":-12},{"active":true,"barcode":"7340131600216","id":934,"name":"Nocco Caribbean","price":20482,"stock":0},{"active":true,"barcode":"7310070000354","id":935,"name":"Zingo Tropical","price":7189,"stock":0},{"active":true,"barcode":"125","id":936,"name":"Popcorn","price":6227,"stock":0},{"active":true,"barcode":"57055022","id":937,"name":"jenka","price":1185,"stock":0},{"active":true,"barcode":"57055039","id":938,"name":"shake","price":1317,"stock":0},{"active":true,"barcode":"7310240079555","id":939,"name":"Ost och skinkpaj","price":43294,"stock":0},{"active":true,"barcode":"5900951027307","id":940,"name":"Snickers 75g","price":10193,"stock":0},{"active":true,"barcode":"7340005400331","id":941,"name":"OLW cheez ballz","price":5488,"stock":0},{"active":true,"barcode":"7300400381604","id":942,"name":"OLW Dill & Gr\u00e4sl\u00f6k","price":5277,"stock":0},{"active":true,"barcode":"40144016","id":943,"name":"Werther's original cream candies","price":6482,"stock":0},{"active":true,"barcode":"7310511251307","id":944,"name":"Co-co 30g","price":5441,"stock":0},{"active":true,"barcode":"5774540471808","id":945,"name":"Pingvinst\u00e5ng Sur smultron","price":5362,"stock":-1},{"active":true,"barcode":"7340083452895","id":946,"name":"Gar chips Peperoni","price":5109,"stock":0},{"active":true,"barcode":"7310532112236","id":947,"name":"Linschips Sourcream & Onion","price":24336,"stock":3},{"active":true,"barcode":"5900020017420","id":948,"name":"Nesquik ","price":7268,"stock":0},{"active":true,"barcode":"7315360014233","id":949,"name":"P\u00e4rlboll","price":6865,"stock":0},{"active":true,"barcode":"7622201056629","id":950,"name":"Marabou mj\u00f6lkcoklad  Daim","price":14323,"stock":0},{"active":true,"barcode":"7611612514729","id":951,"name":"Passion l\u00e4sk","price":7465,"stock":0},{"active":true,"barcode":"7310070000293","id":952,"name":"Festis cactus & lime","price":13437,"stock":0},{"active":true,"barcode":"7310070000309","id":953,"name":"Festis guanabana & pineapple","price":13203,"stock":0},{"active":true,"barcode":"5000112626445","id":954,"name":"Cola Zero Vanilla","price":8281,"stock":0},{"active":true,"barcode":"7340154805261","id":955,"name":"Reese's","price":10171,"stock":0},{"active":true,"barcode":"5060517882853","id":956,"name":"Monster Hydro Tropical","price":45002,"stock":0},{"active":true,"barcode":"5060517882792","id":957,"name":"Monster Hydro Manic Melon","price":16810,"stock":0},{"active":true,"barcode":"7310960044222","id":958,"name":"Dafg\u00e5rds Spagetti Bolognese","price":34512,"stock":2},{"active":true,"barcode":"126","id":959,"name":"Semla","price":25405,"stock":0},{"active":true,"barcode":"7340116870207","id":960,"name":"Meme vatten mango ","price":15185,"stock":0},{"active":true,"barcode":"7611612221733","id":961,"name":"Power king lemon","price":8123,"stock":0},{"active":true,"barcode":"7340116870146","id":962,"name":"memevatten passion","price":15123,"stock":0},{"active":true,"barcode":"7310400010701","id":963,"name":"p\u00e5skmust","price":7267,"stock":0},{"active":true,"barcode":"5053990107384","id":964,"name":"Pringles Sourcream & onion","price":9789,"stock":0},{"active":true,"barcode":"5053990107339","id":965,"name":"Pringles Original","price":9363,"stock":0},{"active":true,"barcode":"50818907","id":966,"name":"Fisherman's friend  mint","price":11417,"stock":0},{"active":true,"barcode":"5000112579512","id":967,"name":"Mer apelsin","price":7095,"stock":0},{"active":true,"barcode":"7392555502096","id":968,"name":"Red Devil","price":16258,"stock":0},{"active":true,"barcode":"7392555502058","id":969,"name":"Explosion","price":16163,"stock":0},{"active":true,"barcode":"7310070000286","id":971,"name":"festis orange","price":13314,"stock":0},{"active":true,"barcode":"7310070000279","id":972,"name":"festis strawberry & lime","price":13007,"stock":0},{"active":true,"barcode":"7310780002327","id":973,"name":"PimPim 20g","price":4902,"stock":0},{"active":true,"barcode":"6420256010594","id":975,"name":"Gr\u00e4ddkola","price":7487,"stock":0},{"active":true,"barcode":"6411401015908","id":976,"name":"Geisha 100g","price":13431,"stock":0},{"active":true,"barcode":"6416453014725","id":977,"name":"Kina wafer 55g","price":6383,"stock":0},{"active":true,"barcode":"7622210776891","id":978,"name":"Vit choklad 185g","price":20113,"stock":0},{"active":true,"barcode":"7310532112601","id":979,"name":"Linschips dill & gr\u00e4sl\u00f6k ","price":19194,"stock":0},{"active":true,"barcode":"6416453036567","id":980,"name":"Tutti Frutti Red","price":7079,"stock":0},{"active":true,"barcode":"6416453036482","id":981,"name":"Tutti Frutti Bananas","price":7472,"stock":0},{"active":true,"barcode":"7340131600650","id":982,"name":"Nocco Carnival","price":19028,"stock":0},{"active":true,"barcode":"7340005404612","id":983,"name":"Olw Parmesan 275g","price":16462,"stock":0},{"active":true,"barcode":"7310070766007","id":984,"name":"Pepsi","price":7046,"stock":0},{"active":true,"barcode":"5060517883683","id":985,"name":"Monster  Mango Loco","price":18176,"stock":6},{"active":true,"barcode":"7340005404612","id":986,"name":"Parmesanchips","price":16472,"stock":0},{"active":true,"barcode":"7392555502034","id":987,"name":"\u00d6lkorv Bierbanger","price":14426,"stock":0},{"active":true,"barcode":"7392555502249","id":988,"name":"\u00d6lkorv Full steam ipa","price":14293,"stock":0},{"active":true,"barcode":"7392555502089","id":989,"name":"\u00d6lkorv - Joddlarkorv","price":14096,"stock":0},{"active":true,"barcode":"7392555502102","id":990,"name":"\u00d6lkorv - Whiskeypinne","price":14346,"stock":0},{"active":true,"barcode":"7310240077650","id":991,"name":"Grandiosa kibab","price":18296,"stock":0},{"active":true,"barcode":"7340116870108","id":992,"name":"Memevatten Golden kiwi","price":15388,"stock":0},{"active":true,"barcode":"7611612513166","id":993,"name":"Lemon & Lime","price":7476,"stock":0},{"active":true,"barcode":"7613032630409","id":994,"name":"Lion white","price":6440,"stock":0},{"active":true,"barcode":"7350039457706","id":995,"name":"Peacem\u00e4rke C/S","price":8469,"stock":0},{"active":true,"barcode":"7310070003096","id":996,"name":"pepsi max lime","price":7365,"stock":0},{"active":true,"barcode":"7310401034560","id":997,"name":"Trocadero zero","price":6808,"stock":20},{"active":true,"barcode":"7310070001245","id":998,"name":"Festis pear & kiwi","price":13382,"stock":0},{"active":true,"barcode":"7310350110131","id":999,"name":"Fizzypop 80g","price":8117,"stock":0},{"active":true,"barcode":"5449000149343","id":1000,"name":"Mer  hallon & svartvinb\u00e4r","price":12750,"stock":-10},{"active":true,"barcode":"7340131600377","id":1001,"name":"Nocco Focus 2: Melon Crush","price":19070,"stock":0},{"active":true,"barcode":"5060335633521","id":1002,"name":"Monster  the doctor","price":16810,"stock":0},{"active":true,"barcode":"7310401007120","id":1003,"name":"Loka naturell","price":7483,"stock":0},{"active":true,"barcode":"7611612100403","id":1004,"name":"Asia Box Sweet & Sour","price":36237,"stock":0},{"active":true,"barcode":"7611612100427","id":1005,"name":"Asia Box Red Curry Chicken","price":36752,"stock":2},{"active":true,"barcode":"7611612100373","id":1006,"name":"Asia Box Spicy Sesame Chicken with Noodles","price":36845,"stock":5},{"active":true,"barcode":"7611612221726","id":1007,"name":"Power King tropical ","price":8198,"stock":0},{"active":true,"barcode":"7392555502119","id":1008,"name":"White Angel \u00f6lkorv","price":16251,"stock":0},{"active":true,"barcode":"7350042716678","id":1009,"name":"Vitamin well hallon","price":15105,"stock":0},{"active":true,"barcode":"7350042710409","id":1010,"name":"Vitamin well svarta vinb\u00e4r ","price":15117,"stock":0},{"active":true,"barcode":"5774540740300","id":1011,"name":"Pingvinst\u00e5ng Sur melon","price":4173,"stock":0},{"active":true,"barcode":"7350068297052","id":1012,"name":"Fizzy cola spark","price":15181,"stock":0},{"active":true,"barcode":"7350068294075","id":1013,"name":"Protein Bar choklad Boll","price":22452,"stock":0},{"active":true,"barcode":"4014400902495","id":1014,"name":"Riesen 150g","price":22168,"stock":1},{"active":true,"barcode":"7310511251406","id":1015,"name":"Mrabou Co-Co","price":8414,"stock":0},{"active":true,"barcode":"50184491","id":1016,"name":"Dextro tropical","price":9021,"stock":0},{"active":true,"barcode":"7310350118083","id":1017,"name":"Gott&Blandat s\u00f6ta klassiker","price":15434,"stock":0},{"active":true,"barcode":"7611612221580","id":1018,"name":"Powerking zero","price":8190,"stock":0},{"active":true,"barcode":"7310780002303","id":1019,"name":"Zoo liten","price":4193,"stock":0},{"active":true,"barcode":"7611612514552","id":1020,"name":"P\u00e4ronsoda","price":7235,"stock":0},{"active":true,"barcode":"7622210102539","id":1021,"name":"Japp kingsize","price":9130,"stock":0},{"active":true,"barcode":"4009900360791","id":1022,"name":"Extra eucalyptus","price":11209,"stock":0},{"active":true,"barcode":"Papperskopp","id":1023,"name":"Kaffepapperskopp","price":2339,"stock":0},{"active":true,"barcode":"6416453038271","id":1024,"name":"Tutti Frutti Original","price":11534,"stock":0},{"active":true,"barcode":"5000159376792","id":1025,"name":"Skittles Crazy Sours","price":6028,"stock":0},{"active":true,"barcode":"7340131610000","id":1026,"name":"Nocco Tropical","price":19048,"stock":0},{"active":true,"barcode":"7310401020952","id":1027,"name":"Loka Crush P\u00e4ron","price":7330,"stock":0},{"active":true,"barcode":"5701090065461","id":1028,"name":"Haribo Liten Vingummi Click Mix","price":2383,"stock":0},{"active":true,"barcode":"7350068294082","id":1029,"name":"Njie Proteinbar Cookie Dough","price":18272,"stock":0},{"active":true,"barcode":"7340001800227","id":1030,"name":"Barebells Proteinbar Caramel Cashew","price":23063,"stock":0},{"active":true,"barcode":"7340001800210","id":1031,"name":"Barebells Proteinbar Coconut-Choco","price":22230,"stock":0},{"active":true,"barcode":"7340001800203","id":1032,"name":"Barebells Proteinbar Cookies&Cream","price":23068,"stock":2},{"active":true,"barcode":"7310960854722","id":1033,"name":"Billys Panpizza Veggie","price":15448,"stock":2},{"active":true,"barcode":"7350042712007","id":1034,"name":"Vitamin Well cit/kak","price":15222,"stock":0},{"active":true,"barcode":"90167324","id":1035,"name":"Iste I en burk med bl\u00e5 och gr\u00f6n nyans","price":9213,"stock":0},{"active":true,"barcode":"5000112636093","id":1036,"name":"Fanta blodig orange","price":8281,"stock":0},{"active":true,"barcode":"5996379193731","id":1037,"name":"Nappar Cola","price":7645,"stock":0},{"active":true,"barcode":"4009900399432","id":1038,"name":"Extra White Spearmint","price":11209,"stock":0},{"active":true,"barcode":"4014400918113","id":1039,"name":"Werther's Original Chewy Toffees","price":11050,"stock":0},{"active":true,"barcode":"7350068294099","id":1040,"name":"Njie ProPud BananaSplit","price":18487,"stock":0},{"active":true,"barcode":"7340001801071","id":1041,"name":"Barbell White Nuts","price":22349,"stock":0},{"active":true,"barcode":"5060166696726","id":1042,"name":"Rehab Sips","price":20999,"stock":0},{"active":true,"barcode":"7340001801583","id":1043,"name":"Barbell Sexy Mint Rudolf Bar ","price":22555,"stock":0},{"active":true,"barcode":"7310861040606","id":1044,"name":"Gainomax Toffee Bar","price":19420,"stock":0},{"active":true,"barcode":"7310861040620","id":1045,"name":"Gainomax Blueberry Bar","price":19420,"stock":0},{"active":true,"barcode":"7300400482059","id":1046,"name":"Wasa Sandwich Cheese","price":7219,"stock":0},{"active":true,"barcode":"7310960648857","id":1047,"name":"Dafg\u00e5rds Biff Mozzarella","price":28940,"stock":0},{"active":true,"barcode":"7300400481977","id":1048,"name":"Hummus","price":6499,"stock":0},{"active":true,"barcode":"7310240079586","id":1049,"name":"Felix Bacon och Broccolipaj","price":33252,"stock":0},{"active":true,"barcode":"4014400920598","id":1050,"name":"Riesen 80g","price":11281,"stock":0},{"active":true,"barcode":"7310040018341","id":1051,"name":"Guld nougat","price":8126,"stock":0},{"active":true,"barcode":"5900951028502","id":1052,"name":"Twix X-tra","price":9199,"stock":0},{"active":true,"barcode":"7392659004540","id":1053,"name":"Lantchips Saltade","price":19192,"stock":0},{"active":true,"barcode":"4011800564414","id":1054,"name":"Corny white","price":8114,"stock":0},{"active":true,"barcode":"7310401036083","id":1055,"name":"Julmust Nyg\u00e5rda Light","price":6087,"stock":0},{"active":true,"barcode":"7611612513081","id":1056,"name":"American Cola","price":7128,"stock":0},{"active":true,"barcode":"4011800568511","id":1057,"name":"Corny Dark","price":8728,"stock":0},{"active":true,"barcode":"7310070003065","id":1058,"name":"Festis cappucino twist","price":13123,"stock":0},{"active":true,"barcode":"5000112637427","id":1059,"name":"Coca Cola Exotic Mango Light","price":7138,"stock":0},{"active":true,"barcode":"7340001801668","id":1060,"name":"Barebells Proteinbar Hazelnut & Nougat","price":23065,"stock":0},{"active":true,"barcode":"7310500040523","id":1061,"name":"Findus L\u00f6vtunn Bit","price":31634,"stock":0},{"active":true,"barcode":"5060466510067","id":1062,"name":"Burn Kiwi \u00c4pple","price":15388,"stock":0},{"active":true,"barcode":"42353737","id":1063,"name":"KitKat Ruby","price":8234,"stock":0},{"active":true,"barcode":"7622210675446","id":1064,"name":"Marabou Fudge & Havssalt stor","price":19114,"stock":0},{"active":true,"barcode":"7340001801996","id":1065,"name":"Barebells Proteinbar Brownie Core","price":22358,"stock":0},{"active":true,"barcode":"7340001802009","id":1066,"name":"Barebells Proteinbar Apple Pie Core","price":22171,"stock":0},{"active":true,"barcode":"7340001802016","id":1067,"name":"Barebells Proteinbar Toffee Core","price":22480,"stock":0},{"active":true,"barcode":"6411401019029","id":1068,"name":"Geisha 37g","price":7542,"stock":0},{"active":true,"barcode":"5000112638035","id":1069,"name":"Fanta Zero Orange","price":8282,"stock":0},{"active":true,"barcode":"5000112637946","id":1070,"name":"Fanta Orange","price":8285,"stock":0},{"active":true,"barcode":"5000112637977","id":1071,"name":"Fanta Exotic (ny)","price":8712,"stock":7},{"active":true,"barcode":"5000112638011","id":1072,"name":"Fanta Lemon (ny)","price":8288,"stock":0},{"active":true,"barcode":"7310070003461","id":1073,"name":"Zingo Zero Sorbet 33cl","price":7017,"stock":0},{"active":true,"barcode":"7611612514712","id":1074,"name":"Hallonsoda","price":5864,"stock":0},{"active":true,"barcode":"9002490215415","id":1075,"name":"Red Bull Zero Sugar 25cl","price":16629,"stock":0},{"active":true,"barcode":"90424588","id":1076,"name":"Organics by Red Bull Simply Cola 25cl","price":19999,"stock":0},{"active":true,"barcode":"7315361112372","id":1077,"name":"Delicato Mazarin","price":7389,"stock":0},{"active":true,"barcode":"7622201056643","id":1078,"name":"Marabou Daim 200g","price":24342,"stock":0},{"active":true,"barcode":"6416453015456","id":1079,"name":"Fazer Mj\u00f6lkchoklad 145g","price":19199,"stock":0},{"active":true,"barcode":"5774540738826","id":1080,"name":"Pingvinst\u00e5ng Ferrari 27g","price":4289,"stock":0},{"active":true,"barcode":"7350068291272","id":1081,"name":"Njie ProPud Pear Vanilla","price":18364,"stock":0},{"active":true,"barcode":"7310070002396","id":1082,"name":"Carlsberg Alkoholfri","price":11012,"stock":0},{"active":true,"barcode":"7350068294181","id":1083,"name":"Njie ProPud Cashew Almond","price":17260,"stock":0},{"active":true,"barcode":"7340001802665","id":1084,"name":"Barebells Protein Bar Lemon Curd","price":22165,"stock":0},{"active":true,"barcode":"7611612211871","id":1085,"name":"Powerking Protein Bar Caramel","price":9101,"stock":0},{"active":true,"barcode":"7340083444760","id":1086,"name":"Garant Salt & Vin\u00e4ger Chips","price":15269,"stock":0},{"active":true,"barcode":"5000112637908","id":1087,"name":"CocaCola Vanilla 33cl","price":8287,"stock":0},{"active":true,"barcode":"7350068291227","id":1088,"name":"Njie ProPud White Chocolate Raspberry","price":18328,"stock":0},{"active":true,"barcode":"8711327343245","id":1089,"name":"Trocadero zero glass","price":13135,"stock":0},{"active":true,"barcode":"7310350119035","id":1090,"name":"L\u00e4kerol Salty Caramel","price":5128,"stock":0},{"active":true,"barcode":"7340001800692","id":1091,"name":"Barebells Milkshake Banana","price":18171,"stock":0},{"active":true,"barcode":"7340001802672","id":1092,"name":"Barebells Milkshake Creamy Pear","price":18184,"stock":0},{"active":true,"barcode":"BUYSTICKER","id":1093,"name":"LUDD Sticker","price":6378,"stock":-27},{"active":true,"barcode":"5000112639926","id":1094,"name":"Coca Cola Energy","price":13285,"stock":0},{"active":true,"barcode":"7310090776628","id":1095,"name":"Risi frutti bl\u00e5","price":11123,"stock":0},{"active":true,"barcode":"7340083443657","id":1096,"name":"Garant Pepperonichips 200g","price":15425,"stock":0},{"active":true,"barcode":"7310040013537","id":1097,"name":"Tarragona","price":10432,"stock":0},{"active":true,"barcode":"8712000050146","id":1098,"name":"Heineken Alkoholfri","price":10409,"stock":0},{"active":true,"barcode":"7314720639673","id":1099,"name":"Kiviks \u00e4ppelmust","price":15338,"stock":0},{"active":true,"barcode":"4014400900651","id":1100,"name":"Toffifee","price":33367,"stock":0},{"active":true,"barcode":"7350068291210","id":1101,"name":"Njie ProPud Chocolate","price":18341,"stock":0},{"active":true,"barcode":"7340001800906","id":1102,"name":"Barebells Milkshake Vanilla","price":18185,"stock":0},{"active":true,"barcode":"7310070766083","id":1103,"name":"Raml\u00f6sa Citrus","price":6256,"stock":0},{"active":true,"barcode":"7340001803020","id":1104,"name":"Barebells Proteinbar Blueberry Cake","price":23067,"stock":0},{"active":true,"barcode":"Ferrerorolife","id":1105,"name":"Ferrero Rocher Singular","price":5290,"stock":0},{"active":true,"barcode":"7310401037172","id":1106,"name":"Loka Hallon","price":7455,"stock":0},{"active":true,"barcode":"5060517887858","id":1107,"name":"Punch Monster ","price":16810,"stock":1},{"active":true,"barcode":"7314720632476","id":1108,"name":"Kiviks Lemonad","price":15222,"stock":0},{"active":true,"barcode":"7310350131099","id":1109,"name":"Sport Lunch Caramel","price":8049,"stock":0},{"active":true,"barcode":"5000112641998","id":1110,"name":"Fanta Shokata","price":8288,"stock":0},{"active":true,"barcode":"7310401003467","id":1111,"name":"Orangina 50cl","price":11427,"stock":0},{"active":true,"barcode":"7392659002003","id":1112,"name":"LantChips L\u00e4ttsaltade","price":17459,"stock":0},{"active":true,"barcode":"7622210807274","id":1113,"name":"Marabou Kex 50 g","price":8436,"stock":0},{"active":true,"barcode":"7312690117047","id":1114,"name":"Sia Sandwich Glass","price":11299,"stock":0},{"active":true,"barcode":"7312690117016","id":1115,"name":"Sia Glassb\u00e5t","price":10992,"stock":0},{"active":true,"barcode":"5000112637991","id":1116,"name":"Coca Cola Cherry","price":8287,"stock":0},{"active":true,"barcode":"7340131601312","id":1117,"name":"Nocco Miami Strawberry","price":19384,"stock":0},{"active":true,"barcode":"7310350114146","id":1118,"name":"Bilar Saltlakrits","price":15432,"stock":0},{"active":true,"barcode":"7310074765846","id":1120,"name":"7up 33cl","price":6586,"stock":0},{"active":true,"barcode":"7340083456268","id":1121,"name":"N\u00f6tmix Rostade Saltade","price":14185,"stock":0},{"active":true,"barcode":"7340083456275","id":1122,"name":"N\u00f6t & Fruktmix 70g","price":14052,"stock":0},{"active":true,"barcode":"5060639126156","id":1123,"name":"Monster Ultra Paradise","price":16810,"stock":0},{"active":true,"barcode":"0KR","id":1124,"name":"0 kr Test code","price":0,"stock":0},{"active":true,"barcode":"7300400482295","id":1125,"name":"Wasa Sandwich sourcream & onion","price":7219,"stock":0},{"active":true,"barcode":"5000112638875","id":1126,"name":"Sprite Zero 33cl","price":7206,"stock":0},{"active":true,"barcode":"7310532113073","id":1127,"name":"Linschips Ranch & Sourcream ","price":19195,"stock":0},{"active":true,"barcode":"7310350131419","id":1128,"name":"Ahlgrens Elbilar 100g","price":5000,"stock":0},{"active":true,"barcode":"7340083438691","id":1129,"name":"Garant Grillchips 200g","price":15399,"stock":0},{"active":true,"barcode":"7310070765840","id":1130,"name":"7HP","price":7173,"stock":0},{"active":true,"barcode":"7310532106464","id":1131,"name":"Estrella Sourcream & Onion","price":18487,"stock":0},{"active":true,"barcode":"7622210315519","id":1133,"name":"Marabou Crisp! 60g","price":8387,"stock":0},{"active":true,"barcode":"7314720629766","id":1136,"name":"Kiviks \u00c4ppelmust med Fruktk\u00f6tt","price":15334,"stock":0},{"active":true,"barcode":"7340131601596","id":1139,"name":"Nocco Ice Soda 330 ml","price":20484,"stock":0},{"active":true,"barcode":"5703828023507","id":1142,"name":"Ice Tea Persika Aqua D\u00b4 or ","price":10398,"stock":0},{"active":true,"barcode":"666Glassdags","id":1148,"name":"P\u00e4ronsplit","price":7988,"stock":0},{"active":true,"barcode":"7611612100427","id":1151,"name":"Red Curry Chicken, Spicefield\u00a0350g","price":36844,"stock":8},{"active":true,"barcode":"7340083467745","id":1154,"name":"Korean Chicken with Noodles Fryst, Spicefield\u00a0320g","price":36845,"stock":0},{"active":true,"barcode":"7340083467738","id":1157,"name":"Chicken PadThai Fryst, Spicefield\u00a0320g","price":36846,"stock":-1},{"active":true,"barcode":"7340083467721","id":1160,"name":"Vegetable Pad Thai Fryst, Spicefield\u00a0320g","price":36847,"stock":0},{"active":true,"barcode":"5000112642704","id":1163,"name":"Coca Cola Lemon","price":8287,"stock":0},{"active":true,"barcode":"7310532103616","id":1166,"name":"V\u00e4stkust Chips Gr\u00e4ddfil & L\u00f6k","price":19321,"stock":0},{"active":true,"barcode":"8712566328208","id":1169,"name":"Magnum Classic","price":17902,"stock":-2},{"active":true,"barcode":"8712566328352","id":1172,"name":"Magnum Almond","price":17903,"stock":0},{"active":true,"barcode":"7310500088853","id":1175,"name":"Pasta Fyra Ostar ","price":30683,"stock":0},{"active":true,"barcode":"7310240077575","id":1178,"name":"Grandiosa X-tra Allt Calzone","price":21850,"stock":0},{"active":true,"barcode":"7310240079609","id":1181,"name":"Skaldjurspaj, Felix 220g","price":25000,"stock":0},{"active":true,"barcode":"7310960039815","id":1184,"name":"Karins Vegetariska Lasagne ","price":28954,"stock":0},{"active":true,"barcode":"7310240076806","id":1187,"name":"Penne con Mozzarella, Felix","price":39305,"stock":0},{"active":true,"barcode":"7310500180700","id":1190,"name":"Vegans Chiligryta, Pease Powl","price":40216,"stock":0},{"active":true,"barcode":"7310500180649","id":1193,"name":"Vegansk Pulled Pease, Pease Bowl ","price":40217,"stock":0},{"active":true,"barcode":"7622201124489","id":1197,"name":"Marabou Cookie Dough","price":24341,"stock":0},{"active":true,"barcode":"7310070766113","id":1200,"name":"Zingo Orange Burk , 33cl","price":6588,"stock":0},{"active":true,"barcode":"90426094","id":1203,"name":"Ice Tea Peach Pet , Pfanner 50cl","price":9233,"stock":0},{"active":true,"barcode":"7310960648871","id":1209,"name":"Spagetti med K\u00f6ttf\u00e4rss\u00e5s Fryst ","price":28952,"stock":0},{"active":true,"barcode":"7622201121099","id":1212,"name":"Darkmilk , 35g Marabou","price":8660,"stock":0},{"active":true,"barcode":"7300400381505","id":1215,"name":"L\u00e4ttsaltade Chips , 40g OLW","price":6971,"stock":0},{"active":true,"barcode":"7340001803235","id":1218,"name":"Protein Bar Chocolate Dough, 55g","price":23061,"stock":0},{"active":true,"barcode":"7340001801071","id":1221,"name":"Protein Bar White Chocolate Almond, 55g","price":23064,"stock":0},{"active":true,"barcode":"4607065735302","id":1224,"name":"Crisp Duo , 40g Snickers","price":7990,"stock":0},{"active":true,"barcode":"7392659002904","id":1227,"name":"L\u00e4ttsaltade Lantchips, 180g ","price":19191,"stock":0},{"active":true,"barcode":"5060639126804","id":1230,"name":"Monster Punch Energy","price":16840,"stock":0},{"active":true,"barcode":"7622400624520","id":1233,"name":"Marabou Premium Kakao 70%","price":19194,"stock":0},{"active":true,"barcode":"7622300544010","id":1236,"name":"Marabou Premium Pekan & Havssalt","price":19193,"stock":0},{"active":true,"barcode":"7310511 216405","id":1239,"name":"Marabou Schweizern\u00f6t","price":24343,"stock":0},{"active":true,"barcode":"DUCKDUCKGO","id":1242,"name":"Debug Rubber Duck","price":5678,"stock":-19},{"active":true,"barcode":"5703828024795","id":1245,"name":"Ice Tea Mango","price":9905,"stock":0},{"active":true,"barcode":"5000112642711","id":1248,"name":"Fanta Rasberry Zero","price":8417,"stock":0},{"active":true,"barcode":"7611612100410","id":1251,"name":"Sweet Chilli Chicken Teriyaki","price":33145,"stock":-6},{"active":true,"barcode":"6416453035966","id":1254,"name":"Tutti Frutti Sour","price":11530,"stock":0},{"active":true,"barcode":"Ludd-mugg","id":1260,"name":"Ludd-mugg-logotype","price":50000,"stock":-4},{"active":true,"barcode":"Holy Grail - Vicke","id":1263,"name":"Holy Grail - Vicke","price":50000,"stock":0},{"active":true,"barcode":"Holy Grail - LUDD","id":1266,"name":"Holy Grail - LUDD","price":50000,"stock":0},{"active":true,"barcode":"7310070004765","id":1269,"name":"Raml\u00f6sa citrus slim","price":7320,"stock":0},{"active":true,"barcode":"7314720632445","id":1272,"name":"Lemonad Citron Kiviks","price":16101,"stock":0},{"active":true,"barcode":"7314720638249","id":1275,"name":"Lemonad P\u00e4ron Ingef\u00e4ra Kiviks","price":16102,"stock":0},{"active":true,"barcode":"7310532107478","id":1278,"name":"V\u00e4stkust Chips Vitl\u00f6k Estrella","price":19322,"stock":0},{"active":true,"barcode":"7310960040927","id":1281,"name":"Singapore Firecracker Chicken","price":42013,"stock":0},{"active":true,"barcode":"7310960040972","id":1284,"name":"Coq Au Vin Dafg\u00e5rd","price":42153,"stock":0},{"active":true,"barcode":"7314720634746","id":1287,"name":"Lemonad Jordgubb Mynta Kiviks","price":16103,"stock":0},{"active":true,"barcode":"7314720633640","id":1290,"name":"Lemonad Grape Kiviks","price":16104,"stock":0},{"active":true,"barcode":"7350020724114","id":1293,"name":"Smoothie Summer Froosh","price":17125,"stock":0},{"active":true,"barcode":"7310960041962","id":1296,"name":"Chicken Teriyaki Dafg\u00e5rds","price":42015,"stock":0},{"active":true,"barcode":"7310500123714","id":1299,"name":"Angusbiff Findus","price":30693,"stock":0},{"active":true,"barcode":"7310500183794","id":1302,"name":"Pasta Tortellini Findus","price":30691,"stock":0},{"active":true,"barcode":"7310960041979","id":1305,"name":"Chicken Panang Dafg\u00e5rds","price":42012,"stock":0},{"active":true,"barcode":"7310960031482","id":1308,"name":"Ugnsrostad Kyckling Dafg\u00e5rds","price":28952,"stock":0},{"active":true,"barcode":"7310040027503","id":1311,"name":"Kexchoklad 100g","price":18808,"stock":1},{"active":true,"barcode":"8710398162045","id":1314,"name":"Sweet Chilli Pepper Doritos","price":23288,"stock":3},{"active":true,"barcode":"7310350132874","id":1317,"name":"Original bilar 125g Ahlgrens (ny)","price":15472,"stock":2},{"active":true,"barcode":"7310500178011","id":1319,"name":"Findus dagens fisk med topping","price":30690,"stock":0},{"active":true,"barcode":"7310500040127","id":1322,"name":"Findus Oxj\u00e4rpar","price":31634,"stock":0},{"active":true,"barcode":"5000112650723","id":1325,"name":"New Fanta Orange","price":8285,"stock":0},{"active":true,"barcode":"7350058331100","id":1327,"name":"Celsius Citron/lime, 35,5cl","price":20347,"stock":0},{"active":true,"barcode":"7310070004468","id":1330,"name":"Raml\u00f6sa P\u00e4ron, 1,5l","price":15837,"stock":0},{"active":true,"barcode":"7350058335245","id":1333,"name":"Celsius Flamingo Tropical 355ml","price":20345,"stock":0},{"active":true,"barcode":"7350058331704","id":1336,"name":"Celsius Hallon Acai 355ml","price":20346,"stock":0},{"active":true,"barcode":"8722700020868","id":1339,"name":"Daimstrut mini","price":11086,"stock":0},{"active":true,"barcode":"8711327528451","id":1342,"name":"TipTop Salty Caramel","price":11084,"stock":0},{"active":true,"barcode":"7310350132898","id":1343,"name":"Sursockrade bilar 100g","price":13524,"stock":0},{"active":true,"barcode":"7310070004741","id":1346,"name":"Raml\u00f6sa P\u00e4ron 33cl","price":6582,"stock":0},{"active":true,"barcode":"5060335630971","id":1347,"name":"Monster Energy Zero","price":18176,"stock":-25},{"active":true,"barcode":"9002490215439","id":1348,"name":"Red Bull Sugar Free 355 ml","price":25830,"stock":0},{"active":true,"barcode":"7310240080025","id":1351,"name":"Halloumi hotpot Felix","price":40532,"stock":0},{"active":true,"barcode":"7310070008701","id":1354,"name":"Julmust Apotekarnes","price":6928,"stock":4},{"active":true,"barcode":"7340001803655","id":1356,"name":"Protein bar creamy crisp 55g","price":23061,"stock":0},{"active":true,"barcode":"5000112638059","id":1359,"name":"bonaqua citron/lime","price":6582,"stock":0},{"active":true,"barcode":"7340131602135","id":1362,"name":"Nocco Mango","price":20482,"stock":0},{"active":true,"barcode":"7350042710003","id":1365,"name":"vitamin well defense","price":15117,"stock":0},{"active":true,"barcode":"7310290002176","id":1367,"name":"Sandwich glass","price":14045,"stock":3},{"active":true,"barcode":"8711327383975","id":1370,"name":"Daim glass stor","price":19700,"stock":0},{"active":true,"barcode":"7622210865335","id":1373,"name":"Dubbel nougat Marabou, 43g","price":12578,"stock":0},{"active":true,"barcode":"7350020720017","id":1375,"name":"Froosh smoothie Mango orange","price":17125,"stock":0},{"active":true,"barcode":"7310290002961","id":1376,"name":"Piggelin Glasspinne","price":9118,"stock":0},{"active":true,"barcode":"5410041001204","id":1379,"name":"Tuc Original 100g","price":12354,"stock":0},{"active":true,"barcode":"7310350133758","id":1382,"name":"Gott & Blandat \u00e4kta frukt och b\u00e4r","price":15963,"stock":0},{"active":true,"barcode":"87108262","id":1385,"name":"Mentos frukt 38g","price":8329,"stock":0},{"active":true,"barcode":"7310070005359","id":1388,"name":"7up Regular 33cl","price":8287,"stock":0},{"active":true,"barcode":"7310401046686","id":1391,"name":"Loka citron 33cl (ny)","price":7436,"stock":-22},{"active":true,"barcode":"7310401046754","id":1394,"name":"Trocadero Zero 33cl (ny)","price":6808,"stock":15},{"active":true,"barcode":"8712100836169","id":1396,"name":"Magnum Classic 79g","price":17902,"stock":0},{"active":true,"barcode":"5760466961110","id":1399,"name":"Starbucks Caffe latte Seattle","price":26402,"stock":0},{"active":true,"barcode":"7350020720734","id":1402,"name":"Froosh Strawberry, Banana, Guava","price":17126,"stock":0},{"active":true,"barcode":"6416453028210","id":1405,"name":"Turkisk Peppar 120g","price":21072,"stock":9},{"active":true,"barcode":"7310070005441","id":1408,"name":"Pepsi 33cl","price":8291,"stock":0},{"active":true,"barcode":"7310070005250","id":1411,"name":"Pepsi Max 33cl","price":7368,"stock":24},{"active":true,"barcode":"8801073839830","id":1414,"name":"Samyang Ramen Beef","price":13076,"stock":0},{"active":true,"barcode":"Ludd20Ar","id":1417,"name":"LUDD 20 \u00c5r - Tygm\u00e4rke","price":5000,"stock":0},{"active":true,"barcode":"Patch Vicke","id":1420,"name":"Vicke tygm\u00e4rke - 2022","price":12000,"stock":0},{"active":true,"barcode":"7310401047027","id":1421,"name":"P\u00e4ron Crush 33cl","price":6985,"stock":0},{"active":true,"barcode":"7310861015246","id":1422,"name":"Gainomax Strawberry","price":19874,"stock":0},{"active":true,"barcode":"5053990162093","id":1425,"name":"Pringles Paprika","price":24108,"stock":0},{"active":true,"barcode":"5000112650402","id":1427,"name":"Fanta Lemon Zero 33cl","price":8287,"stock":0},{"active":true,"barcode":"7310960044147","id":1428,"name":"Dafg\u00e5rds K\u00f6ttbullar","price":32810,"stock":0},{"active":true,"barcode":"7310960044130","id":1438,"name":"Karins lasagne","price":30032,"stock":8},{"active":true,"barcode":"5060751215363","id":1440,"name":"Monster Monarch","price":18176,"stock":0},{"active":true,"barcode":"7340131601619","id":1443,"name":"Nocco Raspberry Blast!!!","price":16840,"stock":0},{"active":true,"barcode":"frukost","id":1446,"name":"Frukosts p\u00e5 LUDD","price":15669,"stock":0},{"active":true,"barcode":"8712566344321","id":1449,"name":"Haribo Glass","price":12818,"stock":0},{"active":true,"barcode":"7310960044079","id":1452,"name":"Gorby's Pirog","price":13208,"stock":3},{"active":true,"barcode":"7310960044277","id":1455,"name":"Skomakarl\u00e5da","price":32810,"stock":0},{"active":true,"barcode":"7300400482929","id":1458,"name":"Sandwich Taco","price":7397,"stock":0},{"active":true,"barcode":"5000112637953","id":1461,"name":"Sprite 33cl (Spicy Water)","price":7338,"stock":0},{"active":true,"barcode":"7310070005267","id":1464,"name":"MountainDew 33cl","price":7368,"stock":27},{"active":true,"barcode":"7310070004772","id":1467,"name":"Raml\u00f6sa Granat\u00e4pple 33cl","price":4398,"stock":0},{"active":true,"barcode":"8936134030403","id":1470,"name":"R\u00e4kchips","price":69800,"stock":0},{"active":true,"barcode":"54493810","id":1471,"name":"Mer \u00c4pple","price":13995,"stock":0},{"active":true,"barcode":"54493803","id":1474,"name":"Mer Aplesin","price":13995,"stock":0},{"active":true,"barcode":"5000112647754","id":1477,"name":"Mer Lingon","price":13796,"stock":0},{"active":true,"barcode":"7392257101344","id":1480,"name":"Sur patron","price":1024,"stock":-152},{"active":true,"barcode":"7310500050898","id":1483,"name":"Kyckling Curry","price":34000,"stock":0},{"active":true,"barcode":"90433641","id":1486,"name":"Red Bull THE WHITE EDITION","price":13370,"stock":1},{"active":true,"barcode":"7310401046723","id":1489,"name":"Trocadero","price":6808,"stock":16},{"active":true,"barcode":"7611612211727","id":1492,"name":"Powerking bar - Cookies & Cream","price":12000,"stock":0},{"active":true,"barcode":"7310070002488","id":1495,"name":"Julmust Glasflaska","price":13000,"stock":0},{"active":true,"barcode":"7340131603224","id":1498,"name":"Nocco Pearade 33cl","price":19070,"stock":0},{"active":true,"barcode":"7310090771623","id":1501,"name":"Risifrutti Jordgubb","price":12112,"stock":0},{"active":true,"barcode":"7310070005298","id":1504,"name":"Zingo 33cl","price":6320,"stock":6},{"active":true,"barcode":"7392555502041","id":1507,"name":"Cabanossi Korv","price":19856,"stock":-34},{"active":true,"barcode":"7310350131945","id":1508,"name":"Plopp juleskum","price":10400,"stock":0},{"active":true,"barcode":"7310090772620","id":1511,"name":"risifrutti hallon","price":12288,"stock":0},{"active":true,"barcode":"7392555502065","id":1514,"name":"\u00d6lkorv - het polare","price":16695,"stock":-39},{"active":true,"barcode":"7392257101337","id":1516,"name":"Salta patroner","price":1024,"stock":0},{"active":true,"barcode":"5060896624426","id":1519,"name":"Monster guld upplaga","price":16969,"stock":2},{"active":true,"barcode":"7611612221924","id":1522,"name":"powerking - jordgubbe","price":6000,"stock":0},{"active":true,"barcode":"7310401048604","id":1525,"name":"Trocamust","price":10000,"stock":0},{"active":true,"barcode":"7611612221375","id":1528,"name":"Powerking - sockerfri","price":6000,"stock":0},{"active":true,"barcode":"PRIDE AND ACCOMPLISHMENT","id":1529,"name":"Pride and Accomplishment","price":1,"stock":0},{"active":true,"barcode":"7392555502485","id":1532,"name":"\u00d6lkorv - Jambalaya","price":16696,"stock":0},{"active":true,"barcode":"5711953024399","id":1535,"name":"Pucko 400ml","price":25600,"stock":0},{"active":true,"barcode":"7300400482752","id":1541,"name":"Sandwich Pizza","price":8404,"stock":4},{"active":true,"barcode":"5010478900998","id":1547,"name":"Refreshers","price":2560,"stock":0},{"active":true,"barcode":"7392659004557","id":1550,"name":"Svenska Lantchips Gr\u00e4ddfil 100g","price":18688,"stock":0},{"active":true,"barcode":"7340131602890","id":1553,"name":"Nocco Ramonade","price":21504,"stock":0},{"active":true,"barcode":"5060751212812","id":1556,"name":"Monster Fiesta","price":18176,"stock":0},{"active":true,"barcode":"7310401046716","id":1559,"name":"LOKA Jordgubb Granat\u00e4pple","price":5688,"stock":2},{"active":true,"barcode":"5010478247819","id":1568,"name":"BananaSkids","price":2608,"stock":-2},{"active":true,"barcode":"7340083497124","id":1569,"name":"powerking - new","price":6541,"stock":51},{"active":true,"barcode":"5000112654240","id":1570,"name":"Cola Zero Koffeinfri (detox)","price":8280,"stock":0},{"active":true,"barcode":"7041111133006","id":1572,"name":"Frukt toppar","price":16384,"stock":0},{"active":true,"barcode":"40345123","id":1575,"name":"Smarties","price":6144,"stock":0},{"active":true,"barcode":"5760466961455","id":1578,"name":"Pucko 270g","price":13840,"stock":-1},{"active":true,"barcode":"7611612222105","id":1581,"name":"Powerking Raspberry","price":6325,"stock":0},{"active":true,"barcode":"80050100","id":1584,"name":"Nut & Go! ( \u0361\u00b0 \u035c\u0296 \u0361\u00b0)","price":15525,"stock":0},{"active":true,"barcode":"5060896625607","id":1585,"name":"Monster Lewsi Hamilton (Ramus hates this)","price":18176,"stock":-20},{"active":true,"barcode":"5900951313592","id":1588,"name":"Twix 2x25g","price":9872,"stock":1},{"active":true,"barcode":"7310532106501","id":1591,"name":"Estrella Grillchips","price":19000,"stock":-2},{"active":true,"barcode":"7315360010754","id":1593,"name":"Delicatoboll 58g","price":7484,"stock":6},{"active":true,"barcode":"5900951311505","id":1596,"name":"Snickers 50g","price":9848,"stock":2},{"active":true,"barcode":"7315360011560","id":1599,"name":"Chocolate chips cookie 55g","price":12088,"stock":1},{"active":true,"barcode":"5060947546783","id":1601,"name":"Monster Ultra Peachy Keen","price":18176,"stock":0},{"active":true,"barcode":"73105000575907611612121309","id":1604,"name":"Asia Box Chicken Bibimbap","price":34512,"stock":16},{"active":true,"barcode":"7310500186825","id":1607,"name":"Findus F\u00e4rsbiffar","price":36752,"stock":1},{"active":true,"barcode":"7310500186702","id":1610,"name":"Findus Ostschnitzel","price":35632,"stock":2},{"active":true,"barcode":"7310070000057","id":1615,"name":"Julmust Apotekarnes (Ny)","price":6916,"stock":1},{"active":true,"barcode":"LUDDMARKE","id":1620,"name":"M\u00e4rke","price":24949,"stock":-37},{"active":true,"barcode":"7611612121309","id":1623,"name":"Asiabox Bibimbap","price":36845,"stock":-5},{"active":true,"barcode":"5060947541245","id":1624,"name":"Monster Energy Ultra Rosa","price":18176,"stock":3},{"active":true,"barcode":"5053990161669","id":1626,"name":"Pringels Paprika","price":31128,"stock":3},{"active":true,"barcode":"7310400014136","id":1629,"name":"Julmust Sockerfri","price":5900,"stock":-1},{"active":true,"barcode":"7310500186764","id":1643,"name":"Rostad Kyckling","price":35632,"stock":1},{"active":true,"barcode":"7310500186795","id":1646,"name":"K\u00f6ttbullar med mos","price":35632,"stock":0},{"active":true,"barcode":"7310500186917","id":1649,"name":"Findus Kyckling Curry Fryst","price":35632,"stock":0},{"active":true,"barcode":"5900951312250","id":1652,"name":"Twix xtra 75g","price":13880,"stock":3},{"active":true,"barcode":"SEALCLUB","id":1654,"name":"Klubbad","price":1024,"stock":-71},{"active":true,"barcode":"5061013944908","id":1655,"name":"Bad Apple","price":18176,"stock":-42},{"active":true,"barcode":"7392659002447","id":1658,"name":"Grillchips lantcips","price":19696,"stock":7},{"active":true,"barcode":"7310401052588","id":1661,"name":"Loka hallon rabarber","price":7436,"stock":1},{"active":true,"barcode":"5000112512748","id":1664,"name":"Fanta exotic zero","price":8761,"stock":1},{"active":true,"barcode":"5056784901502","id":1667,"name":"Ultra strawberry dreams monster","price":18176,"stock":0},{"active":true,"barcode":"5000159557405","id":1669,"name":"Bounty Ny","price":9872,"stock":0},{"active":true,"barcode":"7310960044307","id":1670,"name":"Dafg\u00e5rds Kalops","price":32690,"stock":0},{"active":true,"barcode":"7392659002416","id":1671,"name":"Lantchips saltade","price":19634,"stock":0},{"active":true,"barcode":"7310960044185","id":1674,"name":"Kyckling Jacob2","price":35200,"stock":-6},{"active":true,"barcode":"7611612222372","id":1675,"name":"Powerking 500ml","price":12543,"stock":-23},{"active":true,"barcode":"7310401047010","id":1677,"name":"Loka crush hallon","price":7590,"stock":-9},{"active":true,"barcode":"7310070001146","id":1679,"name":"Apotekarnes P\u00e5skmust","price":10890,"stock":3},{"active":true,"barcode":"7310240075151","id":1682,"name":"Ost & Broccoli Soppa","price":31280,"stock":-6},{"active":true,"barcode":"4011800407513","id":1685,"name":"Big Corny C","price":12345,"stock":3},{"active":true,"barcode":"7611612212120","id":1688,"name":"PC","price":12345,"stock":1},{"active":true,"barcode":"7310401046709","id":1691,"name":"Loka P\u00e4ron","price":4971,"stock":0},{"active":true,"barcode":"5060947549883","id":1694,"name":"Gr\u00f6n Monster Zero","price":12160,"stock":4}]}
+{
+  "products": [
+    {
+      "active": true,
+      "barcode": "1KR",
+      "id": 739,
+      "name": "1Kr",
+      "price": 1000,
+      "stock": -192
+    },
+    {
+      "active": true,
+      "barcode": "2KR",
+      "id": 740,
+      "name": "2Kr",
+      "price": 2000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5KR",
+      "id": 741,
+      "name": "5Kr",
+      "price": 5000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "10KR",
+      "id": 742,
+      "name": "10Kr",
+      "price": 10000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "123KAPPA",
+      "id": 743,
+      "name": "Burkläsk 33cl",
+      "price": 7246,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960029243",
+      "id": 745,
+      "name": "Panpizza Bolognese Fryst 170g Billys",
+      "price": 16085,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960713654",
+      "id": 746,
+      "name": "Panpizza Original Fryst 170g Billys",
+      "price": 15448,
+      "stock": 6
+    },
+    {
+      "active": true,
+      "barcode": "7392257001392",
+      "id": 747,
+      "name": "Patron Hallon och Lakrits",
+      "price": 1384,
+      "stock": 0
+    },
+    {
+      "active": false,
+      "barcode": "5000159459228",
+      "id": 748,
+      "name": "Twix 50g",
+      "price": 6208,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7040110663408",
+      "id": 749,
+      "name": "Japp 30g Marabou",
+      "price": 5497,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5900951020940",
+      "id": 751,
+      "name": "Milky Way 21.5g 2-p",
+      "price": 6439,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040027909",
+      "id": 752,
+      "name": "Kexchoklad 25g Cloetta",
+      "price": 5315,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210435262",
+      "id": 753,
+      "name": "Traditional Winegums 160g Bassetts",
+      "price": 16029,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350111343",
+      "id": 754,
+      "name": "Ahlgrens Bilar 55g",
+      "price": 10478,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "80050094",
+      "id": 756,
+      "name": "Kinder Maxi",
+      "price": 4494,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612221351",
+      "id": 757,
+      "name": "Powerking",
+      "price": 8397,
+      "stock": 48
+    },
+    {
+      "active": true,
+      "barcode": "9002490215408",
+      "id": 758,
+      "name": "Red Bull",
+      "price": 15376,
+      "stock": 22
+    },
+    {
+      "active": true,
+      "barcode": "7392257132898",
+      "id": 759,
+      "name": "Hockeypulver 12g Konfekta",
+      "price": 2055,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000159407236",
+      "id": 760,
+      "name": "Mars 51g",
+      "price": 6312,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350109142",
+      "id": 761,
+      "name": "Pim Pim 80g Malaco",
+      "price": 7412,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310511257507",
+      "id": 762,
+      "name": "Daim Dubbel 56g Marabou",
+      "price": 11640,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "76145513",
+      "id": 763,
+      "name": "Toblerone 50g Marabou",
+      "price": 8380,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310511210304",
+      "id": 764,
+      "name": "Mjölkchoklad 100g Marabou",
+      "price": 16213,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210208101",
+      "id": 765,
+      "name": "Mjölkchoklad 185g Marabou Oreo",
+      "price": 24340,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000159557771",
+      "id": 766,
+      "name": "Bounty 57g",
+      "price": 9872,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310350119790",
+      "id": 767,
+      "name": "Juleskum 100g Cloetta",
+      "price": 12174,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "RAVIOLI",
+      "id": 768,
+      "name": "Patron",
+      "price": 1004,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5900951134937",
+      "id": 769,
+      "name": "Mars 2-p 69g",
+      "price": 6260,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350118342",
+      "id": 770,
+      "name": "Kexchoklad 60g Cloetta",
+      "price": 9848,
+      "stock": 39
+    },
+    {
+      "active": true,
+      "barcode": "7622210059956",
+      "id": 771,
+      "name": "Drömkrisp 100g Marabo",
+      "price": 14011,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5996071642711",
+      "id": 772,
+      "name": "S.P. Ray",
+      "price": 12300,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350109029",
+      "id": 773,
+      "name": "Djungelvrål 80g Malac",
+      "price": 7296,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4009900399432",
+      "id": 774,
+      "name": "Tuggummi Professional white Spearemint 29g Extra",
+      "price": 15305,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350504305",
+      "id": 775,
+      "name": "Gott men dåligt blandat",
+      "price": 16592,
+      "stock": 29
+    },
+    {
+      "active": true,
+      "barcode": "8710398161987",
+      "id": 776,
+      "name": "Nacho cheese 170g Doritos",
+      "price": 23288,
+      "stock": 14
+    },
+    {
+      "active": true,
+      "barcode": "5774540465401",
+      "id": 777,
+      "name": "Pingvinstång Salta Hallon 27g Tom",
+      "price": 5207,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622300788834",
+      "id": 778,
+      "name": "Mjölkchoklad Bubblig 60g Marabou",
+      "price": 12753,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350036416751",
+      "id": 779,
+      "name": "Godis Armband",
+      "price": 1428,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "57540948",
+      "id": 780,
+      "name": "Pingvinstång Tivoli 27g Tom",
+      "price": 5229,
+      "stock": 9
+    },
+    {
+      "active": true,
+      "barcode": "7310040021341",
+      "id": 781,
+      "name": "Center 78g Cloetta",
+      "price": 12129,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5053990101870",
+      "id": 782,
+      "name": "Chips Sour cream big",
+      "price": 20318,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310511210403",
+      "id": 783,
+      "name": "Mjölkchoklad 200g Marabo",
+      "price": 20279,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7614500010013",
+      "id": 784,
+      "name": "Original 100g Toblerone",
+      "price": 16620,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6411401061066",
+      "id": 785,
+      "name": "Tyrkisk peber 20g Fazer",
+      "price": 2261,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7311672270251",
+      "id": 786,
+      "name": "Smakis Päron",
+      "price": 5035,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7311671270252",
+      "id": 787,
+      "name": "Smakis Apelsin",
+      "price": 5040,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8855702006827",
+      "id": 788,
+      "name": "Thai-Cube Tikka Masala",
+      "price": 26163,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7040110663200",
+      "id": 789,
+      "name": "Japp Dubbel 60g",
+      "price": 8385,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210713216",
+      "id": 790,
+      "name": "Marabou Oreo 37g",
+      "price": 11640,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "50251094",
+      "id": 791,
+      "name": "Kitkat",
+      "price": 6326,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240079562",
+      "id": 792,
+      "name": "Mexikansk Tacopaj",
+      "price": 41042,
+      "stock": 5
+    },
+    {
+      "active": true,
+      "barcode": "7310500000404",
+      "id": 793,
+      "name": "Pasta Alferdo",
+      "price": 35632,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310040028067",
+      "id": 794,
+      "name": "Sport Lunch",
+      "price": 18384,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6416453038981",
+      "id": 795,
+      "name": "Kina snacks",
+      "price": 22180,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622300740375",
+      "id": 796,
+      "name": "O'boy",
+      "price": 3207,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340005403547",
+      "id": 797,
+      "name": "OLW Sourcecream ",
+      "price": 14139,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5701090043919",
+      "id": 798,
+      "name": "Haribo Persikor",
+      "price": 7645,
+      "stock": -24
+    },
+    {
+      "active": true,
+      "barcode": "7310350109135",
+      "id": 799,
+      "name": "Malaco Fruxo",
+      "price": 7994,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4011800564513",
+      "id": 800,
+      "name": "Corny Chocolate-Banana",
+      "price": 8115,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4011800541514",
+      "id": 801,
+      "name": "Corny Coconut",
+      "price": 8119,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4011800563516",
+      "id": 802,
+      "name": "Corny Chocolate",
+      "price": 8752,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622400624445",
+      "id": 803,
+      "name": "Mörkchoklad Apelsn",
+      "price": 18134,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622300544010",
+      "id": 804,
+      "name": "Mörkchoklad Havsalt Peca",
+      "price": 18277,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622201042226",
+      "id": 805,
+      "name": "Mörkchoklad Hallno",
+      "price": 18453,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622400424601",
+      "id": 806,
+      "name": "Mjölkchokld 100g Apelsin",
+      "price": 14163,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040034563",
+      "id": 807,
+      "name": "Polly 130g Og",
+      "price": 14433,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612100397",
+      "id": 808,
+      "name": "Asia Box Chiken Tikka Masala",
+      "price": 36845,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7611612100434",
+      "id": 809,
+      "name": "Asia Box Panang Curry Chicken",
+      "price": 36752,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7622300346676",
+      "id": 810,
+      "name": "Marabou 100g Gradd nougat",
+      "price": 14404,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5774540738932",
+      "id": 811,
+      "name": "Pingvin Karamella Kolastang",
+      "price": 4321,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7315360010709",
+      "id": 812,
+      "name": "Delicato Biskvi",
+      "price": 8700,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7310960001447",
+      "id": 813,
+      "name": "Billys Burning Pepper",
+      "price": 16055,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500040110",
+      "id": 814,
+      "name": "Findus Ost-schnitzel",
+      "price": 35632,
+      "stock": 16
+    },
+    {
+      "active": true,
+      "barcode": "7310500000404",
+      "id": 815,
+      "name": "Finus Pasta Alfredo",
+      "price": 35632,
+      "stock": 16
+    },
+    {
+      "active": true,
+      "barcode": "7310240079562",
+      "id": 816,
+      "name": "Felix Maxikansk Tacopaj",
+      "price": 33147,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400127394",
+      "id": 817,
+      "name": "Sandwich Cheese and French Herbs",
+      "price": 7219,
+      "stock": -21
+    },
+    {
+      "active": true,
+      "barcode": "7300400122689",
+      "id": 818,
+      "name": "Sandwich Cheese and Chives",
+      "price": 8404,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4001686313916",
+      "id": 819,
+      "name": "Haribo Nappar Zourr",
+      "price": 7268,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "57402369",
+      "id": 820,
+      "name": "Pingvinstang Jordgubb",
+      "price": 4500,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4001686372586",
+      "id": 821,
+      "name": "Haribo Roulette",
+      "price": 6462,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5996379193748",
+      "id": 822,
+      "name": "Haribo Goldenbears",
+      "price": 6140,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7315360010914",
+      "id": 823,
+      "name": "Delicato Punschrulle",
+      "price": 7732,
+      "stock": 4
+    },
+    {
+      "active": true,
+      "barcode": "7311672273252",
+      "id": 824,
+      "name": "Smakis Paron",
+      "price": 5202,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500094861",
+      "id": 825,
+      "name": "Findus Falafel Marrakech",
+      "price": 30370,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500094809",
+      "id": 826,
+      "name": "Findus Chicken Indonesia",
+      "price": 30454,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240079593",
+      "id": 827,
+      "name": "Felix Kyckling Broccolipaj",
+      "price": 33082,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240076851",
+      "id": 828,
+      "name": "Felix Italia Fettuccine alla Bolognese",
+      "price": 39309,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500109107",
+      "id": 829,
+      "name": "Findus Rostad Kycklingfile",
+      "price": 31634,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500040158",
+      "id": 830,
+      "name": "Findus Jagarbiff",
+      "price": 30394,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5760466961479",
+      "id": 831,
+      "name": "Pucko",
+      "price": 8268,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040028746",
+      "id": 833,
+      "name": "Sport Lunch 50 g",
+      "price": 10681,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240079579",
+      "id": 834,
+      "name": "Felix Köttfarspaj",
+      "price": 33150,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240076813",
+      "id": 835,
+      "name": "Felix Penne Rosse Piccanti",
+      "price": 39308,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240076820",
+      "id": 836,
+      "name": "Felix Rigatoni ai Funghi",
+      "price": 39307,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5996379193724",
+      "id": 837,
+      "name": "Haribo Nappar Fruit",
+      "price": 7643,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112579321",
+      "id": 838,
+      "name": "Fanta Orange 33cl",
+      "price": 8414,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112579925",
+      "id": 839,
+      "name": "Spicy Water",
+      "price": 7338,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637939",
+      "id": 840,
+      "name": "CocaCola Zero 33cl",
+      "price": 8712,
+      "stock": 20
+    },
+    {
+      "active": true,
+      "barcode": "7310401021768",
+      "id": 841,
+      "name": "Loka Passionsfruk ",
+      "price": 7172,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112614701",
+      "id": 842,
+      "name": "Fanta Zero Orange 33cl",
+      "price": 8285,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401007113",
+      "id": 843,
+      "name": "Loka Citron 33cl",
+      "price": 5688,
+      "stock": 20
+    },
+    {
+      "active": true,
+      "barcode": "5000112617382",
+      "id": 844,
+      "name": "Sprite Mynta 33cl",
+      "price": 7047,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401007168",
+      "id": 845,
+      "name": "Dr. Pepper 33cl",
+      "price": 8208,
+      "stock": 4
+    },
+    {
+      "active": true,
+      "barcode": "5449000181435",
+      "id": 846,
+      "name": "Fanta Strawberry ",
+      "price": 8287,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637922",
+      "id": 847,
+      "name": "CocaCola 33cl",
+      "price": 8664,
+      "stock": -23
+    },
+    {
+      "active": true,
+      "barcode": "5000112579550",
+      "id": 848,
+      "name": "Sprite Zero 33cl-old",
+      "price": 7206,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112579390",
+      "id": 849,
+      "name": "Fanta Exotic",
+      "price": 8284,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7311672273252",
+      "id": 850,
+      "name": "Smakis Jordgubb",
+      "price": 5083,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401007144",
+      "id": 851,
+      "name": "Champis 33cl",
+      "price": 7248,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5449000096982",
+      "id": 852,
+      "name": "CocaCola Vanilla 33cl-old",
+      "price": 8287,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500007700",
+      "id": 853,
+      "name": "Findus Pepparbiff",
+      "price": 30006,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310531027906",
+      "id": 854,
+      "name": "Est Chips Sourcream ",
+      "price": 5326,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "3800020414385",
+      "id": 855,
+      "name": "KitKat Cookie Dough 42g",
+      "price": 6003,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040028647",
+      "id": 856,
+      "name": "Sport Lunch 25g",
+      "price": 5268,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5010478251434",
+      "id": 857,
+      "name": "Banana Skids",
+      "price": 1090,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112579376",
+      "id": 858,
+      "name": "Fanta Lemon",
+      "price": 8284,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350045424303",
+      "id": 859,
+      "name": "Vimto",
+      "price": 7665,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070000361",
+      "id": 860,
+      "name": "Mountain Dew Orginal",
+      "price": 7368,
+      "stock": 60
+    },
+    {
+      "active": true,
+      "barcode": "5449000009500",
+      "id": 861,
+      "name": "CocaCola Cherry old",
+      "price": 7143,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060335635716",
+      "id": 862,
+      "name": "Monster Energy Ultra Zero White",
+      "price": 18176,
+      "stock": -1
+    },
+    {
+      "active": true,
+      "barcode": "5060335635747",
+      "id": 863,
+      "name": "Orange Sips",
+      "price": 15258,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060335635778",
+      "id": 864,
+      "name": "Red Sips",
+      "price": 15314,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960601906",
+      "id": 865,
+      "name": "Billys Kebab 170g",
+      "price": 15448,
+      "stock": -1
+    },
+    {
+      "active": true,
+      "barcode": "5060337502740",
+      "id": 866,
+      "name": "Yellow Sips",
+      "price": 15027,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401007151",
+      "id": 867,
+      "name": "Trocadero 33cl",
+      "price": 6808,
+      "stock": 20
+    },
+    {
+      "active": true,
+      "barcode": "7310350119318",
+      "id": 868,
+      "name": "Kick Raspberry",
+      "price": 5092,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5700417006804",
+      "id": 869,
+      "name": "Kick OG",
+      "price": 5062,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4001686372975",
+      "id": 870,
+      "name": "Haribo Roulette Zourr",
+      "price": 6106,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500040141",
+      "id": 871,
+      "name": "Findus Köttbullar",
+      "price": 31634,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960016489",
+      "id": 872,
+      "name": "Karins Lasagne",
+      "price": 28957,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310511217303",
+      "id": 873,
+      "name": "Marabou Frukt ",
+      "price": 14413,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622300245146",
+      "id": 874,
+      "name": "Marabou Mjölk bar 43g",
+      "price": 7105,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4001686383612",
+      "id": 875,
+      "name": "Haribo Mega-Roulette Cola",
+      "price": 7386,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5766632533518",
+      "id": 876,
+      "name": "Dumle strut",
+      "price": 15341,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7312690013479",
+      "id": 877,
+      "name": "Hilda pinne",
+      "price": 7455,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500057590",
+      "id": 878,
+      "name": "Findus Black & White",
+      "price": 35632,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7312690013257",
+      "id": 879,
+      "name": "Sandwich",
+      "price": 8250,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7312690013097",
+      "id": 880,
+      "name": "Glass Nötkrokant",
+      "price": 8490,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060466510005",
+      "id": 881,
+      "name": "Burn",
+      "price": 12484,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8711400800016",
+      "id": 882,
+      "name": "Lakrisal",
+      "price": 4118,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350103959",
+      "id": 883,
+      "name": "Zoo",
+      "price": 6376,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6411401017575",
+      "id": 884,
+      "name": "Dumle Snacks",
+      "price": 6069,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040020504",
+      "id": 885,
+      "name": "Plopp",
+      "price": 12408,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000159502955",
+      "id": 886,
+      "name": "Mars Kingsize",
+      "price": 9444,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622400958991",
+      "id": 887,
+      "name": "Marrabou Digestive",
+      "price": 14408,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4008400935225",
+      "id": 888,
+      "name": "Kinder Bueno",
+      "price": 8252,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340116870009",
+      "id": 889,
+      "name": "Memevatten Original",
+      "price": 15030,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210981271",
+      "id": 890,
+      "name": "Daim orange",
+      "price": 6063,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310050005188",
+      "id": 891,
+      "name": "ICE ESPRESSO + MILK",
+      "price": 19219,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340116870030",
+      "id": 892,
+      "name": "Memevatten Jordgubb",
+      "price": 15092,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400127363",
+      "id": 893,
+      "name": "Sandwich cheese tomato & basil",
+      "price": 8404,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "7300400128315",
+      "id": 894,
+      "name": "Sandwich cheesee & paprika",
+      "price": 7219,
+      "stock": 8
+    },
+    {
+      "active": true,
+      "barcode": "54492653",
+      "id": 896,
+      "name": "Powerade",
+      "price": 17000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070002754",
+      "id": 897,
+      "name": "Pepsi max ginger",
+      "price": 7389,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7311673270250",
+      "id": 898,
+      "name": "Smakis Äpple",
+      "price": 4100,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960718116",
+      "id": 899,
+      "name": "Billys peperoni",
+      "price": 15448,
+      "stock": 6
+    },
+    {
+      "active": true,
+      "barcode": "7315361112402",
+      "id": 900,
+      "name": "Daimboll",
+      "price": 7335,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040020719",
+      "id": 901,
+      "name": "Center 50g",
+      "price": 10441,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060166694777",
+      "id": 902,
+      "name": "Monster Energy",
+      "price": 16810,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340116870801",
+      "id": 903,
+      "name": "Memevatten melon",
+      "price": 15394,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960794752",
+      "id": 904,
+      "name": "Billys Hawaii",
+      "price": 15448,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401009551",
+      "id": 905,
+      "name": "Mariestads alkoholfri",
+      "price": 11023,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401007137",
+      "id": 906,
+      "name": "Loka päron",
+      "price": 7162,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7393077181653",
+      "id": 907,
+      "name": "Skalle",
+      "price": 8110,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350039457690",
+      "id": 908,
+      "name": "Peacemärke J/L",
+      "price": 8411,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000159376655",
+      "id": 909,
+      "name": "Skittles 38g",
+      "price": 12348,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392257002061",
+      "id": 910,
+      "name": "Filidutter",
+      "price": 7174,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350042710102",
+      "id": 911,
+      "name": "Vitamin Well care",
+      "price": 15347,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060517880613",
+      "id": 912,
+      "name": "Monster punch",
+      "price": 17128,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4011800565510",
+      "id": 913,
+      "name": "corny peanut-choclate",
+      "price": 8445,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240077636",
+      "id": 914,
+      "name": "Grandiosa Vesuvio",
+      "price": 19136,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6411401037184",
+      "id": 915,
+      "name": "Viol",
+      "price": 4360,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070765802",
+      "id": 917,
+      "name": "Julmust",
+      "price": 7005,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7393714333100",
+      "id": 918,
+      "name": "Zeunerts",
+      "price": 10085,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040020726",
+      "id": 919,
+      "name": "Plopp 50g",
+      "price": 12136,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350020720093",
+      "id": 920,
+      "name": "frossh Pineapple, banana & coconut",
+      "price": 17175,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4003084595000",
+      "id": 921,
+      "name": "Burger 50g",
+      "price": 10373,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "87111606",
+      "id": 922,
+      "name": "Dextro classic",
+      "price": 9034,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8713600286072",
+      "id": 923,
+      "name": "mini sushi",
+      "price": 19119,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8000500003787",
+      "id": 924,
+      "name": "Ferrero Rocher",
+      "price": 47384,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310510001729",
+      "id": 925,
+      "name": "Non Stop",
+      "price": 15444,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7613032625474",
+      "id": 926,
+      "name": "Lion",
+      "price": 7290,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "40052441",
+      "id": 927,
+      "name": "KitKat",
+      "price": 5821,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400381703",
+      "id": 928,
+      "name": "OLW Sourcream & Onion",
+      "price": 6131,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400382205",
+      "id": 929,
+      "name": "OLW Cheese Doodles",
+      "price": 5435,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112626551",
+      "id": 931,
+      "name": "Fanta Blackcurrant",
+      "price": 8286,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070765987",
+      "id": 932,
+      "name": "Pepsi Hax",
+      "price": 7398,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310400010695",
+      "id": 933,
+      "name": "Nygårda Julmust (flaska)",
+      "price": 7482,
+      "stock": -12
+    },
+    {
+      "active": true,
+      "barcode": "7340131600216",
+      "id": 934,
+      "name": "Nocco Caribbean",
+      "price": 20482,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070000354",
+      "id": 935,
+      "name": "Zingo Tropical",
+      "price": 7189,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "125",
+      "id": 936,
+      "name": "Popcorn",
+      "price": 6227,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "57055022",
+      "id": 937,
+      "name": "jenka",
+      "price": 1185,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "57055039",
+      "id": 938,
+      "name": "shake",
+      "price": 1317,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240079555",
+      "id": 939,
+      "name": "Ost och skinkpaj",
+      "price": 43294,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5900951027307",
+      "id": 940,
+      "name": "Snickers 75g",
+      "price": 10193,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340005400331",
+      "id": 941,
+      "name": "OLW cheez ballz",
+      "price": 5488,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400381604",
+      "id": 942,
+      "name": "OLW Dill & Gräslök",
+      "price": 5277,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "40144016",
+      "id": 943,
+      "name": "Werther's original cream candies",
+      "price": 6482,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310511251307",
+      "id": 944,
+      "name": "Co-co 30g",
+      "price": 5441,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5774540471808",
+      "id": 945,
+      "name": "Pingvinstång Sur smultron",
+      "price": 5362,
+      "stock": -1
+    },
+    {
+      "active": true,
+      "barcode": "7340083452895",
+      "id": 946,
+      "name": "Gar chips Peperoni",
+      "price": 5109,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310532112236",
+      "id": 947,
+      "name": "Linschips Sourcream & Onion",
+      "price": 24336,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "5900020017420",
+      "id": 948,
+      "name": "Nesquik ",
+      "price": 7268,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7315360014233",
+      "id": 949,
+      "name": "Pärlboll",
+      "price": 6865,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622201056629",
+      "id": 950,
+      "name": "Marabou mjölkcoklad  Daim",
+      "price": 14323,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612514729",
+      "id": 951,
+      "name": "Passion läsk",
+      "price": 7465,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070000293",
+      "id": 952,
+      "name": "Festis cactus & lime",
+      "price": 13437,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070000309",
+      "id": 953,
+      "name": "Festis guanabana & pineapple",
+      "price": 13203,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112626445",
+      "id": 954,
+      "name": "Cola Zero Vanilla",
+      "price": 8281,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340154805261",
+      "id": 955,
+      "name": "Reese's",
+      "price": 10171,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060517882853",
+      "id": 956,
+      "name": "Monster Hydro Tropical",
+      "price": 45002,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060517882792",
+      "id": 957,
+      "name": "Monster Hydro Manic Melon",
+      "price": 16810,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960044222",
+      "id": 958,
+      "name": "Dafgårds Spagetti Bolognese",
+      "price": 34512,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "126",
+      "id": 959,
+      "name": "Semla",
+      "price": 25405,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340116870207",
+      "id": 960,
+      "name": "Meme vatten mango ",
+      "price": 15185,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612221733",
+      "id": 961,
+      "name": "Power king lemon",
+      "price": 8123,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340116870146",
+      "id": 962,
+      "name": "memevatten passion",
+      "price": 15123,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310400010701",
+      "id": 963,
+      "name": "påskmust",
+      "price": 7267,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5053990107384",
+      "id": 964,
+      "name": "Pringles Sourcream & onion",
+      "price": 9789,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5053990107339",
+      "id": 965,
+      "name": "Pringles Original",
+      "price": 9363,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "50818907",
+      "id": 966,
+      "name": "Fisherman's friend  mint",
+      "price": 11417,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112579512",
+      "id": 967,
+      "name": "Mer apelsin",
+      "price": 7095,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502096",
+      "id": 968,
+      "name": "Red Devil",
+      "price": 16258,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502058",
+      "id": 969,
+      "name": "Explosion",
+      "price": 16163,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070000286",
+      "id": 971,
+      "name": "festis orange",
+      "price": 13314,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070000279",
+      "id": 972,
+      "name": "festis strawberry & lime",
+      "price": 13007,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310780002327",
+      "id": 973,
+      "name": "PimPim 20g",
+      "price": 4902,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6420256010594",
+      "id": 975,
+      "name": "Gräddkola",
+      "price": 7487,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6411401015908",
+      "id": 976,
+      "name": "Geisha 100g",
+      "price": 13431,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6416453014725",
+      "id": 977,
+      "name": "Kina wafer 55g",
+      "price": 6383,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210776891",
+      "id": 978,
+      "name": "Vit choklad 185g",
+      "price": 20113,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310532112601",
+      "id": 979,
+      "name": "Linschips dill & gräslök ",
+      "price": 19194,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6416453036567",
+      "id": 980,
+      "name": "Tutti Frutti Red",
+      "price": 7079,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6416453036482",
+      "id": 981,
+      "name": "Tutti Frutti Bananas",
+      "price": 7472,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131600650",
+      "id": 982,
+      "name": "Nocco Carnival",
+      "price": 19028,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340005404612",
+      "id": 983,
+      "name": "Olw Parmesan 275g",
+      "price": 16462,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070766007",
+      "id": 984,
+      "name": "Pepsi",
+      "price": 7046,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060517883683",
+      "id": 985,
+      "name": "Monster  Mango Loco",
+      "price": 18176,
+      "stock": 6
+    },
+    {
+      "active": true,
+      "barcode": "7340005404612",
+      "id": 986,
+      "name": "Parmesanchips",
+      "price": 16472,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502034",
+      "id": 987,
+      "name": "Ölkorv Bierbanger",
+      "price": 14426,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502249",
+      "id": 988,
+      "name": "Ölkorv Full steam ipa",
+      "price": 14293,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502089",
+      "id": 989,
+      "name": "Ölkorv - Joddlarkorv",
+      "price": 14096,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502102",
+      "id": 990,
+      "name": "Ölkorv - Whiskeypinne",
+      "price": 14346,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240077650",
+      "id": 991,
+      "name": "Grandiosa kibab",
+      "price": 18296,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340116870108",
+      "id": 992,
+      "name": "Memevatten Golden kiwi",
+      "price": 15388,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612513166",
+      "id": 993,
+      "name": "Lemon & Lime",
+      "price": 7476,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7613032630409",
+      "id": 994,
+      "name": "Lion white",
+      "price": 6440,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350039457706",
+      "id": 995,
+      "name": "Peacemärke C/S",
+      "price": 8469,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070003096",
+      "id": 996,
+      "name": "pepsi max lime",
+      "price": 7365,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401034560",
+      "id": 997,
+      "name": "Trocadero zero",
+      "price": 6808,
+      "stock": 20
+    },
+    {
+      "active": true,
+      "barcode": "7310070001245",
+      "id": 998,
+      "name": "Festis pear & kiwi",
+      "price": 13382,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350110131",
+      "id": 999,
+      "name": "Fizzypop 80g",
+      "price": 8117,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5449000149343",
+      "id": 1000,
+      "name": "Mer  hallon & svartvinbär",
+      "price": 12750,
+      "stock": -10
+    },
+    {
+      "active": true,
+      "barcode": "7340131600377",
+      "id": 1001,
+      "name": "Nocco Focus 2: Melon Crush",
+      "price": 19070,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060335633521",
+      "id": 1002,
+      "name": "Monster  the doctor",
+      "price": 16810,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401007120",
+      "id": 1003,
+      "name": "Loka naturell",
+      "price": 7483,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612100403",
+      "id": 1004,
+      "name": "Asia Box Sweet & Sour",
+      "price": 36237,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612100427",
+      "id": 1005,
+      "name": "Asia Box Red Curry Chicken",
+      "price": 36752,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7611612100373",
+      "id": 1006,
+      "name": "Asia Box Spicy Sesame Chicken with Noodles",
+      "price": 36845,
+      "stock": 5
+    },
+    {
+      "active": true,
+      "barcode": "7611612221726",
+      "id": 1007,
+      "name": "Power King tropical ",
+      "price": 8198,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502119",
+      "id": 1008,
+      "name": "White Angel ölkorv",
+      "price": 16251,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350042716678",
+      "id": 1009,
+      "name": "Vitamin well hallon",
+      "price": 15105,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350042710409",
+      "id": 1010,
+      "name": "Vitamin well svarta vinbär ",
+      "price": 15117,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5774540740300",
+      "id": 1011,
+      "name": "Pingvinstång Sur melon",
+      "price": 4173,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068297052",
+      "id": 1012,
+      "name": "Fizzy cola spark",
+      "price": 15181,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068294075",
+      "id": 1013,
+      "name": "Protein Bar choklad Boll",
+      "price": 22452,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4014400902495",
+      "id": 1014,
+      "name": "Riesen 150g",
+      "price": 22168,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310511251406",
+      "id": 1015,
+      "name": "Mrabou Co-Co",
+      "price": 8414,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "50184491",
+      "id": 1016,
+      "name": "Dextro tropical",
+      "price": 9021,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350118083",
+      "id": 1017,
+      "name": "Gott&Blandat söta klassiker",
+      "price": 15434,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612221580",
+      "id": 1018,
+      "name": "Powerking zero",
+      "price": 8190,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310780002303",
+      "id": 1019,
+      "name": "Zoo liten",
+      "price": 4193,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612514552",
+      "id": 1020,
+      "name": "Päronsoda",
+      "price": 7235,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210102539",
+      "id": 1021,
+      "name": "Japp kingsize",
+      "price": 9130,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4009900360791",
+      "id": 1022,
+      "name": "Extra eucalyptus",
+      "price": 11209,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "Papperskopp",
+      "id": 1023,
+      "name": "Kaffepapperskopp",
+      "price": 2339,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6416453038271",
+      "id": 1024,
+      "name": "Tutti Frutti Original",
+      "price": 11534,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000159376792",
+      "id": 1025,
+      "name": "Skittles Crazy Sours",
+      "price": 6028,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131610000",
+      "id": 1026,
+      "name": "Nocco Tropical",
+      "price": 19048,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401020952",
+      "id": 1027,
+      "name": "Loka Crush Päron",
+      "price": 7330,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5701090065461",
+      "id": 1028,
+      "name": "Haribo Liten Vingummi Click Mix",
+      "price": 2383,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068294082",
+      "id": 1029,
+      "name": "Njie Proteinbar Cookie Dough",
+      "price": 18272,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001800227",
+      "id": 1030,
+      "name": "Barebells Proteinbar Caramel Cashew",
+      "price": 23063,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001800210",
+      "id": 1031,
+      "name": "Barebells Proteinbar Coconut-Choco",
+      "price": 22230,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001800203",
+      "id": 1032,
+      "name": "Barebells Proteinbar Cookies&Cream",
+      "price": 23068,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7310960854722",
+      "id": 1033,
+      "name": "Billys Panpizza Veggie",
+      "price": 15448,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7350042712007",
+      "id": 1034,
+      "name": "Vitamin Well cit/kak",
+      "price": 15222,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "90167324",
+      "id": 1035,
+      "name": "Iste I en burk med blå och grön nyans",
+      "price": 9213,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112636093",
+      "id": 1036,
+      "name": "Fanta blodig orange",
+      "price": 8281,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5996379193731",
+      "id": 1037,
+      "name": "Nappar Cola",
+      "price": 7645,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4009900399432",
+      "id": 1038,
+      "name": "Extra White Spearmint",
+      "price": 11209,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4014400918113",
+      "id": 1039,
+      "name": "Werther's Original Chewy Toffees",
+      "price": 11050,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068294099",
+      "id": 1040,
+      "name": "Njie ProPud BananaSplit",
+      "price": 18487,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001801071",
+      "id": 1041,
+      "name": "Barbell White Nuts",
+      "price": 22349,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060166696726",
+      "id": 1042,
+      "name": "Rehab Sips",
+      "price": 20999,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001801583",
+      "id": 1043,
+      "name": "Barbell Sexy Mint Rudolf Bar ",
+      "price": 22555,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310861040606",
+      "id": 1044,
+      "name": "Gainomax Toffee Bar",
+      "price": 19420,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310861040620",
+      "id": 1045,
+      "name": "Gainomax Blueberry Bar",
+      "price": 19420,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400482059",
+      "id": 1046,
+      "name": "Wasa Sandwich Cheese",
+      "price": 7219,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960648857",
+      "id": 1047,
+      "name": "Dafgårds Biff Mozzarella",
+      "price": 28940,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400481977",
+      "id": 1048,
+      "name": "Hummus",
+      "price": 6499,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240079586",
+      "id": 1049,
+      "name": "Felix Bacon och Broccolipaj",
+      "price": 33252,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4014400920598",
+      "id": 1050,
+      "name": "Riesen 80g",
+      "price": 11281,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040018341",
+      "id": 1051,
+      "name": "Guld nougat",
+      "price": 8126,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5900951028502",
+      "id": 1052,
+      "name": "Twix X-tra",
+      "price": 9199,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392659004540",
+      "id": 1053,
+      "name": "Lantchips Saltade",
+      "price": 19192,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4011800564414",
+      "id": 1054,
+      "name": "Corny white",
+      "price": 8114,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401036083",
+      "id": 1055,
+      "name": "Julmust Nygårda Light",
+      "price": 6087,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612513081",
+      "id": 1056,
+      "name": "American Cola",
+      "price": 7128,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4011800568511",
+      "id": 1057,
+      "name": "Corny Dark",
+      "price": 8728,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070003065",
+      "id": 1058,
+      "name": "Festis cappucino twist",
+      "price": 13123,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637427",
+      "id": 1059,
+      "name": "Coca Cola Exotic Mango Light",
+      "price": 7138,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001801668",
+      "id": 1060,
+      "name": "Barebells Proteinbar Hazelnut & Nougat",
+      "price": 23065,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500040523",
+      "id": 1061,
+      "name": "Findus Lövtunn Bit",
+      "price": 31634,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060466510067",
+      "id": 1062,
+      "name": "Burn Kiwi Äpple",
+      "price": 15388,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "42353737",
+      "id": 1063,
+      "name": "KitKat Ruby",
+      "price": 8234,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210675446",
+      "id": 1064,
+      "name": "Marabou Fudge & Havssalt stor",
+      "price": 19114,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001801996",
+      "id": 1065,
+      "name": "Barebells Proteinbar Brownie Core",
+      "price": 22358,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001802009",
+      "id": 1066,
+      "name": "Barebells Proteinbar Apple Pie Core",
+      "price": 22171,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001802016",
+      "id": 1067,
+      "name": "Barebells Proteinbar Toffee Core",
+      "price": 22480,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6411401019029",
+      "id": 1068,
+      "name": "Geisha 37g",
+      "price": 7542,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112638035",
+      "id": 1069,
+      "name": "Fanta Zero Orange",
+      "price": 8282,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637946",
+      "id": 1070,
+      "name": "Fanta Orange",
+      "price": 8285,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637977",
+      "id": 1071,
+      "name": "Fanta Exotic (ny)",
+      "price": 8712,
+      "stock": 7
+    },
+    {
+      "active": true,
+      "barcode": "5000112638011",
+      "id": 1072,
+      "name": "Fanta Lemon (ny)",
+      "price": 8288,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070003461",
+      "id": 1073,
+      "name": "Zingo Zero Sorbet 33cl",
+      "price": 7017,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612514712",
+      "id": 1074,
+      "name": "Hallonsoda",
+      "price": 5864,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "9002490215415",
+      "id": 1075,
+      "name": "Red Bull Zero Sugar 25cl",
+      "price": 16629,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "90424588",
+      "id": 1076,
+      "name": "Organics by Red Bull Simply Cola 25cl",
+      "price": 19999,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7315361112372",
+      "id": 1077,
+      "name": "Delicato Mazarin",
+      "price": 7389,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622201056643",
+      "id": 1078,
+      "name": "Marabou Daim 200g",
+      "price": 24342,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6416453015456",
+      "id": 1079,
+      "name": "Fazer Mjölkchoklad 145g",
+      "price": 19199,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5774540738826",
+      "id": 1080,
+      "name": "Pingvinstång Ferrari 27g",
+      "price": 4289,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068291272",
+      "id": 1081,
+      "name": "Njie ProPud Pear Vanilla",
+      "price": 18364,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070002396",
+      "id": 1082,
+      "name": "Carlsberg Alkoholfri",
+      "price": 11012,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068294181",
+      "id": 1083,
+      "name": "Njie ProPud Cashew Almond",
+      "price": 17260,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001802665",
+      "id": 1084,
+      "name": "Barebells Protein Bar Lemon Curd",
+      "price": 22165,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612211871",
+      "id": 1085,
+      "name": "Powerking Protein Bar Caramel",
+      "price": 9101,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340083444760",
+      "id": 1086,
+      "name": "Garant Salt & Vinäger Chips",
+      "price": 15269,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637908",
+      "id": 1087,
+      "name": "CocaCola Vanilla 33cl",
+      "price": 8287,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068291227",
+      "id": 1088,
+      "name": "Njie ProPud White Chocolate Raspberry",
+      "price": 18328,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8711327343245",
+      "id": 1089,
+      "name": "Trocadero zero glass",
+      "price": 13135,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350119035",
+      "id": 1090,
+      "name": "Läkerol Salty Caramel",
+      "price": 5128,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001800692",
+      "id": 1091,
+      "name": "Barebells Milkshake Banana",
+      "price": 18171,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001802672",
+      "id": 1092,
+      "name": "Barebells Milkshake Creamy Pear",
+      "price": 18184,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "BUYSTICKER",
+      "id": 1093,
+      "name": "LUDD Sticker",
+      "price": 6378,
+      "stock": -27
+    },
+    {
+      "active": true,
+      "barcode": "5000112639926",
+      "id": 1094,
+      "name": "Coca Cola Energy",
+      "price": 13285,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310090776628",
+      "id": 1095,
+      "name": "Risi frutti blå",
+      "price": 11123,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340083443657",
+      "id": 1096,
+      "name": "Garant Pepperonichips 200g",
+      "price": 15425,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040013537",
+      "id": 1097,
+      "name": "Tarragona",
+      "price": 10432,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8712000050146",
+      "id": 1098,
+      "name": "Heineken Alkoholfri",
+      "price": 10409,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7314720639673",
+      "id": 1099,
+      "name": "Kiviks äppelmust",
+      "price": 15338,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4014400900651",
+      "id": 1100,
+      "name": "Toffifee",
+      "price": 33367,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350068291210",
+      "id": 1101,
+      "name": "Njie ProPud Chocolate",
+      "price": 18341,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001800906",
+      "id": 1102,
+      "name": "Barebells Milkshake Vanilla",
+      "price": 18185,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070766083",
+      "id": 1103,
+      "name": "Ramlösa Citrus",
+      "price": 6256,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001803020",
+      "id": 1104,
+      "name": "Barebells Proteinbar Blueberry Cake",
+      "price": 23067,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "Ferrerorolife",
+      "id": 1105,
+      "name": "Ferrero Rocher Singular",
+      "price": 5290,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401037172",
+      "id": 1106,
+      "name": "Loka Hallon",
+      "price": 7455,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060517887858",
+      "id": 1107,
+      "name": "Punch Monster ",
+      "price": 16810,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7314720632476",
+      "id": 1108,
+      "name": "Kiviks Lemonad",
+      "price": 15222,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350131099",
+      "id": 1109,
+      "name": "Sport Lunch Caramel",
+      "price": 8049,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112641998",
+      "id": 1110,
+      "name": "Fanta Shokata",
+      "price": 8288,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401003467",
+      "id": 1111,
+      "name": "Orangina 50cl",
+      "price": 11427,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392659002003",
+      "id": 1112,
+      "name": "LantChips Lättsaltade",
+      "price": 17459,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210807274",
+      "id": 1113,
+      "name": "Marabou Kex 50 g",
+      "price": 8436,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7312690117047",
+      "id": 1114,
+      "name": "Sia Sandwich Glass",
+      "price": 11299,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7312690117016",
+      "id": 1115,
+      "name": "Sia Glassbåt",
+      "price": 10992,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637991",
+      "id": 1116,
+      "name": "Coca Cola Cherry",
+      "price": 8287,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131601312",
+      "id": 1117,
+      "name": "Nocco Miami Strawberry",
+      "price": 19384,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350114146",
+      "id": 1118,
+      "name": "Bilar Saltlakrits",
+      "price": 15432,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310074765846",
+      "id": 1120,
+      "name": "7up 33cl",
+      "price": 6586,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340083456268",
+      "id": 1121,
+      "name": "Nötmix Rostade Saltade",
+      "price": 14185,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340083456275",
+      "id": 1122,
+      "name": "Nöt & Fruktmix 70g",
+      "price": 14052,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060639126156",
+      "id": 1123,
+      "name": "Monster Ultra Paradise",
+      "price": 16810,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "0KR",
+      "id": 1124,
+      "name": "0 kr Test code",
+      "price": 0,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400482295",
+      "id": 1125,
+      "name": "Wasa Sandwich sourcream & onion",
+      "price": 7219,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112638875",
+      "id": 1126,
+      "name": "Sprite Zero 33cl",
+      "price": 7206,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310532113073",
+      "id": 1127,
+      "name": "Linschips Ranch & Sourcream ",
+      "price": 19195,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350131419",
+      "id": 1128,
+      "name": "Ahlgrens Elbilar 100g",
+      "price": 5000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340083438691",
+      "id": 1129,
+      "name": "Garant Grillchips 200g",
+      "price": 15399,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070765840",
+      "id": 1130,
+      "name": "7HP",
+      "price": 7173,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310532106464",
+      "id": 1131,
+      "name": "Estrella Sourcream & Onion",
+      "price": 18487,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210315519",
+      "id": 1133,
+      "name": "Marabou Crisp! 60g",
+      "price": 8387,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7314720629766",
+      "id": 1136,
+      "name": "Kiviks Äppelmust med Fruktkött",
+      "price": 15334,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131601596",
+      "id": 1139,
+      "name": "Nocco Ice Soda 330 ml",
+      "price": 20484,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5703828023507",
+      "id": 1142,
+      "name": "Ice Tea Persika Aqua D´ or ",
+      "price": 10398,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "666Glassdags",
+      "id": 1148,
+      "name": "Päronsplit",
+      "price": 7988,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612100427",
+      "id": 1151,
+      "name": "Red Curry Chicken, Spicefield 350g",
+      "price": 36844,
+      "stock": 8
+    },
+    {
+      "active": true,
+      "barcode": "7340083467745",
+      "id": 1154,
+      "name": "Korean Chicken with Noodles Fryst, Spicefield 320g",
+      "price": 36845,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340083467738",
+      "id": 1157,
+      "name": "Chicken PadThai Fryst, Spicefield 320g",
+      "price": 36846,
+      "stock": -1
+    },
+    {
+      "active": true,
+      "barcode": "7340083467721",
+      "id": 1160,
+      "name": "Vegetable Pad Thai Fryst, Spicefield 320g",
+      "price": 36847,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112642704",
+      "id": 1163,
+      "name": "Coca Cola Lemon",
+      "price": 8287,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310532103616",
+      "id": 1166,
+      "name": "Västkust Chips Gräddfil & Lök",
+      "price": 19321,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8712566328208",
+      "id": 1169,
+      "name": "Magnum Classic",
+      "price": 17902,
+      "stock": -2
+    },
+    {
+      "active": true,
+      "barcode": "8712566328352",
+      "id": 1172,
+      "name": "Magnum Almond",
+      "price": 17903,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500088853",
+      "id": 1175,
+      "name": "Pasta Fyra Ostar ",
+      "price": 30683,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240077575",
+      "id": 1178,
+      "name": "Grandiosa X-tra Allt Calzone",
+      "price": 21850,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240079609",
+      "id": 1181,
+      "name": "Skaldjurspaj, Felix 220g",
+      "price": 25000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960039815",
+      "id": 1184,
+      "name": "Karins Vegetariska Lasagne ",
+      "price": 28954,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240076806",
+      "id": 1187,
+      "name": "Penne con Mozzarella, Felix",
+      "price": 39305,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500180700",
+      "id": 1190,
+      "name": "Vegans Chiligryta, Pease Powl",
+      "price": 40216,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500180649",
+      "id": 1193,
+      "name": "Vegansk Pulled Pease, Pease Bowl ",
+      "price": 40217,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622201124489",
+      "id": 1197,
+      "name": "Marabou Cookie Dough",
+      "price": 24341,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070766113",
+      "id": 1200,
+      "name": "Zingo Orange Burk , 33cl",
+      "price": 6588,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "90426094",
+      "id": 1203,
+      "name": "Ice Tea Peach Pet , Pfanner 50cl",
+      "price": 9233,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960648871",
+      "id": 1209,
+      "name": "Spagetti med Köttfärssås Fryst ",
+      "price": 28952,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622201121099",
+      "id": 1212,
+      "name": "Darkmilk , 35g Marabou",
+      "price": 8660,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400381505",
+      "id": 1215,
+      "name": "Lättsaltade Chips , 40g OLW",
+      "price": 6971,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001803235",
+      "id": 1218,
+      "name": "Protein Bar Chocolate Dough, 55g",
+      "price": 23061,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340001801071",
+      "id": 1221,
+      "name": "Protein Bar White Chocolate Almond, 55g",
+      "price": 23064,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "4607065735302",
+      "id": 1224,
+      "name": "Crisp Duo , 40g Snickers",
+      "price": 7990,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392659002904",
+      "id": 1227,
+      "name": "Lättsaltade Lantchips, 180g ",
+      "price": 19191,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060639126804",
+      "id": 1230,
+      "name": "Monster Punch Energy",
+      "price": 16840,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622400624520",
+      "id": 1233,
+      "name": "Marabou Premium Kakao 70%",
+      "price": 19194,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622300544010",
+      "id": 1236,
+      "name": "Marabou Premium Pekan & Havssalt",
+      "price": 19193,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310511 216405",
+      "id": 1239,
+      "name": "Marabou Schweizernöt",
+      "price": 24343,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "DUCKDUCKGO",
+      "id": 1242,
+      "name": "Debug Rubber Duck",
+      "price": 5678,
+      "stock": -19
+    },
+    {
+      "active": true,
+      "barcode": "5703828024795",
+      "id": 1245,
+      "name": "Ice Tea Mango",
+      "price": 9905,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112642711",
+      "id": 1248,
+      "name": "Fanta Rasberry Zero",
+      "price": 8417,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612100410",
+      "id": 1251,
+      "name": "Sweet Chilli Chicken Teriyaki",
+      "price": 33145,
+      "stock": -6
+    },
+    {
+      "active": true,
+      "barcode": "6416453035966",
+      "id": 1254,
+      "name": "Tutti Frutti Sour",
+      "price": 11530,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "Ludd-mugg",
+      "id": 1260,
+      "name": "Ludd-mugg-logotype",
+      "price": 50000,
+      "stock": -4
+    },
+    {
+      "active": true,
+      "barcode": "Holy Grail - Vicke",
+      "id": 1263,
+      "name": "Holy Grail - Vicke",
+      "price": 50000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "Holy Grail - LUDD",
+      "id": 1266,
+      "name": "Holy Grail - LUDD",
+      "price": 50000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070004765",
+      "id": 1269,
+      "name": "Ramlösa citrus slim",
+      "price": 7320,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7314720632445",
+      "id": 1272,
+      "name": "Lemonad Citron Kiviks",
+      "price": 16101,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7314720638249",
+      "id": 1275,
+      "name": "Lemonad Päron Ingefära Kiviks",
+      "price": 16102,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310532107478",
+      "id": 1278,
+      "name": "Västkust Chips Vitlök Estrella",
+      "price": 19322,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960040927",
+      "id": 1281,
+      "name": "Singapore Firecracker Chicken",
+      "price": 42013,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960040972",
+      "id": 1284,
+      "name": "Coq Au Vin Dafgård",
+      "price": 42153,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7314720634746",
+      "id": 1287,
+      "name": "Lemonad Jordgubb Mynta Kiviks",
+      "price": 16103,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7314720633640",
+      "id": 1290,
+      "name": "Lemonad Grape Kiviks",
+      "price": 16104,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350020724114",
+      "id": 1293,
+      "name": "Smoothie Summer Froosh",
+      "price": 17125,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960041962",
+      "id": 1296,
+      "name": "Chicken Teriyaki Dafgårds",
+      "price": 42015,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500123714",
+      "id": 1299,
+      "name": "Angusbiff Findus",
+      "price": 30693,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500183794",
+      "id": 1302,
+      "name": "Pasta Tortellini Findus",
+      "price": 30691,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960041979",
+      "id": 1305,
+      "name": "Chicken Panang Dafgårds",
+      "price": 42012,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960031482",
+      "id": 1308,
+      "name": "Ugnsrostad Kyckling Dafgårds",
+      "price": 28952,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310040027503",
+      "id": 1311,
+      "name": "Kexchoklad 100g",
+      "price": 18808,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "8710398162045",
+      "id": 1314,
+      "name": "Sweet Chilli Pepper Doritos",
+      "price": 23288,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "7310350132874",
+      "id": 1317,
+      "name": "Original bilar 125g Ahlgrens (ny)",
+      "price": 15472,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7310500178011",
+      "id": 1319,
+      "name": "Findus dagens fisk med topping",
+      "price": 30690,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500040127",
+      "id": 1322,
+      "name": "Findus Oxjärpar",
+      "price": 31634,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112650723",
+      "id": 1325,
+      "name": "New Fanta Orange",
+      "price": 8285,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350058331100",
+      "id": 1327,
+      "name": "Celsius Citron/lime, 35,5cl",
+      "price": 20347,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070004468",
+      "id": 1330,
+      "name": "Ramlösa Päron, 1,5l",
+      "price": 15837,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350058335245",
+      "id": 1333,
+      "name": "Celsius Flamingo Tropical 355ml",
+      "price": 20345,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350058331704",
+      "id": 1336,
+      "name": "Celsius Hallon Acai 355ml",
+      "price": 20346,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8722700020868",
+      "id": 1339,
+      "name": "Daimstrut mini",
+      "price": 11086,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8711327528451",
+      "id": 1342,
+      "name": "TipTop Salty Caramel",
+      "price": 11084,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350132898",
+      "id": 1343,
+      "name": "Sursockrade bilar 100g",
+      "price": 13524,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070004741",
+      "id": 1346,
+      "name": "Ramlösa Päron 33cl",
+      "price": 6582,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060335630971",
+      "id": 1347,
+      "name": "Monster Energy Zero",
+      "price": 18176,
+      "stock": -25
+    },
+    {
+      "active": true,
+      "barcode": "9002490215439",
+      "id": 1348,
+      "name": "Red Bull Sugar Free 355 ml",
+      "price": 25830,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310240080025",
+      "id": 1351,
+      "name": "Halloumi hotpot Felix",
+      "price": 40532,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070008701",
+      "id": 1354,
+      "name": "Julmust Apotekarnes",
+      "price": 6928,
+      "stock": 4
+    },
+    {
+      "active": true,
+      "barcode": "7340001803655",
+      "id": 1356,
+      "name": "Protein bar creamy crisp 55g",
+      "price": 23061,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112638059",
+      "id": 1359,
+      "name": "bonaqua citron/lime",
+      "price": 6582,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131602135",
+      "id": 1362,
+      "name": "Nocco Mango",
+      "price": 20482,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350042710003",
+      "id": 1365,
+      "name": "vitamin well defense",
+      "price": 15117,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310290002176",
+      "id": 1367,
+      "name": "Sandwich glass",
+      "price": 14045,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "8711327383975",
+      "id": 1370,
+      "name": "Daim glass stor",
+      "price": 19700,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7622210865335",
+      "id": 1373,
+      "name": "Dubbel nougat Marabou, 43g",
+      "price": 12578,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350020720017",
+      "id": 1375,
+      "name": "Froosh smoothie Mango orange",
+      "price": 17125,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310290002961",
+      "id": 1376,
+      "name": "Piggelin Glasspinne",
+      "price": 9118,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5410041001204",
+      "id": 1379,
+      "name": "Tuc Original 100g",
+      "price": 12354,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310350133758",
+      "id": 1382,
+      "name": "Gott & Blandat äkta frukt och bär",
+      "price": 15963,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "87108262",
+      "id": 1385,
+      "name": "Mentos frukt 38g",
+      "price": 8329,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070005359",
+      "id": 1388,
+      "name": "7up Regular 33cl",
+      "price": 8287,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401046686",
+      "id": 1391,
+      "name": "Loka citron 33cl (ny)",
+      "price": 7436,
+      "stock": -22
+    },
+    {
+      "active": true,
+      "barcode": "7310401046754",
+      "id": 1394,
+      "name": "Trocadero Zero 33cl (ny)",
+      "price": 6808,
+      "stock": 15
+    },
+    {
+      "active": true,
+      "barcode": "8712100836169",
+      "id": 1396,
+      "name": "Magnum Classic 79g",
+      "price": 17902,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5760466961110",
+      "id": 1399,
+      "name": "Starbucks Caffe latte Seattle",
+      "price": 26402,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7350020720734",
+      "id": 1402,
+      "name": "Froosh Strawberry, Banana, Guava",
+      "price": 17126,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "6416453028210",
+      "id": 1405,
+      "name": "Turkisk Peppar 120g",
+      "price": 21072,
+      "stock": 9
+    },
+    {
+      "active": true,
+      "barcode": "7310070005441",
+      "id": 1408,
+      "name": "Pepsi 33cl",
+      "price": 8291,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070005250",
+      "id": 1411,
+      "name": "Pepsi Max 33cl",
+      "price": 7368,
+      "stock": 24
+    },
+    {
+      "active": true,
+      "barcode": "8801073839830",
+      "id": 1414,
+      "name": "Samyang Ramen Beef",
+      "price": 13076,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "Ludd20Ar",
+      "id": 1417,
+      "name": "LUDD 20 År - Tygmärke",
+      "price": 5000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "Patch Vicke",
+      "id": 1420,
+      "name": "Vicke tygmärke - 2022",
+      "price": 12000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401047027",
+      "id": 1421,
+      "name": "Päron Crush 33cl",
+      "price": 6985,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310861015246",
+      "id": 1422,
+      "name": "Gainomax Strawberry",
+      "price": 19874,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5053990162093",
+      "id": 1425,
+      "name": "Pringles Paprika",
+      "price": 24108,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112650402",
+      "id": 1427,
+      "name": "Fanta Lemon Zero 33cl",
+      "price": 8287,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960044147",
+      "id": 1428,
+      "name": "Dafgårds Köttbullar",
+      "price": 32810,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960044130",
+      "id": 1438,
+      "name": "Karins lasagne",
+      "price": 30032,
+      "stock": 8
+    },
+    {
+      "active": true,
+      "barcode": "5060751215363",
+      "id": 1440,
+      "name": "Monster Monarch",
+      "price": 18176,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131601619",
+      "id": 1443,
+      "name": "Nocco Raspberry Blast!!!",
+      "price": 16840,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "frukost",
+      "id": 1446,
+      "name": "Frukosts på LUDD",
+      "price": 15669,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8712566344321",
+      "id": 1449,
+      "name": "Haribo Glass",
+      "price": 12818,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960044079",
+      "id": 1452,
+      "name": "Gorby's Pirog",
+      "price": 13208,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "7310960044277",
+      "id": 1455,
+      "name": "Skomakarlåda",
+      "price": 32810,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400482929",
+      "id": 1458,
+      "name": "Sandwich Taco",
+      "price": 7397,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112637953",
+      "id": 1461,
+      "name": "Sprite 33cl (Spicy Water)",
+      "price": 7338,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070005267",
+      "id": 1464,
+      "name": "MountainDew 33cl",
+      "price": 7368,
+      "stock": 27
+    },
+    {
+      "active": true,
+      "barcode": "7310070004772",
+      "id": 1467,
+      "name": "Ramlösa Granatäpple 33cl",
+      "price": 4398,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "8936134030403",
+      "id": 1470,
+      "name": "Räkchips",
+      "price": 69800,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "54493810",
+      "id": 1471,
+      "name": "Mer Äpple",
+      "price": 13995,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "54493803",
+      "id": 1474,
+      "name": "Mer Aplesin",
+      "price": 13995,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000112647754",
+      "id": 1477,
+      "name": "Mer Lingon",
+      "price": 13796,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392257101344",
+      "id": 1480,
+      "name": "Sur patron",
+      "price": 1024,
+      "stock": -152
+    },
+    {
+      "active": true,
+      "barcode": "7310500050898",
+      "id": 1483,
+      "name": "Kyckling Curry",
+      "price": 34000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "90433641",
+      "id": 1486,
+      "name": "Red Bull THE WHITE EDITION",
+      "price": 13370,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310401046723",
+      "id": 1489,
+      "name": "Trocadero",
+      "price": 6808,
+      "stock": 16
+    },
+    {
+      "active": true,
+      "barcode": "7611612211727",
+      "id": 1492,
+      "name": "Powerking bar - Cookies & Cream",
+      "price": 12000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070002488",
+      "id": 1495,
+      "name": "Julmust Glasflaska",
+      "price": 13000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131603224",
+      "id": 1498,
+      "name": "Nocco Pearade 33cl",
+      "price": 19070,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310090771623",
+      "id": 1501,
+      "name": "Risifrutti Jordgubb",
+      "price": 12112,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310070005298",
+      "id": 1504,
+      "name": "Zingo 33cl",
+      "price": 6320,
+      "stock": 6
+    },
+    {
+      "active": true,
+      "barcode": "7392555502041",
+      "id": 1507,
+      "name": "Cabanossi Korv",
+      "price": 19856,
+      "stock": -34
+    },
+    {
+      "active": true,
+      "barcode": "7310350131945",
+      "id": 1508,
+      "name": "Plopp juleskum",
+      "price": 10400,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310090772620",
+      "id": 1511,
+      "name": "risifrutti hallon",
+      "price": 12288,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502065",
+      "id": 1514,
+      "name": "Ölkorv - het polare",
+      "price": 16695,
+      "stock": -39
+    },
+    {
+      "active": true,
+      "barcode": "7392257101337",
+      "id": 1516,
+      "name": "Salta patroner",
+      "price": 1024,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060896624426",
+      "id": 1519,
+      "name": "Monster guld upplaga",
+      "price": 16969,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7611612221924",
+      "id": 1522,
+      "name": "powerking - jordgubbe",
+      "price": 6000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401048604",
+      "id": 1525,
+      "name": "Trocamust",
+      "price": 10000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7611612221375",
+      "id": 1528,
+      "name": "Powerking - sockerfri",
+      "price": 6000,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "PRIDE AND ACCOMPLISHMENT",
+      "id": 1529,
+      "name": "Pride and Accomplishment",
+      "price": 1,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392555502485",
+      "id": 1532,
+      "name": "Ölkorv - Jambalaya",
+      "price": 16696,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5711953024399",
+      "id": 1535,
+      "name": "Pucko 400ml",
+      "price": 25600,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7300400482752",
+      "id": 1541,
+      "name": "Sandwich Pizza",
+      "price": 8404,
+      "stock": 4
+    },
+    {
+      "active": true,
+      "barcode": "5010478900998",
+      "id": 1547,
+      "name": "Refreshers",
+      "price": 2560,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392659004557",
+      "id": 1550,
+      "name": "Svenska Lantchips Gräddfil 100g",
+      "price": 18688,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7340131602890",
+      "id": 1553,
+      "name": "Nocco Ramonade",
+      "price": 21504,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060751212812",
+      "id": 1556,
+      "name": "Monster Fiesta",
+      "price": 18176,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310401046716",
+      "id": 1559,
+      "name": "LOKA Jordgubb Granatäpple",
+      "price": 5688,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "5010478247819",
+      "id": 1568,
+      "name": "BananaSkids",
+      "price": 2608,
+      "stock": -2
+    },
+    {
+      "active": true,
+      "barcode": "7340083497124",
+      "id": 1569,
+      "name": "powerking - new",
+      "price": 6541,
+      "stock": 51
+    },
+    {
+      "active": true,
+      "barcode": "5000112654240",
+      "id": 1570,
+      "name": "Cola Zero Koffeinfri (detox)",
+      "price": 8280,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7041111133006",
+      "id": 1572,
+      "name": "Frukt toppar",
+      "price": 16384,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "40345123",
+      "id": 1575,
+      "name": "Smarties",
+      "price": 6144,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5760466961455",
+      "id": 1578,
+      "name": "Pucko 270g",
+      "price": 13840,
+      "stock": -1
+    },
+    {
+      "active": true,
+      "barcode": "7611612222105",
+      "id": 1581,
+      "name": "Powerking Raspberry",
+      "price": 6325,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "80050100",
+      "id": 1584,
+      "name": "Nut & Go! ( ͡° ͜ʖ ͡°)",
+      "price": 15525,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060896625607",
+      "id": 1585,
+      "name": "Monster Lewsi Hamilton (Ramus hates this)",
+      "price": 18176,
+      "stock": -20
+    },
+    {
+      "active": true,
+      "barcode": "5900951313592",
+      "id": 1588,
+      "name": "Twix 2x25g",
+      "price": 9872,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310532106501",
+      "id": 1591,
+      "name": "Estrella Grillchips",
+      "price": 19000,
+      "stock": -2
+    },
+    {
+      "active": true,
+      "barcode": "7315360010754",
+      "id": 1593,
+      "name": "Delicatoboll 58g",
+      "price": 7484,
+      "stock": 6
+    },
+    {
+      "active": true,
+      "barcode": "5900951311505",
+      "id": 1596,
+      "name": "Snickers 50g",
+      "price": 9848,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7315360011560",
+      "id": 1599,
+      "name": "Chocolate chips cookie 55g",
+      "price": 12088,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "5060947546783",
+      "id": 1601,
+      "name": "Monster Ultra Peachy Keen",
+      "price": 18176,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "73105000575907611612121309",
+      "id": 1604,
+      "name": "Asia Box Chicken Bibimbap",
+      "price": 34512,
+      "stock": 16
+    },
+    {
+      "active": true,
+      "barcode": "7310500186825",
+      "id": 1607,
+      "name": "Findus Färsbiffar",
+      "price": 36752,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310500186702",
+      "id": 1610,
+      "name": "Findus Ostschnitzel",
+      "price": 35632,
+      "stock": 2
+    },
+    {
+      "active": true,
+      "barcode": "7310070000057",
+      "id": 1615,
+      "name": "Julmust Apotekarnes (Ny)",
+      "price": 6916,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "LUDDMARKE",
+      "id": 1620,
+      "name": "Märke",
+      "price": 24949,
+      "stock": -37
+    },
+    {
+      "active": true,
+      "barcode": "7611612121309",
+      "id": 1623,
+      "name": "Asiabox Bibimbap",
+      "price": 36845,
+      "stock": -5
+    },
+    {
+      "active": true,
+      "barcode": "5060947541245",
+      "id": 1624,
+      "name": "Monster Energy Ultra Rosa",
+      "price": 18176,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "5053990161669",
+      "id": 1626,
+      "name": "Pringels Paprika",
+      "price": 31128,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "7310400014136",
+      "id": 1629,
+      "name": "Julmust Sockerfri",
+      "price": 5900,
+      "stock": -1
+    },
+    {
+      "active": true,
+      "barcode": "7310500186764",
+      "id": 1643,
+      "name": "Rostad Kyckling",
+      "price": 35632,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310500186795",
+      "id": 1646,
+      "name": "Köttbullar med mos",
+      "price": 35632,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310500186917",
+      "id": 1649,
+      "name": "Findus Kyckling Curry Fryst",
+      "price": 35632,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5900951312250",
+      "id": 1652,
+      "name": "Twix xtra 75g",
+      "price": 13880,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "SEALCLUB",
+      "id": 1654,
+      "name": "Klubbad",
+      "price": 1024,
+      "stock": -71
+    },
+    {
+      "active": true,
+      "barcode": "5061013944908",
+      "id": 1655,
+      "name": "Bad Apple",
+      "price": 18176,
+      "stock": -42
+    },
+    {
+      "active": true,
+      "barcode": "7392659002447",
+      "id": 1658,
+      "name": "Grillchips lantcips",
+      "price": 19696,
+      "stock": 7
+    },
+    {
+      "active": true,
+      "barcode": "7310401052588",
+      "id": 1661,
+      "name": "Loka hallon rabarber",
+      "price": 7436,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "5000112512748",
+      "id": 1664,
+      "name": "Fanta exotic zero",
+      "price": 8761,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "5056784901502",
+      "id": 1667,
+      "name": "Ultra strawberry dreams monster",
+      "price": 18176,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5000159557405",
+      "id": 1669,
+      "name": "Bounty Ny",
+      "price": 9872,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960044307",
+      "id": 1670,
+      "name": "Dafgårds Kalops",
+      "price": 32690,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7392659002416",
+      "id": 1671,
+      "name": "Lantchips saltade",
+      "price": 19634,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7310960044185",
+      "id": 1674,
+      "name": "Kyckling Jacob2",
+      "price": 35200,
+      "stock": -6
+    },
+    {
+      "active": true,
+      "barcode": "7611612222372",
+      "id": 1675,
+      "name": "Powerking 500ml",
+      "price": 12543,
+      "stock": -23
+    },
+    {
+      "active": true,
+      "barcode": "7310401047010",
+      "id": 1677,
+      "name": "Loka crush hallon",
+      "price": 7590,
+      "stock": -9
+    },
+    {
+      "active": true,
+      "barcode": "7310070001146",
+      "id": 1679,
+      "name": "Apotekarnes Påskmust",
+      "price": 10890,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "7310240075151",
+      "id": 1682,
+      "name": "Ost & Broccoli Soppa",
+      "price": 31280,
+      "stock": -6
+    },
+    {
+      "active": true,
+      "barcode": "4011800407513",
+      "id": 1685,
+      "name": "Big Corny C",
+      "price": 12345,
+      "stock": 3
+    },
+    {
+      "active": true,
+      "barcode": "7611612212120",
+      "id": 1688,
+      "name": "PC",
+      "price": 12345,
+      "stock": 1
+    },
+    {
+      "active": true,
+      "barcode": "7310401046709",
+      "id": 1691,
+      "name": "Loka Päron",
+      "price": 4971,
+      "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "5060947549883",
+      "id": 1694,
+      "name": "Grön Monster Zero",
+      "price": 12160,
+      "stock": 4
+    }
+  ]
+}
