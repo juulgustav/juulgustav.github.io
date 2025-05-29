@@ -262,12 +262,16 @@
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
             iso.arrange({ sortBy: 'random'  });
+            var firstComplete = true;
             function fixSort() {
                 sleep(2000).then(() => { 
                     sort(document.getElementById("sort-by").value); 
                     console.log("Resorting during load");
                     console.log(document.readyState); 
-                    if(document.readyState != "complete") {
+                    if(document.readyState != "complete" || firstComplete) {
+                        if (document.readyState == "complete") {
+                            firstComplete = false;
+                        }
                         fixSort();
                     }
                 });

@@ -490,8 +490,10 @@
                     sort(document.getElementById("sort-by").value); 
                     console.log("Resorting during load");
                     console.log(document.readyState); 
-                    if(document.readyState != "complete") {
-                        if (firstComplete) {}
+                    if(document.readyState != "complete" || firstComplete) {
+                        if (document.readyState == "complete") {
+                            firstComplete = false;
+                        }
                         fixSort();
                     }
                 });

@@ -134,7 +134,7 @@
       "id": 758,
       "name": "Red Bull",
       "price": 15376,
-      "stock": 21
+      "stock": 19
     },
     {
       "active": true,
@@ -230,7 +230,7 @@
       "id": 770,
       "name": "Kexchoklad 60g Cloetta",
       "price": 9848,
-      "stock": 37
+      "stock": 36
     },
     {
       "active": true,
@@ -270,7 +270,7 @@
       "id": 775,
       "name": "Gott men dåligt blandat",
       "price": 16592,
-      "stock": 29
+      "stock": 28
     },
     {
       "active": true,
@@ -782,7 +782,7 @@
       "id": 840,
       "name": "CocaCola Zero 33cl",
       "price": 8712,
-      "stock": 18
+      "stock": 16
     },
     {
       "active": true,
@@ -838,7 +838,7 @@
       "id": 847,
       "name": "CocaCola 33cl",
       "price": 8664,
-      "stock": -29
+      "stock": -30
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 43
+      "stock": 39
     },
     {
       "active": true,
@@ -4318,7 +4318,7 @@
       "id": 1593,
       "name": "Delicatoboll 58g",
       "price": 7484,
-      "stock": 6
+      "stock": 5
     },
     {
       "active": true,
@@ -4454,7 +4454,7 @@
       "id": 1654,
       "name": "Klubbad",
       "price": 1024,
-      "stock": -71
+      "stock": -74
     },
     {
       "active": true,
