@@ -67,7 +67,7 @@
   },
   {
     "date": "2023-09-14T00:00:00",
-    "name": "Sveriges ingejörer",
+    "name": "Sveriges Ingejörer",
     "places": [
       "right-arm"
     ],
@@ -1860,5 +1860,27 @@
     "width": 10.0,
     "height": 10.0,
     "image": "gula_20.jpg"
+  },
+  {
+    "date": "2025-05-30T00:00:00+02:00",
+    "name": "Uno +2",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "uno_+2.jpg"
+  },
+  {
+    "date": "2025-05-30T00:00:00+02:00",
+    "name": "Uno +4",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "uno_+4.jpg"
   }
 ]

@@ -216,7 +216,7 @@
                 totalArea += märke.area* märke.places.length;
                 totalPatches +=märke.places.length;
                 div.innerHTML = `
-                    <img src="${imgSrc}" alt="Märkesbild" onclick="openPopup(${index})" name=${index}>
+                    <img src="${imgSrc}" alt="Märkesbild" title="${märke.image}" onclick="openPopup(${index})" name=${index}>
                     <h3 style="margin: 5px 0;">${märke.name}</h3>
                     <p style="margin: 4px 0;"><strong>${märke.shape} Antal: ${märke.places.length}</strong></p>
                     <p style="margin: 4px 0;">${märke.places.join('\n')}</p>
