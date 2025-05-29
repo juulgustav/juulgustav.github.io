@@ -270,7 +270,7 @@
       "id": 775,
       "name": "Gott men dåligt blandat",
       "price": 16592,
-      "stock": 28
+      "stock": 27
     },
     {
       "active": true,
@@ -278,7 +278,7 @@
       "id": 776,
       "name": "Nacho cheese 170g Doritos",
       "price": 23288,
-      "stock": 14
+      "stock": 12
     },
     {
       "active": true,
@@ -406,7 +406,7 @@
       "id": 792,
       "name": "Mexikansk Tacopaj",
       "price": 41042,
-      "stock": 5
+      "stock": 4
     },
     {
       "active": true,
@@ -782,7 +782,7 @@
       "id": 840,
       "name": "CocaCola Zero 33cl",
       "price": 8712,
-      "stock": 15
+      "stock": 11
     },
     {
       "active": true,
@@ -822,7 +822,7 @@
       "id": 845,
       "name": "Dr. Pepper 33cl",
       "price": 8208,
-      "stock": 4
+      "stock": 3
     },
     {
       "active": true,
@@ -838,7 +838,7 @@
       "id": 847,
       "name": "CocaCola 33cl",
       "price": 8664,
-      "stock": -30
+      "stock": -31
     },
     {
       "active": true,
@@ -1214,7 +1214,7 @@
       "id": 894,
       "name": "Sandwich cheesee & paprika",
       "price": 7219,
-      "stock": 8
+      "stock": 6
     },
     {
       "active": true,
@@ -1246,7 +1246,7 @@
       "id": 899,
       "name": "Billys peperoni",
       "price": 15448,
-      "stock": 6
+      "stock": 4
     },
     {
       "active": true,
@@ -2070,7 +2070,7 @@
       "id": 1006,
       "name": "Asia Box Spicy Sesame Chicken with Noodles",
       "price": 36845,
-      "stock": 5
+      "stock": 4
     },
     {
       "active": true,
@@ -3534,7 +3534,7 @@
       "id": 1317,
       "name": "Original bilar 125g Ahlgrens (ny)",
       "price": 15472,
-      "stock": 1
+      "stock": 0
     },
     {
       "active": true,
@@ -3822,7 +3822,7 @@
       "id": 1411,
       "name": "Pepsi Max 33cl",
       "price": 7368,
-      "stock": 22
+      "stock": 18
     },
     {
       "active": true,
@@ -3934,7 +3934,7 @@
       "id": 1452,
       "name": "Gorby's Pirog",
       "price": 13208,
-      "stock": 1
+      "stock": 0
     },
     {
       "active": true,
@@ -3966,7 +3966,7 @@
       "id": 1464,
       "name": "MountainDew 33cl",
       "price": 7368,
-      "stock": 26
+      "stock": 25
     },
     {
       "active": true,
@@ -4038,7 +4038,7 @@
       "id": 1489,
       "name": "Trocadero",
       "price": 6808,
-      "stock": 14
+      "stock": 13
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 36
+      "stock": 32
     },
     {
       "active": true,
@@ -4318,7 +4318,7 @@
       "id": 1593,
       "name": "Delicatoboll 58g",
       "price": 7484,
-      "stock": 3
+      "stock": 1
     },
     {
       "active": true,
@@ -4454,7 +4454,7 @@
       "id": 1654,
       "name": "Klubbad",
       "price": 1024,
-      "stock": -75
+      "stock": -77
     },
     {
       "active": true,
@@ -4590,7 +4590,7 @@
       "id": 1694,
       "name": "Grön Monster Zero",
       "price": 12160,
-      "stock": 4
+      "stock": 3
     }
   ]
 }
