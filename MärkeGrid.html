@@ -152,6 +152,8 @@
         var patchGraphxValues = [];
         var patchGraphyValues = [];
         var patchGraphyValuesArea = [];
+        var patchGraphyValuesAverageArea = [];
+
         var shapeCount = {};
         var patchGraphxValuesShape = {};
         var patchGraphyValuesShape = {};
@@ -182,15 +184,18 @@
                 var days=days_between(märkeData[0].date,märke.date);
                 var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
                 //console.log(date);
+                totalPatches +=märke.places.length;
                 if (index>0&&date==patchGraphxValues[patchGraphxValues.length-1]) {
                     patchGraphyValues[patchGraphyValues.length-1] = patchGraphyValues[patchGraphyValues.length-1]+märke.places.length;
-                    patchGraphyValuesArea[patchGraphyValues.length-1] = patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length*0.0001;
+                    patchGraphyValuesArea[patchGraphyValues.length-1] = patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length;
+                    patchGraphyValuesAverageArea[patchGraphyValues.length-1] = (patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length)/totalPatches;
                 }
                 else{
                     patchGraphxValues.push(date);
                     //xValues.push(märke.date);
                     patchGraphyValues.push(totalPatches+ märke.places.length);
-                    patchGraphyValuesArea.push(totalArea*0.0001+märke.area* märke.places.length*0.0001);
+                    patchGraphyValuesArea.push(totalArea+märke.area* märke.places.length);
+                    patchGraphyValuesAverageArea.push((totalArea+märke.area* märke.places.length)/totalPatches);
                 }
                 shapeCount[märke.shape] = (shapeCount[märke.shape] || 0) + märke.places.length;
                 //console.log(apartment);
@@ -214,7 +219,6 @@
                 //console.log(div.dataset)
                 let dateSewnOn = stylizeDate(märke.date);
                 totalArea += märke.area* märke.places.length;
-                totalPatches +=märke.places.length;
                 div.innerHTML = `
                     <img src="${imgSrc}" alt="Märkesbild" title="${märke.image}" onclick="openPopup(${index})" name=${index}>
                     <h3 style="margin: 5px 0;">${märke.name}</h3>
@@ -282,6 +286,16 @@
                         tension: 0.1,
                         yAxisID: 'yRight',
                         hidden: true
+                    },
+                    {
+                        label: "Genomsnittlig area över tid",
+                        data: patchGraphyValuesAverageArea,
+                        backgroundColor: "rgba(0,150,0,0.1)",
+                        borderColor: "rgba(0,150,0,1.0)",
+                        fill: true,
+                        tension: 0.1,
+                        yAxisID: 'yRight',
+                        hidden: true
                     }
                 ]
                 },
@@ -310,7 +324,7 @@
                             position: 'right',
                             title: {
                             display: true,
-                            text: 'Area (m²)'
+                            text: 'Area (cm²)'
                             },
                             grid: {
                             drawOnChartArea: false, // prevent grid lines from overlapping
