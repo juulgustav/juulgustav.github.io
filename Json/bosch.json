@@ -134,7 +134,7 @@
       "id": 758,
       "name": "Red Bull",
       "price": 15376,
-      "stock": 19
+      "stock": 18
     },
     {
       "active": true,
@@ -230,7 +230,7 @@
       "id": 770,
       "name": "Kexchoklad 60g Cloetta",
       "price": 9848,
-      "stock": 35
+      "stock": 32
     },
     {
       "active": true,
@@ -838,7 +838,7 @@
       "id": 847,
       "name": "CocaCola 33cl",
       "price": 8664,
-      "stock": -31
+      "stock": -37
     },
     {
       "active": true,
@@ -2070,7 +2070,7 @@
       "id": 1006,
       "name": "Asia Box Spicy Sesame Chicken with Noodles",
       "price": 36845,
-      "stock": 4
+      "stock": 3
     },
     {
       "active": true,
@@ -3822,7 +3822,7 @@
       "id": 1411,
       "name": "Pepsi Max 33cl",
       "price": 7368,
-      "stock": 18
+      "stock": 15
     },
     {
       "active": true,
@@ -3934,7 +3934,7 @@
       "id": 1452,
       "name": "Gorby's Pirog",
       "price": 13208,
-      "stock": 0
+      "stock": -1
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 32
+      "stock": 29
     },
     {
       "active": true,
@@ -4454,7 +4454,7 @@
       "id": 1654,
       "name": "Klubbad",
       "price": 1024,
-      "stock": -77
+      "stock": -78
     },
     {
       "active": true,

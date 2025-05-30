@@ -1863,6 +1863,39 @@
   },
   {
     "date": "2025-05-30T00:00:00+02:00",
+    "name": "Dammsugare",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "outline",
+    "width": 6.5,
+    "height": 3.5,
+    "image": "dammsugare.jpg"
+  },
+  {
+    "date": "2025-05-30T00:00:00+02:00",
+    "name": "DF Lund",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "df_lund.jpg"
+  },
+  {
+    "date": "2025-05-30T00:00:00+02:00",
+    "name": "StudentDisplay",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 12.0,
+    "height": 3.5,
+    "image": "studentdisplay.jpg"
+  },
+  {
+    "date": "2025-05-30T00:00:00+02:00",
     "name": "Uno +2",
     "places": [
       "right-front-chest"
