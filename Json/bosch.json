@@ -134,7 +134,7 @@
       "id": 758,
       "name": "Red Bull",
       "price": 15376,
-      "stock": 18
+      "stock": 17
     },
     {
       "active": true,
@@ -4014,7 +4014,7 @@
       "id": 1480,
       "name": "Sur patron",
       "price": 1024,
-      "stock": -152
+      "stock": -155
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 29
+      "stock": 25
     },
     {
       "active": true,

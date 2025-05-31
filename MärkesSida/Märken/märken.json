@@ -807,7 +807,7 @@
     "date": "2024-09-29T00:00:00",
     "name": "Störst Hjärna på LTU - Larv",
     "places": [
-      "right-front-leg-lower"
+      "right-back-leg-lower"
     ],
     "shape": "circle",
     "width": 7.5,
@@ -1479,7 +1479,7 @@
     "date": "2025-03-22T00:00:00",
     "name": "Valborg 2024",
     "places": [
-      "right-front-leg-lower"
+      "right-back-leg-lower"
     ],
     "shape": "circle",
     "width": 8.0,
@@ -1865,7 +1865,7 @@
     "date": "2025-05-30T00:00:00+02:00",
     "name": "Dammsugare",
     "places": [
-      "right-front-leg-lower"
+      "right-back-leg-lower"
     ],
     "shape": "outline",
     "width": 6.5,
@@ -1876,7 +1876,7 @@
     "date": "2025-05-30T00:00:00+02:00",
     "name": "DF Lund",
     "places": [
-      "right-front-leg-lower"
+      "right-back-leg-lower"
     ],
     "shape": "circle",
     "width": 8.0,
