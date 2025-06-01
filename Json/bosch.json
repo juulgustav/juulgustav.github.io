@@ -134,7 +134,7 @@
       "id": 758,
       "name": "Red Bull",
       "price": 15376,
-      "stock": 15
+      "stock": 13
     },
     {
       "active": true,
@@ -230,7 +230,7 @@
       "id": 770,
       "name": "Kexchoklad 60g Cloetta",
       "price": 9848,
-      "stock": 30
+      "stock": 24
     },
     {
       "active": true,
@@ -1214,7 +1214,7 @@
       "id": 894,
       "name": "Sandwich cheesee & paprika",
       "price": 7219,
-      "stock": 5
+      "stock": 4
     },
     {
       "active": true,
@@ -3894,7 +3894,7 @@
       "id": 1438,
       "name": "Karins lasagne",
       "price": 30032,
-      "stock": 5
+      "stock": 4
     },
     {
       "active": true,
@@ -3966,7 +3966,7 @@
       "id": 1464,
       "name": "MountainDew 33cl",
       "price": 7368,
-      "stock": 24
+      "stock": 22
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 19
+      "stock": 15
     },
     {
       "active": true,
@@ -4590,7 +4590,7 @@
       "id": 1694,
       "name": "Grön Monster Zero",
       "price": 12160,
-      "stock": 2
+      "stock": 1
     }
   ]
 }
