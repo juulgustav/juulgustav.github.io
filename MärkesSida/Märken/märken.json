@@ -1926,5 +1926,16 @@
     "width": 8.0,
     "height": 8.0,
     "image": "datateknik_40_år.jpg"
+  },
+  {
+    "date": "2025-06-01T00:00:00+02:00",
+    "name": "Tralalero Tralala",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 9.0,
+    "height": 8.0,
+    "image": "tralalero_tralala.jpg"
   }
 ]
