@@ -133,7 +133,7 @@
 
     <div id="stat-modal" class="modal">
         <div class="modal-content" id="stat_content">
-            <div style="width:50%;height:100%; position: absolute; left: 0; top: 0; bottom: 0;">
+            <div id="canvasHolder" style="width:50%;height:100%; position: absolute; left: 0; top: 0; bottom: 0;">
                 <canvas id="märkeGraf" style="width: 100%; height: 100%;"></canvas>
             </div>
             <canvas id="myChart" style="max-width:50%;max-height:50%; position: absolute; right: 0; top: 0;"></canvas>
@@ -146,6 +146,34 @@
     </div>
 
     <script>
+        if(isMobile() || window.innerHeight> window.innerWidth) {
+            console.log("Mobile canvas mode activate")
+            const divs = document.querySelectorAll('canvas');
+            console.log(divs);
+            divs.forEach(div => {
+                //div.style.width = "100%";
+                div.style.width = "100%";
+                div.style.height = "";
+                div.style.position = "";
+                div.style.left = "";
+                div.style.top = "";
+                div.style.bottom = "";
+                div.style.right = "";
+                div.style.maxWidth = "";
+                div.style.maxHeight = "";
+            });
+            const div =document.getElementById("canvasHolder");
+            console.log(div);
+            div.style.width = "100%";
+            div.style.height = "auto";
+            div.style.position = "";
+            div.style.left = "";
+            div.style.top = "";
+            div.style.bottom = "";
+            div.style.right = "";
+            div.style.maxWidth = "";
+            div.style.maxHeight = "";
+        }
         var märkeData = [];
         const gridContainer = document.querySelector(".grid");
         var iso;
@@ -455,6 +483,7 @@
                     div.style.width = (width).toString()+"px";
                 });
             }
+            
             // Filter Handler
             //document.getElementById("filter-category").addEventListener("change", (event) => {
             //    const filterValue = event.target.value === "*" ? "*" : `.${event.target.value}`;
@@ -863,7 +892,7 @@
 
             document.getElementById('stat-modal').style.display = "block";
             let firstClick=true;
-
+            
             //document.getElementById('märkeGraf').style.width = '50%';
             window.addEventListener('click', click);
 
