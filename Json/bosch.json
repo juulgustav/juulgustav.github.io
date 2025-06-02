@@ -230,7 +230,7 @@
       "id": 770,
       "name": "Kexchoklad 60g Cloetta",
       "price": 9848,
-      "stock": 23
+      "stock": 22
     },
     {
       "active": true,
@@ -4590,7 +4590,7 @@
       "id": 1694,
       "name": "Grön Monster Zero",
       "price": 12160,
-      "stock": 1
+      "stock": 0
     }
   ]
 }
