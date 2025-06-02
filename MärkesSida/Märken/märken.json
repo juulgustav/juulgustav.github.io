@@ -1937,5 +1937,16 @@
     "width": 9.0,
     "height": 8.0,
     "image": "tralalero_tralala.jpg"
+  },
+  {
+    "date": "2025-06-02T00:00:00+02:00",
+    "name": "Bombardiro Crocodilo",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 9.0,
+    "height": 8.0,
+    "image": "bombardiro_crocodilo.jpg"
   }
 ]
