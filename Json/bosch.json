@@ -54,7 +54,7 @@
       "id": 746,
       "name": "Panpizza Original Fryst 170g Billys",
       "price": 15448,
-      "stock": 5
+      "stock": 59
     },
     {
       "active": true,
@@ -230,7 +230,7 @@
       "id": 770,
       "name": "Kexchoklad 60g Cloetta",
       "price": 9848,
-      "stock": 21
+      "stock": 19
     },
     {
       "active": true,
@@ -270,7 +270,7 @@
       "id": 775,
       "name": "Gott men dåligt blandat",
       "price": 16592,
-      "stock": 27
+      "stock": 26
     },
     {
       "active": true,
@@ -414,7 +414,7 @@
       "id": 793,
       "name": "Pasta Alferdo",
       "price": 35632,
-      "stock": 1
+      "stock": 16
     },
     {
       "active": true,
@@ -598,7 +598,7 @@
       "id": 816,
       "name": "Felix Maxikansk Tacopaj",
       "price": 33147,
-      "stock": 0
+      "stock": 1
     },
     {
       "active": true,
@@ -606,7 +606,7 @@
       "id": 817,
       "name": "Sandwich Cheese and French Herbs",
       "price": 7219,
-      "stock": -21
+      "stock": 23
     },
     {
       "active": true,
@@ -782,7 +782,7 @@
       "id": 840,
       "name": "CocaCola Zero 33cl",
       "price": 8712,
-      "stock": 11
+      "stock": 37
     },
     {
       "active": true,
@@ -822,7 +822,7 @@
       "id": 845,
       "name": "Dr. Pepper 33cl",
       "price": 8208,
-      "stock": 3
+      "stock": 21
     },
     {
       "active": true,
@@ -838,7 +838,7 @@
       "id": 847,
       "name": "CocaCola 33cl",
       "price": 8664,
-      "stock": -39
+      "stock": 20
     },
     {
       "active": true,
@@ -958,7 +958,7 @@
       "id": 862,
       "name": "Monster Energy Ultra Zero White",
       "price": 18176,
-      "stock": -1
+      "stock": 46
     },
     {
       "active": true,
@@ -982,7 +982,7 @@
       "id": 865,
       "name": "Billys Kebab 170g",
       "price": 15448,
-      "stock": -1
+      "stock": 39
     },
     {
       "active": true,
@@ -1086,7 +1086,7 @@
       "id": 878,
       "name": "Findus Black & White",
       "price": 35632,
-      "stock": 1
+      "stock": 8
     },
     {
       "active": true,
@@ -1206,7 +1206,7 @@
       "id": 893,
       "name": "Sandwich cheese tomato & basil",
       "price": 8404,
-      "stock": 3
+      "stock": 24
     },
     {
       "active": true,
@@ -1214,7 +1214,7 @@
       "id": 894,
       "name": "Sandwich cheesee & paprika",
       "price": 7219,
-      "stock": 4
+      "stock": 23
     },
     {
       "active": true,
@@ -1246,7 +1246,7 @@
       "id": 899,
       "name": "Billys peperoni",
       "price": 15448,
-      "stock": 1
+      "stock": 20
     },
     {
       "active": true,
@@ -1286,7 +1286,7 @@
       "id": 904,
       "name": "Billys Hawaii",
       "price": 15448,
-      "stock": 0
+      "stock": 20
     },
     {
       "active": true,
@@ -1598,7 +1598,7 @@
       "id": 945,
       "name": "Pingvinstång Sur smultron",
       "price": 5362,
-      "stock": -1
+      "stock": 51
     },
     {
       "active": true,
@@ -1614,7 +1614,7 @@
       "id": 947,
       "name": "Linschips Sourcream & Onion",
       "price": 24336,
-      "stock": 3
+      "stock": 12
     },
     {
       "active": true,
@@ -1702,7 +1702,7 @@
       "id": 958,
       "name": "Dafgårds Spagetti Bolognese",
       "price": 34512,
-      "stock": 2
+      "stock": 6
     },
     {
       "active": true,
@@ -1902,7 +1902,7 @@
       "id": 985,
       "name": "Monster  Mango Loco",
       "price": 18176,
-      "stock": 6
+      "stock": 24
     },
     {
       "active": true,
@@ -2022,7 +2022,7 @@
       "id": 1000,
       "name": "Mer  hallon & svartvinbär",
       "price": 12750,
-      "stock": -10
+      "stock": 12
     },
     {
       "active": true,
@@ -2070,7 +2070,7 @@
       "id": 1006,
       "name": "Asia Box Spicy Sesame Chicken with Noodles",
       "price": 36845,
-      "stock": 2
+      "stock": 8
     },
     {
       "active": true,
@@ -2286,7 +2286,7 @@
       "id": 1033,
       "name": "Billys Panpizza Veggie",
       "price": 15448,
-      "stock": 2
+      "stock": 20
     },
     {
       "active": true,
@@ -2454,7 +2454,7 @@
       "id": 1054,
       "name": "Corny white",
       "price": 8114,
-      "stock": 0
+      "stock": 24
     },
     {
       "active": true,
@@ -3126,7 +3126,7 @@
       "id": 1157,
       "name": "Chicken PadThai Fryst, Spicefield 320g",
       "price": 36846,
-      "stock": -1
+      "stock": 8
     },
     {
       "active": true,
@@ -3534,7 +3534,7 @@
       "id": 1317,
       "name": "Original bilar 125g Ahlgrens (ny)",
       "price": 15472,
-      "stock": 0
+      "stock": 36
     },
     {
       "active": true,
@@ -3542,7 +3542,7 @@
       "id": 1319,
       "name": "Findus dagens fisk med topping",
       "price": 30690,
-      "stock": 0
+      "stock": 8
     },
     {
       "active": true,
@@ -3550,7 +3550,7 @@
       "id": 1322,
       "name": "Findus Oxjärpar",
       "price": 31634,
-      "stock": 0
+      "stock": 8
     },
     {
       "active": true,
@@ -3630,7 +3630,7 @@
       "id": 1347,
       "name": "Monster Energy Zero",
       "price": 18176,
-      "stock": -25
+      "stock": 22
     },
     {
       "active": true,
@@ -3774,7 +3774,7 @@
       "id": 1394,
       "name": "Trocadero Zero 33cl (ny)",
       "price": 6808,
-      "stock": 15
+      "stock": 58
     },
     {
       "active": true,
@@ -3822,7 +3822,7 @@
       "id": 1411,
       "name": "Pepsi Max 33cl",
       "price": 7368,
-      "stock": 12
+      "stock": 40
     },
     {
       "active": true,
@@ -3894,7 +3894,7 @@
       "id": 1438,
       "name": "Karins lasagne",
       "price": 30032,
-      "stock": 4
+      "stock": 3
     },
     {
       "active": true,
@@ -3934,7 +3934,7 @@
       "id": 1452,
       "name": "Gorby's Pirog",
       "price": 13208,
-      "stock": -1
+      "stock": 20
     },
     {
       "active": true,
@@ -3966,7 +3966,7 @@
       "id": 1464,
       "name": "MountainDew 33cl",
       "price": 7368,
-      "stock": 16
+      "stock": 62
     },
     {
       "active": true,
@@ -4030,7 +4030,7 @@
       "id": 1486,
       "name": "Red Bull THE WHITE EDITION",
       "price": 13370,
-      "stock": 1
+      "stock": 24
     },
     {
       "active": true,
@@ -4038,7 +4038,7 @@
       "id": 1489,
       "name": "Trocadero",
       "price": 6808,
-      "stock": 13
+      "stock": 38
     },
     {
       "active": true,
@@ -4078,7 +4078,7 @@
       "id": 1504,
       "name": "Zingo 33cl",
       "price": 6320,
-      "stock": 6
+      "stock": 20
     },
     {
       "active": true,
@@ -4230,7 +4230,7 @@
       "id": 1568,
       "name": "BananaSkids",
       "price": 2608,
-      "stock": -2
+      "stock": 117
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 10
+      "stock": 74
     },
     {
       "active": true,
@@ -4318,7 +4318,7 @@
       "id": 1593,
       "name": "Delicatoboll 58g",
       "price": 7484,
-      "stock": 1
+      "stock": 24
     },
     {
       "active": true,
@@ -4326,7 +4326,7 @@
       "id": 1596,
       "name": "Snickers 50g",
       "price": 9848,
-      "stock": 2
+      "stock": 31
     },
     {
       "active": true,
@@ -4334,7 +4334,7 @@
       "id": 1599,
       "name": "Chocolate chips cookie 55g",
       "price": 12088,
-      "stock": 1
+      "stock": 18
     },
     {
       "active": true,
@@ -4358,7 +4358,7 @@
       "id": 1607,
       "name": "Findus Färsbiffar",
       "price": 36752,
-      "stock": 1
+      "stock": 8
     },
     {
       "active": true,
@@ -4366,7 +4366,7 @@
       "id": 1610,
       "name": "Findus Ostschnitzel",
       "price": 35632,
-      "stock": 2
+      "stock": 15
     },
     {
       "active": true,
@@ -4390,7 +4390,7 @@
       "id": 1623,
       "name": "Asiabox Bibimbap",
       "price": 36845,
-      "stock": -5
+      "stock": 8
     },
     {
       "active": true,
@@ -4406,7 +4406,7 @@
       "id": 1626,
       "name": "Pringels Paprika",
       "price": 31128,
-      "stock": 3
+      "stock": 19
     },
     {
       "active": true,
@@ -4502,7 +4502,7 @@
       "id": 1669,
       "name": "Bounty Ny",
       "price": 9872,
-      "stock": 0
+      "stock": 24
     },
     {
       "active": true,
@@ -4541,8 +4541,8 @@
       "barcode": "7310401047010",
       "id": 1677,
       "name": "Loka crush hallon",
-      "price": 7590,
-      "stock": -9
+      "price": 8590,
+      "stock": 20
     },
     {
       "active": true,
@@ -4591,6 +4591,30 @@
       "name": "Grön Monster Zero",
       "price": 12160,
       "stock": 0
+    },
+    {
+      "active": true,
+      "barcode": "7311043004034",
+      "id": 1699,
+      "name": "152st pinnar",
+      "price": 11999,
+      "stock": 23
+    },
+    {
+      "active": true,
+      "barcode": "7350146811668",
+      "id": 1702,
+      "name": "Latitude Hajk",
+      "price": 12000,
+      "stock": 24
+    },
+    {
+      "active": true,
+      "barcode": "7350146811576",
+      "id": 1705,
+      "name": "Latitude Dimma",
+      "price": 12000,
+      "stock": 23
     }
   ]
 }
