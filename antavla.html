@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>my-family-chart</title>
+  <title>Skogsdala Antavla 2.0</title>
   <script src="https://unpkg.com/d3@6"></script>
   <script type="module" src="https://unpkg.com/family-chart@0.4.5"></script>
   <link rel="stylesheet" href="https://unpkg.com/family-chart@0.4.5/dist/styles/family-chart.css">
+  <link rel="icon" href="Assets/Logo.png">
+
 </head>
 <body>
-<div id="FamilyChart" class="f3" style="width:100%;height:1440px;margin:auto;background-color:rgb(33,33,33);color:#fff;"></div>
+<div id="FamilyChart" class="f3" style="width:100%;height: 98vh;margin:auto;background-color:rgb(33,33,33);color:#fff;"></div>
 <script type="module">
 
 fetch('Json/Personer.json')
@@ -19,8 +21,8 @@ fetch('Json/Personer.json')
 
 function create(data) {
   const cont  = f3.createChart('#FamilyChart', data)
-        .setTransitionTime(1000)
-        .setCardXSpacing(250)
+        .setTransitionTime(600)
+        .setCardXSpacing(150)
         .setCardYSpacing(150)
         .setSingleParentEmptyCard(true, {label: 'ADD'})
         .setShowSiblingsOfMain(false)
