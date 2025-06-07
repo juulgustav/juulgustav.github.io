@@ -24,9 +24,11 @@ function create(data) {
         .setTransitionTime(600)
         .setCardXSpacing(150)
         .setCardYSpacing(150)
-        .setSingleParentEmptyCard(true, {label: 'ADD'})
+        .setSingleParentEmptyCard(true, {label: 'Unknown'})
         .setShowSiblingsOfMain(false)
         .setOrientationVertical()
+        .setAncestryDepth(1)
+        .setProgenyDepth(1)
       //const svg = f3.createSvg(cont)
       const Card = cont.setCard(f3.CardHtml)
         .setCardDisplay([["first name"],["last name"]])
@@ -36,12 +38,7 @@ function create(data) {
         .setOnHoverPathToMain()
     
       
-      const f3EditTree = cont.editTree()
-        .fixed(true)
-        .setFields(["first name","last name","birthday","avatar"])
-        .setEditFirst(true)
       
-f3EditTree.setEdit()
 
 
   //store.setOnUpdate(props => f3.view(store.getTree(), svg, Card, props || {}))
