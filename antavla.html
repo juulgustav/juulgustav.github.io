@@ -12,6 +12,14 @@
 
 </head>
 <body>
+    <!-- Modal -->
+        <div id="info-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <!--<h2>More Information</h2>
+                <p>Here is more detailed info about the marker...</p>-->
+            </div>
+        </div>
 <div id="FamilyChart" class="f3" style="width:100%;height: 98vh;margin:auto;background-color:rgb(33,33,33);color:#fff;"></div>
 <script type="module">
 
@@ -27,18 +35,32 @@ function create(data) {
         .setSingleParentEmptyCard(true, {label: 'Unknown'})
         .setShowSiblingsOfMain(false)
         .setOrientationVertical()
-        .setAncestryDepth(1)
-        .setProgenyDepth(1)
+        //.setAncestryDepth(1)
+        //.setProgenyDepth(1)
       //const svg = f3.createSvg(cont)
       const Card = cont.setCard(f3.CardHtml)
-        .setCardDisplay([["first name"],["last name"]])
+        .setCardDisplay([["firstname"],["lastname"]])
         .setCardDim({})
         .setMiniTree(true)
         .setStyle('imageCircle')
         .setOnHoverPathToMain()
     
       
+      const f3EditTree = cont.editTree()
+        .fixed(true)
+        .setFields(["firstname","lastname","birthday","occupation"])
+        .setEditFirst(false)
       
+      f3EditTree.setNoEdit()
+      
+      Card.setOnCardClick((e, d) => {
+        console.log(d);
+        console.log(e);
+        //f3EditTree.open(d)
+        openPopup(d.data.data);
+        //if (f3EditTree.isAddingRelative()) return
+        Card.onCardClickDefault(e, d)
+      })
 
 
   //store.setOnUpdate(props => f3.view(store.getTree(), svg, Card, props || {}))
@@ -70,7 +92,7 @@ function create(data) {
   const all_select_options = []
   data.forEach(d => {
     if (all_select_options.find(d0 => d0.value === d["id"])) return
-    all_select_options.push({label: `${d.data["first name"]+" "+d.data["last name"]}`, value: d["id"]})
+    all_select_options.push({label: `${d.data["firstname"]+" "+d.data["lastname"]}`, value: d["id"]})
   })
   const search_cont = d3.select(document.querySelector("#FamilyChart")).append("div")
     .attr("style", "position: absolute; top: 10px; left: 10px; width: 150px; z-index: 1000;")
@@ -108,6 +130,89 @@ function create(data) {
       })
       .text(d => d.label)
   }
+    function stylizeDate(date)
+    {
+        console.log(date);
+        date = new Date(date);
+        console.log(date);
+        let dateSewnOn = date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'long' });
+
+        dateSewnOn = dateSewnOn.replace(/(\p{L})/u, match => match.toUpperCase());
+
+        if(date.getYear() != new Date().getYear())
+        {
+            dateSewnOn += " "+date.toLocaleDateString('sv-SE', { year: 'numeric' });
+        }
+        return dateSewnOn
+    }
+
+    function isMobile() {
+        return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
+    document.getElementById('info-modal').style.display = "none";
+    var popupOpen = false;
+    function openPopup(data){
+        if(popupOpen){
+            //return;
+        }
+        popupOpen = true;
+        console.log("Button clicked!");
+        console.log(data);
+        const modalContent = document.querySelector('.modal-content');
+        //let apartment =apartmentData.find(o => o.marker.popup = pop);
+        let född = stylizeDate(data.birthday);
+        let död = stylizeDate(data.deathyear);
+        let gift = stylizeDate(data.marriagedate);
+        const imgStyle= isMobile()? "max-width:100%; max-height:700px;":  "max-width:90%; max-height:70%;";
+
+        // Update the modal content dynamically
+        modalContent.innerHTML = `
+                <span class="close-btn">&times;</span>
+                <h1>${data.firstname} ${data.lastname}</h1>
+                <img src="${data.avatar}" style="${imgStyle}">
+                <p>${data.occupation}</p>
+
+                <p><strong>Född:</strong> ${data.birthplace} ${född}</p>
+                <h3>Äktenskap med ${data.spouses[0]}</h3>
+                <p><strong>Vigsel:</strong> ${data.marriageplace} ${gift}</p>
+                <p><strong>Död:</strong> ${data.deathplace} ${död}</p>
+                <h3>Barn:</h3> 
+                <p>${data.children.join("</br>")}</p>
+
+            `;
+
+        document.getElementById('info-modal').style.display = "block";
+        let firstClick=true;
+        //window.addEventListener('click', click);
+
+        //function click(e){
+        //    if (document.getElementById('info-modal').contains(e.target)){
+        //        console.log("Click in Box!");
+        //    } else{
+        //        if(firstClick) {
+        //            firstClick=false;
+        //            return;
+        //        }
+        //        console.log("Click outside Box!");
+        //        window.removeEventListener('click', click);
+        //        popupOpen=false;
+        //        document.getElementById('info-modal').style.display = "none";
+        //    }
+        //}
+        // Close modal when the user clicks on the close button (×)
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            //window.removeEventListener('click', click);
+            popupOpen=false;
+            document.getElementById('info-modal').style.display = "none";
+        });
+        // Close modal if the user clicks outside the modal
+        //window.onclick = function(event) {
+        //    if (event.target == document.getElementById('info-modal')) {
+        //        document.getElementById('info-modal').style.display = "none";
+        //    }
+        //};
+    }
 }
 
 </script>
