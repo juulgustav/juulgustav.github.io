@@ -54,7 +54,7 @@
       "id": 746,
       "name": "Panpizza Original Fryst 170g Billys",
       "price": 15448,
-      "stock": 54
+      "stock": 51
     },
     {
       "active": true,
@@ -230,7 +230,7 @@
       "id": 770,
       "name": "Kexchoklad 60g Cloetta",
       "price": 9848,
-      "stock": 16
+      "stock": 15
     },
     {
       "active": true,
@@ -414,7 +414,7 @@
       "id": 793,
       "name": "Pasta Alferdo",
       "price": 35632,
-      "stock": 15
+      "stock": 14
     },
     {
       "active": true,
@@ -606,7 +606,7 @@
       "id": 817,
       "name": "Sandwich Cheese and French Herbs",
       "price": 7219,
-      "stock": 23
+      "stock": 22
     },
     {
       "active": true,
@@ -782,7 +782,7 @@
       "id": 840,
       "name": "CocaCola Zero 33cl",
       "price": 8712,
-      "stock": 32
+      "stock": 31
     },
     {
       "active": true,
@@ -822,7 +822,7 @@
       "id": 845,
       "name": "Dr. Pepper 33cl",
       "price": 8208,
-      "stock": 17
+      "stock": 16
     },
     {
       "active": true,
@@ -838,7 +838,7 @@
       "id": 847,
       "name": "CocaCola 33cl",
       "price": 8664,
-      "stock": 19
+      "stock": 18
     },
     {
       "active": true,
@@ -958,7 +958,7 @@
       "id": 862,
       "name": "Monster Energy Ultra Zero White",
       "price": 18176,
-      "stock": 45
+      "stock": 42
     },
     {
       "active": true,
@@ -1206,7 +1206,7 @@
       "id": 893,
       "name": "Sandwich cheese tomato & basil",
       "price": 8404,
-      "stock": 24
+      "stock": 22
     },
     {
       "active": true,
@@ -1598,7 +1598,7 @@
       "id": 945,
       "name": "Pingvinstång Sur smultron",
       "price": 5362,
-      "stock": 39
+      "stock": 36
     },
     {
       "active": true,
@@ -1902,7 +1902,7 @@
       "id": 985,
       "name": "Monster  Mango Loco",
       "price": 18176,
-      "stock": 20
+      "stock": 19
     },
     {
       "active": true,
@@ -2022,7 +2022,7 @@
       "id": 1000,
       "name": "Mer  hallon & svartvinbär",
       "price": 12750,
-      "stock": 5
+      "stock": 4
     },
     {
       "active": true,
@@ -3534,7 +3534,7 @@
       "id": 1317,
       "name": "Original bilar 125g Ahlgrens (ny)",
       "price": 15472,
-      "stock": 35
+      "stock": 34
     },
     {
       "active": true,
@@ -3630,7 +3630,7 @@
       "id": 1347,
       "name": "Monster Energy Zero",
       "price": 18176,
-      "stock": 22
+      "stock": 21
     },
     {
       "active": true,
@@ -3774,7 +3774,7 @@
       "id": 1394,
       "name": "Trocadero Zero 33cl (ny)",
       "price": 6808,
-      "stock": 55
+      "stock": 47
     },
     {
       "active": true,
@@ -3822,7 +3822,7 @@
       "id": 1411,
       "name": "Pepsi Max 33cl",
       "price": 7368,
-      "stock": 37
+      "stock": 36
     },
     {
       "active": true,
@@ -3966,7 +3966,7 @@
       "id": 1464,
       "name": "MountainDew 33cl",
       "price": 7368,
-      "stock": 61
+      "stock": 58
     },
     {
       "active": true,
@@ -4014,7 +4014,7 @@
       "id": 1480,
       "name": "Sur patron",
       "price": 1024,
-      "stock": -160
+      "stock": -165
     },
     {
       "active": true,
@@ -4038,7 +4038,7 @@
       "id": 1489,
       "name": "Trocadero",
       "price": 6808,
-      "stock": 35
+      "stock": 33
     },
     {
       "active": true,
@@ -4078,7 +4078,7 @@
       "id": 1504,
       "name": "Zingo 33cl",
       "price": 6320,
-      "stock": 19
+      "stock": 18
     },
     {
       "active": true,
@@ -4230,7 +4230,7 @@
       "id": 1568,
       "name": "BananaSkids",
       "price": 2608,
-      "stock": 114
+      "stock": 109
     },
     {
       "active": true,
@@ -4238,7 +4238,7 @@
       "id": 1569,
       "name": "powerking - new",
       "price": 6541,
-      "stock": 73
+      "stock": 72
     },
     {
       "active": true,
@@ -4318,7 +4318,7 @@
       "id": 1593,
       "name": "Delicatoboll 58g",
       "price": 7484,
-      "stock": 23
+      "stock": 22
     },
     {
       "active": true,
@@ -4334,7 +4334,7 @@
       "id": 1599,
       "name": "Chocolate chips cookie 55g",
       "price": 12088,
-      "stock": 16
+      "stock": 13
     },
     {
       "active": true,
@@ -4502,7 +4502,7 @@
       "id": 1669,
       "name": "Bounty Ny",
       "price": 9872,
-      "stock": 23
+      "stock": 22
     },
     {
       "active": true,
@@ -4542,7 +4542,7 @@
       "id": 1677,
       "name": "Loka crush hallon",
       "price": 8590,
-      "stock": 18
+      "stock": 15
     },
     {
       "active": true,
@@ -4614,7 +4614,7 @@
       "id": 1705,
       "name": "Latitude Dimma",
       "price": 12000,
-      "stock": 23
+      "stock": 21
     },
     {
       "active": true,
@@ -4622,7 +4622,7 @@
       "id": 1706,
       "name": "Powerking new",
       "price": 8397,
-      "stock": -1
+      "stock": -2
     }
   ]
 }

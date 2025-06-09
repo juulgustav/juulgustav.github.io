@@ -34,48 +34,49 @@ function create(data) {
         .setTransitionTime(600)
         .setCardXSpacing(150)
         .setCardYSpacing(150)
-        .setSingleParentEmptyCard(true, {label: 'Unknown'})
+        .setSingleParentEmptyCard(false, {label: 'Unknown'})
         .setShowSiblingsOfMain(false)
         .setOrientationVertical()
         //.setAncestryDepth(1)
         //.setProgenyDepth(1)
       //const svg = f3.createSvg(cont)
-      const Card = cont.setCard(f3.CardHtml)
-        .setCardDisplay([["firstname"],["lastname"]])
-        .setCardDim({})
-        .setMiniTree(true)
-        .setStyle('imageCircle')
-        .setOnHoverPathToMain()
-    
+  const Card = cont.setCard(f3.CardHtml)
+    .setCardDisplay([["firstname"],["lastname"]])
+    .setCardDim({})
+    .setMiniTree(true)
+    .setStyle('imageCircle')
+    .setOnHoverPathToMain()
+
+  
+  const f3EditTree = cont.editTree()
+    .fixed(true)
+    .setFields(["firstname","lastname","birthday","occupation"])
+    .setEditFirst(false)
       
-      const f3EditTree = cont.editTree()
-        .fixed(true)
-        .setFields(["firstname","lastname","birthday","occupation"])
-        .setEditFirst(false)
-      
-      f3EditTree.setNoEdit()
-      
-      Card.setOnCardClick((e, d) => {
-        console.log(d);
-        console.log(e);
-        //f3EditTree.open(d)
-        openPopup(d.data.data);
-        //if (f3EditTree.isAddingRelative()) return
-        Card.onCardClickDefault(e, d)
-      })
-      
-      
-      //store.setOnUpdate(props => f3.view(store.getTree(), svg, Card, props || {}))
-      cont.updateMainId('pf07a0ccd.html')  // Anders Nilsson
-      cont.updateTree({initial: true})
+  //f3EditTree.setNoEdit()
+  //f3EditTree.setEdit()
+  
+  Card.setOnCardClick((e, d) => {
+    console.log(d);
+    console.log(e);
+    //f3EditTree.open(d)
+    openPopup(d.data.data);
+    //if (f3EditTree.isAddingRelative()) return
+    Card.onCardClickDefault(e, d)
+  })
+  
+  
+  //store.setOnUpdate(props => f3.view(store.getTree(), svg, Card, props || {}))
+  cont.updateMainId('pf07a0ccd.html')  // Anders Nilsson
+  cont.updateTree({initial: true})
 
 
-      //f3EditTree.open(cont.getMainDatum())
+  //f3EditTree.open(cont.getMainDatum())
 
   // with person_id this function will update the tree
   function updateTreeWithNewMainPerson(person_id, animation_initial = true) {
-    cont.updateMainId(person_id)
-    cont.updateTree({initial: animation_initial})
+    cont.updateMainId(person_id);
+    cont.updateTree({initial: animation_initial});
   }
 
   // random person
@@ -85,12 +86,12 @@ function create(data) {
     .text("Random Person")
     .attr("style", "position: absolute; top: 10px; right: 10px; z-index: 1000;")
     .on("click", () => {
-      const random_person = data[Math.floor(Math.random() * data.length)]
-      const person_id = random_person["id"]
-      console.log(random_person)
-        openPopup(random_person.data);
+      const random_person = data[Math.floor(Math.random() * data.length)];
+      const person_id = random_person["id"];
+      console.log(random_person);
+      openPopup(random_person.data);
 
-      updateTreeWithNewMainPerson(person_id, false)
+      updateTreeWithNewMainPerson(person_id, true);
     })
 
 
@@ -141,8 +142,8 @@ function create(data) {
       .text(d => d.label)
   }
 
-        console.log(cont.getMainDatum());
-      openPopup(cont.getMainDatum().data);
+    //console.log(cont.getMainDatum());
+    //openPopup(cont.getMainDatum().data);
     function stylizeDate(date)
     {
         console.log(date);
