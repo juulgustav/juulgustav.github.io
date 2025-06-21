@@ -573,7 +573,7 @@
   },
   {
     "date": "2024-05-18T00:00:00",
-    "name": "Gameboy Gray",
+    "name": "Gameboy Grå",
     "places": [
       "left-front-leg-upper"
     ],
@@ -1411,7 +1411,7 @@
   },
   {
     "date": "2025-03-16T00:00:00",
-    "name": "Gameboy Blue",
+    "name": "Gameboy Blå",
     "places": [
       "left-front-stomach"
     ],
@@ -1948,5 +1948,38 @@
     "width": 9.0,
     "height": 8.0,
     "image": "bombardiro_crocodilo.jpg"
+  },
+  {
+    "date": "2025-06-21T00:00:00+02:00",
+    "name": "Gameboy Gul",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 4.0,
+    "height": 6.5,
+    "image": "gameboy_gul.jpg"
+  },
+  {
+    "date": "2025-06-21T00:00:00+02:00",
+    "name": "Snaps Akademin",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 9.0,
+    "height": 9.0,
+    "image": "snaps_akademin.jpg"
+  },
+  {
+    "date": "2025-06-21T00:00:00+02:00",
+    "name": "Data Galan 2025",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "data_galan_2025.jpg"
   }
 ]
