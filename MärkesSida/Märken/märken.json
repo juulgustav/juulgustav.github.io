@@ -1951,6 +1951,17 @@
   },
   {
     "date": "2025-06-21T00:00:00+02:00",
+    "name": "Data Galan 2025",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "data_galan_2025.jpg"
+  },
+  {
+    "date": "2025-06-21T00:00:00+02:00",
     "name": "Gameboy Gul",
     "places": [
       "right-front-leg-upper"
@@ -1973,13 +1984,13 @@
   },
   {
     "date": "2025-06-21T00:00:00+02:00",
-    "name": "Data Galan 2025",
+    "name": "Tequila - Hearthstone",
     "places": [
-      "right-back-leg-lower"
+      "back-backside"
     ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "data_galan_2025.jpg"
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "tequila_-_hearthstone.jpg"
   }
 ]
