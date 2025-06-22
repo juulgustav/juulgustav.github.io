@@ -876,9 +876,9 @@
     "places": [
       "back-backside"
     ],
-    "shape": "outline",
+    "shape": "oval",
     "width": 7.5,
-    "height": 8.0,
+    "height": 6.0,
     "image": "bolaget.jpg"
   },
   {
@@ -1992,5 +1992,27 @@
     "width": 6.0,
     "height": 9.0,
     "image": "tequila_-_hearthstone.jpg"
+  },
+  {
+    "date": "2025-06-22T00:00:00+02:00",
+    "name": "Ovve - Hearthstone",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "ovve_-_hearthstone.jpg"
+  },
+  {
+    "date": "2025-06-22T00:00:00+02:00",
+    "name": "Nudlar - Hearthstone",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "nudlar_-_hearthstone.jpg"
   }
 ]
