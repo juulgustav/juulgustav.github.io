@@ -256,7 +256,7 @@
                     <h3 style="margin: 5px 0;">${märke.name}</h3>
                     <p style="margin: 4px 0;"><strong>${märke.shape} Antal: ${märke.places.length}</strong></p>
                     <p style="margin: 4px 0;">${märke.places.join('\n')}</p>
-                    <p style="margin: 4px 0;">${märke.shape == "circle"? "Radie: "+ märke.width+" cm": "Bredd: "+märke.width+ " cm, Höjd: "+märke.height+ " cm"}, Area: ${parseInt(area(märke.width, märke.height, märke.shape),10)}cm²</p>
+                    <p style="margin: 4px 0;">${märke.shape == "circle"? "Diameter: "+ märke.width+" cm": "Bredd: "+märke.width+ " cm, Höjd: "+märke.height+ " cm"}, Area: ${parseInt(area(märke.width, märke.height, märke.shape),10)}cm²</p>
                     <p style="margin: 4px 0;"><strong>Datum påsatt:</strong> ${dateSewnOn}<br></p>
                     <button id="more-info-btn" onclick="openPopup(${index})" name=${index}>Enhance!</button>
                 `;
