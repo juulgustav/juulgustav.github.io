@@ -17,8 +17,8 @@
       "left-front-leg-lower"
     ],
     "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
+    "width": 7.0,
+    "height": 7.0,
     "image": "utomhussittningen_2023.jpg"
   },
   {
@@ -94,8 +94,8 @@
       "right-front-chest"
     ],
     "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
+    "width": 7.0,
+    "height": 7.0,
     "image": "philm_40.jpg"
   },
   {
@@ -380,8 +380,8 @@
       "left-front-leg-upper"
     ],
     "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
+    "width": 7.0,
+    "height": 7.0,
     "image": "sektionskvällen_2023.jpg"
   },
   {
@@ -512,8 +512,8 @@
       "left-front-stomach"
     ],
     "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
+    "width": 7.0,
+    "height": 7.0,
     "image": "nolleperioden_2023.jpg"
   },
   {
@@ -667,8 +667,8 @@
       "left-front-stomach"
     ],
     "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
+    "width": 7.0,
+    "height": 7.0,
     "image": "norrskensröj_2023.jpg"
   },
   {
@@ -689,8 +689,8 @@
       "left-front-stomach"
     ],
     "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
+    "width": 7.0,
+    "height": 7.0,
     "image": "spelkvällen_2023.jpg"
   },
   {
@@ -998,8 +998,8 @@
       "left-front-chest"
     ],
     "shape": "rect",
-    "width": 7.0,
-    "height": 7.0,
+    "width": 6.5,
+    "height": 6.5,
     "image": "sonic_nom_nom.jpg"
   },
   {
@@ -1317,8 +1317,8 @@
       "left-front-stomach"
     ],
     "shape": "rect",
-    "width": 8.0,
-    "height": 8.0,
+    "width": 7.0,
+    "height": 7.0,
     "image": "35_years_of_philm.jpg"
   },
   {
