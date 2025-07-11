@@ -1995,6 +1995,17 @@
   },
   {
     "date": "2025-06-22T00:00:00+02:00",
+    "name": "Minecraftsittningen 2025 - DDOS",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "minecraftsittningen_2025_-_ddos.jpg"
+  },
+  {
+    "date": "2025-06-22T00:00:00+02:00",
     "name": "Nudlar - Hearthstone",
     "places": [
       "back-backside"
@@ -2016,14 +2027,47 @@
     "image": "ovve_-_hearthstone.jpg"
   },
   {
-    "date": "2025-06-22T00:00:00+02:00",
-    "name": "Minecraftsittningen 2025 - DDOS",
+    "date": "2025-07-01T00:00:00+02:00",
+    "name": "Hets",
     "places": [
-      "right-front-chest"
+      "left-front-shoulder"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "hets.jpg"
+  },
+  {
+    "date": "2025-07-02T00:00:00+02:00",
+    "name": "Formula Student Luleå",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "formula_student_luleå.jpg"
+  },
+  {
+    "date": "2025-07-02T00:00:00+02:00",
+    "name": "Jamboree 22",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "outline",
+    "width": 6.0,
+    "height": 5.0,
+    "image": "jamboree_2022.jpg"
+  },
+  {
+    "date": "2025-07-11T00:00:00+02:00",
+    "name": "Task Failed Successfully",
+    "places": [
+      "left-front-chest"
     ],
     "shape": "rect",
     "width": 8.0,
-    "height": 8.0,
-    "image": "minecraftsittningen_2025_-_ddos.jpg"
+    "height": 5.0,
+    "image": "task_failed_successfully.jpg"
   }
 ]
