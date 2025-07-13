@@ -2061,6 +2061,17 @@
   },
   {
     "date": "2025-07-11T00:00:00+02:00",
+    "name": "Light of Nature",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "hexagon",
+    "width": 7.5,
+    "height": 8.0,
+    "image": "light_of_nature.jpg"
+  },
+  {
+    "date": "2025-07-11T00:00:00+02:00",
     "name": "Task Failed Successfully",
     "places": [
       "left-front-chest"
@@ -2069,5 +2080,38 @@
     "width": 8.0,
     "height": 5.0,
     "image": "task_failed_successfully.jpg"
+  },
+  {
+    "date": "2025-07-11T00:00:00+02:00",
+    "name": "Wall-E",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "outline",
+    "width": 7.0,
+    "height": 8.0,
+    "image": "wall-e.jpg"
+  },
+  {
+    "date": "2025-07-12T00:00:00+02:00",
+    "name": "Jamboree 17",
+    "places": [
+      "right-arm"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 4.5,
+    "image": "jamboree_17.jpg"
+  },
+  {
+    "date": "2025-07-13T00:00:00+02:00",
+    "name": "Delta - 20",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "triangle",
+    "width": 7.5,
+    "height": 7.0,
+    "image": "delta_-_20.jpg"
   }
 ]
