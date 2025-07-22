@@ -2113,5 +2113,49 @@
     "width": 7.5,
     "height": 7.0,
     "image": "delta_-_20.jpg"
+  },
+  {
+    "date": "2025-07-13T00:00:00+02:00",
+    "name": "Windows XP Start",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 3.5,
+    "image": "windows_xp_start.jpg"
+  },
+  {
+    "date": "2025-07-20T00:00:00+02:00",
+    "name": "How to clean your ovve",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "how_to_clean_your_ovve.jpg"
+  },
+  {
+    "date": "2025-07-20T00:00:00+02:00",
+    "name": "Punsch - Hearthstone",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "punsch_-_hearthstone.jpg"
+  },
+  {
+    "date": "2025-07-22T00:00:00+02:00",
+    "name": "Jägermeister - Hearthstone",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 9.0,
+    "image": "jägermeister_-_hearthstone.jpg"
   }
 ]
