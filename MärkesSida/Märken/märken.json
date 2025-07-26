@@ -2157,5 +2157,60 @@
     "width": 6.0,
     "height": 9.0,
     "image": "jägermeister_-_hearthstone.jpg"
+  },
+  {
+    "date": "2025-07-25T00:00:00+02:00",
+    "name": "Boo",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "outline",
+    "width": 4.0,
+    "height": 4.0,
+    "image": "boo.jpg"
+  },
+  {
+    "date": "2025-07-25T00:00:00+02:00",
+    "name": "Luigi",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "outline",
+    "width": 5.0,
+    "height": 4.0,
+    "image": "luigi.jpg"
+  },
+  {
+    "date": "2025-07-26T00:00:00+02:00",
+    "name": "Färgteori Additiv",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "outline",
+    "width": 4.5,
+    "height": 4.5,
+    "image": "färgteori_additiv.jpg"
+  },
+  {
+    "date": "2025-07-26T00:00:00+02:00",
+    "name": "Färgteori Subtraktiv",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "outline",
+    "width": 4.5,
+    "height": 4.5,
+    "image": "färgteori_subtraktiv.jpg"
+  },
+  {
+    "date": "2025-07-26T00:00:00+02:00",
+    "name": "Bullet Bill",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "outline",
+    "width": 4.0,
+    "height": 3.0,
+    "image": "bullet_bill.jpg"
   }
 ]
