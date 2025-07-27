@@ -2182,6 +2182,17 @@
   },
   {
     "date": "2025-07-26T00:00:00+02:00",
+    "name": "Bullet Bill",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "outline",
+    "width": 4.0,
+    "height": 3.0,
+    "image": "bullet_bill.jpg"
+  },
+  {
+    "date": "2025-07-26T00:00:00+02:00",
     "name": "Färgteori Additiv",
     "places": [
       "back-backside"
@@ -2204,13 +2215,24 @@
   },
   {
     "date": "2025-07-26T00:00:00+02:00",
-    "name": "Bullet Bill",
+    "name": "How to clean your ovve 2",
     "places": [
-      "right-back-leg-lower"
+      "back-backside"
     ],
-    "shape": "outline",
-    "width": 4.0,
-    "height": 3.0,
-    "image": "bullet_bill.jpg"
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "how_to_clean_your_ovve_2.jpg"
+  },
+  {
+    "date": "2025-07-26T00:00:00+02:00",
+    "name": "How to clean your ovve 3",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "how_to_clean_your_ovve_3.jpg"
   }
 ]
