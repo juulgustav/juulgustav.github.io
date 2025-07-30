@@ -2116,7 +2116,7 @@
   },
   {
     "date": "2025-07-13T00:00:00+02:00",
-    "name": "Windows XP Start",
+    "name": "Windows 95 Start",
     "places": [
       "right-front-leg-upper"
     ],
@@ -2234,5 +2234,49 @@
     "width": 8.0,
     "height": 8.0,
     "image": "how_to_clean_your_ovve_3.jpg"
+  },
+  {
+    "date": "2025-07-27T00:00:00+02:00",
+    "name": "Ped6 24-25",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "triangle",
+    "width": 9.0,
+    "height": 8.0,
+    "image": "ped6_24-25.jpg"
+  },
+  {
+    "date": "2025-07-27T00:00:00+02:00",
+    "name": "The future is bright",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 6.5,
+    "height": 6.5,
+    "image": "the_future_is_bright.jpg"
+  },
+  {
+    "date": "2025-07-27T00:00:00+02:00",
+    "name": "Datasittningen 2025",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasittningen_2025.jpg"
+  },
+  {
+    "date": "2025-07-27T00:00:00+02:00",
+    "name": "Valborg 2025",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "triangle",
+    "width": 8.0,
+    "height": 7.0,
+    "image": "valborg_2025.jpg"
   }
 ]
