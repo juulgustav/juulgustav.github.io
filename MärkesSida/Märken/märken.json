@@ -2237,6 +2237,17 @@
   },
   {
     "date": "2025-07-27T00:00:00+02:00",
+    "name": "Datasittningen 2025",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "datasittningen_2025.jpg"
+  },
+  {
+    "date": "2025-07-27T00:00:00+02:00",
     "name": "Ped6 24-25",
     "places": [
       "right-back-leg-lower"
@@ -2259,17 +2270,6 @@
   },
   {
     "date": "2025-07-27T00:00:00+02:00",
-    "name": "Datasittningen 2025",
-    "places": [
-      "right-back-leg-lower"
-    ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "datasittningen_2025.jpg"
-  },
-  {
-    "date": "2025-07-27T00:00:00+02:00",
     "name": "Valborg 2025",
     "places": [
       "right-back-leg-lower"
@@ -2278,5 +2278,16 @@
     "width": 8.0,
     "height": 7.0,
     "image": "valborg_2025.jpg"
+  },
+  {
+    "date": "2025-08-03T00:00:00+02:00",
+    "name": "Mätfel Reborn 22-23",
+    "places": [
+      "right-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "mätfel_reborn_22-23.jpg"
   }
 ]
