@@ -2300,5 +2300,49 @@
     "width": 8.0,
     "height": 8.0,
     "image": "mätfel_24-25.jpg"
+  },
+  {
+    "date": "2025-08-12T00:00:00",
+    "name": "Gula 19",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "gula_19.jpg"
+  },
+  {
+    "date": "2025-08-12T00:00:00",
+    "name": "Hata Data",
+    "places": [
+      "left-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 7.5,
+    "height": 1.5,
+    "image": "hata_data.jpg"
+  },
+  {
+    "date": "2025-08-16T00:00:00+02:00",
+    "name": "Datateknik Phös 2025",
+    "places": [
+      "right-front-chest"
+    ],
+    "shape": "outline",
+    "width": 8.0,
+    "height": 9.0,
+    "image": "datateknik_phös_2025.jpg"
+  },
+  {
+    "date": "2025-08-17T00:00:00+02:00",
+    "name": "Phösare 2025",
+    "places": [
+      "left-front-shoulder"
+    ],
+    "shape": "oval",
+    "width": 9.0,
+    "height": 5.5,
+    "image": "phösare_2025.jpg"
   }
 ]
