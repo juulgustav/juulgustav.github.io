@@ -772,7 +772,7 @@
   },
   {
     "date": "2024-09-13T00:00:00",
-    "name": "Data Phös 24",
+    "name": "Datateknik Phös 2024",
     "places": [
       "right-front-shoulder"
     ],
@@ -2316,7 +2316,9 @@
     "date": "2025-08-12T00:00:00",
     "name": "Hata Data",
     "places": [
-      "left-front-leg-upper"
+      "left-front-leg-upper",
+      "right-front-collar",
+      "left-front-collar"
     ],
     "shape": "rect",
     "width": 7.5,
@@ -2344,5 +2346,38 @@
     "width": 9.0,
     "height": 5.5,
     "image": "phösare_2025.jpg"
+  },
+  {
+    "date": "2025-08-18T00:00:00+02:00",
+    "name": "Gula 25",
+    "places": [
+      "left-arm"
+    ],
+    "shape": "circle",
+    "width": 9.5,
+    "height": 9.5,
+    "image": "gula_25.jpg"
+  },
+  {
+    "date": "2025-08-19T00:00:00+02:00",
+    "name": "Skåne Anka",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "triangle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "skåne_anka.jpg"
+  },
+  {
+    "date": "2025-08-19T00:00:00+02:00",
+    "name": "YAI Phös 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "yai_phös_2025.jpg"
   }
 ]
