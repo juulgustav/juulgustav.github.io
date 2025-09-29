@@ -2379,5 +2379,93 @@
     "width": 8.0,
     "height": 8.0,
     "image": "yai_phös_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "Nolleperioden 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "nolleperioden_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "Dirty Dancing 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "dirty_dancing_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "VKM 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "vkm_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "Spelkvällen 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "spelkvällen_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "You Shall Not Pass Out Phaesten - Utomhussittningen 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "you_shall_not_pass_out_phaesten_-_utomhussittningen_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "Norrskensröj 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "norrskensröj_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "Sektionskvällen 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "sektionskvällen_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "Kårkvällen 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 5.0,
+    "image": "kårkvällen_2025.jpg"
   }
 ]
