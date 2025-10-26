@@ -178,6 +178,18 @@
             div.style.maxWidth = "";
             div.style.maxHeight = "";
         }
+        function findMedian(arr) {
+            let n = arr.length;
+            
+            // First we sort the array
+            arr.sort((a, b) => a - b);
+
+            // check for even case
+            if (n % 2 !== 0)
+                return arr[Math.floor(n / 2)];
+
+            return (arr[Math.floor(n / 2) - 1] + arr[Math.floor(n / 2)]) / 2.0;
+        }
         var märkeData = [];
         const gridContainer = document.querySelector(".grid");
         var iso;
@@ -185,6 +197,7 @@
         var patchGraphyValues = [];
         var patchGraphyValuesArea = [];
         var patchGraphyValuesAverageArea = [];
+        var patchMedianArea= [];
 
         var shapeCount = {};
         var patchGraphxValuesShape = {};
@@ -213,6 +226,7 @@
                 for (let index = 0; index < märke.places.length; index++) {
                     areaList.push(märke.area);
                 }
+                patchMedianArea.push(findMedian(areaList));
                 var days=days_between(märkeData[0].date,märke.date);
                 var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
                 //console.log(date);
@@ -229,6 +243,7 @@
                     patchGraphyValuesArea.push(totalArea+märke.area* märke.places.length);
                     patchGraphyValuesAverageArea.push((totalArea+märke.area* märke.places.length)/totalPatches);
                 }
+                
                 shapeCount[märke.shape] = (shapeCount[märke.shape] || 0) + märke.places.length;
                 //console.log(apartment);
                 const imgSrc = "MärkesSida/NewCompressed/"+märke.image;
@@ -321,10 +336,20 @@
                         hidden: true
                     },
                     {
-                        label: "Genomsnittlig area över tid",
+                        label: "Genomsnitt över tid",
                         data: patchGraphyValuesAverageArea,
                         backgroundColor: "rgba(0,150,0,0.1)",
                         borderColor: "rgba(0,150,0,1.0)",
+                        fill: true,
+                        tension: 0.1,
+                        yAxisID: 'yRight',
+                        hidden: true
+                    },
+                    {
+                        label: "Median över tid",
+                        data: patchMedianArea,
+                        backgroundColor: "rgba(150,150,0,0.1)",
+                        borderColor: "rgba(150,150,0,1.0)",
                         fill: true,
                         tension: 0.1,
                         yAxisID: 'yRight',
