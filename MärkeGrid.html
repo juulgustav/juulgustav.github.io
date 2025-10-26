@@ -226,7 +226,6 @@
                 for (let index = 0; index < märke.places.length; index++) {
                     areaList.push(märke.area);
                 }
-                patchMedianArea.push(findMedian(areaList));
                 var days=days_between(märkeData[0].date,märke.date);
                 var date = märke.date.toLocaleDateString('sv-SE', { year:'numeric', day: 'numeric', month: 'numeric' });
                 //console.log(date);
@@ -235,6 +234,7 @@
                     patchGraphyValues[patchGraphyValues.length-1] = patchGraphyValues[patchGraphyValues.length-1]+märke.places.length;
                     patchGraphyValuesArea[patchGraphyValues.length-1] = patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length;
                     patchGraphyValuesAverageArea[patchGraphyValues.length-1] = (patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length)/totalPatches;
+                    patchMedianArea[patchGraphyValues.length-1] = findMedian(areaList);
                 }
                 else{
                     patchGraphxValues.push(date);
@@ -242,6 +242,7 @@
                     patchGraphyValues.push(totalPatches);
                     patchGraphyValuesArea.push(totalArea+märke.area* märke.places.length);
                     patchGraphyValuesAverageArea.push((totalArea+märke.area* märke.places.length)/totalPatches);
+                    patchMedianArea.push(findMedian(areaList));
                 }
                 
                 shapeCount[märke.shape] = (shapeCount[märke.shape] || 0) + märke.places.length;
@@ -310,6 +311,7 @@
             console.log(patchGraphxValues);
             console.log(patchGraphyValues);
             console.log(patchGraphyValuesArea);
+            console.log(patchMedianArea);
             const dataPoints = patchGraphxValues.map((x, i) => ({ x, y: patchGraphyValues[i] }));
             console.log(dataPoints);
             new Chart("märkeGraf", {
