@@ -1248,7 +1248,8 @@
     "date": "2025-01-10T00:00:00",
     "name": "Larv Pub 9",
     "places": [
-      "left-back-leg-upper"
+      "left-back-leg-upper",
+	  "inside-left-front-leg-upper"
     ],
     "shape": "rect",
     "width": 7.5,
@@ -2382,17 +2383,6 @@
   },
   {
     "date": "2025-09-29T00:00:00+02:00",
-    "name": "Nolleperioden 2025",
-    "places": [
-      "back-backside"
-    ],
-    "shape": "nollep25",
-    "width": 6.0,
-    "height": 10.0,
-    "image": "nolleperioden_2025.jpg"
-  },
-  {
-    "date": "2025-09-29T00:00:00+02:00",
     "name": "Dirty Dancing 2025",
     "places": [
       "back-backside"
@@ -2404,36 +2394,25 @@
   },
   {
     "date": "2025-09-29T00:00:00+02:00",
-    "name": "VKM 2025",
+    "name": "Kårkvällen 2025",
     "places": [
       "back-backside"
     ],
-    "shape": "nollep25",
-    "width": 6.0,
-    "height": 10.0,
-    "image": "vkm_2025.jpg"
+    "shape": "rect",
+    "width": 7.0,
+    "height": 5.0,
+    "image": "kårkvällen_2025.jpg"
   },
   {
     "date": "2025-09-29T00:00:00+02:00",
-    "name": "Spelkvällen 2025",
+    "name": "Nolleperioden 2025",
     "places": [
       "back-backside"
     ],
     "shape": "nollep25",
     "width": 6.0,
     "height": 10.0,
-    "image": "spelkvällen_2025.jpg"
-  },
-  {
-    "date": "2025-09-29T00:00:00+02:00",
-    "name": "You Shall Not Pass Out Phaesten - Utomhussittningen 2025",
-    "places": [
-      "back-backside"
-    ],
-    "shape": "nollep25",
-    "width": 6.0,
-    "height": 10.0,
-    "image": "you_shall_not_pass_out_phaesten_-_utomhussittningen_2025.jpg"
+    "image": "nolleperioden_2025.jpg"
   },
   {
     "date": "2025-09-29T00:00:00+02:00",
@@ -2459,13 +2438,79 @@
   },
   {
     "date": "2025-09-29T00:00:00+02:00",
-    "name": "Kårkvällen 2025",
+    "name": "Spelkvällen 2025",
     "places": [
       "back-backside"
     ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "spelkvällen_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "VKM 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "vkm_2025.jpg"
+  },
+  {
+    "date": "2025-09-29T00:00:00+02:00",
+    "name": "You Shall Not Pass Out Phaesten - Utomhussittningen 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "nollep25",
+    "width": 6.0,
+    "height": 10.0,
+    "image": "you_shall_not_pass_out_phaesten_-_utomhussittningen_2025.jpg"
+  },
+  {
+    "date": "2025-10-25T00:00:00+02:00",
+    "name": "Just Smile and Wave Boys",
+    "places": [
+      "left-front-chest"
+    ],
     "shape": "rect",
     "width": 7.0,
-    "height": 5.0,
-    "image": "kårkvällen_2025.jpg"
+    "height": 8.0,
+    "image": "just_smile_and_wave_boys.jpg"
+  },
+  {
+    "date": "2025-10-25T00:00:00+02:00",
+    "name": "FMV",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "fmv.jpg"
+  },
+  {
+    "date": "2025-10-25T00:00:00+02:00",
+    "name": "GlobalEye - SAAB",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "globaleye_-_saab.jpg"
+  },
+  {
+    "date": "2025-10-25T00:00:00+02:00",
+    "name": "Epiroc",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 3.5,
+    "image": "epiroc.jpg"
   }
 ]
