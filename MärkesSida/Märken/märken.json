@@ -410,7 +410,7 @@
     "date": "2023-12-13T00:00:00",
     "name": "Datalaget",
     "places": [
-      "left-front-leg-lower"
+      "right-front-leg-upper"
     ],
     "shape": "circle",
     "width": 9.5,
@@ -1249,7 +1249,7 @@
     "name": "Larv Pub 9",
     "places": [
       "left-back-leg-upper",
-	  "inside-left-front-leg-upper"
+      "inside-left-front-leg-upper"
     ],
     "shape": "rect",
     "width": 7.5,
@@ -2471,14 +2471,14 @@
   },
   {
     "date": "2025-10-25T00:00:00+02:00",
-    "name": "Just Smile and Wave Boys",
+    "name": "Epiroc",
     "places": [
-      "left-front-chest"
+      "right-front-leg-lower"
     ],
     "shape": "rect",
-    "width": 7.0,
-    "height": 8.0,
-    "image": "just_smile_and_wave_boys.jpg"
+    "width": 8.0,
+    "height": 3.5,
+    "image": "epiroc.jpg"
   },
   {
     "date": "2025-10-25T00:00:00+02:00",
@@ -2504,13 +2504,68 @@
   },
   {
     "date": "2025-10-25T00:00:00+02:00",
-    "name": "Epiroc",
+    "name": "Just Smile and Wave Boys",
     "places": [
-      "right-front-leg-lower"
+      "left-front-chest"
+    ],
+    "shape": "rect",
+    "width": 7.0,
+    "height": 8.0,
+    "image": "just_smile_and_wave_boys.jpg"
+  },
+  {
+    "date": "2025-10-26T00:00:00+02:00",
+    "name": "Djungelphaesten - Utomhussittningen 2018",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "djungelphaesten_-_utomhussittningen_2018.jpg"
+  },
+  {
+    "date": "2025-10-26T00:00:00+02:00",
+    "name": "Kungaphaesten - Utomhussittningen 2014",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "kungaphaesten_-_utomhussittningen_2014.jpg"
+  },
+  {
+    "date": "2025-10-26T00:00:00+02:00",
+    "name": "Under Ytan Phaesten - Utomhussittningen 2021",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "under_ytan_phaesten.jpg"
+  },
+  {
+    "date": "2025-10-26T00:00:00+02:00",
+    "name": "Chapter 1: The Conspiracy",
+    "places": [
+      "right-front-leg-upper"
     ],
     "shape": "rect",
     "width": 8.0,
-    "height": 3.5,
-    "image": "epiroc.jpg"
+    "height": 8.0,
+    "image": "the_conspiracy.jpg"
+  },
+  {
+    "date": "2025-10-26T00:00:00+02:00",
+    "name": "Chad Dobbe",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 5.5,
+    "height": 8.0,
+    "image": "chad_dobbe.jpg"
   }
 ]
