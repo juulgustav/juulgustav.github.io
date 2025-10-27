@@ -2515,6 +2515,28 @@
   },
   {
     "date": "2025-10-26T00:00:00+02:00",
+    "name": "Chad Dobbe",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 5.5,
+    "height": 8.0,
+    "image": "chad_dobbe.jpg"
+  },
+  {
+    "date": "2025-10-26T00:00:00+02:00",
+    "name": "Chapter 1: The Conspiracy",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "the_conspiracy.jpg"
+  },
+  {
+    "date": "2025-10-26T00:00:00+02:00",
     "name": "Djungelphaesten - Utomhussittningen 2018",
     "places": [
       "left-back-leg-upper"
@@ -2547,25 +2569,69 @@
     "image": "under_ytan_phaesten.jpg"
   },
   {
-    "date": "2025-10-26T00:00:00+02:00",
-    "name": "Chapter 1: The Conspiracy",
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Rymd Phös 2025",
     "places": [
-      "right-front-leg-upper"
+      "back-backside"
     ],
-    "shape": "rect",
+    "shape": "circle",
     "width": 8.0,
     "height": 8.0,
-    "image": "the_conspiracy.jpg"
+    "image": "rymd_phös_2025.jpg"
   },
   {
-    "date": "2025-10-26T00:00:00+02:00",
-    "name": "Chad Dobbe",
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Resist",
     "places": [
-      "right-front-leg-upper"
+      "left-front-chest"
+    ],
+    "shape": "circle",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "resist.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Pedagogsektionen",
+    "places": [
+      "right-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "pedagogsektionen.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Hanteras Varsamt Ömtåligt Gods",
+    "places": [
+      "right-back-leg-upper"
     ],
     "shape": "rect",
-    "width": 5.5,
+    "width": 9.5,
+    "height": 5.0,
+    "image": "hanteras_varsamt_ömtåligt_gods.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Blue-Patch White Ovve",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 6.0,
     "height": 8.0,
-    "image": "chad_dobbe.jpg"
+    "image": "blue-patch_white_ovve.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Red-Stained Black Ovve",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 8.0,
+    "image": "red-stained_black_ovve.jpg"
   }
 ]
