@@ -2514,6 +2514,17 @@
     "image": "just_smile_and_wave_boys.jpg"
   },
   {
+    "date": "2025-10-25T00:00:00",
+    "name": "Datateknik 2024 Litet Ryggmärke",
+    "places": [
+      "left-front-inside-chest"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "datateknik_2024_litet_ryggmärke.jpg"
+  },
+  {
     "date": "2025-10-26T00:00:00+02:00",
     "name": "Chad Dobbe",
     "places": [
@@ -2570,36 +2581,14 @@
   },
   {
     "date": "2025-10-27T00:00:00+01:00",
-    "name": "Rymd Phös 2025",
+    "name": "Blue-Patch White Ovve",
     "places": [
-      "back-backside"
+      "left-back-leg-upper"
     ],
-    "shape": "circle",
-    "width": 8.0,
-    "height": 8.0,
-    "image": "rymd_phös_2025.jpg"
-  },
-  {
-    "date": "2025-10-27T00:00:00+01:00",
-    "name": "Resist",
-    "places": [
-      "left-front-chest"
-    ],
-    "shape": "circle",
+    "shape": "rect",
     "width": 6.0,
-    "height": 6.0,
-    "image": "resist.jpg"
-  },
-  {
-    "date": "2025-10-27T00:00:00+01:00",
-    "name": "Pedagogsektionen",
-    "places": [
-      "right-back-leg-upper"
-    ],
-    "shape": "circle",
-    "width": 10.0,
-    "height": 10.0,
-    "image": "pedagogsektionen.jpg"
+    "height": 8.0,
+    "image": "blue-patch_white_ovve.jpg"
   },
   {
     "date": "2025-10-27T00:00:00+01:00",
@@ -2614,14 +2603,14 @@
   },
   {
     "date": "2025-10-27T00:00:00+01:00",
-    "name": "Blue-Patch White Ovve",
+    "name": "Pedagogsektionen",
     "places": [
-      "left-back-leg-upper"
+      "right-back-leg-upper"
     ],
-    "shape": "rect",
-    "width": 6.0,
-    "height": 8.0,
-    "image": "blue-patch_white_ovve.jpg"
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "pedagogsektionen.jpg"
   },
   {
     "date": "2025-10-27T00:00:00+01:00",
@@ -2633,5 +2622,38 @@
     "width": 6.0,
     "height": 8.0,
     "image": "red-stained_black_ovve.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Resist",
+    "places": [
+      "left-front-chest"
+    ],
+    "shape": "circle",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "resist.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Rymd Phös 2025",
+    "places": [
+      "back-backside"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "rymd_phös_2025.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
+    "name": "Hata Data Tufft Att Vara Full",
+    "places": [
+      "left-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "hata_data_tufft_att_vara_full.jpg"
   }
 ]
