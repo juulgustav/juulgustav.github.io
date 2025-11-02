@@ -233,7 +233,7 @@
                 if (index>0&&date==patchGraphxValues[patchGraphxValues.length-1]) {
                     patchGraphyValues[patchGraphyValues.length-1] = patchGraphyValues[patchGraphyValues.length-1]+märke.places.length;
                     patchGraphyValuesArea[patchGraphyValues.length-1] = patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length;
-                    patchGraphyValuesAverageArea[patchGraphyValues.length-1] = (patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length)/totalPatches;
+                    //patchGraphyValuesAverageArea[patchGraphyValues.length-1] = (patchGraphyValuesArea[patchGraphyValues.length-1]+märke.area* märke.places.length)/totalPatches;
                     patchMedianArea[patchGraphyValues.length-1] = findMedian(areaList);
                 }
                 else{
@@ -241,7 +241,7 @@
                     //xValues.push(märke.date);
                     patchGraphyValues.push(totalPatches);
                     patchGraphyValuesArea.push(totalArea+märke.area* märke.places.length);
-                    patchGraphyValuesAverageArea.push((totalArea+märke.area* märke.places.length)/totalPatches);
+                    //patchGraphyValuesAverageArea.push((totalArea+märke.area* märke.places.length)/totalPatches);
                     patchMedianArea.push(findMedian(areaList));
                 }
                 
@@ -308,6 +308,9 @@
 
                 //}
             });
+            for (let i = 0; i < patchGraphyValuesArea.length; i++) {
+                patchGraphyValuesAverageArea.push(patchGraphyValuesArea[i]/patchGraphyValues[i]);
+            }
             console.log(patchGraphxValues);
             console.log(patchGraphyValues);
             console.log(patchGraphyValuesArea);
