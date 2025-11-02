@@ -441,7 +441,7 @@
             const max = Math.max(...areaList);
             console.log(min);
             console.log(max);
-            const binCount = Math.ceil((max - min) / binSize) + 1;
+            const binCount = Math.ceil((max - min) / binSize);
 
             // 2. Create bins and count data
             const bins = Array(binCount).fill(0);

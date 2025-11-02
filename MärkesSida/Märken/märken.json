@@ -2666,5 +2666,16 @@
     "width": 10.0,
     "height": 9.0,
     "image": "norrskensröj_2024.jpg"
+  },
+  {
+    "date": "2025-11-02T00:00:00+01:00",
+    "name": "Rymdteknik 2024 Litet Ryggmärke",
+    "places": [
+      "right-front-inside-chest"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "rymdteknik_2024_litet_ryggmärke.jpg"
   }
 ]
