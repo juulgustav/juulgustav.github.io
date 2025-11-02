@@ -133,7 +133,7 @@
   },
   {
     "date": "2023-09-29T00:00:00",
-    "name": "Datateknisk linje",
+    "name": "Datateknisk linje - Datasektionen 10 år",
     "places": [
       "left-front-leg-upper"
     ],
@@ -861,7 +861,7 @@
   },
   {
     "date": "2024-10-06T00:00:00",
-    "name": "XP-EL",
+    "name": "XP-el",
     "places": [
       "left-front-leg-upper"
     ],
@@ -1500,7 +1500,7 @@
   },
   {
     "date": "2025-03-22T00:00:00",
-    "name": "XP-EL 50 år",
+    "name": "XP-el 50 år",
     "places": [
       "right-front-leg-lower"
     ],
@@ -2470,6 +2470,17 @@
     "image": "you_shall_not_pass_out_phaesten_-_utomhussittningen_2025.jpg"
   },
   {
+    "date": "2025-10-25T00:00:00",
+    "name": "Datateknik 2024 Litet Ryggmärke",
+    "places": [
+      "left-front-inside-chest"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "datateknik_2024_litet_ryggmärke.jpg"
+  },
+  {
     "date": "2025-10-25T00:00:00+02:00",
     "name": "Epiroc",
     "places": [
@@ -2512,17 +2523,6 @@
     "width": 7.0,
     "height": 8.0,
     "image": "just_smile_and_wave_boys.jpg"
-  },
-  {
-    "date": "2025-10-25T00:00:00",
-    "name": "Datateknik 2024 Litet Ryggmärke",
-    "places": [
-      "left-front-inside-chest"
-    ],
-    "shape": "circle",
-    "width": 7.5,
-    "height": 7.5,
-    "image": "datateknik_2024_litet_ryggmärke.jpg"
   },
   {
     "date": "2025-10-26T00:00:00+02:00",
@@ -2603,6 +2603,17 @@
   },
   {
     "date": "2025-10-27T00:00:00+01:00",
+    "name": "Hata Data Tufft Att Vara Full",
+    "places": [
+      "left-back-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 10.0,
+    "height": 10.0,
+    "image": "hata_data_tufft_att_vara_full.jpg"
+  },
+  {
+    "date": "2025-10-27T00:00:00+01:00",
     "name": "Pedagogsektionen",
     "places": [
       "right-back-leg-upper"
@@ -2646,14 +2657,14 @@
     "image": "rymd_phös_2025.jpg"
   },
   {
-    "date": "2025-10-27T00:00:00+01:00",
-    "name": "Hata Data Tufft Att Vara Full",
+    "date": "2025-10-31T00:00:00",
+    "name": "Norrskensröj 2024",
     "places": [
-      "left-back-leg-lower"
+      "left-back-leg-upper"
     ],
-    "shape": "circle",
+    "shape": "hexagon",
     "width": 10.0,
-    "height": 10.0,
-    "image": "hata_data_tufft_att_vara_full.jpg"
+    "height": 9.0,
+    "image": "norrskensröj_2024.jpg"
   }
 ]
