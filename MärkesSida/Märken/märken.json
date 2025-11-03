@@ -2677,5 +2677,27 @@
     "width": 8.0,
     "height": 8.0,
     "image": "rymdteknik_2024_litet_ryggmärke.jpg"
+  },
+  {
+    "date": "2025-11-03T00:00:00+01:00",
+    "name": "Kuk",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "outline",
+    "width": 4.0,
+    "height": 12.0,
+    "image": "kuk.jpg"
+  },
+  {
+    "date": "2025-11-03T00:00:00+01:00",
+    "name": "Philm",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 9.0,
+    "height": 4.0,
+    "image": "philm.jpg"
   }
 ]
