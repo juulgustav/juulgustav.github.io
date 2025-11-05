@@ -2699,5 +2699,38 @@
     "width": 9.0,
     "height": 4.0,
     "image": "philm.jpg"
+  },
+  {
+    "date": "2025-11-05T00:00:00+01:00",
+    "name": "Allvar",
+    "places": [
+      "right-front-leg-upper"
+    ],
+    "shape": "rect",
+    "width": 6.0,
+    "height": 6.0,
+    "image": "allvar.jpg"
+  },
+  {
+    "date": "2025-11-05T00:00:00+01:00",
+    "name": "Data Ludd Lan 2025",
+    "places": [
+      "right-front-leg-lower"
+    ],
+    "shape": "circle",
+    "width": 8.0,
+    "height": 8.0,
+    "image": "data_ludd_lan_2025.jpg"
+  },
+  {
+    "date": "2025-11-05T00:00:00+01:00",
+    "name": "Data Galan 2022",
+    "places": [
+      "left-back-leg-upper"
+    ],
+    "shape": "circle",
+    "width": 7.5,
+    "height": 7.5,
+    "image": "data_galan_2022.jpg"
   }
 ]
